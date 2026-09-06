@@ -99,23 +99,23 @@ export default function Navbar({
           
           {/* Brand Logo & Tag */}
           <div
-            className="flex items-center space-x-3 flex-shrink-0 cursor-pointer group"
+            className="flex items-center space-x-2.5 sm:space-x-3 flex-shrink-0 cursor-pointer group min-w-0"
             onClick={() => handleTabClick('overview')}
           >
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-2xl bg-gradient-to-br from-cyan-500/20 via-slate-900 to-slate-950 border border-cyan-500/40 shadow-glow-cyan group-hover:scale-105 transition-transform duration-300">
-              <Shield className="w-5 h-5 text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
+            <div className="relative flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-br from-cyan-500/20 via-slate-900 to-slate-950 border border-cyan-500/40 shadow-glow-cyan group-hover:scale-105 transition-transform duration-300 flex-shrink-0">
+              <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
             </div>
-            <div>
-              <div className="flex items-center space-x-2">
-                <span className="text-xl font-display font-black tracking-wider text-white">
+            <div className="min-w-0">
+              <div className="flex items-center space-x-1.5 sm:space-x-2">
+                <span className="text-lg sm:text-xl font-display font-black tracking-wider text-white">
                   AERO<span className="text-cyan-400">VAULT</span>
                 </span>
-                <span className="px-1.5 py-0.5 text-[9px] font-mono font-bold uppercase rounded-md bg-cyan-950 text-cyan-400 border border-cyan-800">
+                <span className="px-1.5 py-0.2 text-[8px] sm:text-[9px] font-mono font-bold uppercase rounded-md bg-cyan-950 text-cyan-400 border border-cyan-800">
                   v3.0 PRO
                 </span>
               </div>
-              <p className="text-[10px] tracking-wider uppercase font-mono text-slate-400">
-                Global Military Defense Intelligence
+              <p className="text-[9px] sm:text-[10px] tracking-wider uppercase font-mono text-slate-400 truncate max-w-[180px] sm:max-w-none">
+                Global Military Defense Intel
               </p>
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function Navbar({
           </div>
 
           {/* Right Action Controls */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-1.5 sm:space-x-2 flex-shrink-0">
             
             {/* Audio Feedback Synthesizer Toggle */}
             <button
@@ -187,7 +187,7 @@ export default function Navbar({
                 tacticalAudio.playLock();
                 onOpenComparison();
               }}
-              className={`flex items-center space-x-2 px-3 py-2 rounded-xl text-xs font-mono font-bold transition-all border ${
+              className={`flex items-center space-x-1.5 sm:space-x-2 px-2.5 sm:px-3 py-2 rounded-xl text-xs font-mono font-bold transition-all border ${
                 comparisonList.length > 0
                   ? 'bg-gradient-to-r from-cyan-400 to-cyan-500 text-slate-950 border-cyan-400 shadow-glow-cyan hover:brightness-110'
                   : 'bg-slate-900 border-slate-800 text-slate-200 hover:border-cyan-500/40'
@@ -215,7 +215,26 @@ export default function Navbar({
 
       {/* Mobile Drawer Navigation */}
       {mobileMenuOpen && (
-        <div className="xl:hidden border-t border-slate-800 bg-slate-950/98 p-4 space-y-2 animate-fade-in">
+        <div className="xl:hidden border-t border-slate-800 bg-slate-950/98 p-4 space-y-3 animate-fade-in shadow-2xl">
+          
+          {/* Mobile Search Button */}
+          <button
+            onClick={() => {
+              setMobileMenuOpen(false);
+              if (onOpenCommandPalette) onOpenCommandPalette();
+            }}
+            className="w-full p-3 rounded-2xl bg-slate-900 border border-slate-800 text-left flex items-center justify-between text-xs text-slate-300"
+          >
+            <div className="flex items-center space-x-2">
+              <Search className="w-4 h-4 text-cyan-400" />
+              <span>Search jets, warships, tanks, countries...</span>
+            </div>
+            <kbd className="px-2 py-0.5 rounded bg-slate-950 border border-slate-800 text-[10px] font-mono text-cyan-400">
+              Cmd+K
+            </kbd>
+          </button>
+
+          {/* Domain Tabs Grid */}
           <div className="grid grid-cols-2 gap-2">
             {navDomainTabs.map((tab) => {
               const Icon = tab.icon;
@@ -226,18 +245,28 @@ export default function Navbar({
                   onClick={() => handleTabClick(tab.id)}
                   className={`flex items-center space-x-2 p-3 rounded-xl text-xs font-mono font-bold transition-all ${
                     isActive
-                      ? 'bg-cyan-500 text-slate-950'
+                      ? 'bg-cyan-500 text-slate-950 font-bold shadow-glow-cyan'
                       : 'bg-slate-900 text-slate-300 hover:bg-slate-800'
                   }`}
                 >
                   <Icon className="w-4 h-4" />
-                  <span>{tab.label}</span>
+                  <span className="truncate">{tab.label}</span>
                 </button>
               );
             })}
+          </div>
+
+          {/* Mobile Telemetry Status Info */}
+          <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-[10px] font-mono text-slate-400">
+            <span className="flex items-center text-cyan-400">
+              <span className="w-2 h-2 rounded-full bg-cyan-400 mr-1.5 animate-pulse" />
+              GLOBAL INTEL ONLINE
+            </span>
+            <span className="text-white font-bold">{timeStr || 'UTC'}</span>
           </div>
         </div>
       )}
     </header>
   );
 }
+

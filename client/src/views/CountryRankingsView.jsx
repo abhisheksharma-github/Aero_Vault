@@ -301,8 +301,99 @@ export default function CountryRankingsView({ onSelectCountry, onNavigateTab }) 
 
       </div>
 
-      {/* 4. Global Leaderboard Table */}
-      <div className="bg-slate-900/80 backdrop-blur-md rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
+      {/* 4. Global Leaderboard: Mobile Cards View (md:hidden) & Desktop Table (hidden md:block) */}
+      
+      {/* Mobile Card List View (< md) */}
+      <div className="md:hidden space-y-3">
+        {filteredProfiles.map((country, index) => {
+          const rankNumber = index + 1;
+          const barWidth = Math.min(100, Math.max(10, country.atlasIndex));
+
+          return (
+            <div
+              key={country.id || country.countryCode}
+              onClick={() => {
+                tacticalAudio.playClick();
+                setSelectedCountryDetail(country);
+              }}
+              className="bg-slate-900/90 backdrop-blur-md rounded-2xl border border-slate-800 hover:border-cyan-500/50 p-4 space-y-3 cursor-pointer shadow-lg active:scale-[0.99] transition-all"
+            >
+              {/* Header: Rank, Flag, Name, ATLAS Score */}
+              <div className="flex items-start justify-between gap-2">
+                <div className="flex items-center space-x-2.5 min-w-0">
+                  <span
+                    className={`inline-flex items-center justify-center w-7 h-7 rounded-lg text-xs font-black flex-shrink-0 ${
+                      rankNumber === 1
+                        ? 'bg-amber-400/20 text-amber-300 border border-amber-400/40'
+                        : rankNumber === 2
+                        ? 'bg-slate-300/20 text-slate-200 border border-slate-300/40'
+                        : rankNumber === 3
+                        ? 'bg-amber-700/20 text-amber-400 border border-amber-700/40'
+                        : 'bg-slate-950 text-slate-400 border border-slate-800'
+                    }`}
+                  >
+                    #{rankNumber}
+                  </span>
+                  <span className="text-2xl flex-shrink-0">{country.flagEmoji || '🏳️'}</span>
+                  <div className="min-w-0">
+                    <div className="font-display font-bold text-white text-sm truncate">
+                      {country.country}
+                    </div>
+                    <div className="text-[10px] font-mono text-slate-400">
+                      ISO: {country.countryCode} • {country.region || 'Global'}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-right flex-shrink-0">
+                  <div className="text-sm font-display font-black text-cyan-400">
+                    {country.atlasIndex.toFixed(1)}
+                  </div>
+                  <div className="text-[9px] font-mono text-slate-400">ATLAS SCORE</div>
+                </div>
+              </div>
+
+              {/* ATLAS Progress Bar */}
+              <div className="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden border border-slate-800">
+                <div
+                  className="bg-cyan-500 h-full rounded-full transition-all duration-500"
+                  style={{ width: `${barWidth}%` }}
+                />
+              </div>
+
+              {/* 4-Metric Grid */}
+              <div className="grid grid-cols-4 gap-1.5 p-2.5 rounded-xl bg-slate-950/80 border border-slate-800/80 text-center font-mono text-[10px]">
+                <div>
+                  <span className="text-slate-400 block text-[9px]">AIRS</span>
+                  <span className="text-cyan-300 font-bold">{country.airsIndex?.toFixed(1) || '0.0'}</span>
+                </div>
+                <div>
+                  <span className="text-slate-400 block text-[9px]">SEAS</span>
+                  <span className="text-cyan-300 font-bold">{country.seasIndex?.toFixed(1) || '0.0'}</span>
+                </div>
+                <div>
+                  <span className="text-slate-400 block text-[9px]">AIR FLEET</span>
+                  <span className="text-white font-bold">{(country.totalAircraft || 0).toLocaleString()}</span>
+                </div>
+                <div>
+                  <span className="text-slate-400 block text-[9px]">BUDGET</span>
+                  <span className="text-emerald-400 font-bold">${country.defenseBudgetUsd || 0}B</span>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+
+        {filteredProfiles.length === 0 && (
+          <div className="p-8 text-center text-slate-500 bg-slate-900/60 rounded-2xl border border-slate-800">
+            <Search className="w-6 h-6 mx-auto mb-2 text-slate-600" />
+            <p className="text-xs">No sovereign defense forces matched "{searchQuery}"</p>
+          </div>
+        )}
+      </div>
+
+      {/* Desktop Leaderboard Table (hidden md:block) */}
+      <div className="hidden md:block bg-slate-900/80 backdrop-blur-md rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse">
             <thead>
@@ -397,7 +488,6 @@ export default function CountryRankingsView({ onSelectCountry, onNavigateTab }) 
             <tbody className="divide-y divide-slate-800 text-xs font-mono">
               {filteredProfiles.map((country, index) => {
                 const rankNumber = index + 1;
-                const isTop3 = rankNumber <= 3;
                 const barWidth = Math.min(100, Math.max(10, country.atlasIndex));
 
                 return (
@@ -529,15 +619,15 @@ export default function CountryRankingsView({ onSelectCountry, onNavigateTab }) 
 
       {/* 5. Country Detail Inspection Drawer / Modal */}
       {selectedCountryDetail && (
-        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
-          <div className="bg-slate-900 border border-slate-800 rounded-3xl max-w-2xl w-full p-6 space-y-6 shadow-2xl relative">
+        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-4">
+          <div className="bg-slate-900 border border-slate-800 rounded-3xl max-w-2xl w-full p-4 sm:p-6 space-y-5 shadow-2xl relative max-h-[92vh] overflow-y-auto">
             
             {/* Header */}
             <div className="flex items-center justify-between border-b border-slate-800 pb-4">
               <div className="flex items-center space-x-3">
-                <span className="text-4xl">{selectedCountryDetail.flagEmoji}</span>
+                <span className="text-3xl sm:text-4xl">{selectedCountryDetail.flagEmoji}</span>
                 <div>
-                  <h2 className="text-2xl font-display font-black text-white">
+                  <h2 className="text-xl sm:text-2xl font-display font-black text-white">
                     {selectedCountryDetail.country}
                   </h2>
                   <div className="text-xs font-mono text-cyan-400">
@@ -554,36 +644,36 @@ export default function CountryRankingsView({ onSelectCountry, onNavigateTab }) 
             </div>
 
             {/* Metric Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
               <div className="p-3 rounded-2xl bg-slate-950 border border-slate-800">
                 <div className="text-[10px] font-mono text-slate-400">ATLAS SCORE</div>
-                <div className="text-xl font-bold font-display text-cyan-400 mt-1">
+                <div className="text-lg sm:text-xl font-bold font-display text-cyan-400 mt-1">
                   {selectedCountryDetail.atlasIndex.toFixed(1)}
                 </div>
               </div>
               <div className="p-3 rounded-2xl bg-slate-950 border border-slate-800">
                 <div className="text-[10px] font-mono text-slate-400">AIRS (AIR)</div>
-                <div className="text-xl font-bold font-display text-cyan-400 mt-1">
+                <div className="text-lg sm:text-xl font-bold font-display text-cyan-400 mt-1">
                   {selectedCountryDetail.airsIndex?.toFixed(1) || '0.0'}
                 </div>
               </div>
               <div className="p-3 rounded-2xl bg-slate-950 border border-slate-800">
                 <div className="text-[10px] font-mono text-slate-400">SEAS (NAVY)</div>
-                <div className="text-xl font-bold font-display text-cyan-400 mt-1">
+                <div className="text-lg sm:text-xl font-bold font-display text-cyan-400 mt-1">
                   {selectedCountryDetail.seasIndex?.toFixed(1) || '0.0'}
                 </div>
               </div>
               <div className="p-3 rounded-2xl bg-slate-950 border border-slate-800">
                 <div className="text-[10px] font-mono text-slate-400">ARMS (LAND)</div>
-                <div className="text-xl font-bold font-display text-cyan-400 mt-1">
+                <div className="text-lg sm:text-xl font-bold font-display text-cyan-400 mt-1">
                   {selectedCountryDetail.armsIndex?.toFixed(1) || '0.0'}
                 </div>
               </div>
             </div>
 
             {/* Strategic Attributes */}
-            <div className="grid grid-cols-2 gap-4 text-xs font-mono">
-              <div className="space-y-2 p-4 rounded-2xl bg-slate-950/60 border border-slate-800/80">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono">
+              <div className="space-y-2 p-3.5 rounded-2xl bg-slate-950/60 border border-slate-800/80">
                 <div className="text-slate-400 text-[10px] uppercase font-bold">Order of Battle</div>
                 <div className="flex justify-between py-1 border-b border-slate-800/60">
                   <span className="text-slate-400">Active Troops:</span>
@@ -599,7 +689,7 @@ export default function CountryRankingsView({ onSelectCountry, onNavigateTab }) 
                 </div>
               </div>
 
-              <div className="space-y-2 p-4 rounded-2xl bg-slate-950/60 border border-slate-800/80">
+              <div className="space-y-2 p-3.5 rounded-2xl bg-slate-950/60 border border-slate-800/80">
                 <div className="text-slate-400 text-[10px] uppercase font-bold">Multi-Domain Fleet</div>
                 <div className="flex justify-between py-1 border-b border-slate-800/60">
                   <span className="text-slate-400">Airframes:</span>
@@ -617,10 +707,10 @@ export default function CountryRankingsView({ onSelectCountry, onNavigateTab }) 
             </div>
 
             {/* Actions */}
-            <div className="flex items-center justify-end space-x-3 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-end gap-2 pt-2">
               <button
                 onClick={() => setSelectedCountryDetail(null)}
-                className="px-4 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono text-slate-300 hover:text-white"
+                className="px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono text-slate-300 hover:text-white"
               >
                 Close Dossier
               </button>
@@ -631,7 +721,7 @@ export default function CountryRankingsView({ onSelectCountry, onNavigateTab }) 
                     setSelectedCountryDetail(null);
                     onSelectCountry(cName);
                   }}
-                  className="px-5 py-2 rounded-xl bg-cyan-500 text-slate-950 font-mono font-bold text-xs hover:brightness-110 shadow-lg shadow-cyan-500/20"
+                  className="px-5 py-2.5 rounded-xl bg-cyan-500 text-slate-950 font-mono font-bold text-xs hover:brightness-110 shadow-lg shadow-cyan-500/20 text-center"
                 >
                   Explore Complete Fleet Inventory →
                 </button>
@@ -645,3 +735,4 @@ export default function CountryRankingsView({ onSelectCountry, onNavigateTab }) 
     </div>
   );
 }
+

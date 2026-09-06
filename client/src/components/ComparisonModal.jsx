@@ -150,24 +150,24 @@ export default function ComparisonModal({
   const scoreScenarioB = calculateScenarioScore(secondAircraft);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 overflow-y-auto bg-av-navy/90 backdrop-blur-2xl animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 overflow-y-auto bg-av-navy/90 backdrop-blur-2xl animate-fade-in">
       <div 
         className="relative w-full max-w-6xl rounded-3xl glass-panel border border-av-sky/40 shadow-2xl overflow-hidden my-auto max-h-[94vh] flex flex-col bg-av-dark text-av-light hud-corner-box"
         onClick={(e) => e.stopPropagation()}
       >
         
         {/* Header Ribbon */}
-        <div className="p-6 bg-gradient-to-r from-av-blue via-av-blue/70 to-av-navy border-b border-av-steel/30 flex-shrink-0 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <div className="p-2.5 rounded-2xl bg-av-sky/20 border border-av-sky/40 text-av-sky shadow-glow-cyan">
-              <Scale className="w-6 h-6" />
+        <div className="p-4 sm:p-6 bg-gradient-to-r from-av-blue via-av-blue/70 to-av-navy border-b border-av-steel/30 flex-shrink-0 flex items-center justify-between gap-3">
+          <div className="flex items-center space-x-2.5 sm:space-x-3 min-w-0">
+            <div className="p-2 sm:p-2.5 rounded-2xl bg-av-sky/20 border border-av-sky/40 text-av-sky shadow-glow-cyan flex-shrink-0">
+              <Scale className="w-5 h-5 sm:w-6 sm:h-6" />
             </div>
-            <div>
-              <h2 className="text-xl sm:text-2xl font-display font-black text-white">
+            <div className="min-w-0">
+              <h2 className="text-base sm:text-2xl font-display font-black text-white truncate">
                 Multi-Domain Tactical Benchmark Station
               </h2>
-              <p className="text-xs font-mono text-av-mist">
-                Head-to-head deterministic airframe combat analysis & simulated mission showdown
+              <p className="text-[10px] sm:text-xs font-mono text-av-mist truncate">
+                Head-to-head deterministic airframe combat analysis
               </p>
             </div>
           </div>
@@ -177,26 +177,26 @@ export default function ComparisonModal({
               tacticalAudio.playClick();
               onClose();
             }}
-            className="p-2.5 rounded-2xl bg-av-navy/80 text-av-mist hover:text-white hover:bg-rose-500/20 hover:border-rose-500/50 border border-av-steel/40 transition-colors"
+            className="p-2 sm:p-2.5 rounded-2xl bg-av-navy/80 text-av-mist hover:text-white hover:bg-rose-500/20 hover:border-rose-500/50 border border-av-steel/40 transition-colors flex-shrink-0"
           >
-            <X className="w-5 h-5" />
+            <X className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         </div>
 
         {/* Modal Scrollable Body */}
-        <div className="p-6 overflow-y-auto space-y-8 flex-1">
+        <div className="p-4 sm:p-6 overflow-y-auto space-y-6 sm:space-y-8 flex-1">
           
           {/* Fighter vs Fighter Showdown Header Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 relative">
             
-            {/* VS Badge in Center */}
+            {/* VS Badge in Center (Desktop) & Center Divider (Mobile) */}
             <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-av-navy border-2 border-av-sky shadow-glow-cyan items-center justify-center font-display font-black text-sm text-av-sky">
               VS
             </div>
 
             {/* Aircraft A Card */}
-            <div className="p-5 rounded-3xl glass-panel border border-cyan-500/40 space-y-4 bg-gradient-to-b from-cyan-950/30 to-av-dark hud-corner-box">
-              <div className="flex items-center justify-between gap-3">
+            <div className="p-4 sm:p-5 rounded-3xl glass-panel border border-cyan-500/40 space-y-3 sm:space-y-4 bg-gradient-to-b from-cyan-950/30 to-av-dark hud-corner-box">
+              <div className="flex items-center justify-between gap-2 sm:gap-3">
                 <select
                   value={aircraftA.name}
                   onChange={(e) => {
@@ -206,7 +206,7 @@ export default function ComparisonModal({
                       onSelectAircraftA(match);
                     }
                   }}
-                  className="bg-av-navy/90 border border-cyan-500/40 text-white font-display font-bold text-base sm:text-lg rounded-xl px-3 py-1.5 focus:outline-none focus:border-av-sky w-full font-sans cursor-pointer"
+                  className="bg-av-navy/90 border border-cyan-500/40 text-white font-display font-bold text-sm sm:text-lg rounded-xl px-2.5 sm:px-3 py-1.5 focus:outline-none focus:border-av-sky w-full font-sans cursor-pointer truncate"
                 >
                   {allAircraft.map((a) => (
                     <option key={a.name} value={a.name} className="bg-av-dark text-white font-sans">
@@ -215,38 +215,45 @@ export default function ComparisonModal({
                   ))}
                 </select>
                 
-                <span className="px-3 py-1 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-400/40 text-xs font-mono font-black">
+                <span className="px-2.5 sm:px-3 py-1 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-400/40 text-[10px] sm:text-xs font-mono font-black whitespace-nowrap flex-shrink-0">
                   {tvrA.toFixed(1)} TVR
                 </span>
               </div>
 
-              <div className="h-40 rounded-2xl overflow-hidden border border-av-steel/30 bg-av-navy">
+              <div className="h-32 sm:h-40 rounded-2xl overflow-hidden border border-av-steel/30 bg-av-navy">
                 <img src={aircraftA.imageUrl} alt={aircraftA.name} className="w-full h-full object-cover" />
               </div>
 
               <div className="grid grid-cols-2 gap-2 text-xs font-mono">
                 <div className="p-2 rounded-xl bg-av-navy/80 border border-av-steel/20">
                   <span className="text-av-mist block text-[10px]">Speed:</span>
-                  <span className="text-white font-bold">{aircraftA.topSpeedMach ? `Mach ${aircraftA.topSpeedMach}` : 'Mach 2.0'}</span>
+                  <span className="text-white font-bold text-[11px] truncate block">{aircraftA.topSpeedMach ? `Mach ${aircraftA.topSpeedMach}` : 'Mach 2.0'}</span>
                 </div>
                 <div className="p-2 rounded-xl bg-av-navy/80 border border-av-steel/20">
                   <span className="text-av-mist block text-[10px]">Radar Reach:</span>
-                  <span className="text-cyan-300 font-bold">{aircraftA.radarRangeAirKm ? `${aircraftA.radarRangeAirKm} km` : '200+ km'}</span>
+                  <span className="text-cyan-300 font-bold text-[11px] truncate block">{aircraftA.radarRangeAirKm ? `${aircraftA.radarRangeAirKm} km` : '200+ km'}</span>
                 </div>
                 <div className="p-2 rounded-xl bg-av-navy/80 border border-av-steel/20">
                   <span className="text-av-mist block text-[10px]">Stealth:</span>
-                  <span className="text-purple-300 font-bold">{aircraftA.stealthLevel?.replace('_', ' ') || 'REDUCED'}</span>
+                  <span className="text-purple-300 font-bold text-[11px] truncate block">{aircraftA.stealthLevel?.replace('_', ' ') || 'REDUCED'}</span>
                 </div>
                 <div className="p-2 rounded-xl bg-av-navy/80 border border-av-steel/20">
                   <span className="text-av-mist block text-[10px]">Combat Radius:</span>
-                  <span className="text-emerald-400 font-bold">{aircraftA.combatRangeKm ? `${aircraftA.combatRangeKm} km` : '1,500 km'}</span>
+                  <span className="text-emerald-400 font-bold text-[11px] truncate block">{aircraftA.combatRangeKm ? `${aircraftA.combatRangeKm} km` : '1,500 km'}</span>
                 </div>
               </div>
             </div>
 
+            {/* Mobile VS Pill */}
+            <div className="md:hidden flex items-center justify-center -my-2 z-10">
+              <span className="px-3 py-0.5 rounded-full bg-av-navy border border-av-sky text-av-sky text-[10px] font-mono font-bold shadow-glow-cyan">
+                VS SHOWDOWN
+              </span>
+            </div>
+
             {/* Aircraft B Card */}
-            <div className="p-5 rounded-3xl glass-panel border border-emerald-500/40 space-y-4 bg-gradient-to-b from-emerald-950/30 to-av-dark hud-corner-box">
-              <div className="flex items-center justify-between gap-3">
+            <div className="p-4 sm:p-5 rounded-3xl glass-panel border border-emerald-500/40 space-y-3 sm:space-y-4 bg-gradient-to-b from-emerald-950/30 to-av-dark hud-corner-box">
+              <div className="flex items-center justify-between gap-2 sm:gap-3">
                 <select
                   value={secondAircraft.name}
                   onChange={(e) => {
@@ -256,7 +263,7 @@ export default function ComparisonModal({
                       onSelectAircraftB(match);
                     }
                   }}
-                  className="bg-av-navy/90 border border-emerald-500/40 text-white font-display font-bold text-base sm:text-lg rounded-xl px-3 py-1.5 focus:outline-none focus:border-emerald-400 w-full font-sans cursor-pointer"
+                  className="bg-av-navy/90 border border-emerald-500/40 text-white font-display font-bold text-sm sm:text-lg rounded-xl px-2.5 sm:px-3 py-1.5 focus:outline-none focus:border-emerald-400 w-full font-sans cursor-pointer truncate"
                 >
                   {allAircraft.map((a) => (
                     <option key={a.name} value={a.name} className="bg-av-dark text-white font-sans">
@@ -265,35 +272,36 @@ export default function ComparisonModal({
                   ))}
                 </select>
 
-                <span className="px-3 py-1 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-400/40 text-xs font-mono font-black">
+                <span className="px-2.5 sm:px-3 py-1 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-400/40 text-[10px] sm:text-xs font-mono font-black whitespace-nowrap flex-shrink-0">
                   {tvrB.toFixed(1)} TVR
                 </span>
               </div>
 
-              <div className="h-40 rounded-2xl overflow-hidden border border-av-steel/30 bg-av-navy">
+              <div className="h-32 sm:h-40 rounded-2xl overflow-hidden border border-av-steel/30 bg-av-navy">
                 <img src={secondAircraft.imageUrl} alt={secondAircraft.name} className="w-full h-full object-cover" />
               </div>
 
               <div className="grid grid-cols-2 gap-2 text-xs font-mono">
                 <div className="p-2 rounded-xl bg-av-navy/80 border border-av-steel/20">
                   <span className="text-av-mist block text-[10px]">Speed:</span>
-                  <span className="text-white font-bold">{secondAircraft.topSpeedMach ? `Mach ${secondAircraft.topSpeedMach}` : 'Mach 2.0'}</span>
+                  <span className="text-white font-bold text-[11px] truncate block">{secondAircraft.topSpeedMach ? `Mach ${secondAircraft.topSpeedMach}` : 'Mach 2.0'}</span>
                 </div>
                 <div className="p-2 rounded-xl bg-av-navy/80 border border-av-steel/20">
                   <span className="text-av-mist block text-[10px]">Radar Reach:</span>
-                  <span className="text-cyan-300 font-bold">{secondAircraft.radarRangeAirKm ? `${secondAircraft.radarRangeAirKm} km` : '200+ km'}</span>
+                  <span className="text-cyan-300 font-bold text-[11px] truncate block">{secondAircraft.radarRangeAirKm ? `${secondAircraft.radarRangeAirKm} km` : '200+ km'}</span>
                 </div>
                 <div className="p-2 rounded-xl bg-av-navy/80 border border-av-steel/20">
                   <span className="text-av-mist block text-[10px]">Stealth:</span>
-                  <span className="text-purple-300 font-bold">{secondAircraft.stealthLevel?.replace('_', ' ') || 'REDUCED'}</span>
+                  <span className="text-purple-300 font-bold text-[11px] truncate block">{secondAircraft.stealthLevel?.replace('_', ' ') || 'REDUCED'}</span>
                 </div>
                 <div className="p-2 rounded-xl bg-av-navy/80 border border-av-steel/20">
                   <span className="text-av-mist block text-[10px]">Combat Radius:</span>
-                  <span className="text-emerald-400 font-bold">{secondAircraft.combatRangeKm ? `${secondAircraft.combatRangeKm} km` : '1,500 km'}</span>
+                  <span className="text-emerald-400 font-bold text-[11px] truncate block">{secondAircraft.combatRangeKm ? `${secondAircraft.combatRangeKm} km` : '1,500 km'}</span>
                 </div>
               </div>
             </div>
           </div>
+
 
           {/* 7-Pillar Capability Comparison Bars */}
           <div className="glass-panel p-6 rounded-3xl border border-av-steel/30 space-y-4 hud-corner-box">
