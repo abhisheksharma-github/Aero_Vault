@@ -1,0 +1,854 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum AircraftStatus {
+  ACTIVE
+  INACTIVE
+  RETIRED
+}
+
+enum MilitaryBranch {
+  AIR_FORCE
+  ARMY_AVIATION
+  NAVAL_AVIATION
+  MARINE_AVIATION
+  JOINT
+}
+
+enum AircraftCategory {
+  // Combat Aircraft
+  FIGHTER
+  INTERCEPTOR
+  MULTIROLE_FIGHTER
+  AIR_SUPERIORITY
+  GROUND_ATTACK
+  STRIKE
+  BOMBER
+  LIGHT_ATTACK
+
+  // Support Aircraft
+  AEWC
+  AIRBORNE_EARLY_WARNING
+  ELINT
+  SIGINT
+  EW_AIRCRAFT
+  RECONNAISSANCE
+  SURVEILLANCE
+  MARITIME_PATROL
+
+  // Transport & Tanker
+  STRATEGIC_TRANSPORT
+  TACTICAL_TRANSPORT
+  UTILITY_TRANSPORT
+  VIP_TRANSPORT
+  AERIAL_REFUELING
+  TANKER
+  TRANSPORT
+
+  // Training
+  TRAINER
+  LEAD_IN_FIGHTER_TRAINER
+
+  // Rotary Wing
+  HELICOPTER
+  ATTACK_HELICOPTER
+  UTILITY_HELICOPTER
+  TRANSPORT_HELICOPTER
+  RECON_HELICOPTER
+  NAVAL_HELICOPTER
+  ANTI_SUBMARINE_HELICOPTER
+  SEARCH_AND_RESCUE_HELICOPTER
+
+  // Unmanned Systems
+  UAV
+  MALE_UAV
+  HALE_UAV
+  TACTICAL_UAV
+  UCAV
+  LOITERING_MUNITION
+  RECON_UAV
+  STRIKE_UAV
+
+  // Special
+  SPECIAL_MISSION
+  TARGET_DRONE
+  EXPERIMENTAL
+  ATTACK
+}
+
+enum AircraftGeneration {
+  GEN_1
+  GEN_2
+  GEN_3
+  GEN_4
+  GEN_4_PLUS
+  GEN_4_5
+  GEN_5
+  GEN_5_PLUS
+  GEN_6
+  NOT_APPLICABLE
+}
+
+enum Era {
+  VINTAGE
+  COLD_WAR
+  MODERN
+  NEXT_GEN
+}
+
+enum StealthLevel {
+  VERY_LOW
+  LOW
+  REDUCED
+  MODERATE
+  HIGH
+  VERY_HIGH
+}
+
+enum RadarType {
+  MECHANICAL_PULSE_DOPPLER
+  PESA
+  AESA
+  MULTI_BAND_AESA
+  NONE
+}
+
+enum ConfidenceLevel {
+  VERIFIED
+  PARTIALLY_VERIFIED
+  ESTIMATED
+  CONFLICTING
+  UNVERIFIED
+  OUTDATED
+  UNKNOWN
+}
+
+enum WeaponType {
+  BVR_AAM
+  WVR_AAM
+  ANTI_SHIP_MISSILE
+  LAND_ATTACK_CRUISE_MISSILE
+  PRECISION_GUIDED_BOMB
+  UNGUIDED_BOMB
+  ANTI_RADIATION_MISSILE
+  HYPERSONIC_GLIDE
+  GUN_POD
+  TORPEDO
+  ANTI_TANK_MISSILE
+}
+
+enum ImageType {
+  AIRCRAFT
+  COCKPIT
+  AIRBORNE
+  GROUND
+  CARRIER
+  FORMATION
+  WEAPON_LOADOUT
+  HELICOPTER
+  UAV
+  DETAIL
+}
+
+// ----------------------------------------------------
+// MULTI-DOMAIN GLOBAL MILITARY DEFENSE ENUMS
+// ----------------------------------------------------
+
+enum SitrepCategory {
+  DELIVERED
+  COMMISSIONED
+  RETIRED
+  SHOT_DOWN
+  DAMAGED
+  DESTROYED
+  ON_ORDER
+  TEST_FLIGHT
+  TRANSFER
+}
+
+enum DomainType {
+  AIR
+  NAVY
+  LAND
+  STRATEGIC_DEFENSE
+}
+
+enum NavalVesselType {
+  AIRCRAFT_CARRIER
+  HELICOPTER_CARRIER
+  GUIDED_MISSILE_DESTROYER
+  FRIGATE
+  CORVETTE
+  BALLISTIC_MISSILE_SUBMARINE
+  ATTACK_SUBMARINE
+  AMPHIBIOUS_ASSAULT
+  PATROL_VESSEL
+  MINE_COUNTERMEASURE
+  AUXILIARY_FLEET
+}
+
+enum GroundVehicleCategory {
+  MAIN_BATTLE_TANK
+  INFANTRY_FIGHTING_VEHICLE
+  ARMORED_PERSONNEL_CARRIER
+  SELF_PROPELLED_ARTILLERY
+  MULTIPLE_LAUNCH_ROCKET_SYSTEM
+  AIR_DEFENSE_SYSTEM
+  LIGHT_ARMORED_VEHICLE
+  TACTICAL_BALLISTIC_MISSILE
+}
+
+// ----------------------------------------------------
+// CORE AIRPOWER MODELS
+// ----------------------------------------------------
+
+model Aircraft {
+  id                  String             @id @default(uuid())
+  name                String             @unique
+  commonName          String?
+  officialDesignation String?
+  natoReportingName   String?
+  family              String? // e.g. "F-16 Fighting Falcon", "Su-30", "AH-64 Apache", "MQ-9 Reaper"
+  variant             String? // e.g. "F-16V Block 70", "Su-30MKI", "AH-64E", "MQ-9B SeaGuardian"
+  block               String? // e.g. "Block 50/52", "Block 70", "Lot 15"
+  manufacturer        String
+  manufacturerCountry String?
+  originCountry       String
+  country             String // Operating nation
+  affiliation         String // e.g. IAF, USAF, US Navy, US Army, PLAAF, PLAN-AF, Royal Air Force
+  militaryBranch      MilitaryBranch     @default(AIR_FORCE)
+  serviceStatus       AircraftStatus     @default(ACTIVE)
+  category            AircraftCategory
+  generation          AircraftGeneration @default(GEN_4)
+  era                 Era                @default(MODERN)
+  role                String
+  secondaryRoles      String[]           @default([])
+
+  // Production & Lifecycle Numbers
+  firstFlightYear  Int?
+  introductionYear Int?
+  retirementYear   Int?
+  productionCount  Int? // Total airframes ever produced
+  fleetCount       Int? @default(1) // Currently active in this operator fleet
+  activeCount      Int? @default(1)
+  inactiveCount    Int? @default(0)
+  retiredCount     Int? @default(0)
+
+  // Propulsion & Flight Dynamics
+  engineManufacturer  String?
+  engineModel         String
+  engineCount         Int     @default(1)
+  engineType          String? // Turbofan, Turbojet, Turboprop, Turboshaft
+  hasAfterburner      Boolean @default(false)
+  thrustDryKn         Float?
+  thrustAfterburnerKn Float?
+  topSpeedMach        Float?
+  topSpeedKmh         Float?
+  cruiseSpeedKmh      Float?
+  serviceCeilingM     Float?
+  rateOfClimbMs       Float?
+  gLimitPositive      Float?
+  gLimitNegative      Float?
+  enduranceHours      Float?
+
+  // Range, Weights & Dimensions
+  combatRangeKm      Float?
+  combatRadiusKm     Float?
+  ferryRangeKm       Float?
+  emptyWeightKg      Float?
+  maxTakeoffWeightKg Float?
+  payloadCapacityKg  Float?
+  internalFuelKg     Float?
+  lengthM            Float?
+  wingspanM          Float?
+  heightM            Float?
+
+  // Sensors, Avionics & Electronic Warfare
+  radarType         RadarType @default(MECHANICAL_PULSE_DOPPLER)
+  radarModel        String?
+  radarRangeAirKm   Float?
+  hasAesa           Boolean   @default(false)
+  hasIrst           Boolean   @default(false)
+  hasSensorFusion   Boolean   @default(false)
+  hasDatalink       Boolean   @default(false)
+  hasHmd            Boolean   @default(false) // Helmet Mounted Display
+  electronicWarfare String?
+  ewScore           Float     @default(50.0)
+
+  // Survivability & Low Observability
+  stealthLevel   StealthLevel @default(LOW)
+  rcsEstimatedM2 Float?
+  hasRwr         Boolean      @default(true)
+  hasEcm         Boolean      @default(true)
+  hasMaws        Boolean      @default(false)
+
+  // Logistics & Maintenance
+  maintenanceHoursPerFlightHour Float?
+  costPerFlightHourUsd          Float?
+  reliabilityScore              Float  @default(75.0)
+
+  // Intelligence Ratings & Data Provenance
+  confidenceLevel ConfidenceLevel @default(VERIFIED)
+  confidenceScore Float           @default(85.0) // 0 - 100
+  sourceCount     Int             @default(1)
+  lastVerified    DateTime?
+  description     String          @db.Text
+  imageUrl        String          @db.Text
+
+  // Cached Calculated TVR
+  tvrScore           Float @default(0.0)
+  performanceScore   Float @default(0.0)
+  avionicsScore      Float @default(0.0)
+  weaponsScore       Float @default(0.0)
+  survivabilityScore Float @default(0.0)
+  logisticsScore     Float @default(0.0)
+
+  // Relational Connections
+  weapons     AircraftWeapon[]
+  dataSources AircraftDataSource[]
+  milestones  AircraftMilestone[]
+  snapshots   AircraftSnapshot[]
+  images      AircraftImage[]
+  conflicts   DataConflict[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([country])
+  @@index([militaryBranch])
+  @@index([category])
+  @@index([generation])
+  @@index([serviceStatus])
+  @@index([tvrScore])
+  @@index([family])
+}
+
+model AircraftImage {
+  id           String    @id @default(uuid())
+  aircraftId   String
+  url          String    @db.Text
+  thumbnailUrl String?   @db.Text
+  caption      String?
+  imageType    ImageType @default(AIRCRAFT)
+  author       String?
+  license      String? // e.g. "Public Domain / US DoD", "CC BY-SA 4.0", "Manufacturer Official PR"
+  sourceUrl    String?   @db.Text
+  isPrimary    Boolean   @default(false)
+  isVerified   Boolean   @default(true)
+  createdAt    DateTime  @default(now())
+
+  aircraft Aircraft @relation(fields: [aircraftId], references: [id], onDelete: Cascade)
+
+  @@index([aircraftId])
+}
+
+model Weapon {
+  id            String           @id @default(uuid())
+  name          String           @unique
+  type          WeaponType
+  manufacturer  String?
+  originCountry String?
+  guidance      String? // Active Radar, Semi-Active, Infrared, GPS/INS, Laser, TV, Anti-Radiation
+  maxRangeKm    Float?
+  speedMach     Float?
+  warheadKg     Float?
+  description   String?          @db.Text
+  aircraft      AircraftWeapon[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([type])
+}
+
+model AircraftWeapon {
+  id           String  @id @default(uuid())
+  aircraftId   String
+  weaponId     String
+  maxCapacity  Int     @default(1)
+  isIntegrated Boolean @default(true)
+  notes        String?
+
+  aircraft Aircraft @relation(fields: [aircraftId], references: [id], onDelete: Cascade)
+  weapon   Weapon   @relation(fields: [weaponId], references: [id], onDelete: Cascade)
+
+  @@unique([aircraftId, weaponId])
+}
+
+model DataSource {
+  id               String               @id @default(uuid())
+  name             String               @unique
+  publisher        String // e.g. Jane's Defense, FlightGlobal, DoD, Manufacturer Official, WDMMA, IISS
+  url              String?
+  sourceType       String // TIER_1_OFFICIAL, TIER_2_DEFENSE_JOURNAL, TIER_3_OSINT
+  reliabilityLevel String               @default("HIGH") // HIGH, MEDIUM, LOW
+  aircraftData     AircraftDataSource[]
+  createdAt        DateTime             @default(now())
+  updatedAt        DateTime             @updatedAt
+}
+
+model AircraftDataSource {
+  id              String          @id @default(uuid())
+  aircraftId      String?
+  navalVesselId   String?
+  groundVehicleId String?
+  sourceId        String
+  field           String // e.g. "topSpeedMach", "rcsEstimatedM2", "combatRangeKm", "fleetCount"
+  valueString     String?
+  confidenceLevel ConfidenceLevel @default(ESTIMATED)
+  lastChecked     DateTime        @default(now())
+  notes           String?
+
+  aircraft      Aircraft?      @relation(fields: [aircraftId], references: [id], onDelete: Cascade)
+  navalVessel   NavalVessel?   @relation(fields: [navalVesselId], references: [id], onDelete: Cascade)
+  groundVehicle GroundVehicle? @relation(fields: [groundVehicleId], references: [id], onDelete: Cascade)
+  source        DataSource     @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+
+  @@unique([aircraftId, sourceId, field])
+}
+
+model DataConflict {
+  id           String   @id @default(uuid())
+  aircraftId   String
+  field        String
+  sourceAValue String
+  sourceBValue String
+  sourceAName  String
+  sourceBName  String
+  status       String   @default("PENDING_REVIEW") // PENDING_REVIEW, RESOLVED, DISMISSED
+  notes        String?
+  createdAt    DateTime @default(now())
+
+  aircraft Aircraft @relation(fields: [aircraftId], references: [id], onDelete: Cascade)
+
+  @@index([aircraftId, status])
+}
+
+model DataChange {
+  id            String   @id @default(uuid())
+  entityType    String // "AIRCRAFT" | "NATION" | "BRANCH"
+  entityName    String
+  field         String
+  previousValue String
+  newValue      String
+  deltaString   String?
+  source        String
+  recordedAt    DateTime @default(now())
+
+  @@index([entityType, recordedAt])
+}
+
+model AircraftMilestone {
+  id          String @id @default(uuid())
+  aircraftId  String
+  year        Int
+  eventType   String // FIRST_FLIGHT, COMMISSIONED, RADAR_UPGRADE, WEAPON_INTEGRATION, AVIONICS_MODERNIZATION, RETIRED
+  title       String
+  description String @db.Text
+
+  aircraft Aircraft @relation(fields: [aircraftId], references: [id], onDelete: Cascade)
+
+  @@index([aircraftId, year])
+}
+
+model AircraftSnapshot {
+  id         String   @id @default(uuid())
+  aircraftId String
+  recordedAt DateTime @default(now())
+  tvrScore   Float
+  fleetCount Int?
+  notes      String?
+
+  aircraft Aircraft @relation(fields: [aircraftId], references: [id], onDelete: Cascade)
+
+  @@index([aircraftId, recordedAt])
+}
+
+model NationIntelligence {
+  id                 String  @id @default(uuid())
+  countryName        String  @unique
+  countryCode        String?
+  flag               String?
+  airForceName       String?
+  armyAviationName   String?
+  navalAviationName  String?
+  globalRanking      Int
+  tvrTotal           Float
+  combatPowerScore   Float   @default(0.0)
+  strikeScore        Float   @default(0.0)
+  mobilityScore      Float   @default(0.0)
+  aewcScore          Float   @default(0.0)
+  tankerScore        Float   @default(0.0)
+  uavScore           Float   @default(0.0)
+  navalAirScore      Float   @default(0.0)
+  armyAirScore       Float   @default(0.0)
+  modernizationIndex Float
+  logisticsScore     Float
+  forceReadiness     Float   @default(80.0)
+  totalActiveUnits   Int
+
+  // Branch Unit Aggregates
+  airForceUnits      Int @default(0)
+  armyAviationUnits  Int @default(0)
+  navalAviationUnits Int @default(0)
+  marineUnits        Int @default(0)
+
+  // Category Distribution
+  totalFighters    Int @default(0)
+  totalBombers     Int @default(0)
+  totalTransports  Int @default(0)
+  totalHelicopters Int @default(0)
+  totalUAVs        Int @default(0)
+  totalAEWC        Int @default(0)
+  totalTankers     Int @default(0)
+  totalTrainers    Int @default(0)
+
+  // Generation Ratios
+  gen5Count   Int @default(0)
+  gen45Count  Int @default(0)
+  gen4Count   Int @default(0)
+  legacyCount Int @default(0)
+
+  primaryStrengths   String[] @default([])
+  primaryLimitations String[] @default([])
+  historicalRankings Json?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([globalRanking])
+  @@index([tvrTotal])
+}
+
+// ----------------------------------------------------
+// MULTI-DOMAIN GLOBAL MILITARY DEFENSE MODELS
+// ----------------------------------------------------
+
+model SitrepEvent {
+  id          String          @id @default(uuid())
+  eventDate   DateTime        @default(now())
+  domain      DomainType      @default(AIR)
+  eventType   SitrepCategory
+  country     String
+  countryCode String? // ISO 3-letter code, e.g., "IND", "USA"
+  countryFlag String? // Flag emoji
+  entityName  String // e.g. "EC-130H Compass Call", "INS Arighat"
+  location    String?
+  summary     String          @db.Text
+  sourceUrl   String?
+  confidence  ConfidenceLevel @default(VERIFIED)
+  createdAt   DateTime        @default(now())
+
+  @@index([domain])
+  @@index([country])
+  @@index([eventDate])
+}
+
+model NavalVessel {
+  id               String          @id @default(uuid())
+  name             String          @unique
+  shipClass        String
+  vesselType       NavalVesselType @default(FRIGATE)
+  country          String
+  countryCode      String?
+  militaryBranch   MilitaryBranch  @default(NAVAL_AVIATION)
+  status           AircraftStatus  @default(ACTIVE)
+  displacementTons Float?
+  maxSpeedKnots    Float?
+  commissionedYear Int?
+  crewComplement   Int?
+  activeCount      Int             @default(1)
+  originCountry    String?
+  pennantNumber    String?
+  radarType        RadarType       @default(MECHANICAL_PULSE_DOPPLER)
+  hasAesa          Boolean         @default(false)
+  imageUrl         String?
+  description      String?         @db.Text
+  tvrScore         Float           @default(70.0)
+  lastVerified     DateTime        @default(now())
+
+  dataSources AircraftDataSource[]
+
+  @@index([country])
+  @@index([vesselType])
+}
+
+model GroundVehicle {
+  id             String                @id @default(uuid())
+  name           String                @unique
+  category       GroundVehicleCategory @default(MAIN_BATTLE_TANK)
+  country        String
+  countryCode    String?
+  militaryBranch MilitaryBranch        @default(ARMY_AVIATION)
+  status         AircraftStatus        @default(ACTIVE)
+  activeCount    Int                   @default(0)
+  reserveCount   Int                   @default(0)
+  generation     String?
+  mainArmament   String?
+  enginePowerHp  Float?
+  topSpeedKmh    Float?
+  weightTons     Float?
+  imageUrl       String?
+  description    String?               @db.Text
+  tvrScore       Float                 @default(70.0)
+  lastVerified   DateTime              @default(now())
+
+  dataSources AircraftDataSource[]
+
+  @@index([country])
+  @@index([category])
+}
+
+model CountryForceProfile {
+  id          String  @id @default(uuid())
+  country     String  @unique
+  countryCode String  @unique // e.g. "IND", "USA", "CHN"
+  flagEmoji   String?
+  region      String?
+
+  // Normalized Composite Indices (0.0 - 100.0)
+  atlasIndex Float @default(0.0) // Overall National Military Power
+  airsIndex  Float @default(0.0) // Air Power Index
+  seasIndex  Float @default(0.0) // Naval Power Index
+  armsIndex  Float @default(0.0) // Land Power Index
+
+  // Demographics & Budget
+  activeTroops     Int   @default(0)
+  reserveTroops    Int   @default(0)
+  paramilitary     Int   @default(0)
+  defenseBudgetUsd Float @default(0.0) // Billions USD
+
+  // Fleet Inventories
+  totalAircraft Int @default(0)
+  totalWarships Int @default(0)
+  totalVehicles Int @default(0)
+
+  // Strategic Enablers
+  nuclearWarheads  Int? @default(0)
+  aircraftCarriers Int? @default(0)
+  submarines       Int? @default(0)
+
+  updatedAt DateTime @updatedAt
+
+  @@index([atlasIndex])
+  @@index([airsIndex])
+}
+
+// ----------------------------------------------------
+// NORMALIZED G20 MILITARY AVIATION ENTITIES
+// ----------------------------------------------------
+
+model Country {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  countryCode String   @unique // e.g. "IND", "USA"
+  isoCode     String   @unique // e.g. "IN", "US"
+  flag        String?
+  region      String?
+  description String?  @db.Text
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  branches  MilitaryBranchEntity[]
+  operators AircraftOperator[]
+
+  @@index([name])
+  @@index([countryCode])
+}
+
+model MilitaryBranchEntity {
+  id           String   @id @default(uuid())
+  countryId    String
+  branchName   String // e.g. "Indian Air Force", "US Navy"
+  branchType   String // "AIR_FORCE", "NAVAL_AVIATION", "ARMY_AVIATION", "MARINE_AVIATION", "COAST_GUARD"
+  officialName String?
+  description  String?  @db.Text
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  country   Country            @relation(fields: [countryId], references: [id], onDelete: Cascade)
+  operators AircraftOperator[]
+
+  @@unique([countryId, branchName])
+  @@index([branchType])
+}
+
+model Manufacturer {
+  id              String   @id @default(uuid())
+  name            String   @unique
+  country         String
+  officialWebsite String?
+  description     String?  @db.Text
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  aircraft AircraftVariant[]
+
+  @@index([name])
+}
+
+model AircraftVariant {
+  id                  String   @id // Formatted as COUNTRY-BRANCH-AIRCRAFT-VARIANT or standard code
+  aircraftName        String
+  officialDesignation String?
+  natoReportingName   String?
+  variantName         String
+  manufacturerId      String?
+  countryOfOrigin     String
+  aircraftType        String // e.g. "Fixed-Wing", "Rotary-Wing", "Unmanned"
+  primaryCategory     String // e.g. "Multirole Fighter", "Attack Helicopter", "AEW&C"
+  secondaryRoles      String[] @default([])
+  generation          String? // e.g. "GEN_4_5", "GEN_5"
+  firstFlightYear     Int?
+  introductionYear    Int?
+  productionStatus    String   @default("ACTIVE_PRODUCTION") // ACTIVE_PRODUCTION, OUT_OF_PRODUCTION, PROTOTYPE, UNDER_DEVELOPMENT
+  description         String?  @db.Text
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  manufacturer   Manufacturer?           @relation(fields: [manufacturerId], references: [id], onDelete: SetNull)
+  operators      AircraftOperator[]
+  specifications AircraftSpecification?
+  avionics       AircraftAvionics?
+  capabilities   AircraftCapability?
+  images         AircraftImageMetadata[]
+  sources        AircraftSourceRecord[]
+
+  @@index([aircraftName])
+  @@index([primaryCategory])
+  @@index([countryOfOrigin])
+}
+
+model AircraftOperator {
+  id                String    @id @default(uuid())
+  aircraftVariantId String
+  countryId         String
+  militaryBranchId  String
+  operationalStatus String    @default("ACTIVE") // ACTIVE, LIMITED_OPERATIONAL, RESERVE, ON_ORDER, RETIRED
+  estimatedQuantity Int?
+  confirmedQuantity Int?
+  quantityYear      Int?
+  quantityNotes     String?
+  dataConfidence    String    @default("HIGH") // HIGH, MEDIUM, LOW
+  lastVerified      DateTime? @default(now())
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  aircraftVariant AircraftVariant      @relation(fields: [aircraftVariantId], references: [id], onDelete: Cascade)
+  country         Country              @relation(fields: [countryId], references: [id], onDelete: Cascade)
+  militaryBranch  MilitaryBranchEntity @relation(fields: [militaryBranchId], references: [id], onDelete: Cascade)
+
+  @@unique([aircraftVariantId, countryId, militaryBranchId])
+  @@index([operationalStatus])
+}
+
+model AircraftSpecification {
+  id                 String  @id @default(uuid())
+  aircraftVariantId  String  @unique
+  lengthM            Float?
+  wingspanM          Float?
+  heightM            Float?
+  emptyWeightKg      Float?
+  maxTakeoffWeightKg Float?
+  minimumCrew        Int?    @default(1)
+  maximumCrew        Int?    @default(1)
+  engineCount        Int     @default(1)
+  engineModel        String?
+  engineType         String? // Turbofan, Turboprop, Turboshaft
+  maxSpeedKmh        Float?
+  maxSpeedMach       Float?
+  cruiseSpeedKmh     Float?
+  combatRadiusKm     Float?
+  ferryRangeKm       Float?
+  serviceCeilingM    Float?
+  rateOfClimbMs      Float?
+
+  aircraftVariant AircraftVariant @relation(fields: [aircraftVariantId], references: [id], onDelete: Cascade)
+}
+
+model AircraftAvionics {
+  id                   String   @id @default(uuid())
+  aircraftVariantId    String   @unique
+  radar                String?
+  radarType            String? // AESA, PESA, Mechanical Pulse-Doppler
+  radarArchitecture    String? // Gallium Nitride (GaN), Gallium Arsenide (GaAs)
+  irst                 String? // Infrared Search and Track model
+  electronicWarfare    String?
+  targetingSystem      String?
+  helmetMountedDisplay String?
+  dataLink             String?
+  sensorSystems        String[] @default([])
+
+  aircraftVariant AircraftVariant @relation(fields: [aircraftVariantId], references: [id], onDelete: Cascade)
+}
+
+model AircraftCapability {
+  id                   String  @id @default(uuid())
+  aircraftVariantId    String  @unique
+  internalGun          String?
+  airToAirCapable      Boolean @default(true)
+  airToGroundCapable   Boolean @default(true)
+  antiShipCapable      Boolean @default(false)
+  antiRadiationCapable Boolean @default(false)
+  guidedBombCapable    Boolean @default(true)
+  cruiseMissileCapable Boolean @default(false)
+  maximumPayloadKg     Float?
+
+  aircraftVariant AircraftVariant @relation(fields: [aircraftVariantId], references: [id], onDelete: Cascade)
+}
+
+model AircraftImageMetadata {
+  id                String    @id @default(uuid())
+  aircraftVariantId String
+  primaryImageUrl   String    @db.Text
+  thumbnailUrl      String?   @db.Text
+  imageSource       String // e.g. "Wikimedia Commons", "US DoD", "MoD India", "Manufacturer PR"
+  sourcePage        String?   @db.Text
+  imageLicense      String // e.g. "Public Domain", "CC BY-SA 4.0", "Government Work"
+  licenseUrl        String?   @db.Text
+  photographer      String?
+  attribution       String?
+  lastVerified      DateTime? @default(now())
+  createdAt         DateTime  @default(now())
+
+  aircraftVariant AircraftVariant @relation(fields: [aircraftVariantId], references: [id], onDelete: Cascade)
+
+  @@index([aircraftVariantId])
+}
+
+model AircraftSourceRecord {
+  id                String    @id @default(uuid())
+  aircraftVariantId String
+  sourceType        String // e.g. "OFFICIAL_GOVERNMENT", "DEFENSE_JOURNAL", "OSINT_DIRECTORY"
+  sourceName        String // e.g. "Ministry of Defence India Annual Report", "Janes World Air Forces"
+  sourceUrl         String?   @db.Text
+  sourceTier        Int       @default(1) // 1, 2, 3
+  verifiedAt        DateTime? @default(now())
+  notes             String?
+
+  aircraftVariant AircraftVariant @relation(fields: [aircraftVariantId], references: [id], onDelete: Cascade)
+
+  @@index([aircraftVariantId])
+  @@index([sourceTier])
+}
+
+model DataAuditLog {
+  id         String   @id @default(uuid())
+  entityType String // "AIRCRAFT", "OPERATOR", "COUNTRY", "BRANCH"
+  entityId   String
+  action     String // "CREATE", "UPDATE", "VERIFY", "FLAG_CONFLICT"
+  previousValue Json?
+  newValue      Json?
+  source        String?
+  timestamp     DateTime @default(now())
+
+  @@index([entityType, entityId])
+  @@index([timestamp])
+}
+

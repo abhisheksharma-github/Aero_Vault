@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --av-navy: #000B18;
+    --av-dark: #001226;
+    --av-blue: #0A2A4E;
+    --av-steel: #3B6790;
+    --av-teal: #4E8EA2;
+    --av-mist: #7EAFBF;
+    --av-light: #E0EDF8;
+    --av-sky: #00F0FF;
+    --av-emerald: #10B981;
+    --av-amber: #F59E0B;
+    --av-crimson: #EF4444;
+  }
+
+  body {
+    background-color: var(--av-navy);
+    color: var(--av-light);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-image: 
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 240, 255, 0.08), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 100% 60%, rgba(10, 42, 78, 0.4), transparent 60%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Tactical HUD & Cockpit Glassmorphism 3.0 */
+.glass-panel {
+  background: linear-gradient(135deg, rgba(10, 42, 78, 0.45) 0%, rgba(0, 18, 38, 0.65) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(73, 118, 159, 0.28);
+  box-shadow: 0 8px 32px 0 rgba(0, 8, 20, 0.37);
+}
+
+.glass-panel-hover {
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: linear-gradient(135deg, rgba(10, 50, 92, 0.65) 0%, rgba(0, 22, 46, 0.85) 100%);
+  border-color: rgba(0, 240, 255, 0.45);
+  box-shadow: 0 12px 36px -8px rgba(0, 240, 255, 0.22), inset 0 0 16px rgba(0, 240, 255, 0.04);
+  transform: translateY(-2px);
+}
+
+.radar-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(73, 118, 159, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(73, 118, 159, 0.07) 1px, transparent 1px);
+}
+
+/* HUD Reticle Corner Brackets [ ] */
+.hud-corner-box {
+  position: relative;
+}
+
+.hud-corner-box::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #00F0FF;
+  border-left: 2px solid #00F0FF;
+  pointer-events: none;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, width 0.2s ease, height 0.2s ease;
+}
+
+.hud-corner-box::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #00F0FF;
+  border-right: 2px solid #00F0FF;
+  pointer-events: none;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, width 0.2s ease, height 0.2s ease;
+}
+
+.hud-corner-box:hover::before,
+.hud-corner-box:hover::after {
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+
+/* Tactical HUD Scanline Effect */
+.scanline-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 50%,
+    rgba(0, 240, 255, 0.03) 50%,
+    rgba(0, 240, 255, 0.03)
+  );
+  background-size: 100% 4px;
+}
+
+/* Custom Tactical Aerospace Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000B18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0A325C;
+  border: 1px solid #3B6790;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00F0FF;
+  box-shadow: 0 0 10px #00F0FF;
+}
+
+/* Plain English Glossary Tooltip Styling */
+.intel-tooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: help;
+}
+
+.intel-tooltip .intel-tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  width: 240px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: #00162E;
+  color: #D6E6F2;
+  font-size: 11px;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4;
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.8), 0 0 15px -3px rgba(0, 240, 255, 0.2);
+  z-index: 60;
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.intel-tooltip .intel-tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #00162E transparent transparent transparent;
+}
+
+.intel-tooltip:hover .intel-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
