@@ -264,14 +264,9 @@ AeroVault/
 
 ## 📖 Documentation Suite
 
-- [`API.md`](./API.md) — REST API endpoint schemas, request bodies, and responses.
-- [`DEPLOYMENT.md`](./DEPLOYMENT.md) — Production cloud runbook for Render, Vercel, and Neon.
-- [`TVR_METHODOLOGY.md`](./TVR_METHODOLOGY.md) — Mathematical formula, weights, and role multipliers.
-- [`ARCHITECTURE.md`](./ARCHITECTURE.md) — Technical system design, state management, and service layers.
-- [`OSINT_PIPELINE.md`](./OSINT_PIPELINE.md) — Multi-source consensus engine and data freshness tiers.
-- [`DATA_MODEL.md`](./DATA_MODEL.md) — Database entity relationship diagrams and enums.
-- [`DATA_SOURCES.md`](./DATA_SOURCES.md) — Authoritative defense citations and verification provenance.
 
+- [`DEPLOYMENT.md`](./DEPLOYMENT.md) — Production cloud runbook for Render, Vercel, and Neo
+- [`ARCHITECTURE.md`](./ARCHITECTURE.md) — Technical system design, state management, and service layers.
 ---
 
 ## ⚖️ License & Provenance
