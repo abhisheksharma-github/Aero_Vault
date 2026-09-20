@@ -332,6 +332,24 @@ export default function AircraftDirectoryView({
       </div>
 
       {/* Aircraft Cards Grid */}
+      {loading ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[1, 2, 3, 4, 5, 6].map((k) => (
+            <div key={`skeleton-${k}`} className="rounded-2xl glass-panel border border-slate-800 p-5 space-y-4 animate-pulse">
+              <div className="w-full h-44 bg-slate-900/80 rounded-xl" />
+              <div className="space-y-2">
+                <div className="h-4 bg-slate-800 rounded w-3/4" />
+                <div className="h-3 bg-slate-900 rounded w-1/2" />
+              </div>
+              <div className="grid grid-cols-3 gap-2 pt-2">
+                <div className="h-8 bg-slate-900 rounded" />
+                <div className="h-8 bg-slate-900 rounded" />
+                <div className="h-8 bg-slate-900 rounded" />
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredAndSortedAircraft.map((aircraft) => {
           const isCompared = comparedAircraft.some(
@@ -463,6 +481,7 @@ export default function AircraftDirectoryView({
           );
         })}
       </div>
+      )}
     </div>
   );
 }

@@ -454,8 +454,8 @@ export default function AircraftDetailModal({
                   <div className="pt-3 border-t border-slate-800 space-y-2">
                     <div className="text-[11px] text-slate-400 font-bold uppercase">Key Integrated Weapon Systems:</div>
                     <div className="flex flex-wrap gap-1.5">
-                      {capabilities.keyWeaponsIntegrated.map((w, idx) => (
-                        <span key={idx} className="px-2.5 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-cyan-500/30 text-cyan-300">
+                      {capabilities.keyWeaponsIntegrated.map((w) => (
+                        <span key={w} className="px-2.5 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-cyan-500/30 text-cyan-300">
                           {w}
                         </span>
                       ))}
@@ -550,7 +550,7 @@ export default function AircraftDetailModal({
                 <div className="space-y-2.5">
                   {sources.length > 0 ? (
                     sources.map((s, idx) => (
-                      <div key={idx} className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between text-xs">
+                      <div key={s.id || s.sourceName || s.name || `src-${idx}`} className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between text-xs">
                         <div className="space-y-0.5">
                           <div className="text-white font-bold flex items-center gap-2">
                             <span>{s.sourceName}</span>

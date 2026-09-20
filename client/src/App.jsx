@@ -19,6 +19,7 @@ import SitrepWidget from './components/SitrepWidget';
 import ComparisonModal from './components/ComparisonModal';
 import AircraftDetailModal from './components/AircraftDetailModal';
 import CommandPalette from './components/CommandPalette';
+import ErrorBoundary from './components/ErrorBoundary';
 import { apiService } from './services/api';
 import { initialAircraftData, initialNationIntelligence } from './data/mockData';
 import { Shield, RefreshCw, Layers } from 'lucide-react';
@@ -173,7 +174,7 @@ export default function App() {
 
           {/* Dynamic Active View Panel */}
           <div className="flex-1 w-full min-w-0">
-            
+            <ErrorBoundary inline viewName={activeTab} key={activeTab}>
             {/* VIEW 1: OVERVIEW */}
             {activeTab === 'overview' && (
               <OverviewDashboard
@@ -368,6 +369,7 @@ export default function App() {
 
             {/* VIEW 11: DATA QUALITY */}
             {activeTab === 'quality' && <DataQualityView />}
+            </ErrorBoundary>
           </div>
         </div>
       </main>

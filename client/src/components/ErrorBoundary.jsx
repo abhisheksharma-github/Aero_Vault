@@ -22,14 +22,58 @@ export default class ErrorBoundary extends Component {
 
   handleReset = () => {
     this.setState({ hasError: false, error: null, errorInfo: null });
+    if (this.props.onReset) {
+      this.props.onReset();
+    }
   };
 
   render() {
     if (this.state.hasError) {
+      const isInline = this.props.inline ?? false;
+      const viewTitle = this.props.viewName || 'Tactical Module';
+
+      if (isInline) {
+        return (
+          <div className="w-full rounded-3xl glass-panel border border-rose-500/40 p-8 shadow-glow-crimson space-y-5 text-center my-6">
+            <div className="w-12 h-12 rounded-2xl bg-rose-950/80 border border-rose-500/50 flex items-center justify-center mx-auto text-rose-400 shadow-glow-crimson animate-pulse">
+              <AlertTriangle className="w-6 h-6" />
+            </div>
+
+            <div className="space-y-1">
+              <span className="px-3 py-0.5 rounded-full text-[10px] font-mono font-bold bg-rose-950/80 text-rose-400 border border-rose-500/40 uppercase tracking-wider">
+                {viewTitle} Telemetry Interrupted
+              </span>
+              <h3 className="text-lg font-bold text-white">
+                View Rendering Interruption
+              </h3>
+              <p className="text-xs text-slate-300 max-w-md mx-auto">
+                An unexpected exception occurred while rendering this module. Other defense sectors remain operational.
+              </p>
+            </div>
+
+            {this.state.error && (
+              <div className="p-3 rounded-xl bg-vault-900/90 border border-slate-800 text-left font-mono text-[11px] text-rose-300 max-h-24 overflow-y-auto">
+                <span className="text-slate-500 select-none">Fault: </span>
+                {this.state.error.message || this.state.error.toString()}
+              </div>
+            )}
+
+            <div className="flex items-center justify-center gap-3 pt-1">
+              <button
+                onClick={this.handleReset}
+                className="px-4 py-2 rounded-xl text-xs font-mono font-bold bg-vault-900 hover:bg-slate-800 text-slate-200 border border-slate-700 hover:border-slate-500 transition-all flex items-center space-x-2"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>Retry View</span>
+              </button>
+            </div>
+          </div>
+        );
+      }
+
       return (
         <div className="min-h-screen bg-vault-950 text-slate-100 flex items-center justify-center p-6 radar-grid selection:bg-tactical-cyan/20 selection:text-tactical-cyan font-sans">
           <div className="max-w-xl w-full rounded-3xl glass-panel border border-rose-500/40 p-8 shadow-glow-crimson space-y-6 text-center">
-            
             <div className="w-16 h-16 rounded-2xl bg-rose-950/80 border border-rose-500/50 flex items-center justify-center mx-auto text-rose-400 shadow-glow-crimson animate-pulse">
               <ShieldAlert className="w-8 h-8" />
             </div>

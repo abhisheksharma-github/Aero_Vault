@@ -284,7 +284,7 @@ export default function CountryExplorerView({ onSelectCountry, onSelectAircraft 
                 <div className="flex flex-wrap gap-1.5">
                   {branches.map((b, idx) => (
                     <span
-                      key={idx}
+                      key={b.id || b.name || `branch-${idx}`}
                       className="px-2 py-0.5 rounded-md text-[10px] font-mono bg-slate-950 text-slate-300 border border-slate-800/80 truncate max-w-[200px]"
                       title={b.officialName || b.name}
                     >
@@ -384,7 +384,7 @@ export default function CountryExplorerView({ onSelectCountry, onSelectAircraft 
               </h4>
               <div className="space-y-3">
                 {selectedCountryDossier.militaryBranches?.map((b, i) => (
-                  <div key={i} className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-1">
+                  <div key={b.id || b.name || `mb-${i}`} className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-1">
                     <div className="flex items-center justify-between">
                       <span className="text-sm font-bold text-white font-display">{b.name}</span>
                       <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 text-slate-400 border border-slate-800">

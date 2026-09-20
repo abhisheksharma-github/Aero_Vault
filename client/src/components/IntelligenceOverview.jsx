@@ -249,10 +249,10 @@ export default function IntelligenceOverview({
                 { label: 'Fleet Modernization', score: selectedNation?.modernizationIndex || 80, icon: Cpu, color: 'from-emerald-400 to-teal-500' },
                 { label: 'Mobility & Logistics', score: selectedNation?.logisticsScore || 82, icon: Truck, color: 'from-blue-400 to-indigo-500' },
                 { label: 'AEW&C & ISR Coverage', score: selectedNation?.aewcScore || 75, icon: Radio, color: 'from-amber-400 to-orange-500' },
-              ].map((dim, idx) => {
+              ].map((dim) => {
                 const Icon = dim.icon;
                 return (
-                  <div key={idx} className="space-y-1 text-xs font-mono">
+                  <div key={dim.label} className="space-y-1 text-xs font-mono">
                     <div className="flex justify-between text-slate-300">
                       <span className="flex items-center gap-1.5">
                         <Icon className="w-3.5 h-3.5 text-slate-400" />
@@ -263,13 +263,31 @@ export default function IntelligenceOverview({
                     <div className="w-full h-2 rounded-full bg-vault-950 overflow-hidden border border-slate-800">
                       <div
                         className={`h-full bg-gradient-to-r ${dim.color} rounded-full transition-all duration-500`}
-                        style={{ width: `${Math.min(100, dim.score)}%` }}
+                        style={{ width: `${Math.min(100, Math.max(10, dim.score))}%` }}
                       />
                     </div>
                   </div>
                 );
               })}
             </div>
+
+            {/* Primary Strengths */}
+            {selectedNation?.primaryStrengths && selectedNation.primaryStrengths.length > 0 && (
+              <div className="space-y-2">
+                <div className="text-[10px] font-mono text-emerald-400 uppercase font-bold flex items-center gap-1">
+                  <CheckCircle2 className="w-3.5 h-3.5" />
+                  Primary Strategic Strengths
+                </div>
+                <ul className="space-y-1.5 text-xs text-slate-300">
+                  {selectedNation.primaryStrengths.map((str) => (
+                    <li key={str} className="flex items-start gap-1.5">
+                      <span className="text-emerald-400 font-bold">•</span>
+                      <span>{str}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* Generation Breakdown */}
             {countryAnalysis?.generationBreakdown && (
