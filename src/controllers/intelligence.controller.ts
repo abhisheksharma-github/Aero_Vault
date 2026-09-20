@@ -5,6 +5,7 @@ import { comparisonService } from '../services/comparison.service.js';
 import { aircraftService } from '../services/aircraft.service.js';
 import { dataQualityService } from '../services/dataQuality.service.js';
 import { atlasService } from '../services/atlas.service.js';
+import { rssSitrepService } from '../services/rssSitrep.service.js';
 import { prisma } from '../db.js';
 import {
   IntelligenceQueryParams,
@@ -75,7 +76,7 @@ export class IntelligenceController {
   };
 
   /**
-   * GET /api/intelligence/sitrep - Multi-domain operational sitrep feed
+   * GET /api/intelligence/sitrep - Multi-domain operational sitrep feed with live RSS ingest
    */
   getSitreps = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
@@ -85,34 +86,27 @@ export class IntelligenceController {
       const numPage = Number(page) || 1;
       const skip = (numPage - 1) * numLimit;
 
+      // 1. Fetch live RSS feeds (IDRW.org + Defence.in)
+      let liveItems: any[] = [];
+      try {
+        liveItems = await rssSitrepService.getLiveFeeds();
+      } catch (err: any) {
+        logger.warn('Failed to fetch live RSS sitreps, continuing with vault data', {
+          error: err.message || err,
+        });
+      }
+
+      // 2. Fetch database or vault sitrep items
+      let baseSitreps: any[] = [];
       try {
         const db = prisma as any;
         if (db.sitrepEvent) {
-          const whereClause: Record<string, unknown> = {};
-          if (domain) whereClause.domain = domain as DomainType;
-          if (country) whereClause.country = { contains: country, mode: 'insensitive' };
-          if (eventType) whereClause.eventType = eventType;
-
-          const [totalCount, sitreps] = await Promise.all([
-            db.sitrepEvent.count({ where: whereClause }),
-            db.sitrepEvent.findMany({
-              where: whereClause,
-              orderBy: { eventDate: 'desc' },
-              skip,
-              take: numLimit,
-            }),
-          ]);
-
-          if (sitreps && sitreps.length > 0) {
-            res.status(200).json({
-              success: true,
-              count: sitreps.length,
-              total: totalCount,
-              page: numPage,
-              totalPages: Math.ceil(totalCount / numLimit) || 1,
-              data: sitreps,
-            });
-            return;
+          const dbItems = await db.sitrepEvent.findMany({
+            orderBy: { eventDate: 'desc' },
+            take: 100,
+          });
+          if (dbItems && dbItems.length > 0) {
+            baseSitreps = dbItems;
           }
         }
       } catch (dbErr: any) {
@@ -121,22 +115,47 @@ export class IntelligenceController {
         });
       }
 
-      let sitreps = [...(vaultSitrep as any[])];
-
-      if (domain) {
-        sitreps = sitreps.filter((s) => s.domain === domain);
+      if (baseSitreps.length === 0) {
+        baseSitreps = [...(vaultSitrep as any[])];
       }
+
+      // 3. Merge live RSS items and base sitreps (avoiding duplicates)
+      const seenIds = new Set<string>();
+      const combinedSitreps: any[] = [];
+
+      for (const item of [...liveItems, ...baseSitreps]) {
+        const id = item.id || item.sourceUrl || `${item.domain}-${item.eventDate}`;
+        if (!seenIds.has(id)) {
+          seenIds.add(id);
+          combinedSitreps.push(item);
+        }
+      }
+
+      // 4. Apply domain, country, and eventType filters
+      let filteredSitreps = combinedSitreps;
+
+      if (domain && domain !== 'ALL') {
+        const targetDomain = (domain === 'STRATEGIC_DEFENSE' ? 'STRATEGIC' : domain) as string;
+        filteredSitreps = filteredSitreps.filter((s) => {
+          const sDomain = s.domain === 'STRATEGIC_DEFENSE' ? 'STRATEGIC' : s.domain;
+          return sDomain === targetDomain;
+        });
+      }
+
       if (country) {
-        sitreps = sitreps.filter((s) => s.country?.toLowerCase().includes(country.toLowerCase()));
+        const cLower = country.toLowerCase();
+        filteredSitreps = filteredSitreps.filter((s) => s.country?.toLowerCase().includes(cLower));
       }
+
       if (eventType) {
-        sitreps = sitreps.filter((s) => s.eventType === eventType);
+        filteredSitreps = filteredSitreps.filter((s) => s.eventType === eventType);
       }
 
-      sitreps.sort((a, b) => new Date(b.eventDate).getTime() - new Date(a.eventDate).getTime());
+      // 5. Sort newest first
+      filteredSitreps.sort((a, b) => new Date(b.eventDate).getTime() - new Date(a.eventDate).getTime());
 
-      const totalCount = sitreps.length;
-      const paginatedSitreps = sitreps.slice(skip, skip + numLimit);
+      const totalCount = filteredSitreps.length;
+      const paginatedSitreps = filteredSitreps.slice(skip, skip + numLimit);
 
       res.status(200).json({
         success: true,
@@ -144,6 +163,12 @@ export class IntelligenceController {
         total: totalCount,
         page: numPage,
         totalPages: Math.ceil(totalCount / numLimit) || 1,
+        liveFeedCount: liveItems.length,
+        sources: [
+          'IDRW.org (Indian Defence Research Wing)',
+          'Defence.in (Strategic & Military Community)',
+          'AeroVault Tactical OSINT Vault',
+        ],
         data: paginatedSitreps,
       });
     } catch (error) {

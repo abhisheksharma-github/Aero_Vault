@@ -394,7 +394,7 @@ export const apiService = {
   },
 
   /**
-   * Get Live Sitrep Defense Events
+   * Get Live Sitrep Defense Events (IDRW.org + Defence.in + OSINT Vault)
    */
   async getSitreps(params = {}) {
     try {
@@ -402,6 +402,7 @@ export const apiService = {
       if (params.domain && params.domain !== 'ALL') query.append('domain', params.domain);
       if (params.limit) query.append('limit', String(params.limit));
       if (params.page) query.append('page', String(params.page));
+      if (params.source) query.append('source', params.source);
 
       const res = await fetch(`${API_BASE}/intelligence/sitrep?${query.toString()}`);
       if (res.ok) {
@@ -410,8 +411,10 @@ export const apiService = {
           return {
             items: json.data,
             count: json.count || json.data.length,
-            pagination: json.pagination,
-            source: 'live-db',
+            total: json.total,
+            liveFeedCount: json.liveFeedCount || 0,
+            sources: json.sources || ['IDRW.org', 'Defence.in', 'AeroVault Strategic Intelligence'],
+            source: json.liveFeedCount > 0 ? 'live-rss' : 'live-db',
           };
         }
       }
@@ -427,6 +430,9 @@ export const apiService = {
     return {
       items,
       count: items.length,
+      total: items.length,
+      liveFeedCount: 0,
+      sources: ['AeroVault Offline OSINT Vault'],
       source: 'offline-vault',
     };
   },

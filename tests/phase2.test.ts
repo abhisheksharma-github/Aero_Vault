@@ -75,4 +75,15 @@ describe('Phase 2 — Data Coverage & Per-Entity JSON Vault Tests', () => {
     expect(typeof res.body.data.coverage.completeness).toBe('number');
     expect(res.body.data.inventory).toBeDefined();
   });
+
+  it('GET /api/intelligence/sitrep returns multi-domain events with source metadata', async () => {
+    const res = await request(app).get('/api/intelligence/sitrep?limit=10');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(Array.isArray(res.body.data)).toBe(true);
+    expect(res.body.data.length).toBeGreaterThan(0);
+    expect(Array.isArray(res.body.sources)).toBe(true);
+    expect(res.body.sources.length).toBeGreaterThan(0);
+    expect(typeof res.body.count).toBe('number');
+  });
 });

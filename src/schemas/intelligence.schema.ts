@@ -77,9 +77,11 @@ export const MissionCompareQuerySchema = z
 // Multi-Domain Schemas
 export const SitrepQuerySchema = z
   .object({
-    domain: z.enum(['AIR', 'NAVY', 'LAND', 'STRATEGIC_DEFENSE']).optional(),
+    domain: z.enum(['AIR', 'NAVY', 'LAND', 'STRATEGIC', 'STRATEGIC_DEFENSE', 'ALL']).optional(),
     eventType: z.string().optional(),
     country: z.string().optional(),
+    source: z.string().optional(),
+    live: z.coerce.boolean().optional(),
     limit: z.coerce.number().int().min(1).max(100).default(15),
     page: z.coerce.number().int().min(1).default(1),
   })
