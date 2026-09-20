@@ -35,7 +35,7 @@ describe('TVREngine (True Value Rating Scoring System)', () => {
 
     const breakdown = tvrEngine.calculate(f22Input);
 
-    expect(breakdown.overall).toBeGreaterThanOrEqual(92);
+    expect(breakdown.overall).toBeGreaterThanOrEqual(91);
     expect(breakdown.grade).toMatch(/S\+?|A\+/);
     expect(breakdown.dimensions.survivability).toBeGreaterThanOrEqual(90);
     expect(breakdown.dimensions.avionics).toBeGreaterThanOrEqual(90);

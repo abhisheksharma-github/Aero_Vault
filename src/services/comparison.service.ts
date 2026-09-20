@@ -1,5 +1,6 @@
 import { Aircraft, MilitaryBranch } from '@prisma/client';
 import { tvrEngine, TVRScoreBreakdown } from './tvr.service.js';
+import { CanonicalAircraft } from '../types/aircraft.types.js';
 
 export type MissionType =
   | 'BVR_COMBAT'
@@ -104,7 +105,7 @@ export interface BranchComparisonReport {
 }
 
 export class ComparisonService {
-  public compareAircraft(aircraftA: Aircraft, aircraftB: Aircraft): ComparisonReport {
+  public compareAircraft(aircraftA: CanonicalAircraft | Aircraft | any, aircraftB: CanonicalAircraft | Aircraft | any): ComparisonReport {
     const tvrA = tvrEngine.calculate(aircraftA as any);
     const tvrB = tvrEngine.calculate(aircraftB as any);
 
@@ -229,9 +230,9 @@ export class ComparisonService {
   }
 
   private evaluateAllMissions(
-    acA: Aircraft,
+    acA: CanonicalAircraft | Aircraft | any,
     tvrA: TVRScoreBreakdown,
-    acB: Aircraft,
+    acB: CanonicalAircraft | Aircraft | any,
     tvrB: TVRScoreBreakdown
   ): MissionScenarioResult[] {
     const missions: MissionType[] = [
@@ -250,9 +251,9 @@ export class ComparisonService {
 
   public evaluateMission(
     mission: MissionType,
-    acA: Aircraft,
+    acA: CanonicalAircraft | Aircraft | any,
     tvrA: TVRScoreBreakdown,
-    acB: Aircraft,
+    acB: CanonicalAircraft | Aircraft | any,
     tvrB: TVRScoreBreakdown
   ): MissionScenarioResult {
     let scoreA = 50;

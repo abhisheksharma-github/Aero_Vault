@@ -24,16 +24,17 @@ import {
   initialCountryForceProfiles,
   initialNavalVessels,
   initialGroundVehicles,
-  initialAircraftData,
 } from '../data/multiDomainData.js';
+import { aircraftVault } from '../data/normalize.js';
+import { validatedQuery, validatedParams } from '../middleware/validate.middleware.js';
 
 export class IntelligenceController {
   /**
    * GET /api/intelligence - WDMMA national rankings & global airpower aggregates
    */
-  async getRankings(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getRankings = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const query = req.query as unknown as IntelligenceQueryParams;
+      const query = validatedQuery<IntelligenceQueryParams>(req);
       const result = await intelligenceService.getRankings(query);
 
       res.status(200).json({
@@ -43,14 +44,15 @@ export class IntelligenceController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 
   /**
    * GET /api/intelligence/sitrep - Multi-domain operational sitrep feed
    */
-  async getSitreps(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getSitreps = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const { domain, eventType, country, limit = 15, page = 1 } = req.query as unknown as SitrepQueryParams;
+      const query = validatedQuery<SitrepQueryParams>(req);
+      const { domain, eventType, country, limit = 15, page = 1 } = query;
       const numLimit = Number(limit) || 15;
       const numPage = Number(page) || 1;
       const skip = (numPage - 1) * numLimit;
@@ -117,14 +119,15 @@ export class IntelligenceController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 
   /**
    * GET /api/rankings/countries - Global military power rankings across ATLAS, AIRS, SEAS, ARMS
    */
-  async getCountryRankings(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getCountryRankings = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const { sortBy = 'atlasIndex', order = 'desc', limit = 50 } = req.query as unknown as CountryRankingsQueryParams;
+      const query = validatedQuery<CountryRankingsQueryParams>(req);
+      const { sortBy = 'atlasIndex', order = 'desc', limit = 50 } = query;
       const numLimit = Number(limit) || 50;
 
       try {
@@ -167,14 +170,15 @@ export class IntelligenceController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 
   /**
    * GET /api/countries/:countryCode/inventory - Comprehensive multi-domain inventory by country code
    */
-  async getCountryInventory(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getCountryInventory = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const { countryCode } = req.params as unknown as CountryInventoryParams;
+      const params = validatedParams<CountryInventoryParams>(req);
+      const countryCode = params.countryCode || (req.params as any).countryCode;
       const code = (countryCode || '').toUpperCase();
 
       try {
@@ -192,18 +196,24 @@ export class IntelligenceController {
           if (profile) {
             const countryFilter = profile.country;
             const [aircraft, vessels, vehicles] = await Promise.all([
-              db.aircraft ? db.aircraft.findMany({
-                where: { country: { equals: countryFilter, mode: 'insensitive' }, serviceStatus: 'ACTIVE' },
-                orderBy: { tvrScore: 'desc' },
-              }) : [],
-              db.navalVessel ? db.navalVessel.findMany({
-                where: { country: { equals: countryFilter, mode: 'insensitive' }, status: 'ACTIVE' },
-                orderBy: { tvrScore: 'desc' },
-              }) : [],
-              db.groundVehicle ? db.groundVehicle.findMany({
-                where: { country: { equals: countryFilter, mode: 'insensitive' }, status: 'ACTIVE' },
-                orderBy: { tvrScore: 'desc' },
-              }) : [],
+              db.aircraft
+                ? db.aircraft.findMany({
+                  where: { country: { equals: countryFilter, mode: 'insensitive' }, serviceStatus: 'ACTIVE' },
+                  orderBy: { tvrScore: 'desc' },
+                })
+                : [],
+              db.navalVessel
+                ? db.navalVessel.findMany({
+                  where: { country: { equals: countryFilter, mode: 'insensitive' }, status: 'ACTIVE' },
+                  orderBy: { tvrScore: 'desc' },
+                })
+                : [],
+              db.groundVehicle
+                ? db.groundVehicle.findMany({
+                  where: { country: { equals: countryFilter, mode: 'insensitive' }, status: 'ACTIVE' },
+                  orderBy: { tvrScore: 'desc' },
+                })
+                : [],
             ]);
 
             res.status(200).json({
@@ -235,8 +245,11 @@ export class IntelligenceController {
 
       const targetCountry = profile ? profile.country : countryCode;
 
-      const aircraft = (initialAircraftData as any[]).filter(
-        (a) => a.country?.toLowerCase() === targetCountry?.toLowerCase() && a.serviceStatus === 'ACTIVE'
+      const aircraft = aircraftVault.filter(
+        (a) =>
+          (a.country?.toLowerCase() === targetCountry?.toLowerCase() ||
+            a.originCountry?.toLowerCase() === targetCountry?.toLowerCase()) &&
+          a.serviceStatus === 'ACTIVE'
       );
       const vessels = (initialNavalVessels as any[]).filter(
         (v) => v.country?.toLowerCase() === targetCountry?.toLowerCase() && v.status === 'ACTIVE'
@@ -269,14 +282,15 @@ export class IntelligenceController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 
   /**
    * GET /api/naval/vessels - Paginated naval warship & submarine inventory
    */
-  async getNavalVessels(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getNavalVessels = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const { country, vesselType, search, page = 1, limit = 20 } = req.query as unknown as NavalVesselsQueryParams;
+      const query = validatedQuery<NavalVesselsQueryParams>(req);
+      const { country, vesselType, search, page = 1, limit = 20 } = query;
       const numLimit = Number(limit) || 20;
       const numPage = Number(page) || 1;
       const skip = (numPage - 1) * numLimit;
@@ -355,14 +369,15 @@ export class IntelligenceController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 
   /**
    * GET /api/land/vehicles - Paginated armor & land vehicle inventory
    */
-  async getGroundVehicles(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getGroundVehicles = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const { country, category, search, page = 1, limit = 20 } = req.query as unknown as GroundVehiclesQueryParams;
+      const query = validatedQuery<GroundVehiclesQueryParams>(req);
+      const { country, category, search, page = 1, limit = 20 } = query;
       const numLimit = Number(limit) || 20;
       const numPage = Number(page) || 1;
       const skip = (numPage - 1) * numLimit;
@@ -439,12 +454,12 @@ export class IntelligenceController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 
   /**
    * POST /api/intelligence/reindex - Trigger ATLAS/AIRS/SEAS/ARMS engine re-indexing
    */
-  async reindex(req: Request, res: Response, next: NextFunction): Promise<void> {
+  reindex = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       try {
         const result = await atlasService.syncAllProfiles();
@@ -465,14 +480,15 @@ export class IntelligenceController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 
   /**
    * GET /api/intelligence/:country - Country fleet inventory & basic metrics
    */
-  async getCountryIntelligence(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getCountryIntelligence = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const country = req.params.country as string;
+      const params = validatedParams<{ country: string }>(req);
+      const country = params.country || (req.params as any).country;
       const result = await intelligenceService.getCountryIntelligence(country);
 
       res.status(200).json({
@@ -482,14 +498,15 @@ export class IntelligenceController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 
   /**
    * GET /api/intelligence/nations/:country/analysis - Detailed airpower score & "Why this ranking?"
    */
-  async getCountryAnalysis(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getCountryAnalysis = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const country = req.params.country as string;
+      const params = validatedParams<{ country: string }>(req);
+      const country = params.country || (req.params as any).country;
       const analysis = await rankingService.getDetailedNationAnalysis(country);
 
       res.status(200).json({
@@ -499,14 +516,15 @@ export class IntelligenceController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 
   /**
    * GET /api/intelligence/compare - Split-screen benchmark comparison between 2 aircraft
    */
-  async compareAircraft(req: Request, res: Response, next: NextFunction): Promise<void> {
+  compareAircraft = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const { aircraftA: aId, aircraftB: bId } = req.query as unknown as CompareQueryParams;
+      const query = validatedQuery<CompareQueryParams>(req);
+      const { aircraftA: aId, aircraftB: bId } = query;
 
       const [aircraftA, aircraftB] = await Promise.all([
         aircraftService.getAircraftById(aId),
@@ -522,14 +540,15 @@ export class IntelligenceController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 
   /**
    * GET /api/intelligence/compare/mission - Mission-specific tactical scenario simulation
    */
-  async compareMission(req: Request, res: Response, next: NextFunction): Promise<void> {
+  compareMission = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const { aircraftA: aId, aircraftB: bId, mission } = req.query as unknown as MissionCompareQueryParams;
+      const query = validatedQuery<MissionCompareQueryParams>(req);
+      const { aircraftA: aId, aircraftB: bId, mission } = query;
 
       const [aircraftA, aircraftB] = await Promise.all([
         aircraftService.getAircraftById(aId),
@@ -555,12 +574,12 @@ export class IntelligenceController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 
   /**
    * GET /api/intelligence/quality - Data quality metrics & active conflicts
    */
-  async getDataQuality(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getDataQuality = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const metrics = await dataQualityService.runAudit();
 
@@ -571,7 +590,7 @@ export class IntelligenceController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 }
 
 export const intelligenceController = new IntelligenceController();

@@ -1,7 +1,8 @@
 import { prisma } from '../db.js';
 import { AppError } from '../middleware/error.middleware.js';
 import { IntelligenceQueryParams } from '../schemas/intelligence.schema.js';
-import { initialNationIntelligence, initialAircraftData } from '../data/multiDomainData.js';
+import { initialNationIntelligence } from '../data/multiDomainData.js';
+import { aircraftVault } from '../data/normalize.js';
 
 export class IntelligenceService {
   /**
@@ -66,7 +67,7 @@ export class IntelligenceService {
     const paginatedNations = nations.slice(0, limit);
     const totalNations = nations.length;
     const totalActiveUnits = nations.reduce((sum, n) => sum + (n.totalActiveUnits || 0), 0);
-    const totalAircraft = initialAircraftData.filter((a) => a.serviceStatus === 'ACTIVE').length;
+    const totalAircraft = aircraftVault.filter((a) => a.serviceStatus === 'ACTIVE').length;
     const avgTvr = Number((nations.reduce((sum, n) => sum + (n.tvrTotal || 0), 0) / (totalNations || 1)).toFixed(1));
     const avgMod = Number((nations.reduce((sum, n) => sum + (n.modernizationIndex || 0), 0) / (totalNations || 1)).toFixed(1));
     const avgLog = Number((nations.reduce((sum, n) => sum + (n.logisticsScore || 0), 0) / (totalNations || 1)).toFixed(1));
@@ -139,10 +140,11 @@ export class IntelligenceService {
     }
 
     if (!aircraftList || aircraftList.length === 0) {
-      aircraftList = (initialAircraftData as any[])
+      aircraftList = aircraftVault
         .filter(
           (a) =>
             a.country?.toLowerCase() === nation.countryName?.toLowerCase() ||
+            a.originCountry?.toLowerCase() === nation.countryName?.toLowerCase() ||
             a.affiliation?.toLowerCase()?.includes(nation.countryName?.toLowerCase())
         )
         .sort((a, b) => (b.tvrScore ?? 0) - (a.tvrScore ?? 0));

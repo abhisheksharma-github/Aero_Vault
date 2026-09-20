@@ -17,43 +17,56 @@ export const StealthLevelEnum = z.nativeEnum(StealthLevel);
 export const RadarTypeEnum = z.nativeEnum(RadarType);
 export const ConfidenceLevelEnum = z.nativeEnum(ConfidenceLevel);
 
+export const MilitaryBranchEnum = z.enum([
+  'AIR_FORCE',
+  'ARMY_AVIATION',
+  'NAVAL_AVIATION',
+  'MARINE_AVIATION',
+  'JOINT',
+]);
+
 // Query validation schema for listing aircraft
-export const AircraftQuerySchema = z.object({
-  country: z.string().trim().optional(),
-  affiliation: z.string().trim().optional(),
-  serviceStatus: AircraftStatusEnum.optional(),
-  category: AircraftCategoryEnum.optional(),
-  generation: AircraftGenerationEnum.optional(),
-  era: EraEnum.optional(),
-  stealthLevel: StealthLevelEnum.optional(),
-  search: z.string().trim().optional(),
-  minTvr: z.coerce.number().min(0).max(100).optional(),
-  maxTvr: z.coerce.number().min(0).max(100).optional(),
-  sortBy: z
-    .enum([
-      'name',
-      'tvrScore',
-      'country',
-      'category',
-      'generation',
-      'serviceStatus',
-      'era',
-      'topSpeedMach',
-      'combatRangeKm',
-      'introductionYear',
-      'fleetCount',
-      'createdAt',
-    ])
-    .default('tvrScore'),
-  sortOrder: z.enum(['asc', 'desc']).default('desc'),
-  page: z.coerce.number().int().positive().default(1),
-  limit: z.coerce.number().int().min(1).max(100).default(24),
-});
+export const AircraftQuerySchema = z
+  .object({
+    country: z.string().trim().optional(),
+    affiliation: z.string().trim().optional(),
+    militaryBranch: MilitaryBranchEnum.optional(),
+    serviceStatus: AircraftStatusEnum.optional(),
+    category: AircraftCategoryEnum.optional(),
+    generation: AircraftGenerationEnum.optional(),
+    era: EraEnum.optional(),
+    stealthLevel: StealthLevelEnum.optional(),
+    search: z.string().trim().optional(),
+    minTvr: z.coerce.number().min(0).max(100).optional(),
+    maxTvr: z.coerce.number().min(0).max(100).optional(),
+    sortBy: z
+      .enum([
+        'name',
+        'tvrScore',
+        'country',
+        'category',
+        'generation',
+        'serviceStatus',
+        'era',
+        'topSpeedMach',
+        'combatRangeKm',
+        'introductionYear',
+        'fleetCount',
+        'createdAt',
+      ])
+      .default('tvrScore'),
+    sortOrder: z.enum(['asc', 'desc']).default('desc'),
+    page: z.coerce.number().int().positive().default(1),
+    limit: z.coerce.number().int().min(1).max(100).default(24),
+  })
+  .strict();
 
 // Single aircraft param schema
 export const AircraftIdParamSchema = z.object({
-  id: z.string().uuid('Aircraft ID must be a valid UUID'),
+  id: z.string().trim().min(1).max(128).regex(/^[A-Za-z0-9_-]+$/, 'Invalid aircraft ID format'),
 });
+
+export type AircraftIdParam = z.infer<typeof AircraftIdParamSchema>;
 
 // Create aircraft body schema
 export const CreateAircraftSchema = z.object({

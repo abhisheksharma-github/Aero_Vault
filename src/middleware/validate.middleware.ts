@@ -7,27 +7,40 @@ interface ValidationSchema {
   params?: ZodSchema;
 }
 
+export function validatedQuery<T>(req: Request): T {
+  return (req.validated?.query ?? req.query) as T;
+}
+
+export function validatedParams<T>(req: Request): T {
+  return (req.validated?.params ?? req.params) as T;
+}
+
+export function validatedBody<T>(req: Request): T {
+  return (req.validated?.body ?? req.body) as T;
+}
+
 export const validate = (schemas: ValidationSchema) => {
   return async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
+      if (!req.validated) {
+        req.validated = {};
+      }
+
       if (schemas.params) {
         const parsedParams = await schemas.params.parseAsync(req.params);
-        for (const key of Object.keys(req.params)) {
-          delete (req.params as Record<string, unknown>)[key];
-        }
+        req.validated.params = parsedParams;
         Object.assign(req.params, parsedParams);
       }
 
       if (schemas.query) {
         const parsedQuery = await schemas.query.parseAsync(req.query);
-        for (const key of Object.keys(req.query)) {
-          delete (req.query as Record<string, unknown>)[key];
-        }
-        Object.assign(req.query, parsedQuery);
+        req.validated.query = parsedQuery;
       }
 
       if (schemas.body) {
-        req.body = await schemas.body.parseAsync(req.body);
+        const parsedBody = await schemas.body.parseAsync(req.body);
+        req.validated.body = parsedBody;
+        req.body = parsedBody;
       }
 
       next();

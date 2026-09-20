@@ -74,9 +74,45 @@ export default function AircraftDirectoryView({
   }, [searchQuery, selectedCountry, selectedCategory, selectedGeneration, selectedStatus]);
 
   // Derived filter options
-  const categories = useMemo(() => {
-    const set = new Set(g20AircraftData.map((a) => a.primaryCategory));
-    return ['ALL', ...Array.from(set)];
+  const [categories, setCategories] = useState([
+    { value: 'ALL', label: 'All Roles & Categories' },
+    { value: 'MULTIROLE_FIGHTER', label: 'Multirole Fighter' },
+    { value: 'AIR_SUPERIORITY', label: 'Air Superiority' },
+    { value: 'FIGHTER', label: 'Fighter' },
+    { value: 'INTERCEPTOR', label: 'Interceptor' },
+    { value: 'GROUND_ATTACK', label: 'Ground Attack' },
+    { value: 'BOMBER', label: 'Strategic Bomber' },
+    { value: 'AEWC', label: 'AEW&C' },
+    { value: 'MARITIME_PATROL', label: 'Maritime Patrol' },
+    { value: 'STRATEGIC_TRANSPORT', label: 'Strategic Transport' },
+    { value: 'AERIAL_REFUELING', label: 'Aerial Refueling' },
+    { value: 'ATTACK_HELICOPTER', label: 'Attack Helicopter' },
+    { value: 'UTILITY_HELICOPTER', label: 'Utility Helicopter' },
+    { value: 'TRANSPORT_HELICOPTER', label: 'Transport Helicopter' },
+    { value: 'ANTI_SUBMARINE_HELICOPTER', label: 'Anti-Submarine Helicopter' },
+    { value: 'MALE_UAV', label: 'MALE UAV' },
+    { value: 'HALE_UAV', label: 'HALE UAV' },
+    { value: 'UCAV', label: 'UCAV' },
+  ]);
+
+  useEffect(() => {
+    async function loadCategories() {
+      try {
+        const res = await fetch('/api/aircraft/categories');
+        if (res.ok) {
+          const json = await res.json();
+          if (json.success && Array.isArray(json.data)) {
+            setCategories([
+              { value: 'ALL', label: 'All Roles & Categories' },
+              ...json.data.map((c) => ({ value: c.value, label: c.label })),
+            ]);
+          }
+        }
+      } catch {
+        // Fallback already in place
+      }
+    }
+    loadCategories();
   }, []);
 
   const countries = useMemo(() => {
@@ -244,7 +280,7 @@ export default function AircraftDirectoryView({
               className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono text-white focus:outline-none focus:border-cyan-500"
             >
               {categories.map((cat) => (
-                <option key={cat} value={cat}>{cat === 'ALL' ? 'All Roles & Categories' : cat}</option>
+                <option key={cat.value} value={cat.value}>{cat.label}</option>
               ))}
             </select>
           </div>

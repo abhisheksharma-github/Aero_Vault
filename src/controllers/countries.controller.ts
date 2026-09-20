@@ -1,7 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 import { prisma } from '../db.js';
 import { g20CountriesData } from '../data/g20/g20Countries.js';
-import { g20AircraftData } from '../data/g20/g20Aircraft.js';
+import { aircraftVault } from '../data/normalize.js';
+import { validatedParams, validatedQuery } from '../middleware/validate.middleware.js';
 
 export class CountriesController {
   /**
@@ -44,7 +45,8 @@ export class CountriesController {
    */
   async getCountryByNameOrCode(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const rawParam = req.params.country;
+      const params = validatedParams<{ country: string }>(req);
+      const rawParam = params.country || req.params.country;
       const identifier = (Array.isArray(rawParam) ? rawParam[0] : (rawParam || '')).toLowerCase();
 
       try {
@@ -102,19 +104,28 @@ export class CountriesController {
    */
   async getCountryAircraft(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const rawParam = req.params.country;
+      const params = validatedParams<{ country: string }>(req);
+      const rawParam = params.country || req.params.country;
       const identifier = (Array.isArray(rawParam) ? rawParam[0] : (rawParam || '')).toLowerCase();
-      const { branch, category, status } = req.query as {
+      const query = validatedQuery<{
         branch?: string;
         category?: string;
         status?: string;
-      };
+      }>(req);
+      const { branch, category, status } = query;
 
-      let filtered = g20AircraftData.filter(
-        (a) =>
-          a.country.toLowerCase() === identifier ||
-          a.id.toLowerCase().startsWith(identifier)
-      );
+      let filtered = aircraftVault.filter((a) => {
+        const c = (a.country || '').toLowerCase();
+        const o = (a.originCountry || '').toLowerCase();
+        const id = (a.id || '').toLowerCase();
+        return (
+          c === identifier ||
+          c.includes(identifier) ||
+          o === identifier ||
+          id.startsWith(identifier) ||
+          (a.aliases && a.aliases.some((al) => al.toLowerCase().startsWith(identifier)))
+        );
+      });
 
       if (branch) {
         filtered = filtered.filter(
@@ -127,7 +138,8 @@ export class CountriesController {
       if (category) {
         filtered = filtered.filter(
           (a) =>
-            a.primaryCategory.toLowerCase() === category.toLowerCase() ||
+            a.category.toLowerCase() === category.toLowerCase() ||
+            (a.primaryCategory && a.primaryCategory.toLowerCase() === category.toLowerCase()) ||
             a.secondaryRoles.some((r) => r.toLowerCase().includes(category.toLowerCase()))
         );
       }

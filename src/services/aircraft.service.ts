@@ -7,8 +7,7 @@ import {
   UpdateAircraftInput,
 } from '../schemas/aircraft.schema.js';
 import { tvrEngine } from './tvr.service.js';
-import { initialAircraftData } from '../data/multiDomainData.js';
-import { g20AircraftData } from '../data/g20/g20Aircraft.js';
+import { aircraftVault, findAircraftByIdOrAlias } from '../data/normalize.js';
 
 export class AircraftService {
   /**
@@ -18,6 +17,7 @@ export class AircraftService {
     const {
       country,
       affiliation,
+      militaryBranch,
       serviceStatus,
       category,
       generation,
@@ -41,6 +41,10 @@ export class AircraftService {
 
       if (affiliation) {
         where.affiliation = { contains: affiliation, mode: 'insensitive' };
+      }
+
+      if (militaryBranch) {
+        where.militaryBranch = militaryBranch;
       }
 
       if (serviceStatus) {
@@ -126,6 +130,7 @@ export class AircraftService {
           appliedFilters: {
             country: country || null,
             affiliation: affiliation || null,
+            militaryBranch: militaryBranch || null,
             serviceStatus: serviceStatus || null,
             category: category || null,
             generation: generation || null,
@@ -141,14 +146,17 @@ export class AircraftService {
       // Prisma offline or unmigrated; gracefully proceed to in-memory vault fallback
     }
 
-    // High-fidelity fallback from multiDomainData
-    let filtered: any[] = [...(initialAircraftData as any[])];
+    // Unified canonical aircraft vault fallback
+    let filtered = [...aircraftVault];
 
     if (country) {
       filtered = filtered.filter((a) => a.country?.toLowerCase().includes(country.toLowerCase()));
     }
     if (affiliation) {
       filtered = filtered.filter((a) => a.affiliation?.toLowerCase().includes(affiliation.toLowerCase()));
+    }
+    if (militaryBranch) {
+      filtered = filtered.filter((a) => a.militaryBranch === militaryBranch);
     }
     if (serviceStatus) {
       filtered = filtered.filter((a) => a.serviceStatus === serviceStatus);
@@ -181,7 +189,9 @@ export class AircraftService {
           (a.role && a.role.toLowerCase().includes(q)) ||
           (a.originCountry && a.originCountry.toLowerCase().includes(q)) ||
           (a.engineModel && a.engineModel.toLowerCase().includes(q)) ||
-          (a.description && a.description.toLowerCase().includes(q))
+          (a.description && a.description.toLowerCase().includes(q)) ||
+          (a.id && a.id.toLowerCase().includes(q)) ||
+          (a.aliases && a.aliases.some((al) => al.toLowerCase().includes(q)))
       );
     }
 
@@ -212,6 +222,7 @@ export class AircraftService {
       appliedFilters: {
         country: country || null,
         affiliation: affiliation || null,
+        militaryBranch: militaryBranch || null,
         serviceStatus: serviceStatus || null,
         category: category || null,
         generation: generation || null,
@@ -229,11 +240,12 @@ export class AircraftService {
    */
   async getAircraftById(idOrName: string) {
     try {
-      const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(idOrName);
+      const cleanId = decodeURIComponent(idOrName).trim();
+      const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(cleanId);
 
       const aircraft = isUuid
         ? await prisma.aircraft.findUnique({
-          where: { id: idOrName },
+          where: { id: cleanId },
           include: {
             weapons: {
               include: {
@@ -254,10 +266,11 @@ export class AircraftService {
         })
         : await prisma.aircraft.findFirst({
           where: {
-            name: {
-              equals: decodeURIComponent(idOrName).trim(),
-              mode: 'insensitive',
-            },
+            OR: [
+              { id: { equals: cleanId, mode: 'insensitive' } },
+              { name: { equals: cleanId, mode: 'insensitive' } },
+              { commonName: { equals: cleanId, mode: 'insensitive' } },
+            ],
           },
           include: {
             weapons: {
@@ -283,14 +296,7 @@ export class AircraftService {
       // Offline fallback
     }
 
-    const clean = decodeURIComponent(idOrName).toLowerCase().trim();
-    const fallbackMatch = (initialAircraftData as any[]).find(
-      (a) =>
-        a.id?.toLowerCase() === clean ||
-        a.name?.toLowerCase() === clean ||
-        (a.commonName && a.commonName.toLowerCase() === clean)
-    );
-
+    const fallbackMatch = findAircraftByIdOrAlias(idOrName);
     if (fallbackMatch) {
       return {
         ...fallbackMatch,
@@ -298,17 +304,6 @@ export class AircraftService {
         dataSources: fallbackMatch.dataSources || [],
         milestones: fallbackMatch.milestones || [],
       };
-    }
-
-    const g20Match = g20AircraftData.find(
-      (a) =>
-        a.id?.toLowerCase() === clean ||
-        a.aircraftName?.toLowerCase() === clean ||
-        a.officialDesignation?.toLowerCase() === clean
-    );
-
-    if (g20Match) {
-      return g20Match;
     }
 
     throw new AppError(`Aircraft '${idOrName}' not found in tactical vault`, 404, 'AIRCRAFT_NOT_FOUND');

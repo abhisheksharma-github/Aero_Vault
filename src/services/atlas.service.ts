@@ -1,7 +1,6 @@
 import { prisma } from '../db.js';
 import {
   initialCountryForceProfiles,
-  initialAircraftData,
   initialNavalVessels,
   initialGroundVehicles,
 } from '../data/multiDomainData.js';

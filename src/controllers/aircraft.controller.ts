@@ -1,88 +1,84 @@
 import { Request, Response, NextFunction } from 'express';
+import { AircraftCategory } from '@prisma/client';
 import { aircraftService } from '../services/aircraft.service.js';
-import { AircraftQueryParams, CreateAircraftInput, UpdateAircraftInput } from '../schemas/aircraft.schema.js';
-import { g20AircraftData } from '../data/g20/g20Aircraft.js';
+import {
+  AircraftQueryParams,
+  CreateAircraftInput,
+  UpdateAircraftInput,
+  AircraftIdParam,
+} from '../schemas/aircraft.schema.js';
+import {
+  validatedQuery,
+  validatedParams,
+  validatedBody,
+} from '../middleware/validate.middleware.js';
+import { aircraftVault, searchAircraftInVault } from '../data/normalize.js';
 
-export const G20_AIRCRAFT_CATEGORIES = [
-  {
-    group: 'FIGHTER AND COMBAT',
-    categories: [
-      'Fighter',
-      'Multirole Fighter',
-      'Air Superiority',
-      'Interceptor',
-      'Strike Aircraft',
-      'Ground Attack',
-      'Close Air Support',
-      'Bomber',
-      'Strategic Bomber',
-      'Electronic Warfare',
-    ],
-  },
-  {
-    group: 'INTELLIGENCE AND SURVEILLANCE',
-    categories: [
-      'AEW&C',
-      'AWACS',
-      'ISR',
-      'Reconnaissance',
-      'Surveillance',
-      'SIGINT',
-      'ELINT',
-    ],
-  },
-  {
-    group: 'MARITIME',
-    categories: [
-      'Maritime Patrol Aircraft',
-      'Anti-Submarine Warfare Aircraft',
-      'Maritime Helicopter',
-      'ASW Helicopter',
-    ],
-  },
-  {
-    group: 'TRANSPORT',
-    categories: [
-      'Strategic Transport',
-      'Tactical Transport',
-      'Utility Aircraft',
-      'VIP Transport',
-    ],
-  },
-  {
-    group: 'REFUELING',
-    categories: ['Aerial Refueling Tanker'],
-  },
-  {
-    group: 'TRAINING',
-    categories: [
-      'Basic Trainer',
-      'Intermediate Trainer',
-      'Advanced Jet Trainer',
-      'Lead-In Fighter Trainer',
-    ],
-  },
-  {
-    group: 'HELICOPTERS',
-    categories: [
-      'Attack Helicopter',
-      'Utility Helicopter',
-      'Transport Helicopter',
-      'Heavy Lift Helicopter',
-      'Reconnaissance Helicopter',
-      'Special Operations Helicopter',
-      'Search and Rescue Helicopter',
-    ],
-  },
-  {
-    group: 'UNMANNED',
-    categories: ['UAV', 'Tactical UAV', 'MALE UAV', 'HALE UAV', 'UCAV'],
-  },
-  {
-    group: 'DEVELOPMENT',
-    categories: ['Prototype', 'Experimental', 'Under Development', 'Future Aircraft'],
-  },
-];
+export interface CategoryInfo {
+  value: AircraftCategory;
+  label: string;
+  group: string;
+}
+
+const CATEGORY_LABELS: Record<string, { label: string; group: string }> = {
+  FIGHTER: { label: 'Fighter', group: 'FIGHTER AND COMBAT' },
+  INTERCEPTOR: { label: 'Interceptor', group: 'FIGHTER AND COMBAT' },
+  MULTIROLE_FIGHTER: { label: 'Multirole Fighter', group: 'FIGHTER AND COMBAT' },
+  AIR_SUPERIORITY: { label: 'Air Superiority', group: 'FIGHTER AND COMBAT' },
+  GROUND_ATTACK: { label: 'Ground Attack', group: 'FIGHTER AND COMBAT' },
+  STRIKE: { label: 'Strike Aircraft', group: 'FIGHTER AND COMBAT' },
+  BOMBER: { label: 'Strategic Bomber', group: 'FIGHTER AND COMBAT' },
+  LIGHT_ATTACK: { label: 'Light Attack', group: 'FIGHTER AND COMBAT' },
+
+  AEWC: { label: 'AEW&C', group: 'INTELLIGENCE AND SURVEILLANCE' },
+  AIRBORNE_EARLY_WARNING: { label: 'Airborne Early Warning', group: 'INTELLIGENCE AND SURVEILLANCE' },
+  ELINT: { label: 'ELINT', group: 'INTELLIGENCE AND SURVEILLANCE' },
+  SIGINT: { label: 'SIGINT', group: 'INTELLIGENCE AND SURVEILLANCE' },
+  EW_AIRCRAFT: { label: 'Electronic Warfare', group: 'INTELLIGENCE AND SURVEILLANCE' },
+  RECONNAISSANCE: { label: 'Reconnaissance', group: 'INTELLIGENCE AND SURVEILLANCE' },
+  SURVEILLANCE: { label: 'Surveillance', group: 'INTELLIGENCE AND SURVEILLANCE' },
+  MARITIME_PATROL: { label: 'Maritime Patrol', group: 'MARITIME' },
+
+  STRATEGIC_TRANSPORT: { label: 'Strategic Transport', group: 'TRANSPORT' },
+  TACTICAL_TRANSPORT: { label: 'Tactical Transport', group: 'TRANSPORT' },
+  UTILITY_TRANSPORT: { label: 'Utility Transport', group: 'TRANSPORT' },
+  VIP_TRANSPORT: { label: 'VIP Transport', group: 'TRANSPORT' },
+  AERIAL_REFUELING: { label: 'Aerial Refueling Tanker', group: 'REFUELING' },
+  TANKER: { label: 'Tanker', group: 'REFUELING' },
+  TRANSPORT: { label: 'Transport', group: 'TRANSPORT' },
+
+  TRAINER: { label: 'Trainer', group: 'TRAINING' },
+  LEAD_IN_FIGHTER_TRAINER: { label: 'Lead-In Fighter Trainer', group: 'TRAINING' },
+
+  HELICOPTER: { label: 'Helicopter', group: 'HELICOPTERS' },
+  ATTACK_HELICOPTER: { label: 'Attack Helicopter', group: 'HELICOPTERS' },
+  UTILITY_HELICOPTER: { label: 'Utility Helicopter', group: 'HELICOPTERS' },
+  TRANSPORT_HELICOPTER: { label: 'Transport Helicopter', group: 'HELICOPTERS' },
+  RECON_HELICOPTER: { label: 'Recon Helicopter', group: 'HELICOPTERS' },
+  NAVAL_HELICOPTER: { label: 'Naval Helicopter', group: 'HELICOPTERS' },
+  ANTI_SUBMARINE_HELICOPTER: { label: 'Anti-Submarine Helicopter', group: 'HELICOPTERS' },
+  SEARCH_AND_RESCUE_HELICOPTER: { label: 'Search and Rescue Helicopter', group: 'HELICOPTERS' },
+
+  UAV: { label: 'UAV', group: 'UNMANNED' },
+  MALE_UAV: { label: 'MALE UAV', group: 'UNMANNED' },
+  HALE_UAV: { label: 'HALE UAV', group: 'UNMANNED' },
+  TACTICAL_UAV: { label: 'Tactical UAV', group: 'UNMANNED' },
+  UCAV: { label: 'UCAV Combat Drone', group: 'UNMANNED' },
+  LOITERING_MUNITION: { label: 'Loitering Munition', group: 'UNMANNED' },
+  RECON_UAV: { label: 'Recon UAV', group: 'UNMANNED' },
+  STRIKE_UAV: { label: 'Strike UAV', group: 'UNMANNED' },
+
+  SPECIAL_MISSION: { label: 'Special Mission', group: 'DEVELOPMENT' },
+  TARGET_DRONE: { label: 'Target Drone', group: 'DEVELOPMENT' },
+  EXPERIMENTAL: { label: 'Experimental', group: 'DEVELOPMENT' },
+  ATTACK: { label: 'Attack Aircraft', group: 'FIGHTER AND COMBAT' },
+};
+
+export const CANONICAL_AIRCRAFT_CATEGORIES: CategoryInfo[] = Object.values(AircraftCategory).map((cat) => ({
+  value: cat,
+  label: CATEGORY_LABELS[cat]?.label || cat,
+  group: CATEGORY_LABELS[cat]?.group || 'OTHER',
+}));
 
 export class AircraftController {
   /**
@@ -90,7 +86,7 @@ export class AircraftController {
    */
   async getAircraft(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const query = req.query as unknown as AircraftQueryParams;
+      const query = validatedQuery<AircraftQueryParams>(req);
       const result = await aircraftService.listAircraft(query);
 
       res.status(200).json({
@@ -111,8 +107,8 @@ export class AircraftController {
     try {
       res.status(200).json({
         success: true,
-        count: G20_AIRCRAFT_CATEGORIES.length,
-        data: G20_AIRCRAFT_CATEGORIES,
+        count: CANONICAL_AIRCRAFT_CATEGORIES.length,
+        data: CANONICAL_AIRCRAFT_CATEGORIES,
       });
     } catch (error) {
       next(error);
@@ -124,29 +120,8 @@ export class AircraftController {
    */
   async searchAircraft(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const q = (req.query.q as string || '').toLowerCase().trim();
-      if (!q) {
-        res.status(200).json({
-          success: true,
-          count: g20AircraftData.length,
-          data: g20AircraftData,
-        });
-        return;
-      }
-
-      const results = g20AircraftData.filter((item) => {
-        return (
-          item.aircraftName.toLowerCase().includes(q) ||
-          item.officialDesignation.toLowerCase().includes(q) ||
-          item.variant.toLowerCase().includes(q) ||
-          item.family.toLowerCase().includes(q) ||
-          item.manufacturer.toLowerCase().includes(q) ||
-          item.country.toLowerCase().includes(q) ||
-          item.primaryCategory.toLowerCase().includes(q) ||
-          item.id.toLowerCase().includes(q) ||
-          (item.natoReportingName && item.natoReportingName.toLowerCase().includes(q))
-        );
-      });
+      const q = ((req.query.q as string) || '').toLowerCase().trim();
+      const results = searchAircraftInVault(q);
 
       res.status(200).json({
         success: true,
@@ -160,26 +135,12 @@ export class AircraftController {
   }
 
   /**
-   * GET /api/aircraft/:id - Single aircraft specs (with G20 dataset fallback)
+   * GET /api/aircraft/:id - Single aircraft specs
    */
   async getAircraftById(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const id = req.params.id as string;
-
-      // Check normalized G20 dataset first
-      const normalizedMatch = g20AircraftData.find(
-        (a) => a.id.toLowerCase() === id.toLowerCase()
-      );
-
-      if (normalizedMatch) {
-        res.status(200).json({
-          success: true,
-          data: normalizedMatch,
-        });
-        return;
-      }
-
-      const aircraft = await aircraftService.getAircraftById(id);
+      const params = validatedParams<AircraftIdParam>(req);
+      const aircraft = await aircraftService.getAircraftById(params.id);
 
       res.status(200).json({
         success: true,
@@ -195,8 +156,8 @@ export class AircraftController {
    */
   async getAircraftTVR(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const id = req.params.id as string;
-      const tvrReport = await aircraftService.getAircraftTVR(id);
+      const params = validatedParams<AircraftIdParam>(req);
+      const tvrReport = await aircraftService.getAircraftTVR(params.id);
 
       res.status(200).json({
         success: true,
@@ -212,8 +173,8 @@ export class AircraftController {
    */
   async getAircraftSources(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const id = req.params.id as string;
-      const sourcesReport = await aircraftService.getAircraftSources(id);
+      const params = validatedParams<AircraftIdParam>(req);
+      const sourcesReport = await aircraftService.getAircraftSources(params.id);
 
       res.status(200).json({
         success: true,
@@ -229,8 +190,8 @@ export class AircraftController {
    */
   async getAircraftHistory(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const id = req.params.id as string;
-      const historyReport = await aircraftService.getAircraftHistory(id);
+      const params = validatedParams<AircraftIdParam>(req);
+      const historyReport = await aircraftService.getAircraftHistory(params.id);
 
       res.status(200).json({
         success: true,
@@ -246,7 +207,7 @@ export class AircraftController {
    */
   async createAircraft(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const body = req.body as CreateAircraftInput;
+      const body = validatedBody<CreateAircraftInput>(req);
       const created = await aircraftService.createAircraft(body);
 
       res.status(201).json({
@@ -264,9 +225,9 @@ export class AircraftController {
    */
   async updateAircraft(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const id = req.params.id as string;
-      const body = req.body as UpdateAircraftInput;
-      const updated = await aircraftService.updateAircraft(id, body);
+      const params = validatedParams<AircraftIdParam>(req);
+      const body = validatedBody<UpdateAircraftInput>(req);
+      const updated = await aircraftService.updateAircraft(params.id, body);
 
       res.status(200).json({
         success: true,
@@ -283,8 +244,8 @@ export class AircraftController {
    */
   async deleteAircraft(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const id = req.params.id as string;
-      const deleted = await aircraftService.deleteAircraft(id);
+      const params = validatedParams<AircraftIdParam>(req);
+      const deleted = await aircraftService.deleteAircraft(params.id);
 
       res.status(200).json({
         success: true,

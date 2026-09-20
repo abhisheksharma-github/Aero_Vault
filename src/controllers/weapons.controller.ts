@@ -1,12 +1,14 @@
 import { Request, Response, NextFunction } from 'express';
 import { prisma } from '../db.js';
 import { initialWeaponsData } from '../data/multiDomainData.js';
+import { validatedQuery } from '../middleware/validate.middleware.js';
 
 export class WeaponsController {
-  async getWeapons(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getWeapons = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const type = req.query.type as string | undefined;
-      const search = req.query.search as string | undefined;
+      const query = validatedQuery<{ type?: string; search?: string }>(req);
+      const type = query.type;
+      const search = query.search;
 
       try {
         const where: any = {};
@@ -72,7 +74,7 @@ export class WeaponsController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 }
 
 export const weaponsController = new WeaponsController();

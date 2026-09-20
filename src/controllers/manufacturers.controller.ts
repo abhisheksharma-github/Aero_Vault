@@ -6,7 +6,7 @@ export class ManufacturersController {
   /**
    * GET /api/manufacturers - List all global defense aerospace manufacturers
    */
-  async getManufacturers(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getManufacturers = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       try {
         const dbManufacturers = await prisma.manufacturer.findMany({
@@ -33,7 +33,7 @@ export class ManufacturersController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 }
 
 export const manufacturersController = new ManufacturersController();

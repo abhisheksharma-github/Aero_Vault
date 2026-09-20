@@ -1,7 +1,7 @@
 import { Router, Request, Response } from 'express';
 import { prisma } from '../db.js';
 import { osintService } from '../services/osint.service.js';
-import { initialAircraftData } from '../data/multiDomainData.js';
+import { aircraftVault } from '../data/normalize.js';
 
 const router = Router();
 
@@ -21,7 +21,7 @@ router.get('/quality', async (req: Request, res: Response) => {
     }
 
     if (!aircraftList || aircraftList.length === 0) {
-      aircraftList = initialAircraftData as any[];
+      aircraftList = aircraftVault as any[];
     }
 
     const report = osintService.generateQualityReport(aircraftList);

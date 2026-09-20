@@ -1,7 +1,8 @@
 import { Router, Request, Response } from 'express';
 import { prisma } from '../db.js';
 import { reportService } from '../services/report.service.js';
-import { initialNationIntelligence, initialAircraftData } from '../data/multiDomainData.js';
+import { initialNationIntelligence } from '../data/multiDomainData.js';
+import { aircraftVault } from '../data/normalize.js';
 
 const router = Router();
 
@@ -45,8 +46,10 @@ router.get('/nations/:country', async (req: Request, res: Response) => {
     }
 
     if (!aircraftList || aircraftList.length === 0) {
-      aircraftList = (initialAircraftData as any[]).filter(
-        (a) => a.country?.toLowerCase() === nation.countryName?.toLowerCase()
+      aircraftList = aircraftVault.filter(
+        (a) =>
+          a.country?.toLowerCase() === nation.countryName?.toLowerCase() ||
+          a.originCountry?.toLowerCase() === nation.countryName?.toLowerCase()
       );
     }
 
