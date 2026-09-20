@@ -206,30 +206,6 @@ $$\text{TVR} = \left[ \sum_{i=1}^{7} (W_i \times S_i) \right] \times M_{\text{st
 *Read the full mathematical specification in [`TVR_METHODOLOGY.md`](./TVR_METHODOLOGY.md).*
 
 ---
-
-## 🚀 Production Deployment
-
-### Recommended Strategy
-- **Frontend:** [Vercel](https://vercel.com) (Configured via [`client/vercel.json`](./client/vercel.json))
-- **Backend API:** [Render](https://render.com) / [Railway](https://railway.app)
-- **Database:** [Neon PostgreSQL](https://neon.tech)
-
-### Fast Deployment Checklist
-1. **Push to GitHub:** Commit and push repository to GitHub.
-2. **Backend (Render):**
-   - Build Command: `npm install && npx prisma generate && npm run build`
-   - Start Command: `npm start`
-   - Environment Variables: `NODE_ENV=production`, `PORT=4000`, `DATABASE_URL=<neon_url>`, `CORS_ORIGIN=https://<your-vercel-app>.vercel.app`
-3. **Frontend (Vercel):**
-   - Root Directory: `client`
-   - Framework: `Vite`
-   - Build Command: `npm run build`
-   - Environment Variable: `VITE_API_BASE_URL=https://<your-render-backend>.onrender.com/api`
-
-*For complete DevOps configuration and Docker recipes, see [`DEPLOYMENT.md`](./DEPLOYMENT.md).*
-
----
-
 ## 📂 Project Structure
 
 ```
