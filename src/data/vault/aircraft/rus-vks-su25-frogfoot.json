@@ -1,0 +1,153 @@
+{
+  "id": "rus-vks-su25-frogfoot",
+  "name": "Sukhoi Su-25 Frogfoot",
+  "commonName": "Su-25 Frogfoot",
+  "officialDesignation": "Sukhoi Su-25SM3",
+  "natoReportingName": "Frogfoot",
+  "family": "Sukhoi Su-25",
+  "variant": "Su-25SM3 Super Grach",
+  "block": "SM3 Modernized Standard",
+  "manufacturer": "Tbilisi Aircraft Manufacturing (TAM) / Ulan-Ude Aviation Plant",
+  "manufacturerCountry": "Russia",
+  "originCountry": "Russia",
+  "country": "Russia",
+  "affiliation": "Russian Aerospace Forces (VKS)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "GROUND_ATTACK",
+  "generation": "GEN_3",
+  "era": "COLD_WAR",
+  "role": "All-Weather Heavily Armored Close Air Support & Battlefield Ground Attack",
+  "secondaryRoles": [
+    "Anti-Armor Interdiction",
+    "Forward Air Control",
+    "Convoy Escort"
+  ],
+  "firstFlightYear": 1975,
+  "introductionYear": 1981,
+  "retirementYear": null,
+  "productionCount": 1024,
+  "fleetCount": 140,
+  "activeCount": 140,
+  "inactiveCount": 0,
+  "retiredCount": 884,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 13.86,
+      "wingspanM": 10.89,
+      "heightM": 3.96,
+      "wingAreaM2": 41.6
+    },
+    "weights": {
+      "emptyWeightKg": 9800,
+      "maxTakeoffWeightKg": 19300,
+      "payloadCapacityKg": 4400
+    },
+    "performance": {
+      "topSpeedMach": 0.8,
+      "topSpeedKmh": 975,
+      "serviceCeilingM": 7000,
+      "rateOfClimbMs": 58,
+      "gLimitPositive": 6.5,
+      "gLimitNegative": -3,
+      "combatRangeKm": 375,
+      "ferryRangeKm": 1850
+    }
+  },
+  "propulsion": {
+    "engineModel": "Soyuz / Gavrilov R-195 Non-afterburning Turbojets",
+    "engineCount": 2,
+    "engineType": "Non-afterburning Turbojet (Titanium-armored)",
+    "hasAfterburner": false,
+    "thrustDryKn": 44.18,
+    "thrustAfterburnerKn": null,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "NONE",
+    "radarName": "SOLT-25 Electro-Optical Sighting & Vitebsk-25 EW Suite",
+    "radarTrackTargets": 0,
+    "radarEngageTargets": 2,
+    "radarDetectionRangeKm": 0,
+    "bvrCapable": false,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 2.8
+  },
+  "armament": {
+    "internalGun": "30mm GSh-30-2 twin-barrel autocannon (250 rounds)",
+    "hardpoints": 11,
+    "maxPayloadKg": 4400,
+    "airToAirMissiles": [
+      "R-73M Infrared Dogfight Missiles"
+    ],
+    "airToGroundMissiles": [
+      "9K121 Vikhr-1 Laser-Beam Riding Anti-Tank Missiles",
+      "Kh-29L",
+      "Kh-25ML",
+      "S-8 (80mm) / S-13 (122mm) / S-25 (340mm) Rocket Pods"
+    ],
+    "antiShipMissiles": [],
+    "precisionGuidedBombs": [
+      "KAB-500Kr Guided Bombs",
+      "FAB-250 / FAB-500 Iron Bombs",
+      "SPPU-22 Gun Pods"
+    ]
+  },
+  "tvrRating": {
+    "overall": 44.3,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 50,
+      "avionics": 35,
+      "weapons": 56,
+      "survivability": 30,
+      "range": 41,
+      "modernization": 48,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Proven multirole capability with mature global operational track record"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 140,
+    "estimatedQuantity": 140,
+    "quantityYear": 2026,
+    "quantityNotes": "Active inventory: 140 operational units in 2026.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The Su-25 Grach (Frogfoot) is an armored \"flying tank\" with an all-welded titanium bathtub cockpit capsule up to 24mm thick and self-sealing foam-filled fuel tanks.",
+    "historicalContext": "The Eastern counterpart to the American A-10 Thunderbolt II, with an unparalleled operational record in Afghanistan, Chechnya, Georgia, Syria, and Ukraine.",
+    "tacticalDoctrine": "Direct close air support (CAS) in hostile high-threat airspace, shrugging off 23mm anti-aircraft hits to wipe out fortified armor positions."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sukhoi_Su-25_Frogfoot.jpg"
+}

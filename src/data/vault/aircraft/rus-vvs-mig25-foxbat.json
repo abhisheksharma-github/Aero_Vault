@@ -1,0 +1,146 @@
+{
+  "id": "rus-vvs-mig25-foxbat",
+  "name": "Mikoyan MiG-25 Foxbat",
+  "commonName": "MiG-25 Foxbat",
+  "officialDesignation": "Mikoyan-Gurevich MiG-25P/RBS",
+  "natoReportingName": "Foxbat",
+  "family": "Mikoyan MiG-25",
+  "variant": "MiG-25PD / MiG-25RB",
+  "block": "Smerch-A Radar Standard",
+  "manufacturer": "Mikoyan-Gurevich OKB / Sokol Plant",
+  "manufacturerCountry": "Russia",
+  "originCountry": "Russia",
+  "country": "Russia",
+  "affiliation": "Soviet Air Defense Forces (PVO) / Russian Air Force",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "INTERCEPTOR",
+  "generation": "GEN_3",
+  "era": "COLD_WAR",
+  "role": "Mach 3.2 High-Altitude Supersonic Strategic Interceptor & Reconnaissance",
+  "secondaryRoles": [
+    "High-Altitude Photo/ELINT Reconnaissance",
+    "Tactical Nuclear Bombing (MiG-25RB)"
+  ],
+  "firstFlightYear": 1964,
+  "introductionYear": 1970,
+  "retirementYear": 2013,
+  "productionCount": 1186,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 1186,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 19.8,
+      "wingspanM": 15.56,
+      "heightM": 5.66,
+      "wingAreaM2": 59.4
+    },
+    "weights": {
+      "emptyWeightKg": 20000,
+      "maxTakeoffWeightKg": 36720,
+      "payloadCapacityKg": 4000
+    },
+    "performance": {
+      "topSpeedMach": 3.2,
+      "topSpeedKmh": 3490,
+      "serviceCeilingM": 24400,
+      "rateOfClimbMs": 208,
+      "gLimitPositive": 5,
+      "gLimitNegative": -3,
+      "combatRangeKm": 860,
+      "ferryRangeKm": 2575
+    }
+  },
+  "propulsion": {
+    "engineModel": "Tumansky R-15B-300 Single-Shaft Turbojets",
+    "engineCount": 2,
+    "engineType": "Afterburning Turbojet",
+    "hasAfterburner": true,
+    "thrustDryKn": 73.5,
+    "thrustAfterburnerKn": 100.1,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarName": "RP-25 Smerch-A2 High-Power Vacuum-Tube Radar (600 kW pulse power)",
+    "radarTrackTargets": 4,
+    "radarEngageTargets": 1,
+    "radarDetectionRangeKm": 100,
+    "bvrCapable": true,
+    "supercruise": true,
+    "stealth": false,
+    "rcsM2": 6
+  },
+  "armament": {
+    "internalGun": "None",
+    "hardpoints": 4,
+    "maxPayloadKg": 4000,
+    "airToAirMissiles": [
+      "4 × R-40R/T Heavy High-Altitude BVR Missiles (Mach 4.5, 60km range)",
+      "R-60 Dogfight Missile (MiG-25PD)"
+    ],
+    "airToGroundMissiles": [],
+    "antiShipMissiles": [],
+    "precisionGuidedBombs": [
+      "8 × 500kg Heat-Resistant FAB-500T Bombs dropped from Mach 2.5+"
+    ]
+  },
+  "tvrRating": {
+    "overall": 52.9,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 85,
+      "avionics": 45,
+      "weapons": 56,
+      "survivability": 30,
+      "range": 49,
+      "modernization": 48,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "High-thrust propulsion envelope with supersonic dash and high G-tolerance"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 1186,
+    "estimatedQuantity": 0,
+    "quantityYear": 2013,
+    "quantityNotes": "Historic / Retired airframe. Total produced: 1186.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "Constructed primarily of 80% nickel-steel alloy and titanium to resist 300°C friction heat at Mach 3.2, the MiG-25 remains the fastest production combat aircraft in history.",
+    "historicalContext": "Its appearance prompted the United States to develop the F-15 Eagle; Lt. Viktor Belenko famously defected with a MiG-25P to Japan in 1976.",
+    "tacticalDoctrine": "Mach 3 high-altitude dash at 80,000 feet, firing massive 1,000-lb R-40 missiles against high-altitude reconnaissance targets like the SR-71 and B-58 Hustler."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/MiG-25RB_Foxbat_Indian_Air_Force.jpg"
+}

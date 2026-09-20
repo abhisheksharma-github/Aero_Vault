@@ -1,0 +1,152 @@
+{
+  "id": "fra-mn-super-etendard",
+  "name": "Dassault Super Étendard SEM",
+  "commonName": "Super Étendard",
+  "officialDesignation": "Dassault-Breguet Super Étendard",
+  "natoReportingName": "Super Etendard",
+  "family": "Dassault Étendard",
+  "variant": "Super Étendard Modernisé (SEM Standard 5)",
+  "block": "Standard 5",
+  "manufacturer": "Dassault-Breguet",
+  "manufacturerCountry": "France",
+  "originCountry": "France",
+  "country": "France",
+  "affiliation": "French Navy (Marine Nationale)",
+  "militaryBranch": "NAVAL_AVIATION",
+  "serviceStatus": "RETIRED",
+  "category": "STRIKE",
+  "generation": "GEN_3",
+  "era": "COLD_WAR",
+  "role": "Carrier-Borne Nuclear Strike & Anti-Ship Strike Fighter",
+  "secondaryRoles": [
+    "Close Air Support (CAS)",
+    "Laser Bombing",
+    "Force Maritime Defense"
+  ],
+  "firstFlightYear": 1974,
+  "introductionYear": 1978,
+  "retirementYear": 2016,
+  "productionCount": 85,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 71,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 11.29,
+      "wingspanM": 8.87,
+      "heightM": 3.22,
+      "wingAreaM2": 33.9
+    },
+    "weights": {
+      "emptyWeightKg": 6500,
+      "maxTakeoffWeightKg": 12000,
+      "payloadCapacityKg": 2100
+    },
+    "performance": {
+      "topSpeedMach": 1,
+      "topSpeedKmh": 1205,
+      "serviceCeilingM": 13700,
+      "rateOfClimbMs": 100,
+      "gLimitPositive": 8,
+      "gLimitNegative": -3,
+      "combatRangeKm": 850,
+      "ferryRangeKm": 2200
+    }
+  },
+  "propulsion": {
+    "engineModel": "SNECMA Atar 8K-50 Non-afterburning Turbojet",
+    "engineCount": 1,
+    "engineType": "Non-afterburning Turbojet",
+    "hasAfterburner": false,
+    "thrustDryKn": 49,
+    "thrustAfterburnerKn": null,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarName": "Thales Anémone Pulse-Doppler Maritime Radar",
+    "radarTrackTargets": 4,
+    "radarEngageTargets": 1,
+    "radarDetectionRangeKm": 70,
+    "bvrCapable": false,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 2
+  },
+  "armament": {
+    "internalGun": "2 × 30mm DEFA 552A cannons (125 rpg)",
+    "hardpoints": 6,
+    "maxPayloadKg": 2100,
+    "airToAirMissiles": [
+      "Matra R.550 Magic 2 Infrared AAM"
+    ],
+    "airToGroundMissiles": [
+      "ASMP Supersonic Nuclear Missile",
+      "AS-30L Laser Guided Missile"
+    ],
+    "antiShipMissiles": [
+      "AM39 Exocet Sea-Skimming Anti-Ship Missile"
+    ],
+    "precisionGuidedBombs": [
+      "GBU-12 Paveway II Laser Guided Bombs",
+      "Damocles Targeting Pod"
+    ]
+  },
+  "tvrRating": {
+    "overall": 46.5,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 55,
+      "avionics": 45,
+      "weapons": 49,
+      "survivability": 30,
+      "range": 49,
+      "modernization": 48,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Proven multirole capability with mature global operational track record"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 85,
+    "estimatedQuantity": 0,
+    "quantityYear": 2016,
+    "quantityNotes": "Historic / Retired airframe. Total produced: 85.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The Super Étendard gained global fame as the launch platform for the sea-skimming AM39 Exocet anti-ship missile and served as France's carrier-borne nuclear delivery platform.",
+    "historicalContext": "Operated from French carriers Clemenceau, Foch, and Charles de Gaulle for 38 years across combat theaters in Lebanon, Balkans, Afghanistan, and Libya.",
+    "tacticalDoctrine": "Long-range naval strike sorties launching stand-off Exocet missiles against enemy capital ships, followed by high-speed low-altitude escape."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Super_Etendard_SEM.jpg"
+}

@@ -1,0 +1,154 @@
+{
+  "id": "chn-jh7a-fl-plan",
+  "name": "Xian JH-7A Flying Leopard",
+  "commonName": "JH-7A Flounder",
+  "officialDesignation": "Xian JH-7A",
+  "natoReportingName": "Flounder",
+  "family": "Xian JH-7",
+  "variant": "JH-7A",
+  "block": "Block 2",
+  "manufacturer": "Xi'an Aircraft Industrial Corporation (XAC)",
+  "manufacturerCountry": "China",
+  "originCountry": "China",
+  "country": "China",
+  "affiliation": "People's Liberation Army Naval Air Force (PLANAF) / PLAAF",
+  "militaryBranch": "NAVAL_AVIATION",
+  "serviceStatus": "ACTIVE",
+  "category": "STRIKE",
+  "generation": "GEN_4",
+  "era": "MODERN",
+  "role": "Tandem-Seat All-Weather Maritime & Land Precision Strike Fighter-Bomber",
+  "secondaryRoles": [
+    "Anti-Ship Sea Denial",
+    "Deep Penetration Interdiction",
+    "Tactical Electronic Attack"
+  ],
+  "firstFlightYear": 1988,
+  "introductionYear": 1992,
+  "retirementYear": null,
+  "productionCount": 270,
+  "fleetCount": 160,
+  "activeCount": 160,
+  "inactiveCount": 0,
+  "retiredCount": 110,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 16.86,
+      "wingspanM": 13.25,
+      "heightM": 4.82,
+      "wingAreaM2": 50.6
+    },
+    "weights": {
+      "emptyWeightKg": 14500,
+      "maxTakeoffWeightKg": 28475,
+      "payloadCapacityKg": 9000
+    },
+    "performance": {
+      "topSpeedMach": 1.75,
+      "topSpeedKmh": 1808,
+      "serviceCeilingM": 16000,
+      "rateOfClimbMs": 140,
+      "gLimitPositive": 7,
+      "gLimitNegative": -3,
+      "combatRangeKm": 1750,
+      "ferryRangeKm": 3700
+    }
+  },
+  "propulsion": {
+    "engineModel": "WS-9 Qinling (license Rolls-Royce Spey 202)",
+    "engineCount": 2,
+    "engineType": "Afterburning Turbofan",
+    "hasAfterburner": true,
+    "thrustDryKn": 54.3,
+    "thrustAfterburnerKn": 91.2,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarName": "JL-10A Pulse-Doppler Fire Control Radar",
+    "radarTrackTargets": 10,
+    "radarEngageTargets": 2,
+    "radarDetectionRangeKm": 105,
+    "bvrCapable": true,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 5.5
+  },
+  "armament": {
+    "internalGun": "23mm Type 23-III twin-barrel cannon",
+    "hardpoints": 11,
+    "maxPayloadKg": 9000,
+    "airToAirMissiles": [
+      "PL-5E II Infrared AAM",
+      "PL-8 HOBS AAM"
+    ],
+    "airToGroundMissiles": [
+      "KD-88 Tactical Stand-off Missile",
+      "YJ-91 Anti-Radiation Missile"
+    ],
+    "antiShipMissiles": [
+      "YJ-83K Sea-Skimming Anti-Ship Missile",
+      "YJ-12 Heavy Supersonic Anti-Ship Missile"
+    ],
+    "precisionGuidedBombs": [
+      "LT-2 Laser Guided Bomb",
+      "500kg Retarded Iron Bombs"
+    ]
+  },
+  "tvrRating": {
+    "overall": 57.3,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 71,
+      "avionics": 45,
+      "weapons": 78,
+      "survivability": 30,
+      "range": 59,
+      "modernization": 65,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Proven multirole capability with mature global operational track record"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 160,
+    "estimatedQuantity": 160,
+    "quantityYear": 2026,
+    "quantityNotes": "Active inventory: 160 operational units in 2026.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The JH-7A Flying Leopard is a dedicated heavy twin-engine maritime attack fighter capable of carrying four YJ-83K sea-skimming anti-ship cruise missiles across deep naval combat radii.",
+    "historicalContext": "Conceived to give the PLA Navy offensive maritime strike reach without relying on carrier aviation.",
+    "tacticalDoctrine": "Low-altitude sea-skimming saturated anti-ship missile volleys against carrier strike groups and littoral surface combatants."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Xian_JH-7A_at_Airshow_China_2016.jpg"
+}

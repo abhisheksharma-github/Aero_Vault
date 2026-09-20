@@ -1,0 +1,150 @@
+{
+  "id": "rus-vks-mi28nm",
+  "name": "Mil Mi-28NM Night Hunter",
+  "commonName": "Mi-28NM Night Hunter",
+  "officialDesignation": "Mil Mi-28NM",
+  "natoReportingName": "Havoc",
+  "family": "Mil Mi-28",
+  "variant": "Mi-28NM (Night Super Hunter)",
+  "block": "Mast-Mounted Radar Standard",
+  "manufacturer": "Rostvertol / Russian Helicopters",
+  "manufacturerCountry": "Russia",
+  "originCountry": "Russia",
+  "country": "Russia",
+  "affiliation": "Russian Aerospace Forces (VKS) Army Aviation",
+  "militaryBranch": "ARMY_AVIATION",
+  "serviceStatus": "ACTIVE",
+  "category": "ATTACK_HELICOPTER",
+  "generation": "GEN_4",
+  "era": "MODERN",
+  "role": "Heavy All-Weather Day/Night Armor Interdiction & Assault Attack Helicopter",
+  "secondaryRoles": [
+    "Anti-UAV Interception",
+    "Close Air Support",
+    "Armored Escort"
+  ],
+  "firstFlightYear": 1982,
+  "introductionYear": 2009,
+  "retirementYear": null,
+  "productionCount": 140,
+  "fleetCount": 85,
+  "activeCount": 85,
+  "inactiveCount": 0,
+  "retiredCount": 55,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 12.98,
+      "wingspanM": 10.2,
+      "heightM": 3.71,
+      "wingAreaM2": 38.9
+    },
+    "weights": {
+      "emptyWeightKg": 8590,
+      "maxTakeoffWeightKg": 12100,
+      "payloadCapacityKg": 2400
+    },
+    "performance": {
+      "topSpeedMach": 0.28,
+      "topSpeedKmh": 320,
+      "serviceCeilingM": 5700,
+      "rateOfClimbMs": 13.6,
+      "gLimitPositive": 3.5,
+      "gLimitNegative": -3,
+      "combatRangeKm": 450,
+      "ferryRangeKm": 1100
+    }
+  },
+  "propulsion": {
+    "engineModel": "Klimov VK-2500P Turboshafts",
+    "engineCount": 2,
+    "engineType": "Turboshaft",
+    "hasAfterburner": false,
+    "thrustDryKn": 36.8,
+    "thrustAfterburnerKn": null,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "PESA",
+    "radarName": "N025 Mast-Mounted 360-degree Radar Radome",
+    "radarTrackTargets": 12,
+    "radarEngageTargets": 4,
+    "radarDetectionRangeKm": 35,
+    "bvrCapable": false,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 2.5
+  },
+  "armament": {
+    "internalGun": "30mm Shipunov 2A42 autocannon (250 rounds)",
+    "hardpoints": 4,
+    "maxPayloadKg": 2400,
+    "airToAirMissiles": [
+      "R-74M / Igla-S Air-to-Air Missiles",
+      "Verba"
+    ],
+    "airToGroundMissiles": [
+      "LMUR / Izdeliye 305 Light Multipurpose Guided Missile (14.5km range)",
+      "9M120 Ataka Anti-Tank Missile",
+      "9M123 Khrizantema-V Dual-Channel Missile",
+      "80mm S-8 / 122mm S-13 Rockets"
+    ],
+    "antiShipMissiles": [],
+    "precisionGuidedBombs": []
+  },
+  "tvrRating": {
+    "overall": 49.3,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 50,
+      "avionics": 55,
+      "weapons": 55,
+      "survivability": 30,
+      "range": 41,
+      "modernization": 65,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Proven multirole capability with mature global operational track record"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 85,
+    "estimatedQuantity": 85,
+    "quantityYear": 2026,
+    "quantityNotes": "Active inventory: 85 operational units in 2026.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The Mi-28NM is an armored all-weather attack helicopter with a spherical mast-mounted radar dome above the rotor mast, dual controls for both cockpits, and standoff LMUR guided missiles.",
+    "historicalContext": "Heavily refined based on combat operations in Syria and Ukraine, prioritizing standoff guided missile engagements outside short-range air defense MANPAD envelopes.",
+    "tacticalDoctrine": "Hover behind treelines and terrain masks, using mast radar to spot armor, and firing LMUR standoff missiles with man-in-the-loop optical tracking."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Mil_Mi-28NM_Havoc.jpg"
+}

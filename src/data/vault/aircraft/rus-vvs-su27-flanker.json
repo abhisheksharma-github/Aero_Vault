@@ -1,0 +1,150 @@
+{
+  "id": "rus-vvs-su27-flanker",
+  "name": "Sukhoi Su-27 Flanker-B",
+  "commonName": "Su-27 Flanker",
+  "officialDesignation": "Sukhoi Su-27S",
+  "natoReportingName": "Flanker-B",
+  "family": "Sukhoi Su-27",
+  "variant": "Su-27S (Original Production Standard)",
+  "block": "Batch Standard",
+  "manufacturer": "Komsomolsk-on-Amur Aircraft Plant (KnAAPO) / Sukhoi",
+  "manufacturerCountry": "Russia",
+  "originCountry": "Russia",
+  "country": "Russia",
+  "affiliation": "Soviet Air Forces (VVS) / Russian Air Force",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "AIR_SUPERIORITY",
+  "generation": "GEN_4",
+  "era": "COLD_WAR",
+  "role": "Mach 2.35 Heavy Supermaneuverable Air Superiority Fighter",
+  "secondaryRoles": [
+    "High-Altitude BVR Interception",
+    "Escort of Strategic Bombers",
+    "Air Defense Sweep"
+  ],
+  "firstFlightYear": 1977,
+  "introductionYear": 1985,
+  "retirementYear": 2020,
+  "productionCount": 680,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 20,
+  "retiredCount": 660,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 17.92,
+      "wingspanM": 14.08,
+      "heightM": 5.12,
+      "wingAreaM2": 53.8
+    },
+    "weights": {
+      "emptyWeightKg": 16380,
+      "maxTakeoffWeightKg": 30450,
+      "payloadCapacityKg": 6000
+    },
+    "performance": {
+      "topSpeedMach": 2.35,
+      "topSpeedKmh": 2500,
+      "serviceCeilingM": 19000,
+      "rateOfClimbMs": 300,
+      "gLimitPositive": 9,
+      "gLimitNegative": -3,
+      "combatRangeKm": 1340,
+      "ferryRangeKm": 3530
+    }
+  },
+  "propulsion": {
+    "engineModel": "Saturn AL-31F Afterburning Turbofans",
+    "engineCount": 2,
+    "engineType": "Afterburning Turbofan",
+    "hasAfterburner": true,
+    "thrustDryKn": 75.2,
+    "thrustAfterburnerKn": 122.6,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarName": "N001 Mech Coherent Pulse-Doppler Radar & OEPS-27 IRST",
+    "radarTrackTargets": 10,
+    "radarEngageTargets": 1,
+    "radarDetectionRangeKm": 100,
+    "bvrCapable": true,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 5
+  },
+  "armament": {
+    "internalGun": "30mm GSh-30-1 autocannon (150 rounds)",
+    "hardpoints": 10,
+    "maxPayloadKg": 6000,
+    "airToAirMissiles": [
+      "R-27R/ER Semi-Active Radar BVR AAM (130km range)",
+      "R-27T/ET Infrared BVR",
+      "R-73 High-Off-Boresight Dogfight AAM"
+    ],
+    "airToGroundMissiles": [
+      "S-8 / S-13 / S-25 Heavy Unguided Rockets"
+    ],
+    "antiShipMissiles": [],
+    "precisionGuidedBombs": [
+      "FAB-250 / FAB-500 Iron Bombs"
+    ]
+  },
+  "tvrRating": {
+    "overall": 57.8,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 85,
+      "avionics": 45,
+      "weapons": 70,
+      "survivability": 30,
+      "range": 59,
+      "modernization": 65,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "High-thrust propulsion envelope with supersonic dash and high G-tolerance"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 680,
+    "estimatedQuantity": 0,
+    "quantityYear": 2020,
+    "quantityNotes": "Historic / Retired airframe. Total produced: 680.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The Su-27 Flanker-B revolutionized modern air combat with blended wing-body aerodynamics, helmet-mounted sights, OEPS-27 infrared search-and-track (IRST), and the famous \"Pugachev's Cobra\" maneuver.",
+    "historicalContext": "Conceived to outmatch the USAF F-15 Eagle in air-to-air combat, forming the foundation of the world-renowned Flanker fighter family (Su-30, Su-33, Su-34, Su-35, J-11, J-15, J-16).",
+    "tacticalDoctrine": "Deep offensive counter-air sweeps into enemy airspace, destroying defending fighters at BVR ranges with R-27ER missiles and dominating close dogfights with helmet-cued R-73s."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sukhoi_Su-27_Flanker_in_flight.jpg"
+}

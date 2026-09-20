@@ -1,0 +1,148 @@
+{
+  "id": "rus-vks-tu22m3m",
+  "name": "Tupolev Tu-22M3M Backfire-C",
+  "commonName": "Tu-22M3 Backfire",
+  "officialDesignation": "Tupolev Tu-22M3M",
+  "natoReportingName": "Backfire-C",
+  "family": "Tupolev Tu-22",
+  "variant": "Tu-22M3M",
+  "block": "Modernized Standard",
+  "manufacturer": "Kazan Aviation Production Association (KAPO) / Tupolev",
+  "manufacturerCountry": "Russia",
+  "originCountry": "Russia",
+  "country": "Russia",
+  "affiliation": "Russian Aerospace Forces (VKS) Long-Range Aviation",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "BOMBER",
+  "generation": "GEN_3",
+  "era": "COLD_WAR",
+  "role": "Mach 1.88 Variable-Geometry Supersonic Maritime Strike & Land Interdictor",
+  "secondaryRoles": [
+    "Anti-Carrier Strike",
+    "Carpet Bombing",
+    "Tactical Nuclear Standoff Strike"
+  ],
+  "firstFlightYear": 1977,
+  "introductionYear": 1983,
+  "retirementYear": null,
+  "productionCount": 268,
+  "fleetCount": 58,
+  "activeCount": 58,
+  "inactiveCount": 0,
+  "retiredCount": 210,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 33.72,
+      "wingspanM": 26.49,
+      "heightM": 9.63,
+      "wingAreaM2": 101.1
+    },
+    "weights": {
+      "emptyWeightKg": 58000,
+      "maxTakeoffWeightKg": 126000,
+      "payloadCapacityKg": 24000
+    },
+    "performance": {
+      "topSpeedMach": 1.88,
+      "topSpeedKmh": 2000,
+      "serviceCeilingM": 13300,
+      "rateOfClimbMs": 15,
+      "gLimitPositive": 2.5,
+      "gLimitNegative": -3,
+      "combatRangeKm": 2400,
+      "ferryRangeKm": 6800
+    }
+  },
+  "propulsion": {
+    "engineModel": "Kuznetsov NK-25 Turbofans",
+    "engineCount": 2,
+    "engineType": "Afterburning Turbofan",
+    "hasAfterburner": true,
+    "thrustDryKn": 142.1,
+    "thrustAfterburnerKn": 245.2,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "PESA",
+    "radarName": "NV-45 Phased-Array Nav/Attack Radar",
+    "radarTrackTargets": 8,
+    "radarEngageTargets": 2,
+    "radarDetectionRangeKm": 200,
+    "bvrCapable": false,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 10
+  },
+  "armament": {
+    "internalGun": "23mm GSh-23 twin cannon in tail",
+    "hardpoints": 4,
+    "maxPayloadKg": 24000,
+    "airToAirMissiles": [],
+    "airToGroundMissiles": [
+      "3 × Kh-22 / Kh-32 Mach 4.6 Heavy Anti-Ship Missiles (6-ton missiles)",
+      "Kh-47M2 Kinzhal Hypersonic Missile (planned)"
+    ],
+    "antiShipMissiles": [
+      "Kh-32 Supersonic High-Altitude Anti-Ship Missile"
+    ],
+    "precisionGuidedBombs": [
+      "69 × FAB-250 / 24 × FAB-500 / 8 × FAB-1500 Free-fall Bombs"
+    ]
+  },
+  "tvrRating": {
+    "overall": 59,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 68,
+      "avionics": 55,
+      "weapons": 79,
+      "survivability": 30,
+      "range": 65,
+      "modernization": 48,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Proven multirole capability with mature global operational track record"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 58,
+    "estimatedQuantity": 58,
+    "quantityYear": 2026,
+    "quantityNotes": "Active inventory: 58 operational units in 2026.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The Tu-22M3M was designed as the ultimate aircraft carrier killer, capable of high-altitude supersonic sprint to loose 6-ton Kh-22/Kh-32 missiles at Mach 4.6 against carrier strike groups.",
+    "historicalContext": "A prime subject of SALT and START arms control negotiations due to its formidable maritime strike capability against NATO fleets.",
+    "tacticalDoctrine": "Coordinated multi-regiment supersonic dashes over maritime approaches, overwhelming carrier task group air defenses with hypersonic missile salvos."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Tupolev_Tu-22M3_Backfire.jpg"
+}

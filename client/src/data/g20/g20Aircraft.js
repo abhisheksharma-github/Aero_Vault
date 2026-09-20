@@ -502,6 +502,124 @@ export const g20AircraftData = [
     "description": "PLA Army primary attack helicopter featuring stepped tandem cockpit, mast-mounted millimeter wave radar, 23mm revolving cannon turret, HJ-10 anti-tank missiles, and TY-90 dedicated helicopter dogfight AAMs."
   },
   {
+    "id": "CHN-J10C-PLAAF",
+    "aircraftName": "Chengdu J-10C Vigorous Dragon",
+    "officialDesignation": "Chengdu J-10C Firebird",
+    "natoReportingName": "Firebird",
+    "family": "Chengdu J-10",
+    "variant": "J-10C",
+    "block": "Block 3",
+    "manufacturer": "Chengdu Aerospace Corporation (CAC)",
+    "manufacturerCountry": "China",
+    "countryOfOrigin": "China",
+    "country": "China",
+    "affiliation": "People's Liberation Army Air Force (PLAAF)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "4.5-Gen Single-Engine Multirole Air Superiority Fighter",
+    "secondaryRoles": [
+      "Precision Strike",
+      "Suppression of Enemy Air Defenses (SEAD)",
+      "BVR Interception"
+    ],
+    "generation": "GEN_4_5",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 2013,
+    "introductionYear": 2018,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 260,
+      "estimatedQuantity": 260,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 260 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Chengdu Aerospace Corporation (CAC)",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Chengdu_J-10C_at_Airshow_China_2018.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Chengdu_J-10C_at_Airshow_China_2018.jpg",
+      "caption": "Chengdu J-10C Vigorous Dragon in service with China"
+    },
+    "sources": [
+      {
+        "name": "China Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
     "id": "CHN-J20A-PLAAF",
     "aircraftName": "Chengdu J-20A Mighty Dragon",
     "officialDesignation": "J-20A (WS-10C Engines)",
@@ -625,6 +743,478 @@ export const g20AircraftData = [
     ],
     "tvrScore": 93.2,
     "description": "PLAAF flagship 5th-generation heavy stealth fighter featuring canard-delta configuration, internal weapons bay carrying long-range PL-15 and ultra-long PL-17 BVRAAMs, and electro-optical distributed aperture sensors."
+  },
+  {
+    "id": "CHN-PLAAF-J7-FISHBED",
+    "aircraftName": "Chengdu J-7 Fishbed",
+    "officialDesignation": "Chengdu J-7G / F-7",
+    "natoReportingName": "Fishbed",
+    "family": "Mikoyan MiG-21",
+    "variant": "J-7G",
+    "block": "Double-Delta Wing Standard",
+    "manufacturer": "Chengdu Aerospace Corporation (CAC)",
+    "manufacturerCountry": "China",
+    "countryOfOrigin": "China",
+    "country": "China",
+    "affiliation": "People's Liberation Army Air Force (PLAAF)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Mach 2.0 Lightweight Supersonic Air Superiority & Point-Defense Interceptor",
+    "secondaryRoles": [
+      "Ground Support",
+      "Target Towing / Drone Conversion",
+      "Air Defense Scramble"
+    ],
+    "generation": "GEN_2",
+    "era": "COLD_WAR",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1966,
+    "introductionYear": 1967,
+    "retirementYear": 2023,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 2023,
+      "quantityNotes": "Historic airframe (Retired 2023). Total produced: 2400.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Chengdu Aerospace Corporation (CAC)",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Chengdu_J-7G_PLAAF.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Chengdu_J-7G_PLAAF.jpg",
+      "caption": "Chengdu J-7 Fishbed in service with China"
+    },
+    "sources": [
+      {
+        "name": "China Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "CHN-Z20-PLA",
+    "aircraftName": "Harbin Z-20 Divine Eagle",
+    "officialDesignation": "Harbin Z-20",
+    "natoReportingName": "Divine Eagle",
+    "family": "Harbin Z-20",
+    "variant": "Z-20F / Z-20S",
+    "block": "Naval & Army Standard",
+    "manufacturer": "Harbin Aircraft Industry Group (HAIG)",
+    "manufacturerCountry": "China",
+    "countryOfOrigin": "China",
+    "country": "China",
+    "affiliation": "PLA Ground Force / PLA Navy Aviation",
+    "militaryBranch": "ARMY_AVIATION",
+    "aircraftType": "Rotary-Wing",
+    "primaryCategory": "Medium Tactical Utility & Naval Anti-Submarine Warfare Helicopter",
+    "secondaryRoles": [
+      "Combat Search and Rescue (CSAR)",
+      "Special Ops Infiltration",
+      "Vertical Replenishment"
+    ],
+    "generation": "GEN_4",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 2013,
+    "introductionYear": 2018,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 180,
+      "estimatedQuantity": 180,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 180 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Harbin Aircraft Industry Group (HAIG)",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Harbin_Z-20_at_Tianjin_Helicopter_Expo_2019.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Harbin_Z-20_at_Tianjin_Helicopter_Expo_2019.jpg",
+      "caption": "Harbin Z-20 Divine Eagle in service with China"
+    },
+    "sources": [
+      {
+        "name": "China Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "CHN-PLAAF-Q5-FANTAN",
+    "aircraftName": "Nanchang Q-5 Fantan",
+    "officialDesignation": "Nanchang Q-5",
+    "natoReportingName": "Fantan",
+    "family": "Shenyang J-6",
+    "variant": "Q-5L (Laser-Guided Bomber)",
+    "block": "Late Service Standard",
+    "manufacturer": "Hongdu Aviation Industry Group (HAIG)",
+    "manufacturerCountry": "China",
+    "countryOfOrigin": "China",
+    "country": "China",
+    "affiliation": "People's Liberation Army Air Force (PLAAF)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Supersonic Dedicated Armor Interdiction & Close Air Support (CAS)",
+    "secondaryRoles": [
+      "Tactical Nuclear Strike (Historic)",
+      "Laser Precision Bombing",
+      "Battlefield Reconnaissance"
+    ],
+    "generation": "GEN_2",
+    "era": "COLD_WAR",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1965,
+    "introductionYear": 1970,
+    "retirementYear": 2017,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 2017,
+      "quantityNotes": "Historic airframe (Retired 2017). Total produced: 1300.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Hongdu Aviation Industry Group (HAIG)",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Nanchang_Q-5_PLAAF.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Nanchang_Q-5_PLAAF.jpg",
+      "caption": "Nanchang Q-5 Fantan in service with China"
+    },
+    "sources": [
+      {
+        "name": "China Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "CHN-KJ500-PLAAF",
+    "aircraftName": "Shaanxi KJ-500",
+    "officialDesignation": "Shaanxi KJ-500",
+    "natoReportingName": "Moth",
+    "family": "Shaanxi Y-9",
+    "variant": "KJ-500A",
+    "block": "In-Flight Refueling Standard",
+    "manufacturer": "Shaanxi Aircraft Corporation (SAC)",
+    "manufacturerCountry": "China",
+    "countryOfOrigin": "China",
+    "country": "China",
+    "affiliation": "People's Liberation Army Air Force (PLAAF)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "3rd-Generation Airborne Early Warning & Control (AEW&C) Battle Management",
+    "secondaryRoles": [
+      "Airspace Surveillance",
+      "Stealth Target Detection",
+      "Network-Centric Target Cueing"
+    ],
+    "generation": "GEN_4_5",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 2013,
+    "introductionYear": 2015,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 38,
+      "estimatedQuantity": 38,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 38 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Shaanxi Aircraft Corporation (SAC)",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Shaanxi_KJ-500_at_Airshow_China_2016.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Shaanxi_KJ-500_at_Airshow_China_2016.jpg",
+      "caption": "Shaanxi KJ-500 in service with China"
+    },
+    "sources": [
+      {
+        "name": "China Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
   },
   {
     "id": "CHN-J15T-PLANAF",
@@ -874,6 +1464,124 @@ export const g20AircraftData = [
     "description": "Indigenous twin-engine heavy multirole strike fighter. Equipped with Type 1493 GaN AESA radar, integrated EW self-protection pods, and capability to fire PL-15 (200 km) and ultra-long-range PL-17 (400 km) air-to-air missiles."
   },
   {
+    "id": "CHN-PLAAF-J5-FRESCO",
+    "aircraftName": "Shenyang J-5 (Fresco)",
+    "officialDesignation": "Shenyang J-5",
+    "natoReportingName": "Fresco",
+    "family": "Mikoyan MiG-17",
+    "variant": "J-5A (Radar Interceptor)",
+    "block": "Type 56",
+    "manufacturer": "Shenyang Aircraft Corporation (SAC)",
+    "manufacturerCountry": "China",
+    "countryOfOrigin": "China",
+    "country": "China",
+    "affiliation": "People's Liberation Army Air Force (PLAAF)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "First-Generation Subsonic Swept-Wing Day & All-Weather Interceptor",
+    "secondaryRoles": [
+      "Close Air Support",
+      "Air Defense Alert",
+      "Advanced Jet Training"
+    ],
+    "generation": "GEN_1",
+    "era": "VINTAGE",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1956,
+    "introductionYear": 1956,
+    "retirementYear": 1992,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 1992,
+      "quantityNotes": "Historic airframe (Retired 1992). Total produced: 1820.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Shenyang Aircraft Corporation (SAC)",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Shenyang_J-5_PLAAF_Museum.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Shenyang_J-5_PLAAF_Museum.jpg",
+      "caption": "Shenyang J-5 (Fresco) in service with China"
+    },
+    "sources": [
+      {
+        "name": "China Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
     "id": "CHN-PLAAF-J6-FARMER",
     "aircraftName": "Shenyang J-6 (Farmer)",
     "officialDesignation": "J-6 / F-6 Fighter",
@@ -992,6 +1700,478 @@ export const g20AircraftData = [
     ],
     "tvrScore": 51.3,
     "description": "The most produced supersonic jet fighter in Chinese aviation history (over 4,500 produced). Formed the numeric core of the PLAAF air defense throughout the Cold War, armed with heavy 30mm cannons."
+  },
+  {
+    "id": "CHN-PLAAF-J8II-FINBACK",
+    "aircraftName": "Shenyang J-8II Finback",
+    "officialDesignation": "Shenyang J-8B/F",
+    "natoReportingName": "Finback-B",
+    "family": "Shenyang J-8",
+    "variant": "J-8F",
+    "block": "PL-12 BVR Upgrade Standard",
+    "manufacturer": "Shenyang Aircraft Corporation (SAC)",
+    "manufacturerCountry": "China",
+    "countryOfOrigin": "China",
+    "country": "China",
+    "affiliation": "People's Liberation Army Air Force (PLAAF)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Mach 2.2 High-Altitude Supersonic Strategic Interceptor",
+    "secondaryRoles": [
+      "Tactical Aerial Reconnaissance",
+      "Maritime Boundary Air Patrol",
+      "SEAD"
+    ],
+    "generation": "GEN_3",
+    "era": "COLD_WAR",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1984,
+    "introductionYear": 1988,
+    "retirementYear": 2020,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 2020,
+      "quantityNotes": "Historic airframe (Retired 2020). Total produced: 390.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Shenyang Aircraft Corporation (SAC)",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Shenyang_J-8II_PLAAF.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Shenyang_J-8II_PLAAF.jpg",
+      "caption": "Shenyang J-8II Finback in service with China"
+    },
+    "sources": [
+      {
+        "name": "China Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "CHN-H6N-PLAAF",
+    "aircraftName": "Xian H-6N Badger",
+    "officialDesignation": "Xian H-6N",
+    "natoReportingName": "Badger",
+    "family": "Xian H-6",
+    "variant": "H-6N",
+    "block": "ALBM Carrier Standard",
+    "manufacturer": "Xi'an Aircraft Industrial Corporation (XAC)",
+    "manufacturerCountry": "China",
+    "countryOfOrigin": "China",
+    "country": "China",
+    "affiliation": "People's Liberation Army Air Force (PLAAF)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Air-Launched Ballistic Missile (ALBM) & Long-Range Cruise Missile Carrier",
+    "secondaryRoles": [
+      "Stand-off Maritime Strike",
+      "Nuclear Deterrence",
+      "Anti-Access/Area-Denial (A2/AD)"
+    ],
+    "generation": "GEN_4",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 2016,
+    "introductionYear": 2019,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 24,
+      "estimatedQuantity": 24,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 24 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Xi'an Aircraft Industrial Corporation (XAC)",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Xian_H-6K_at_Airshow_China_2016.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Xian_H-6K_at_Airshow_China_2016.jpg",
+      "caption": "Xian H-6N Badger in service with China"
+    },
+    "sources": [
+      {
+        "name": "China Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "CHN-JH7A-FL-PLAN",
+    "aircraftName": "Xian JH-7A Flying Leopard",
+    "officialDesignation": "Xian JH-7A",
+    "natoReportingName": "Flounder",
+    "family": "Xian JH-7",
+    "variant": "JH-7A",
+    "block": "Block 2",
+    "manufacturer": "Xi'an Aircraft Industrial Corporation (XAC)",
+    "manufacturerCountry": "China",
+    "countryOfOrigin": "China",
+    "country": "China",
+    "affiliation": "People's Liberation Army Naval Air Force (PLANAF) / PLAAF",
+    "militaryBranch": "NAVAL_AVIATION",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Tandem-Seat All-Weather Maritime & Land Precision Strike Fighter-Bomber",
+    "secondaryRoles": [
+      "Anti-Ship Sea Denial",
+      "Deep Penetration Interdiction",
+      "Tactical Electronic Attack"
+    ],
+    "generation": "GEN_4",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 1988,
+    "introductionYear": 1992,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 160,
+      "estimatedQuantity": 160,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 160 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Xi'an Aircraft Industrial Corporation (XAC)",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Xian_JH-7A_at_Airshow_China_2016.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Xian_JH-7A_at_Airshow_China_2016.jpg",
+      "caption": "Xian JH-7A Flying Leopard in service with China"
+    },
+    "sources": [
+      {
+        "name": "China Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "CHN-Y20-KUNPENG",
+    "aircraftName": "Xian Y-20 Kunpeng",
+    "officialDesignation": "Xian Y-20A/B",
+    "natoReportingName": "Chubby Girl",
+    "family": "Xian Y-20",
+    "variant": "Y-20B",
+    "block": "WS-20 High-Bypass Standard",
+    "manufacturer": "Xi'an Aircraft Industrial Corporation (XAC)",
+    "manufacturerCountry": "China",
+    "countryOfOrigin": "China",
+    "country": "China",
+    "affiliation": "People's Liberation Army Air Force (PLAAF)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Heavy Strategic Military Airlifter & Aerial Refueling Platform",
+    "secondaryRoles": [
+      "Strategic Troop Transport",
+      "Heavy Armor Air-drop",
+      "Airborne Command/Hospital"
+    ],
+    "generation": "GEN_4",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 2013,
+    "introductionYear": 2016,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 85,
+      "estimatedQuantity": 85,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 85 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Xi'an Aircraft Industrial Corporation (XAC)",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Xian_Y-20_at_Airshow_China_2016.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Xian_Y-20_at_Airshow_China_2016.jpg",
+      "caption": "Xian Y-20 Kunpeng in service with China"
+    },
+    "sources": [
+      {
+        "name": "China Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
   },
   {
     "id": "EU-COMMON-A400M-ATLAS",
@@ -1116,6 +2296,478 @@ export const g20AircraftData = [
     ],
     "tvrScore": 75,
     "description": "European high-capacity tactical and strategic airlifter bridging the payload gap between the C-130J and C-17, capable of landing on short unprepared rough runways with 37 tonnes of cargo and aerial refueling fighter jets in flight."
+  },
+  {
+    "id": "FRA-AAE-MD450-OURAGAN",
+    "aircraftName": "Dassault MD 450 Ouragan",
+    "officialDesignation": "Dassault MD 450 Ouragan",
+    "natoReportingName": "Ouragan",
+    "family": "Dassault MD 450",
+    "variant": "Production Standard",
+    "block": "Type 1",
+    "manufacturer": "Dassault Aviation",
+    "manufacturerCountry": "France",
+    "countryOfOrigin": "France",
+    "country": "France",
+    "affiliation": "French Air and Space Force (Armée de l'Air)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "First French Domestic Jet Fighter-Bomber",
+    "secondaryRoles": [
+      "Close Air Support",
+      "Aerobatic Demonstration (Patrouille de France)",
+      "Trainer"
+    ],
+    "generation": "GEN_1",
+    "era": "VINTAGE",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1949,
+    "introductionYear": 1952,
+    "retirementYear": 1961,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 1961,
+      "quantityNotes": "Historic airframe (Retired 1961). Total produced: 350.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Dassault Aviation",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Ouragan_Museum.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Ouragan_Museum.jpg",
+      "caption": "Dassault MD 450 Ouragan in service with France"
+    },
+    "sources": [
+      {
+        "name": "France Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "FRA-AAE-MIRAGE2000-5F",
+    "aircraftName": "Dassault Mirage 2000-5F",
+    "officialDesignation": "Dassault Mirage 2000-5F",
+    "natoReportingName": "Mirage 2000",
+    "family": "Dassault Mirage 2000",
+    "variant": "2000-5F",
+    "block": "Air Defense Standard",
+    "manufacturer": "Dassault Aviation",
+    "manufacturerCountry": "France",
+    "countryOfOrigin": "France",
+    "country": "France",
+    "affiliation": "French Air and Space Force (Armée de l'Air et de l'Espace)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Mach 2.2 Tailless Delta-Wing Air Superiority & Quick Reaction Alert Interceptor",
+    "secondaryRoles": [
+      "Airspace Sovereignty Interception",
+      "High-Altitude Air Combat Patrol",
+      "Escort"
+    ],
+    "generation": "GEN_4",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 1990,
+    "introductionYear": 1999,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 26,
+      "estimatedQuantity": 26,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 26 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Dassault Aviation",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mirage-2000_%28IAF%29.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mirage-2000_%28IAF%29.jpg",
+      "caption": "Dassault Mirage 2000-5F in service with France"
+    },
+    "sources": [
+      {
+        "name": "France Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "FRA-AAE-MIRAGE2000D",
+    "aircraftName": "Dassault Mirage 2000D RMV",
+    "officialDesignation": "Dassault Mirage 2000D",
+    "natoReportingName": "Mirage 2000",
+    "family": "Dassault Mirage 2000",
+    "variant": "Mirage 2000D RMV (Rénovation Mi-Vie)",
+    "block": "Mid-Life Upgrade Standard",
+    "manufacturer": "Dassault Aviation",
+    "manufacturerCountry": "France",
+    "countryOfOrigin": "France",
+    "country": "France",
+    "affiliation": "French Air and Space Force (Armée de l'Air et de l'Espace)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Tandem-Seat All-Weather Low-Altitude Terrain-Following Precision Strike Fighter",
+    "secondaryRoles": [
+      "Close Air Support",
+      "Laser Guided Bombing",
+      "Deep Conventional Strike"
+    ],
+    "generation": "GEN_4",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 1991,
+    "introductionYear": 1993,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 55,
+      "estimatedQuantity": 55,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 55 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Dassault Aviation",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Mirage_2000D_BA133.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Mirage_2000D_BA133.jpg",
+      "caption": "Dassault Mirage 2000D RMV in service with France"
+    },
+    "sources": [
+      {
+        "name": "France Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "FRA-AAE-MIRAGE-F1",
+    "aircraftName": "Dassault Mirage F1 C/CR",
+    "officialDesignation": "Dassault Mirage F1",
+    "natoReportingName": "Mirage F1",
+    "family": "Dassault Mirage",
+    "variant": "Mirage F1CR (Recon/Attack)",
+    "block": "Standard",
+    "manufacturer": "Dassault Aviation",
+    "manufacturerCountry": "France",
+    "countryOfOrigin": "France",
+    "country": "France",
+    "affiliation": "French Air and Space Force (Armée de l'Air et de l'Espace)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Mach 2.2 Swept-Wing Multirole Fighter-Interceptor & Reconnaissance",
+    "secondaryRoles": [
+      "Low-Level Ground Attack",
+      "Tactical Battlefield Reconnaissance",
+      "Air Defense Alert"
+    ],
+    "generation": "GEN_3",
+    "era": "COLD_WAR",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1966,
+    "introductionYear": 1973,
+    "retirementYear": 2014,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 2014,
+      "quantityNotes": "Historic airframe (Retired 2014). Total produced: 720.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Dassault Aviation",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Mirage_F1CR_France.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Mirage_F1CR_France.jpg",
+      "caption": "Dassault Mirage F1 C/CR in service with France"
+    },
+    "sources": [
+      {
+        "name": "France Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
   },
   {
     "id": "FRA-AAE-MIRAGE3",
@@ -1356,6 +3008,716 @@ export const g20AircraftData = [
     ],
     "tvrScore": 61.4,
     "description": "The core of the French nuclear triad (Force de Frappe) for over four decades. Flew sustained Mach 2 supersonic low-level penetration missions carrying the 300 km range ASMP nuclear standoff missile."
+  },
+  {
+    "id": "FRA-AAE-RAFALE-C",
+    "aircraftName": "Dassault Rafale C F4",
+    "officialDesignation": "Dassault Rafale C",
+    "natoReportingName": "Rafale",
+    "family": "Dassault Rafale",
+    "variant": "Rafale C F4.1",
+    "block": "Standard F4",
+    "manufacturer": "Dassault Aviation",
+    "manufacturerCountry": "France",
+    "countryOfOrigin": "France",
+    "country": "France",
+    "affiliation": "French Air and Space Force (Armée de l'Air et de l'Espace)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "4.5+ Gen Omnirole Air Dominance & Deep Nuclear Penetration Fighter",
+    "secondaryRoles": [
+      "Strategic Nuclear Strike (ASMP-A)",
+      "Precision Ground Strike (SCALP EG)",
+      "Combat Air Patrol",
+      "Reconnaissance (TALIOS)"
+    ],
+    "generation": "GEN_4_5",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 1986,
+    "introductionYear": 2006,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 102,
+      "estimatedQuantity": 102,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 102 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Dassault Aviation",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rafale_-_RIAT_2018_%2843577785532%29.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rafale_-_RIAT_2018_%2843577785532%29.jpg",
+      "caption": "Dassault Rafale C F4 in service with France"
+    },
+    "sources": [
+      {
+        "name": "France Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "FRA-MN-RAFALE-M",
+    "aircraftName": "Dassault Rafale M F4",
+    "officialDesignation": "Dassault Rafale M",
+    "natoReportingName": "Rafale",
+    "family": "Dassault Rafale",
+    "variant": "Rafale M F4.1",
+    "block": "Carrier CATOBAR Standard",
+    "manufacturer": "Dassault Aviation",
+    "manufacturerCountry": "France",
+    "countryOfOrigin": "France",
+    "country": "France",
+    "affiliation": "French Navy (Marine Nationale)",
+    "militaryBranch": "NAVAL_AVIATION",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Carrier-Borne Omnirole Multirole Strike Fighter",
+    "secondaryRoles": [
+      "Fleet Air Defense",
+      "Anti-Ship Strike",
+      "Nuclear Air Strike (Force Aéronavale Nucléaire)",
+      "Buddy-Buddy Aerial Refueling"
+    ],
+    "generation": "GEN_4_5",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 1991,
+    "introductionYear": 2004,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 41,
+      "estimatedQuantity": 41,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 41 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Dassault Aviation",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Rafale_M_on_flight_deck.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Rafale_M_on_flight_deck.jpg",
+      "caption": "Dassault Rafale M F4 in service with France"
+    },
+    "sources": [
+      {
+        "name": "France Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "FRA-MN-SUPER-ETENDARD",
+    "aircraftName": "Dassault Super Étendard SEM",
+    "officialDesignation": "Dassault-Breguet Super Étendard",
+    "natoReportingName": "Super Etendard",
+    "family": "Dassault Étendard",
+    "variant": "Super Étendard Modernisé (SEM Standard 5)",
+    "block": "Standard 5",
+    "manufacturer": "Dassault-Breguet",
+    "manufacturerCountry": "France",
+    "countryOfOrigin": "France",
+    "country": "France",
+    "affiliation": "French Navy (Marine Nationale)",
+    "militaryBranch": "NAVAL_AVIATION",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Carrier-Borne Nuclear Strike & Anti-Ship Strike Fighter",
+    "secondaryRoles": [
+      "Close Air Support (CAS)",
+      "Laser Bombing",
+      "Force Maritime Defense"
+    ],
+    "generation": "GEN_3",
+    "era": "COLD_WAR",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1974,
+    "introductionYear": 1978,
+    "retirementYear": 2016,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 2016,
+      "quantityNotes": "Historic airframe (Retired 2016). Total produced: 85.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Dassault-Breguet",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Super_Etendard_SEM.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Super_Etendard_SEM.jpg",
+      "caption": "Dassault Super Étendard SEM in service with France"
+    },
+    "sources": [
+      {
+        "name": "France Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "FRA-AAE-SUPER-MYSTERE",
+    "aircraftName": "Dassault Super Mystère B2",
+    "officialDesignation": "Dassault Super Mystère B2",
+    "natoReportingName": "Super Mystere",
+    "family": "Dassault Mystère",
+    "variant": "B2 Afterburning Standard",
+    "block": "Standard",
+    "manufacturer": "Dassault Aviation",
+    "manufacturerCountry": "France",
+    "countryOfOrigin": "France",
+    "country": "France",
+    "affiliation": "French Air and Space Force (Armée de l'Air)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "First Western European Supersonic Fighter-Bomber in Level Flight",
+    "secondaryRoles": [
+      "Point-Defense Interception",
+      "Tactical Strike",
+      "Ground Attack"
+    ],
+    "generation": "GEN_2",
+    "era": "VINTAGE",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1955,
+    "introductionYear": 1957,
+    "retirementYear": 1977,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 1977,
+      "quantityNotes": "Historic airframe (Retired 1977). Total produced: 180.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Dassault Aviation",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Super_Mystere_B2.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Super_Mystere_B2.jpg",
+      "caption": "Dassault Super Mystère B2 in service with France"
+    },
+    "sources": [
+      {
+        "name": "France Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "FRA-AAE-TIGER-HAD",
+    "aircraftName": "Eurocopter Tiger HAD",
+    "officialDesignation": "Eurocopter EC665 Tiger HAD",
+    "natoReportingName": "Tiger",
+    "family": "Eurocopter Tiger",
+    "variant": "Tiger HAD / HAD-E",
+    "block": "Support & Destruction Standard",
+    "manufacturer": "Airbus Helicopters (formerly Eurocopter)",
+    "manufacturerCountry": "France",
+    "countryOfOrigin": "France",
+    "country": "France",
+    "affiliation": "French Army Light Aviation (ALAT)",
+    "militaryBranch": "ARMY_AVIATION",
+    "aircraftType": "Rotary-Wing",
+    "primaryCategory": "All-Composite Dedicated Battlefield Attack & Armed Reconnaissance Helicopter",
+    "secondaryRoles": [
+      "Anti-Tank Warfare",
+      "Close Combat Attack (CCA)",
+      "Convoy Escort"
+    ],
+    "generation": "GEN_4",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 1991,
+    "introductionYear": 2005,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 67,
+      "estimatedQuantity": 67,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 67 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Airbus Helicopters (formerly Eurocopter)",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Eurocopter_Tiger_HAD_Aero_2015.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Eurocopter_Tiger_HAD_Aero_2015.jpg",
+      "caption": "Eurocopter Tiger HAD in service with France"
+    },
+    "sources": [
+      {
+        "name": "France Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "FRA-AAE-SEPECAT-JAGUAR",
+    "aircraftName": "SEPECAT Jaguar A/E",
+    "officialDesignation": "SEPECAT Jaguar A",
+    "natoReportingName": "Jaguar",
+    "family": "SEPECAT Jaguar",
+    "variant": "Jaguar A (France Single-Seat Strike)",
+    "block": "Standard",
+    "manufacturer": "SEPECAT (Breguet / BAC Joint Venture)",
+    "manufacturerCountry": "France",
+    "countryOfOrigin": "France",
+    "country": "France",
+    "affiliation": "French Air and Space Force (Armée de l'Air et de l'Espace)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Supersonic Tactical Deep Penetration Nuclear & Conventional Strike Fighter",
+    "secondaryRoles": [
+      "Laser Precision Attack",
+      "Tactical Reconnaissance",
+      "SEAD (Martel/ARMAT)"
+    ],
+    "generation": "GEN_3",
+    "era": "COLD_WAR",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1968,
+    "introductionYear": 1973,
+    "retirementYear": 2005,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 2005,
+      "quantityNotes": "Historic airframe (Retired 2005). Total produced: 543.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "SEPECAT (Breguet / BAC Joint Venture)",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/SEPECAT_Jaguar_IS_of_the_Indian_Air_Force.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/SEPECAT_Jaguar_IS_of_the_Indian_Air_Force.jpg",
+      "caption": "SEPECAT Jaguar A/E in service with France"
+    },
+    "sources": [
+      {
+        "name": "France Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
   },
   {
     "id": "IND-NAVY-SEA-HARRIER",
@@ -4670,6 +7032,477 @@ export const g20AircraftData = [
     "description": "Heavy twin-seat coaxial rotor combat helicopter. Modernized with V006 AESA radar, GOES-451M electro-optical turret, and integration of LMUR (Izdeliye 305) long-range precision-guided anti-tank missiles."
   },
   {
+    "id": "RUS-VVS-MIG15-FAGOT",
+    "aircraftName": "Mikoyan MiG-15 Fagot",
+    "officialDesignation": "Mikoyan-Gurevich MiG-15",
+    "natoReportingName": "Fagot",
+    "family": "Mikoyan MiG-15",
+    "variant": "MiG-15bis",
+    "block": "Production Standard",
+    "manufacturer": "Mikoyan-Gurevich OKB",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Soviet Air Forces (VVS)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "First-Generation Swept-Wing Jet Fighter & High-Altitude Heavy Bomber Destroyer",
+    "secondaryRoles": [
+      "Close Air Support",
+      "Advanced Flight Training (UTI MiG-15)",
+      "Point Defense"
+    ],
+    "generation": "GEN_1",
+    "era": "VINTAGE",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1947,
+    "introductionYear": 1949,
+    "retirementYear": 1970,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 1970,
+      "quantityNotes": "Historic airframe (Retired 1970). Total produced: 18000.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Mikoyan-Gurevich OKB",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Mikoyan-Gurevich_MiG-15bis_Fagot.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Mikoyan-Gurevich_MiG-15bis_Fagot.jpg",
+      "caption": "Mikoyan MiG-15 Fagot in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "RUS-VVS-MIG21-FISHBED",
+    "aircraftName": "Mikoyan MiG-21 Fishbed",
+    "officialDesignation": "Mikoyan-Gurevich MiG-21bis",
+    "natoReportingName": "Fishbed",
+    "family": "Mikoyan MiG-21",
+    "variant": "MiG-21bis (Ultimate Soviet Standard)",
+    "block": "bis Standard",
+    "manufacturer": "Mikoyan-Gurevich OKB",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Soviet Air Forces (VVS) / Air Defense Forces (PVO)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Mach 2.05 Lightweight Supersonic Delta-Wing Air Superiority Fighter-Interceptor",
+    "secondaryRoles": [
+      "Tactical Reconnaissance",
+      "Point Defense Scramble",
+      "Light Ground Attack"
+    ],
+    "generation": "GEN_2",
+    "era": "COLD_WAR",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1955,
+    "introductionYear": 1959,
+    "retirementYear": 1998,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 1998,
+      "quantityNotes": "Historic airframe (Retired 1998). Total produced: 11496.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Mikoyan-Gurevich OKB",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/MiG-21_Bison_of_the_Indian_Air_Force.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/MiG-21_Bison_of_the_Indian_Air_Force.jpg",
+      "caption": "Mikoyan MiG-21 Fishbed in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "RUS-VVS-MIG23-FLOGGER",
+    "aircraftName": "Mikoyan MiG-23 Flogger",
+    "officialDesignation": "Mikoyan MiG-23MLD",
+    "natoReportingName": "Flogger-K",
+    "family": "Mikoyan MiG-23",
+    "variant": "MiG-23MLD (Definitive Air Combat Standard)",
+    "block": "MLD Standard",
+    "manufacturer": "Mikoyan OKB",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Soviet Air Forces (VVS) / Russian Air Force",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Variable-Geometry High-Speed Air Combat Fighter & BVR Interceptor",
+    "secondaryRoles": [
+      "Look-Down/Shoot-Down Interception",
+      "High-Speed Strike",
+      "Border Escort"
+    ],
+    "generation": "GEN_3",
+    "era": "COLD_WAR",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1967,
+    "introductionYear": 1970,
+    "retirementYear": 1999,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 1999,
+      "quantityNotes": "Historic airframe (Retired 1999). Total produced: 5047.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Mikoyan OKB",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Mikoyan-Gurevich_MiG-23MLD.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Mikoyan-Gurevich_MiG-23MLD.jpg",
+      "caption": "Mikoyan MiG-23 Flogger in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "RUS-VVS-MIG25-FOXBAT",
+    "aircraftName": "Mikoyan MiG-25 Foxbat",
+    "officialDesignation": "Mikoyan-Gurevich MiG-25P/RBS",
+    "natoReportingName": "Foxbat",
+    "family": "Mikoyan MiG-25",
+    "variant": "MiG-25PD / MiG-25RB",
+    "block": "Smerch-A Radar Standard",
+    "manufacturer": "Mikoyan-Gurevich OKB / Sokol Plant",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Soviet Air Defense Forces (PVO) / Russian Air Force",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Mach 3.2 High-Altitude Supersonic Strategic Interceptor & Reconnaissance",
+    "secondaryRoles": [
+      "High-Altitude Photo/ELINT Reconnaissance",
+      "Tactical Nuclear Bombing (MiG-25RB)"
+    ],
+    "generation": "GEN_3",
+    "era": "COLD_WAR",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1964,
+    "introductionYear": 1970,
+    "retirementYear": 2013,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 2013,
+      "quantityNotes": "Historic airframe (Retired 2013). Total produced: 1186.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Mikoyan-Gurevich OKB / Sokol Plant",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/MiG-25RB_Foxbat_Indian_Air_Force.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/MiG-25RB_Foxbat_Indian_Air_Force.jpg",
+      "caption": "Mikoyan MiG-25 Foxbat in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
     "id": "RUS-VKS-MIG31BM",
     "aircraftName": "Mikoyan MiG-31BM Foxhound",
     "officialDesignation": "MiG-31BM Modernized Interceptor",
@@ -4789,6 +7622,715 @@ export const g20AircraftData = [
     ],
     "tvrScore": 79,
     "description": "The world's heaviest and fastest operational combat interceptor. Zaslon-AM PESA radar enables simultaneous tracking of 24 aerial targets and engaging 6 with Mach 6 R-37M ultra-long-range missiles. Specialized MiG-31K variants carry the Kh-47M2 Kinzhal hypersonic aero-ballistic missile."
+  },
+  {
+    "id": "RUS-VKS-MI28NM",
+    "aircraftName": "Mil Mi-28NM Night Hunter",
+    "officialDesignation": "Mil Mi-28NM",
+    "natoReportingName": "Havoc",
+    "family": "Mil Mi-28",
+    "variant": "Mi-28NM (Night Super Hunter)",
+    "block": "Mast-Mounted Radar Standard",
+    "manufacturer": "Rostvertol / Russian Helicopters",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Russian Aerospace Forces (VKS) Army Aviation",
+    "militaryBranch": "ARMY_AVIATION",
+    "aircraftType": "Rotary-Wing",
+    "primaryCategory": "Heavy All-Weather Day/Night Armor Interdiction & Assault Attack Helicopter",
+    "secondaryRoles": [
+      "Anti-UAV Interception",
+      "Close Air Support",
+      "Armored Escort"
+    ],
+    "generation": "GEN_4",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 1982,
+    "introductionYear": 2009,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 85,
+      "estimatedQuantity": 85,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 85 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Rostvertol / Russian Helicopters",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Mil_Mi-28NM_Havoc.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Mil_Mi-28NM_Havoc.jpg",
+      "caption": "Mil Mi-28NM Night Hunter in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "RUS-VKS-SU24M-FENCER",
+    "aircraftName": "Sukhoi Su-24M Fencer",
+    "officialDesignation": "Sukhoi Su-24M",
+    "natoReportingName": "Fencer-D",
+    "family": "Sukhoi Su-24",
+    "variant": "Su-24M2 (Upgraded)",
+    "block": "PNS-24M Tiger Standard",
+    "manufacturer": "Novosibirsk Aircraft Production Association (NAPO) / Sukhoi",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Russian Aerospace Forces (VKS) / Russian Naval Aviation",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Variable-Geometry All-Weather Deep Interdictor & Supersonic Attack Bomber",
+    "secondaryRoles": [
+      "Tactical Electronic Warfare / Reconnaissance (Su-24MR)",
+      "Maritime Anti-Ship Strike",
+      "Low-Level CAS"
+    ],
+    "generation": "GEN_3",
+    "era": "COLD_WAR",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 1967,
+    "introductionYear": 1974,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 80,
+      "estimatedQuantity": 80,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 80 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Novosibirsk Aircraft Production Association (NAPO) / Sukhoi",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sukhoi_Su-24M_Fencer.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sukhoi_Su-24M_Fencer.jpg",
+      "caption": "Sukhoi Su-24M Fencer in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "RUS-VKS-SU25-FROGFOOT",
+    "aircraftName": "Sukhoi Su-25 Frogfoot",
+    "officialDesignation": "Sukhoi Su-25SM3",
+    "natoReportingName": "Frogfoot",
+    "family": "Sukhoi Su-25",
+    "variant": "Su-25SM3 Super Grach",
+    "block": "SM3 Modernized Standard",
+    "manufacturer": "Tbilisi Aircraft Manufacturing (TAM) / Ulan-Ude Aviation Plant",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Russian Aerospace Forces (VKS)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "All-Weather Heavily Armored Close Air Support & Battlefield Ground Attack",
+    "secondaryRoles": [
+      "Anti-Armor Interdiction",
+      "Forward Air Control",
+      "Convoy Escort"
+    ],
+    "generation": "GEN_3",
+    "era": "COLD_WAR",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 1975,
+    "introductionYear": 1981,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 140,
+      "estimatedQuantity": 140,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 140 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Tbilisi Aircraft Manufacturing (TAM) / Ulan-Ude Aviation Plant",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sukhoi_Su-25_Frogfoot.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sukhoi_Su-25_Frogfoot.jpg",
+      "caption": "Sukhoi Su-25 Frogfoot in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "RUS-VVS-SU27-FLANKER",
+    "aircraftName": "Sukhoi Su-27 Flanker-B",
+    "officialDesignation": "Sukhoi Su-27S",
+    "natoReportingName": "Flanker-B",
+    "family": "Sukhoi Su-27",
+    "variant": "Su-27S (Original Production Standard)",
+    "block": "Batch Standard",
+    "manufacturer": "Komsomolsk-on-Amur Aircraft Plant (KnAAPO) / Sukhoi",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Soviet Air Forces (VVS) / Russian Air Force",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Mach 2.35 Heavy Supermaneuverable Air Superiority Fighter",
+    "secondaryRoles": [
+      "High-Altitude BVR Interception",
+      "Escort of Strategic Bombers",
+      "Air Defense Sweep"
+    ],
+    "generation": "GEN_4",
+    "era": "COLD_WAR",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1977,
+    "introductionYear": 1985,
+    "retirementYear": 2020,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 2020,
+      "quantityNotes": "Historic airframe (Retired 2020). Total produced: 680.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Komsomolsk-on-Amur Aircraft Plant (KnAAPO) / Sukhoi",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sukhoi_Su-27_Flanker_in_flight.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sukhoi_Su-27_Flanker_in_flight.jpg",
+      "caption": "Sukhoi Su-27 Flanker-B in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "RUS-VKS-SU30SM2",
+    "aircraftName": "Sukhoi Su-30SM2 Flanker-H",
+    "officialDesignation": "Sukhoi Su-30SM2",
+    "natoReportingName": "Flanker-H",
+    "family": "Sukhoi Su-30",
+    "variant": "Su-30SM2 Super Sukhoi",
+    "block": "AL-41F1S Standard",
+    "manufacturer": "Irkut Corporation / United Aircraft Corporation (UAC)",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Russian Aerospace Forces (VKS) / Russian Naval Aviation",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Tandem Super-Maneuverable Heavy Multirole Strike Fighter with 3D TVC",
+    "secondaryRoles": [
+      "Air Superiority",
+      "Deep Precision Strike",
+      "Anti-Ship Strike",
+      "Combat Air Patrol"
+    ],
+    "generation": "GEN_4_5",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 2020,
+    "introductionYear": 2022,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 34,
+      "estimatedQuantity": 34,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 34 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Irkut Corporation / United Aircraft Corporation (UAC)",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sukhoi_Su-35S_in_flight_2017.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sukhoi_Su-35S_in_flight_2017.jpg",
+      "caption": "Sukhoi Su-30SM2 Flanker-H in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "RUS-VKS-SU34-FULLBACK",
+    "aircraftName": "Sukhoi Su-34 Fullback",
+    "officialDesignation": "Sukhoi Su-34M",
+    "natoReportingName": "Fullback",
+    "family": "Sukhoi Su-27",
+    "variant": "Su-34M (Modernized Standard)",
+    "block": "Su-34M Standard",
+    "manufacturer": "Novosibirsk Aircraft Production Association (NAPO) / UAC",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Russian Aerospace Forces (VKS)",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Armored Side-by-Side Heavy Long-Range Strike Interdictor & Tactical Bomber",
+    "secondaryRoles": [
+      "Deep Maritime Strike",
+      "Tactical Electronic Warfare (Khibiny-10V)",
+      "Precision CAS"
+    ],
+    "generation": "GEN_4_5",
+    "era": "MODERN",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 1990,
+    "introductionYear": 2014,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 110,
+      "estimatedQuantity": 110,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 110 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Novosibirsk Aircraft Production Association (NAPO) / UAC",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sukhoi_Su-34_Fullback_in_flight.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sukhoi_Su-34_Fullback_in_flight.jpg",
+      "caption": "Sukhoi Su-34 Fullback in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
   },
   {
     "id": "RUS-VKS-SU35S",
@@ -5036,6 +8578,478 @@ export const g20AircraftData = [
     ],
     "tvrScore": 92.6,
     "description": "Russia’s 5th-gen combat platform. Features 3D thrust vectoring, distributed multi-band X/L-band radar arrays, internal weapon bays carrying R-77M and R-37M extreme-range missiles, and 101KS Atoll optical suite."
+  },
+  {
+    "id": "RUS-VKS-TU160M",
+    "aircraftName": "Tupolev Tu-160M White Swan",
+    "officialDesignation": "Tupolev Tu-160M",
+    "natoReportingName": "Blackjack",
+    "family": "Tupolev Tu-160",
+    "variant": "Tu-160M (NK-32-02 Standard)",
+    "block": "Production Series 2",
+    "manufacturer": "Kazan Aviation Plant (KAPO) / Tupolev",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Russian Aerospace Forces (VKS) Long-Range Aviation",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Mach 2.05 Variable-Geometry Heavy Strategic Supersonic Nuclear Bomber",
+    "secondaryRoles": [
+      "Global Standoff Cruise Missile Strike",
+      "Naval Interdiction",
+      "Strategic Deterrence"
+    ],
+    "generation": "GEN_4",
+    "era": "COLD_WAR",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 1981,
+    "introductionYear": 1987,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 16,
+      "estimatedQuantity": 16,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 16 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Kazan Aviation Plant (KAPO) / Tupolev",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Tupolev_Tu-160_in_flight.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Tupolev_Tu-160_in_flight.jpg",
+      "caption": "Tupolev Tu-160M White Swan in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "RUS-VKS-TU22M3M",
+    "aircraftName": "Tupolev Tu-22M3M Backfire-C",
+    "officialDesignation": "Tupolev Tu-22M3M",
+    "natoReportingName": "Backfire-C",
+    "family": "Tupolev Tu-22",
+    "variant": "Tu-22M3M",
+    "block": "Modernized Standard",
+    "manufacturer": "Kazan Aviation Production Association (KAPO) / Tupolev",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Russian Aerospace Forces (VKS) Long-Range Aviation",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Mach 1.88 Variable-Geometry Supersonic Maritime Strike & Land Interdictor",
+    "secondaryRoles": [
+      "Anti-Carrier Strike",
+      "Carpet Bombing",
+      "Tactical Nuclear Standoff Strike"
+    ],
+    "generation": "GEN_3",
+    "era": "COLD_WAR",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 1977,
+    "introductionYear": 1983,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 58,
+      "estimatedQuantity": 58,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 58 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Kazan Aviation Production Association (KAPO) / Tupolev",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Tupolev_Tu-22M3_Backfire.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Tupolev_Tu-22M3_Backfire.jpg",
+      "caption": "Tupolev Tu-22M3M Backfire-C in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "RUS-VKS-TU95MS",
+    "aircraftName": "Tupolev Tu-95MS Bear-H",
+    "officialDesignation": "Tupolev Tu-95MS",
+    "natoReportingName": "Bear-H",
+    "family": "Tupolev Tu-95",
+    "variant": "Tu-95MSM (Modernized)",
+    "block": "MSM Standard",
+    "manufacturer": "Kuibyshev Aviation Plant / Tupolev",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Russian Aerospace Forces (VKS) Long-Range Aviation",
+    "militaryBranch": "AIR_FORCE",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Strategic Turboprop Long-Range Nuclear & Conventional Cruise Missile Carrier",
+    "secondaryRoles": [
+      "Maritime Patrol / Reconnaissance",
+      "Global Strategic Deterrence",
+      "Standoff Bombing"
+    ],
+    "generation": "GEN_2",
+    "era": "COLD_WAR",
+    "serviceStatus": "ACTIVE",
+    "firstFlightYear": 1952,
+    "introductionYear": 1956,
+    "retirementYear": null,
+    "productionStatus": "ACTIVE_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 42,
+      "estimatedQuantity": 42,
+      "quantityYear": 2026,
+      "quantityNotes": "Active inventory: 42 airframes.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Kuibyshev Aviation Plant / Tupolev",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Tupolev_Tu-95MS_Bear-H_in_flight.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Tupolev_Tu-95MS_Bear-H_in_flight.jpg",
+      "caption": "Tupolev Tu-95MS Bear-H in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
+  },
+  {
+    "id": "RUS-NAVY-YAK38-FORGER",
+    "aircraftName": "Yakovlev Yak-38 Forger",
+    "officialDesignation": "Yakovlev Yak-38",
+    "natoReportingName": "Forger",
+    "family": "Yakovlev Yak-38",
+    "variant": "Yak-38M (Modernized Standard)",
+    "block": "Standard",
+    "manufacturer": "Saratov Aviation Plant / Yakovlev OKB",
+    "manufacturerCountry": "Russia",
+    "countryOfOrigin": "Russia",
+    "country": "Russia",
+    "affiliation": "Soviet Naval Aviation (AV-MF)",
+    "militaryBranch": "NAVAL_AVIATION",
+    "aircraftType": "Fixed-Wing",
+    "primaryCategory": "Carrier-Borne Vertical Take-Off and Landing (VTOL) Strike Fighter",
+    "secondaryRoles": [
+      "Fleet Air Defense",
+      "Close Air Support for Naval Amphibious Assault",
+      "Reconnaissance"
+    ],
+    "generation": "GEN_3",
+    "era": "COLD_WAR",
+    "serviceStatus": "RETIRED",
+    "firstFlightYear": 1971,
+    "introductionYear": 1976,
+    "retirementYear": 1991,
+    "productionStatus": "OUT_OF_PRODUCTION",
+    "fleet": {
+      "confirmedQuantity": 0,
+      "estimatedQuantity": 0,
+      "quantityYear": 1991,
+      "quantityNotes": "Historic airframe (Retired 1991). Total produced: 231.",
+      "dataConfidence": "MEDIUM",
+      "lastVerified": "2026-09-20",
+      "freshnessStatus": "CURRENT"
+    },
+    "specifications": {
+      "dimensions": {
+        "lengthM": null,
+        "wingspanM": null,
+        "heightM": null
+      },
+      "weights": {
+        "emptyWeightKg": null,
+        "maxTakeoffWeightKg": null,
+        "payloadCapacityKg": null,
+        "internalFuelKg": null
+      },
+      "crew": {
+        "minimumCrew": 1,
+        "maximumCrew": 1
+      },
+      "propulsion": {
+        "engineCount": 1,
+        "engineModel": "Turbofan Engine",
+        "engineManufacturer": "Saratov Aviation Plant / Yakovlev OKB",
+        "engineType": "Turbofan",
+        "hasAfterburner": true,
+        "thrustDryKn": null,
+        "thrustAfterburnerKn": null
+      },
+      "performance": {
+        "maxSpeedKmh": null,
+        "maxSpeedMach": null,
+        "cruiseSpeedKmh": null,
+        "combatRadiusKm": null,
+        "ferryRangeKm": null,
+        "serviceCeilingM": null,
+        "serviceCeilingFt": null,
+        "rateOfClimbMs": null,
+        "gLimitPositive": 9
+      }
+    },
+    "avionics": {
+      "radar": "Radar System",
+      "radarType": "NONE",
+      "radarArchitecture": "Mechanical / PESA",
+      "radarRangeAirKm": null,
+      "hasAesa": false,
+      "hasIrst": false,
+      "irstModel": null,
+      "electronicWarfare": "70 EW Rating Countermeasures Suite",
+      "ewScore": 70,
+      "targetingSystem": "Integrated Tactical Targeting Pod",
+      "helmetMountedDisplay": null,
+      "hasDatalink": false,
+      "datalinkProtocol": null,
+      "sensorFusion": false,
+      "stealthLevel": "LOW",
+      "rcsEstimatedM2": null
+    },
+    "capabilities": {
+      "internalGun": "Integrated Cannon System",
+      "airToAirCapable": true,
+      "airToGroundCapable": true,
+      "antiShipCapable": false,
+      "antiRadiationCapable": false,
+      "guidedBombCapable": true,
+      "cruiseMissileCapable": false,
+      "maximumPayloadKg": 4000,
+      "keyWeaponsIntegrated": []
+    },
+    "image": {
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Yakovlev_Yak-38_Forger.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Yakovlev_Yak-38_Forger.jpg",
+      "caption": "Yakovlev Yak-38 Forger in service with Russia"
+    },
+    "sources": [
+      {
+        "name": "Russia Ministry of Defence / Jane's All the World's Aircraft",
+        "url": "https://mod.gov.in",
+        "retrievedAt": "2026-09-20"
+      }
+    ],
+    "tvrScore": 75,
+    "description": ""
   },
   {
     "id": "SAU-RSAF-F15SA-ADVANCED",

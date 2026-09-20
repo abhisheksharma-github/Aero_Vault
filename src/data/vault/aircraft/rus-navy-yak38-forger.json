@@ -1,0 +1,149 @@
+{
+  "id": "rus-navy-yak38-forger",
+  "name": "Yakovlev Yak-38 Forger",
+  "commonName": "Yak-38 Forger",
+  "officialDesignation": "Yakovlev Yak-38",
+  "natoReportingName": "Forger",
+  "family": "Yakovlev Yak-38",
+  "variant": "Yak-38M (Modernized Standard)",
+  "block": "Standard",
+  "manufacturer": "Saratov Aviation Plant / Yakovlev OKB",
+  "manufacturerCountry": "Russia",
+  "originCountry": "Russia",
+  "country": "Russia",
+  "affiliation": "Soviet Naval Aviation (AV-MF)",
+  "militaryBranch": "NAVAL_AVIATION",
+  "serviceStatus": "RETIRED",
+  "category": "FIGHTER",
+  "generation": "GEN_3",
+  "era": "COLD_WAR",
+  "role": "Carrier-Borne Vertical Take-Off and Landing (VTOL) Strike Fighter",
+  "secondaryRoles": [
+    "Fleet Air Defense",
+    "Close Air Support for Naval Amphibious Assault",
+    "Reconnaissance"
+  ],
+  "firstFlightYear": 1971,
+  "introductionYear": 1976,
+  "retirementYear": 1991,
+  "productionCount": 231,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 231,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 12.03,
+      "wingspanM": 9.45,
+      "heightM": 3.44,
+      "wingAreaM2": 36.1
+    },
+    "weights": {
+      "emptyWeightKg": 7385,
+      "maxTakeoffWeightKg": 11300,
+      "payloadCapacityKg": 2000
+    },
+    "performance": {
+      "topSpeedMach": 0.95,
+      "topSpeedKmh": 1050,
+      "serviceCeilingM": 12000,
+      "rateOfClimbMs": 75,
+      "gLimitPositive": 6,
+      "gLimitNegative": -3,
+      "combatRangeKm": 370,
+      "ferryRangeKm": 1300
+    }
+  },
+  "propulsion": {
+    "engineModel": "Tumansky R-28V-300 Main Engine + 2 × Kolesov RD-38 Dedicated Lift Engines",
+    "engineCount": 3,
+    "engineType": "V/STOL Lift-plus-Lift/Cruise System",
+    "hasAfterburner": false,
+    "thrustDryKn": 66.7,
+    "thrustAfterburnerKn": null,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "NONE",
+    "radarName": "Optical Gunsight / Ranging Radar",
+    "radarTrackTargets": 0,
+    "radarEngageTargets": 1,
+    "radarDetectionRangeKm": 0,
+    "bvrCapable": false,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 2.5
+  },
+  "armament": {
+    "internalGun": "UPK-23-250 23mm Gun Pods (250 rounds each)",
+    "hardpoints": 4,
+    "maxPayloadKg": 2000,
+    "airToAirMissiles": [
+      "R-60 / R-60M Infrared Dogfight Missiles"
+    ],
+    "airToGroundMissiles": [
+      "Kh-23M Radio-Guided Missiles",
+      "S-5 / S-8 Rocket Pods"
+    ],
+    "antiShipMissiles": [],
+    "precisionGuidedBombs": [
+      "2 × 500kg / 4 × 250kg FAB Bombs"
+    ]
+  },
+  "tvrRating": {
+    "overall": 43,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 52,
+      "avionics": 35,
+      "weapons": 49,
+      "survivability": 30,
+      "range": 41,
+      "modernization": 48,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Proven multirole capability with mature global operational track record"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 231,
+    "estimatedQuantity": 0,
+    "quantityYear": 1991,
+    "quantityNotes": "Historic / Retired airframe. Total produced: 231.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The Yak-38 was the Soviet Union's first and only operational carrier-based VTOL strike fighter, operating from the decks of Kiev-class heavy aircraft-carrying cruisers.",
+    "historicalContext": "Tested the boundaries of Soviet lift-engine automation with an automatic ejection seat system, providing naval air cover to Soviet fleets during the Cold War.",
+    "tacticalDoctrine": "Vertical launch from Kiev-class cruiser flight decks to intercept maritime reconnaissance aircraft and provide CAS for naval infantry beach landings."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Yakovlev_Yak-38_Forger.jpg"
+}

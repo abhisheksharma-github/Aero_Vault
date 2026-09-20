@@ -1,0 +1,149 @@
+{
+  "id": "chn-h6n-plaaf",
+  "name": "Xian H-6N Badger",
+  "commonName": "H-6N Strategic Bomber",
+  "officialDesignation": "Xian H-6N",
+  "natoReportingName": "Badger",
+  "family": "Xian H-6",
+  "variant": "H-6N",
+  "block": "ALBM Carrier Standard",
+  "manufacturer": "Xi'an Aircraft Industrial Corporation (XAC)",
+  "manufacturerCountry": "China",
+  "originCountry": "China",
+  "country": "China",
+  "affiliation": "People's Liberation Army Air Force (PLAAF)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "BOMBER",
+  "generation": "GEN_4",
+  "era": "MODERN",
+  "role": "Air-Launched Ballistic Missile (ALBM) & Long-Range Cruise Missile Carrier",
+  "secondaryRoles": [
+    "Stand-off Maritime Strike",
+    "Nuclear Deterrence",
+    "Anti-Access/Area-Denial (A2/AD)"
+  ],
+  "firstFlightYear": 2016,
+  "introductionYear": 2019,
+  "retirementYear": null,
+  "productionCount": 30,
+  "fleetCount": 24,
+  "activeCount": 24,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 27,
+      "wingspanM": 21.22,
+      "heightM": 7.71,
+      "wingAreaM2": 81
+    },
+    "weights": {
+      "emptyWeightKg": 37200,
+      "maxTakeoffWeightKg": 79000,
+      "payloadCapacityKg": 12000
+    },
+    "performance": {
+      "topSpeedMach": 0.85,
+      "topSpeedKmh": 1050,
+      "serviceCeilingM": 13500,
+      "rateOfClimbMs": 25,
+      "gLimitPositive": 3.5,
+      "gLimitNegative": -3,
+      "combatRangeKm": 3500,
+      "ferryRangeKm": 8000
+    }
+  },
+  "propulsion": {
+    "engineModel": "Soloviev D-30KP-2 / WS-18 Turbofans",
+    "engineCount": 2,
+    "engineType": "Non-afterburning Turbofan",
+    "hasAfterburner": false,
+    "thrustDryKn": 117.7,
+    "thrustAfterburnerKn": null,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "PESA",
+    "radarName": "Type 742 Surface-Search & Missile Guidance Radar",
+    "radarTrackTargets": 8,
+    "radarEngageTargets": 4,
+    "radarDetectionRangeKm": 250,
+    "bvrCapable": false,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 12
+  },
+  "armament": {
+    "internalGun": "None",
+    "hardpoints": 6,
+    "maxPayloadKg": 12000,
+    "airToAirMissiles": [],
+    "airToGroundMissiles": [
+      "CJ-10K Land-Attack Cruise Missile",
+      "CJ-20 Strategic Stand-off Cruise Missile",
+      "YJ-21 Air-Launched Hypersonic Anti-Ship Ballistic Missile (ALBM)"
+    ],
+    "antiShipMissiles": [
+      "YJ-12 Supersonic Anti-Ship Missile (Mach 3.5)"
+    ],
+    "precisionGuidedBombs": [
+      "KD-63 Heavy Precision Attack Munition"
+    ]
+  },
+  "tvrRating": {
+    "overall": 58.6,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 55,
+      "avionics": 55,
+      "weapons": 78,
+      "survivability": 30,
+      "range": 75,
+      "modernization": 65,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Proven multirole capability with mature global operational track record"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 24,
+    "estimatedQuantity": 24,
+    "quantityYear": 2026,
+    "quantityNotes": "Active inventory: 24 operational units in 2026.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The H-6N is an extensively redesigned strategic strike platform featuring nose inflight-refueling probe and a semi-recessed fuselage carriage for air-launched hypersonic ballistic missiles.",
+    "historicalContext": "Unveiled during the 2019 National Day Military Parade, the H-6N forms the airborne leg of China's nuclear triad with global stand-off conventional strike capacity.",
+    "tacticalDoctrine": "Long-range standoff maritime interdiction across the First and Second Island Chains, launching hypersonic YJ-21 and CJ-20 cruise missiles outside hostile air defense envelopes."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Xian_H-6K_at_Airshow_China_2016.jpg"
+}

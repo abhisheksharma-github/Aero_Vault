@@ -1,0 +1,153 @@
+{
+  "id": "chn-j10c-plaaf",
+  "name": "Chengdu J-10C Vigorous Dragon",
+  "commonName": "J-10C Vigorous Dragon",
+  "officialDesignation": "Chengdu J-10C Firebird",
+  "natoReportingName": "Firebird",
+  "family": "Chengdu J-10",
+  "variant": "J-10C",
+  "block": "Block 3",
+  "manufacturer": "Chengdu Aerospace Corporation (CAC)",
+  "manufacturerCountry": "China",
+  "originCountry": "China",
+  "country": "China",
+  "affiliation": "People's Liberation Army Air Force (PLAAF)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "MULTIROLE_FIGHTER",
+  "generation": "GEN_4_5",
+  "era": "MODERN",
+  "role": "4.5-Gen Single-Engine Multirole Air Superiority Fighter",
+  "secondaryRoles": [
+    "Precision Strike",
+    "Suppression of Enemy Air Defenses (SEAD)",
+    "BVR Interception"
+  ],
+  "firstFlightYear": 2013,
+  "introductionYear": 2018,
+  "retirementYear": null,
+  "productionCount": 380,
+  "fleetCount": 260,
+  "activeCount": 260,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 13.82,
+      "wingspanM": 10.86,
+      "heightM": 3.95,
+      "wingAreaM2": 41.5
+    },
+    "weights": {
+      "emptyWeightKg": 9750,
+      "maxTakeoffWeightKg": 19277,
+      "payloadCapacityKg": 6500
+    },
+    "performance": {
+      "topSpeedMach": 2,
+      "topSpeedKmh": 2125,
+      "serviceCeilingM": 18000,
+      "rateOfClimbMs": 300,
+      "gLimitPositive": 9,
+      "gLimitNegative": -3,
+      "combatRangeKm": 1250,
+      "ferryRangeKm": 3200
+    }
+  },
+  "propulsion": {
+    "engineModel": "WS-10B Taihang Turbofan",
+    "engineCount": 1,
+    "engineType": "Afterburning Turbofan",
+    "hasAfterburner": true,
+    "thrustDryKn": 89,
+    "thrustAfterburnerKn": 142,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "AESA",
+    "radarName": "KLJ-10 GaN Active Electronically Scanned Array",
+    "radarTrackTargets": 20,
+    "radarEngageTargets": 6,
+    "radarDetectionRangeKm": 180,
+    "bvrCapable": true,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 0.8
+  },
+  "armament": {
+    "internalGun": "23mm GSh-23-2 twin-barrel cannon",
+    "hardpoints": 11,
+    "maxPayloadKg": 6500,
+    "airToAirMissiles": [
+      "PL-15 Dual-Pulse BVR AAM",
+      "PL-10 High-Off-Boresight HOBS AAM",
+      "PL-12 BVR"
+    ],
+    "airToGroundMissiles": [
+      "KD-88 Standoff Land Attack Missile",
+      "YJ-91 Anti-Radiation Missile"
+    ],
+    "antiShipMissiles": [
+      "YJ-83K Anti-Ship Cruise Missile"
+    ],
+    "precisionGuidedBombs": [
+      "LT-2 Laser-Guided Bomb",
+      "LS-6 Satellite Guided Glide Bomb (500kg)"
+    ]
+  },
+  "tvrRating": {
+    "overall": 63.4,
+    "grade": "B",
+    "dimensions": {
+      "kinetics": 76,
+      "avionics": 65,
+      "weapons": 78,
+      "survivability": 30,
+      "range": 59,
+      "modernization": 83,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Proven multirole capability with mature global operational track record"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 260,
+    "estimatedQuantity": 260,
+    "quantityYear": 2026,
+    "quantityNotes": "Active inventory: 260 operational units in 2026.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The J-10C is China's frontline lightweight/medium multirole fighter, equipped with a DSI intake, advanced GaN AESA radar, integrated EW suite, and PL-15 BVR missiles.",
+    "historicalContext": "Developed as the definitive iteration of the Vigorous Dragon family, the J-10C represents the modernization of PLAAF tactical wings from older 3rd-generation types into networked 4.5-gen nodes.",
+    "tacticalDoctrine": "Employed in high-low air superiority mixes alongside the heavyweight J-20A and J-16, providing high sortie-generation rates and long-range BVR engagements."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Chengdu_J-10C_at_Airshow_China_2018.jpg"
+}

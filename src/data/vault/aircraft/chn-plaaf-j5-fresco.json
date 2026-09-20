@@ -1,0 +1,148 @@
+{
+  "id": "chn-plaaf-j5-fresco",
+  "name": "Shenyang J-5 (Fresco)",
+  "commonName": "J-5 Fresco",
+  "officialDesignation": "Shenyang J-5",
+  "natoReportingName": "Fresco",
+  "family": "Mikoyan MiG-17",
+  "variant": "J-5A (Radar Interceptor)",
+  "block": "Type 56",
+  "manufacturer": "Shenyang Aircraft Corporation (SAC)",
+  "manufacturerCountry": "China",
+  "originCountry": "China",
+  "country": "China",
+  "affiliation": "People's Liberation Army Air Force (PLAAF)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "FIGHTER",
+  "generation": "GEN_1",
+  "era": "VINTAGE",
+  "role": "First-Generation Subsonic Swept-Wing Day & All-Weather Interceptor",
+  "secondaryRoles": [
+    "Close Air Support",
+    "Air Defense Alert",
+    "Advanced Jet Training"
+  ],
+  "firstFlightYear": 1956,
+  "introductionYear": 1956,
+  "retirementYear": 1992,
+  "productionCount": 1820,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 1820,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 8.78,
+      "wingspanM": 6.9,
+      "heightM": 2.51,
+      "wingAreaM2": 26.3
+    },
+    "weights": {
+      "emptyWeightKg": 3930,
+      "maxTakeoffWeightKg": 6000,
+      "payloadCapacityKg": 500
+    },
+    "performance": {
+      "topSpeedMach": 0.93,
+      "topSpeedKmh": 1145,
+      "serviceCeilingM": 16500,
+      "rateOfClimbMs": 65,
+      "gLimitPositive": 8,
+      "gLimitNegative": -3,
+      "combatRangeKm": 420,
+      "ferryRangeKm": 1420
+    }
+  },
+  "propulsion": {
+    "engineModel": "Shenyang WP-5 (Klimov VK-1F clone)",
+    "engineCount": 1,
+    "engineType": "Centrifugal-flow Turbojet with Afterburner",
+    "hasAfterburner": true,
+    "thrustDryKn": 26,
+    "thrustAfterburnerKn": 33.1,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarName": "RP-1 Izumrud Radar (J-5A variant)",
+    "radarTrackTargets": 1,
+    "radarEngageTargets": 1,
+    "radarDetectionRangeKm": 12,
+    "bvrCapable": false,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 2.8
+  },
+  "armament": {
+    "internalGun": "1 × 37mm Type 37-1 cannon + 2 × 23mm Type 23-1 cannons",
+    "hardpoints": 2,
+    "maxPayloadKg": 500,
+    "airToAirMissiles": [
+      "PL-2 Infrared AAM (Later retrofits)"
+    ],
+    "airToGroundMissiles": [
+      "57mm Rocket Pods"
+    ],
+    "antiShipMissiles": [],
+    "precisionGuidedBombs": [
+      "2 × 250kg FAB-250 Free-fall Bombs"
+    ]
+  },
+  "tvrRating": {
+    "overall": 44.5,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 58,
+      "avionics": 45,
+      "weapons": 44,
+      "survivability": 30,
+      "range": 41,
+      "modernization": 35,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Proven multirole capability with mature global operational track record"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 1820,
+    "estimatedQuantity": 0,
+    "quantityYear": 1992,
+    "quantityNotes": "Historic / Retired airframe. Total produced: 1820.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The Shenyang J-5 was China's first domestically mass-produced jet fighter, marking the birth of modern Chinese aerospace manufacturing.",
+    "historicalContext": "Saw extensive air combat during the Taiwan Strait crises in the 1950s and border defense actions throughout the Cold War.",
+    "tacticalDoctrine": "High-subsonic visual dogfighting utilizing devastating heavy-cannon nose armament against hostile reconnaissance and bomber formations."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Shenyang_J-5_PLAAF_Museum.jpg"
+}

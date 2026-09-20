@@ -1,0 +1,153 @@
+{
+  "id": "fra-aae-mirage-f1",
+  "name": "Dassault Mirage F1 C/CR",
+  "commonName": "Mirage F1",
+  "officialDesignation": "Dassault Mirage F1",
+  "natoReportingName": "Mirage F1",
+  "family": "Dassault Mirage",
+  "variant": "Mirage F1CR (Recon/Attack)",
+  "block": "Standard",
+  "manufacturer": "Dassault Aviation",
+  "manufacturerCountry": "France",
+  "originCountry": "France",
+  "country": "France",
+  "affiliation": "French Air and Space Force (Armée de l'Air et de l'Espace)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "FIGHTER",
+  "generation": "GEN_3",
+  "era": "COLD_WAR",
+  "role": "Mach 2.2 Swept-Wing Multirole Fighter-Interceptor & Reconnaissance",
+  "secondaryRoles": [
+    "Low-Level Ground Attack",
+    "Tactical Battlefield Reconnaissance",
+    "Air Defense Alert"
+  ],
+  "firstFlightYear": 1966,
+  "introductionYear": 1973,
+  "retirementYear": 2014,
+  "productionCount": 720,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 720,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 12.04,
+      "wingspanM": 9.46,
+      "heightM": 3.44,
+      "wingAreaM2": 36.1
+    },
+    "weights": {
+      "emptyWeightKg": 7400,
+      "maxTakeoffWeightKg": 16200,
+      "payloadCapacityKg": 6300
+    },
+    "performance": {
+      "topSpeedMach": 2.2,
+      "topSpeedKmh": 2338,
+      "serviceCeilingM": 20000,
+      "rateOfClimbMs": 215,
+      "gLimitPositive": 8.5,
+      "gLimitNegative": -3,
+      "combatRangeKm": 900,
+      "ferryRangeKm": 3220
+    }
+  },
+  "propulsion": {
+    "engineModel": "SNECMA Atar 9K-50 Turbojet",
+    "engineCount": 1,
+    "engineType": "Afterburning Turbojet",
+    "hasAfterburner": true,
+    "thrustDryKn": 49,
+    "thrustAfterburnerKn": 70.6,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarName": "Thomson-CSF Cyrano IV-M Pulse-Doppler Radar",
+    "radarTrackTargets": 6,
+    "radarEngageTargets": 1,
+    "radarDetectionRangeKm": 60,
+    "bvrCapable": true,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 2.5
+  },
+  "armament": {
+    "internalGun": "2 × 30mm DEFA 553 cannons (135 rpg)",
+    "hardpoints": 7,
+    "maxPayloadKg": 6300,
+    "airToAirMissiles": [
+      "Matra Super 530F Semi-Active Radar BVR AAM",
+      "Matra R.550 Magic 2"
+    ],
+    "airToGroundMissiles": [
+      "AS-30L Laser Guided Missile",
+      "ARMAT Anti-Radiation Missile"
+    ],
+    "antiShipMissiles": [
+      "AM39 Exocet Anti-Ship Missile"
+    ],
+    "precisionGuidedBombs": [
+      "Belouga Cluster Bombs",
+      "400kg Durandal Runway-Cratering Bombs"
+    ]
+  },
+  "tvrRating": {
+    "overall": 53.8,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 80,
+      "avionics": 45,
+      "weapons": 64,
+      "survivability": 30,
+      "range": 49,
+      "modernization": 48,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Proven multirole capability with mature global operational track record"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 720,
+    "estimatedQuantity": 0,
+    "quantityYear": 2014,
+    "quantityNotes": "Historic / Retired airframe. Total produced: 720.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "Diverging from Dassault's trademark delta wing, the Mirage F1 featured a shoulder-mounted swept wing with high-lift devices, achieving short austere airstrip operation and Mach 2.2 top speed.",
+    "historicalContext": "Extensively exported across 14 nations, serving as France's frontline continental interceptor throughout the Cold War until retirement in 2014.",
+    "tacticalDoctrine": "High-speed perimeter air defense and supersonic visual/infrared reconnaissance over hostile territory."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Mirage_F1CR_France.jpg"
+}

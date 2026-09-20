@@ -1,0 +1,149 @@
+{
+  "id": "fra-aae-super-mystere",
+  "name": "Dassault Super Mystère B2",
+  "commonName": "Super Mystère B2",
+  "officialDesignation": "Dassault Super Mystère B2",
+  "natoReportingName": "Super Mystere",
+  "family": "Dassault Mystère",
+  "variant": "B2 Afterburning Standard",
+  "block": "Standard",
+  "manufacturer": "Dassault Aviation",
+  "manufacturerCountry": "France",
+  "originCountry": "France",
+  "country": "France",
+  "affiliation": "French Air and Space Force (Armée de l'Air)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "FIGHTER",
+  "generation": "GEN_2",
+  "era": "VINTAGE",
+  "role": "First Western European Supersonic Fighter-Bomber in Level Flight",
+  "secondaryRoles": [
+    "Point-Defense Interception",
+    "Tactical Strike",
+    "Ground Attack"
+  ],
+  "firstFlightYear": 1955,
+  "introductionYear": 1957,
+  "retirementYear": 1977,
+  "productionCount": 180,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 180,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 11.19,
+      "wingspanM": 8.79,
+      "heightM": 3.2,
+      "wingAreaM2": 33.6
+    },
+    "weights": {
+      "emptyWeightKg": 6390,
+      "maxTakeoffWeightKg": 10000,
+      "payloadCapacityKg": 1500
+    },
+    "performance": {
+      "topSpeedMach": 1.13,
+      "topSpeedKmh": 1195,
+      "serviceCeilingM": 17000,
+      "rateOfClimbMs": 89,
+      "gLimitPositive": 8,
+      "gLimitNegative": -3,
+      "combatRangeKm": 870,
+      "ferryRangeKm": 2175
+    }
+  },
+  "propulsion": {
+    "engineModel": "SNECMA Atar 101G-2 Turbojet",
+    "engineCount": 1,
+    "engineType": "Afterburning Turbojet",
+    "hasAfterburner": true,
+    "thrustDryKn": 33.3,
+    "thrustAfterburnerKn": 44.1,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "NONE",
+    "radarName": "Aida Ranging Radar",
+    "radarTrackTargets": 1,
+    "radarEngageTargets": 1,
+    "radarDetectionRangeKm": 8,
+    "bvrCapable": false,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 2.2
+  },
+  "armament": {
+    "internalGun": "2 × 30mm DEFA 552 cannons (150 rpg)",
+    "hardpoints": 4,
+    "maxPayloadKg": 1500,
+    "airToAirMissiles": [
+      "Matra R.511 / Nord 5103 Early AAM",
+      "AIM-9B Sidewinder (Export)"
+    ],
+    "airToGroundMissiles": [
+      "35 × 68mm SNEB Internal Retractable Rocket Pack"
+    ],
+    "antiShipMissiles": [],
+    "precisionGuidedBombs": [
+      "2 × 450kg (1000 lb) Iron Bombs"
+    ]
+  },
+  "tvrRating": {
+    "overall": 44.2,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 58,
+      "avionics": 35,
+      "weapons": 49,
+      "survivability": 30,
+      "range": 49,
+      "modernization": 35,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Proven multirole capability with mature global operational track record"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 180,
+    "estimatedQuantity": 0,
+    "quantityYear": 1977,
+    "quantityNotes": "Historic / Retired airframe. Total produced: 180.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The Super Mystère B2 made history in 1955 as the first Western European combat aircraft to break the sound barrier in level flight (Mach 1.13).",
+    "historicalContext": "Served as France's frontline supersonic fighter before the arrival of the Mach 2 Mirage III, seeing intense air-to-air combat with the Israeli Air Force in the Six-Day War.",
+    "tacticalDoctrine": "High-speed interception of transonic bombers and ground-attack strikes with internal folding rocket trays."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Super_Mystere_B2.jpg"
+}

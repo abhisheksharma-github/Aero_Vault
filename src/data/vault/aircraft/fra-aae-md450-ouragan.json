@@ -1,0 +1,147 @@
+{
+  "id": "fra-aae-md450-ouragan",
+  "name": "Dassault MD 450 Ouragan",
+  "commonName": "MD 450 Ouragan",
+  "officialDesignation": "Dassault MD 450 Ouragan",
+  "natoReportingName": "Ouragan",
+  "family": "Dassault MD 450",
+  "variant": "Production Standard",
+  "block": "Type 1",
+  "manufacturer": "Dassault Aviation",
+  "manufacturerCountry": "France",
+  "originCountry": "France",
+  "country": "France",
+  "affiliation": "French Air and Space Force (Armée de l'Air)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "FIGHTER",
+  "generation": "GEN_1",
+  "era": "VINTAGE",
+  "role": "First French Domestic Jet Fighter-Bomber",
+  "secondaryRoles": [
+    "Close Air Support",
+    "Aerobatic Demonstration (Patrouille de France)",
+    "Trainer"
+  ],
+  "firstFlightYear": 1949,
+  "introductionYear": 1952,
+  "retirementYear": 1961,
+  "productionCount": 350,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 350,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 9.01,
+      "wingspanM": 7.08,
+      "heightM": 2.57,
+      "wingAreaM2": 27
+    },
+    "weights": {
+      "emptyWeightKg": 4142,
+      "maxTakeoffWeightKg": 7900,
+      "payloadCapacityKg": 1000
+    },
+    "performance": {
+      "topSpeedMach": 0.77,
+      "topSpeedKmh": 940,
+      "serviceCeilingM": 13000,
+      "rateOfClimbMs": 40,
+      "gLimitPositive": 7,
+      "gLimitNegative": -3,
+      "combatRangeKm": 450,
+      "ferryRangeKm": 920
+    }
+  },
+  "propulsion": {
+    "engineModel": "Rolls-Royce Nene 104B / Hispano-Suiza Nene",
+    "engineCount": 1,
+    "engineType": "Centrifugal Turbojet",
+    "hasAfterburner": false,
+    "thrustDryKn": 22.2,
+    "thrustAfterburnerKn": null,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "NONE",
+    "radarName": "Optical Gunsight",
+    "radarTrackTargets": 0,
+    "radarEngageTargets": 1,
+    "radarDetectionRangeKm": 0,
+    "bvrCapable": false,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 2.8
+  },
+  "armament": {
+    "internalGun": "4 × 20mm Hispano-Suiza HS.404 cannons (125 rpg)",
+    "hardpoints": 4,
+    "maxPayloadKg": 1000,
+    "airToAirMissiles": [],
+    "airToGroundMissiles": [
+      "16 × 105mm Brandt T-10 Rockets",
+      "Matra Rocket Pods"
+    ],
+    "antiShipMissiles": [],
+    "precisionGuidedBombs": [
+      "2 × 454kg (1000 lb) Iron Bombs / Napalm tanks"
+    ]
+  },
+  "tvrRating": {
+    "overall": 42.6,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 53,
+      "avionics": 35,
+      "weapons": 49,
+      "survivability": 30,
+      "range": 41,
+      "modernization": 35,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Proven multirole capability with mature global operational track record"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 350,
+    "estimatedQuantity": 0,
+    "quantityYear": 1961,
+    "quantityNotes": "Historic / Retired airframe. Total produced: 350.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The MD 450 Ouragan (Hurricane) was the pioneering first French-designed jet fighter to enter mass production, re-establishing France as a premier aviation power after WWII.",
+    "historicalContext": "Flown by France, Israel, and India (as the Toofani), achieving combat success during the 1956 Suez Crisis and 1965/1971 Indo-Pakistani conflicts.",
+    "tacticalDoctrine": "High-speed visual gunnery runs and low-level rocket interdiction against enemy airbases and armored columns."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Dassault_Ouragan_Museum.jpg"
+}

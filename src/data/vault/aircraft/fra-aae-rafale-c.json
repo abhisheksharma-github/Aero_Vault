@@ -1,0 +1,153 @@
+{
+  "id": "fra-aae-rafale-c",
+  "name": "Dassault Rafale C F4",
+  "commonName": "Rafale C Omnirole",
+  "officialDesignation": "Dassault Rafale C",
+  "natoReportingName": "Rafale",
+  "family": "Dassault Rafale",
+  "variant": "Rafale C F4.1",
+  "block": "Standard F4",
+  "manufacturer": "Dassault Aviation",
+  "manufacturerCountry": "France",
+  "originCountry": "France",
+  "country": "France",
+  "affiliation": "French Air and Space Force (Armée de l'Air et de l'Espace)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "MULTIROLE_FIGHTER",
+  "generation": "GEN_4_5",
+  "era": "MODERN",
+  "role": "4.5+ Gen Omnirole Air Dominance & Deep Nuclear Penetration Fighter",
+  "secondaryRoles": [
+    "Strategic Nuclear Strike (ASMP-A)",
+    "Precision Ground Strike (SCALP EG)",
+    "Combat Air Patrol",
+    "Reconnaissance (TALIOS)"
+  ],
+  "firstFlightYear": 1986,
+  "introductionYear": 2006,
+  "retirementYear": null,
+  "productionCount": 260,
+  "fleetCount": 102,
+  "activeCount": 102,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 13.89,
+      "wingspanM": 10.92,
+      "heightM": 3.97,
+      "wingAreaM2": 41.7
+    },
+    "weights": {
+      "emptyWeightKg": 9850,
+      "maxTakeoffWeightKg": 24500,
+      "payloadCapacityKg": 9500
+    },
+    "performance": {
+      "topSpeedMach": 1.8,
+      "topSpeedKmh": 1912,
+      "serviceCeilingM": 15835,
+      "rateOfClimbMs": 305,
+      "gLimitPositive": 9,
+      "gLimitNegative": -3,
+      "combatRangeKm": 1850,
+      "ferryRangeKm": 3700
+    }
+  },
+  "propulsion": {
+    "engineModel": "Snecma M88-4E Turbofans",
+    "engineCount": 2,
+    "engineType": "Afterburning Turbofan",
+    "hasAfterburner": true,
+    "thrustDryKn": 50,
+    "thrustAfterburnerKn": 75,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "AESA",
+    "radarName": "Thales RBE2 Active Electronically Scanned Array",
+    "radarTrackTargets": 40,
+    "radarEngageTargets": 8,
+    "radarDetectionRangeKm": 200,
+    "bvrCapable": true,
+    "supercruise": true,
+    "stealth": false,
+    "rcsM2": 0.1
+  },
+  "armament": {
+    "internalGun": "30mm GIAT 30/M791 autocannon (125 rounds)",
+    "hardpoints": 14,
+    "maxPayloadKg": 9500,
+    "airToAirMissiles": [
+      "MBDA Meteor Ramjet BVR AAM (200km range)",
+      "MBDA MICA IR/EM Dual-Seeker AAM"
+    ],
+    "airToGroundMissiles": [
+      "SCALP EG / Storm Shadow Standoff Cruise Missile",
+      "ASMP-A Supersonic Nuclear Missile (Mach 3)"
+    ],
+    "antiShipMissiles": [
+      "AM39 Exocet Block 2 Mod 2 Anti-Ship Missile"
+    ],
+    "precisionGuidedBombs": [
+      "AASM Hammer (Highly Agile Modular Munition)",
+      "GBU-12 Paveway II",
+      "GBU-49 GPS/Laser Bomb"
+    ]
+  },
+  "tvrRating": {
+    "overall": 64.5,
+    "grade": "B",
+    "dimensions": {
+      "kinetics": 68,
+      "avionics": 65,
+      "weapons": 86,
+      "survivability": 30,
+      "range": 65,
+      "modernization": 83,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Heavy standoff weapons carriage with multi-target engagement capability"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 102,
+    "estimatedQuantity": 102,
+    "quantityYear": 2026,
+    "quantityNotes": "Active inventory: 102 operational units in 2026.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The Rafale C F4 is France's premier omnirole fighter, integrating the SPECTRA electronic warfare self-defense suite, RBE2 AESA radar, and MBDA Meteor ramjet-powered BVR missiles.",
+    "historicalContext": "Developed independently by France after leaving the Eurofighter consortium to create an airframe capable of replacing seven distinct French military aircraft types.",
+    "tacticalDoctrine": "Simultaneous air-to-air dominance, deep tactical nuclear deterrence, and collaborative combat cloud connectivity within NATO allied strike packages."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rafale_-_RIAT_2018_%2843577785532%29.jpg"
+}

@@ -1,0 +1,151 @@
+{
+  "id": "chn-z20-pla",
+  "name": "Harbin Z-20 Divine Eagle",
+  "commonName": "Z-20 Divine Eagle",
+  "officialDesignation": "Harbin Z-20",
+  "natoReportingName": "Divine Eagle",
+  "family": "Harbin Z-20",
+  "variant": "Z-20F / Z-20S",
+  "block": "Naval & Army Standard",
+  "manufacturer": "Harbin Aircraft Industry Group (HAIG)",
+  "manufacturerCountry": "China",
+  "originCountry": "China",
+  "country": "China",
+  "affiliation": "PLA Ground Force / PLA Navy Aviation",
+  "militaryBranch": "ARMY_AVIATION",
+  "serviceStatus": "ACTIVE",
+  "category": "HELICOPTER",
+  "generation": "GEN_4",
+  "era": "MODERN",
+  "role": "Medium Tactical Utility & Naval Anti-Submarine Warfare Helicopter",
+  "secondaryRoles": [
+    "Combat Search and Rescue (CSAR)",
+    "Special Ops Infiltration",
+    "Vertical Replenishment"
+  ],
+  "firstFlightYear": 2013,
+  "introductionYear": 2018,
+  "retirementYear": null,
+  "productionCount": 220,
+  "fleetCount": 180,
+  "activeCount": 180,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 9.9,
+      "wingspanM": 7.78,
+      "heightM": 2.83,
+      "wingAreaM2": 29.7
+    },
+    "weights": {
+      "emptyWeightKg": 5000,
+      "maxTakeoffWeightKg": 10000,
+      "payloadCapacityKg": 4000
+    },
+    "performance": {
+      "topSpeedMach": 0.28,
+      "topSpeedKmh": 310,
+      "serviceCeilingM": 6000,
+      "rateOfClimbMs": 12,
+      "gLimitPositive": 3.5,
+      "gLimitNegative": -3,
+      "combatRangeKm": 560,
+      "ferryRangeKm": 1100
+    }
+  },
+  "propulsion": {
+    "engineModel": "WZ-10 Turboshafts",
+    "engineCount": 2,
+    "engineType": "Turboshaft",
+    "hasAfterburner": false,
+    "thrustDryKn": 32,
+    "thrustAfterburnerKn": null,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "PESA",
+    "radarName": "Naval Surface Search / Obstacle Avoidance Radar",
+    "radarTrackTargets": 15,
+    "radarEngageTargets": 2,
+    "radarDetectionRangeKm": 90,
+    "bvrCapable": false,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 4.5
+  },
+  "armament": {
+    "internalGun": "Cabin-mounted 7.62mm / 12.7mm Gatling Guns",
+    "hardpoints": 4,
+    "maxPayloadKg": 4000,
+    "airToAirMissiles": [
+      "TY-90 Air-to-Air Helicopter Missile"
+    ],
+    "airToGroundMissiles": [
+      "AKD-10 Anti-Tank Guided Missile (ATGM)",
+      "57mm / 90mm Rocket Pods"
+    ],
+    "antiShipMissiles": [
+      "Yu-7 / Yu-8 Light Anti-Submarine Torpedoes"
+    ],
+    "precisionGuidedBombs": [
+      "Sonar Buoy Launchers"
+    ]
+  },
+  "tvrRating": {
+    "overall": 50.8,
+    "grade": "C",
+    "dimensions": {
+      "kinetics": 50,
+      "avionics": 55,
+      "weapons": 62,
+      "survivability": 30,
+      "range": 41,
+      "modernization": 65,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Proven multirole capability with mature global operational track record"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 180,
+    "estimatedQuantity": 180,
+    "quantityYear": 2026,
+    "quantityNotes": "Active inventory: 180 operational units in 2026.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The Z-20 is a 10-ton utility helicopter featuring a 5-bladed main rotor, fly-by-wire flight controls, and active de-icing for high-altitude Tibetan plateau operations.",
+    "historicalContext": "Developed to replace imported S-70C-2 Black Hawks and Mi-17s with a modernized domestic airframe optimized for plateau and naval destroyer flight decks.",
+    "tacticalDoctrine": "Airborne assault insertion for PLA rapid reaction corps and shipborne ASW screening aboard Type 055 destroyers."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Harbin_Z-20_at_Tianjin_Helicopter_Expo_2019.jpg"
+}

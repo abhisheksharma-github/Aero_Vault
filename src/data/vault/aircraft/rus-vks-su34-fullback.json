@@ -1,0 +1,155 @@
+{
+  "id": "rus-vks-su34-fullback",
+  "name": "Sukhoi Su-34 Fullback",
+  "commonName": "Su-34 Fullback",
+  "officialDesignation": "Sukhoi Su-34M",
+  "natoReportingName": "Fullback",
+  "family": "Sukhoi Su-27",
+  "variant": "Su-34M (Modernized Standard)",
+  "block": "Su-34M Standard",
+  "manufacturer": "Novosibirsk Aircraft Production Association (NAPO) / UAC",
+  "manufacturerCountry": "Russia",
+  "originCountry": "Russia",
+  "country": "Russia",
+  "affiliation": "Russian Aerospace Forces (VKS)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "BOMBER",
+  "generation": "GEN_4_5",
+  "era": "MODERN",
+  "role": "Armored Side-by-Side Heavy Long-Range Strike Interdictor & Tactical Bomber",
+  "secondaryRoles": [
+    "Deep Maritime Strike",
+    "Tactical Electronic Warfare (Khibiny-10V)",
+    "Precision CAS"
+  ],
+  "firstFlightYear": 1990,
+  "introductionYear": 2014,
+  "retirementYear": null,
+  "productionCount": 160,
+  "fleetCount": 110,
+  "activeCount": 110,
+  "inactiveCount": 0,
+  "retiredCount": 50,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 21,
+      "wingspanM": 16.5,
+      "heightM": 6,
+      "wingAreaM2": 63
+    },
+    "weights": {
+      "emptyWeightKg": 22500,
+      "maxTakeoffWeightKg": 45000,
+      "payloadCapacityKg": 12000
+    },
+    "performance": {
+      "topSpeedMach": 1.8,
+      "topSpeedKmh": 1900,
+      "serviceCeilingM": 17000,
+      "rateOfClimbMs": 230,
+      "gLimitPositive": 9,
+      "gLimitNegative": -3,
+      "combatRangeKm": 1400,
+      "ferryRangeKm": 4000
+    }
+  },
+  "propulsion": {
+    "engineModel": "Saturn AL-31F-M1 Turbofans",
+    "engineCount": 2,
+    "engineType": "Afterburning Turbofan",
+    "hasAfterburner": true,
+    "thrustDryKn": 74.5,
+    "thrustAfterburnerKn": 122.6,
+    "thrustVectoring": false
+  },
+  "avionics": {
+    "radarType": "PESA",
+    "radarName": "Leninets V004 Phased-Array Multimode Radar",
+    "radarTrackTargets": 10,
+    "radarEngageTargets": 4,
+    "radarDetectionRangeKm": 200,
+    "bvrCapable": true,
+    "supercruise": false,
+    "stealth": false,
+    "rcsM2": 4
+  },
+  "armament": {
+    "internalGun": "30mm GSh-30-1 autocannon (180 rounds)",
+    "hardpoints": 12,
+    "maxPayloadKg": 12000,
+    "airToAirMissiles": [
+      "R-77-1 Active Radar BVR AAM",
+      "R-73M High-Agility IR AAM"
+    ],
+    "airToGroundMissiles": [
+      "Kh-59MK2 Standoff Cruise Missile",
+      "Kh-38M Precision Tactical Missile",
+      "Kh-29L/T"
+    ],
+    "antiShipMissiles": [
+      "Kh-31AD Mach 3.5 Anti-Ship Missile",
+      "Kh-35U"
+    ],
+    "precisionGuidedBombs": [
+      "UMPK Satellite-Guided Standoff Glide Bombs (FAB-500, FAB-1500, FAB-3000)",
+      "KAB-500S"
+    ]
+  },
+  "tvrRating": {
+    "overall": 62.2,
+    "grade": "B",
+    "dimensions": {
+      "kinetics": 71,
+      "avionics": 55,
+      "weapons": 86,
+      "survivability": 30,
+      "range": 59,
+      "modernization": 83,
+      "logistics": 75
+    },
+    "roleProfile": "FIGHTER",
+    "appliedWeights": {
+      "kinetics": 0.16,
+      "avionics": 0.22,
+      "weapons": 0.22,
+      "survivability": 0.2,
+      "range": 0.1,
+      "modernization": 0.05,
+      "logistics": 0.05
+    },
+    "strengths": [
+      "Heavy standoff weapons carriage with multi-target engagement capability"
+    ],
+    "limitations": [
+      "Conventional radar cross-section vulnerable to modern integrated air defense (IADS)",
+      "Legacy mechanical radar architecture with limited electronic warfare counter-countermeasures",
+      "Restricted combat radius requiring aerial refueling support for deep penetration"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 110,
+    "estimatedQuantity": 110,
+    "quantityYear": 2026,
+    "quantityNotes": "Active inventory: 110 operational units in 2026.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-09-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "intelligenceDossier": {
+    "summary": "The Su-34 Fullback features a 17mm titanium armored cockpit capsule seating the pilot and weapons officer side-by-side, carrying up to 12 tons of ordnance with galley and toilet facilities.",
+    "historicalContext": "Replaced the Su-24M variable-geometry bomber as Russia's primary long-range battlefield interdiction and standoff glide-bomb delivery platform.",
+    "tacticalDoctrine": "High-altitude standoff delivery of heavy UMPK satellite-guided glide bombs outside the engagement range of enemy tactical air defenses."
+  },
+  "provenance": {
+    "sources": [
+      "IISS The Military Balance 2026",
+      "Jane's All the World's Aircraft",
+      "SIPRI Arms Transfers Database 2026",
+      "National Ministry of Defense Verified Inventories"
+    ],
+    "confidenceScore": 0.98,
+    "lastAudit": "2026-09-20"
+  },
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sukhoi_Su-34_Fullback_in_flight.jpg"
+}
