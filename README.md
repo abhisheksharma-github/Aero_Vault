@@ -3,9 +3,9 @@
 [![Build Status](https://img.shields.io/badge/Build-Passing-emerald.svg)](https://github.com/abhisheksharma-github/OrderEase)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3+-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.3+-cyan.svg)](https://react.dev/)
-[![Prisma](https://img.shields.io/badge/Prisma-5.10+-indigo.svg)](https://www.prisma.io/)
+[![Prisma](https://img.shields.io/badge/Prisma-5.22+-indigo.svg)](https://www.prisma.io/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4+-sky.svg)](https://tailwindcss.com/)
-[![Tests](https://img.shields.io/badge/Tests-16%2F16%20Passed-emerald.svg)](./tests/runTests.ts)
+[![Tests](https://img.shields.io/badge/Tests-Vitest-emerald.svg)](./tests)
 [![Intelligence Model](https://img.shields.io/badge/TVR_Model-Deterministic_7_Pillars-teal.svg)](./TVR_METHODOLOGY.md)
 
 **AeroVault** is an enterprise-grade defense intelligence platform providing multi-domain Order of Battle (OrBat), sovereign military power rankings, and technical hardware telemetry across global armed forces. It delivers mathematical **True Value Rating (TVR)** scoring, the **Global Military Power Index (ATLAS 2026)**, and verified open-source intelligence (OSINT) provenance across **Air, Naval, and Land Combat** domains.
@@ -29,7 +29,7 @@
 ## 🌟 Key Features
 
 ### 1. 🌐 Global Military Power Index (ATLAS 2026)
-- Comprehensive sovereign defense leaderboard tracking **162 countries**, **$2.45T USD in defense expenditure**, **58,400+ combat airframes**, and **9,200+ naval warships**.
+- Sovereign defense leaderboard tracking global powers, defense expenditures, combat airframes, and naval warships.
 - Domain-specific power sub-indices:
   - **ATLAS Index:** Overall Multi-Domain Composite Power.
   - **AIRS Index:** Air Superiority & Strike Power Index.
@@ -56,7 +56,7 @@
 
 ### 6. 🎨 Military Dark HUD Tactical Aesthetics
 - Ultra-sleek dark cockpit UI palette (`#000B18`, `#0A2A4E`, `#00F0FF`, `#10B981`) with glassmorphism, responsive data grids, and telemetry visualizers.
-- High-definition verified photography from official military and government archives across all combat assets.
+- High-definition verified photography from official military and government archives across combat assets.
 
 ---
 
@@ -72,7 +72,7 @@
                                                  v
                                   +-----------------------------+
                                   |   Express + TypeScript API  |
-                                  |   (JWT, Helmet, RateLimit)  |
+                                  |   (Helmet, RateLimit, CORS) |
                                   +--------------+--------------+
                                                  |
                    +-----------------------------+-----------------------------+
@@ -89,7 +89,7 @@
                                                  v
                                   +-----------------------------+
                                   |  Dual-Mode Data Layer       |
-                                  |  1. Neon PostgreSQL (Prisma)|
+                                  |  1. PostgreSQL (Prisma)     |
                                   |  2. In-Memory Resilient DB  |
                                   +-----------------------------+
 ```
@@ -98,11 +98,11 @@
 
 ## 💻 Tech Stack
 
-- **Frontend:** React 18, Vite 5, Tailwind CSS 3.4, Lucide Icons, Canvas Confetti.
-- **Backend:** Node.js, Express 4.18, TypeScript 5.3, Prisma ORM 5.10, Helmet, CORS, Morgan, Express Rate Limit.
-- **Database:** PostgreSQL (Neon Serverless / Supabase) with zero-crash in-memory fallback layer.
-- **Testing:** Native TypeScript test suite (`tests/runTests.ts`) with 16 deterministic tests.
-- **Intelligence Model:** Deterministic True Value Rating (TVR 2.0) calibrated with official DoD, MoD, and Jane's defense citations.
+- **Frontend:** React 18, Vite 5, Tailwind CSS 3.4, Lucide Icons.
+- **Backend:** Node.js, Express 5, TypeScript 5, Prisma ORM 5.22, Helmet, CORS, Morgan, Express Rate Limit, Zod.
+- **Database:** PostgreSQL (Neon / Supabase) with zero-crash resilient in-memory fallback layer.
+- **Testing:** Vitest test suite.
+- **Intelligence Model:** Deterministic True Value Rating (TVR 2.0) calibrated with official defense citations.
 
 ---
 
