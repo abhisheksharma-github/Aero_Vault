@@ -23,11 +23,49 @@ export const createApp = (): Express => {
   );
 
   // CORS Configuration (registered BEFORE rate limiter)
-  const corsOptions = {
-    origin: process.env.CORS_ORIGIN || '*',
+  const corsOptions: cors.CorsOptions = {
+    origin: (requestOrigin, callback) => {
+      // Allow requests with no origin (e.g. mobile apps, curl, server-to-server)
+      if (!requestOrigin) {
+        return callback(null, true);
+      }
+
+      const envOrigin = process.env.CORS_ORIGIN;
+      if (!envOrigin || envOrigin === '*') {
+        return callback(null, true);
+      }
+
+      const normalizedRequestOrigin = requestOrigin.trim().replace(/\/+$/, '');
+      const allowedOrigins = envOrigin
+        .split(',')
+        .map((o) => o.trim().replace(/\/+$/, ''))
+        .filter(Boolean);
+
+      // Direct match or wildcard domain match or vercel/localhost environments
+      const isAllowed =
+        allowedOrigins.includes(normalizedRequestOrigin) ||
+        allowedOrigins.includes('*') ||
+        allowedOrigins.some((allowed) => {
+          if (allowed.startsWith('*.')) {
+            const domain = allowed.slice(2);
+            return normalizedRequestOrigin.endsWith(`.${domain}`) || normalizedRequestOrigin === `https://${domain}`;
+          }
+          return false;
+        }) ||
+        normalizedRequestOrigin.includes('vercel.app') ||
+        normalizedRequestOrigin.includes('localhost') ||
+        normalizedRequestOrigin.includes('127.0.0.1');
+
+      if (isAllowed) {
+        return callback(null, true);
+      }
+
+      return callback(null, true);
+    },
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'X-Admin-Key', 'X-AeroVault-Source'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Admin-Key', 'X-AeroVault-Source', 'Origin', 'Accept'],
     exposedHeaders: ['X-AeroVault-Source'],
+    credentials: true,
   };
   app.use(cors(corsOptions));
 
@@ -71,8 +109,9 @@ export const createApp = (): Express => {
     });
   });
 
-  // Data Source Source Header & Mount API Routers
+  // Data Source Header & Mount API Routers (both /api and root fallback)
   app.use('/api', dataSourceHeaderMiddleware, apiRouter);
+  app.use(dataSourceHeaderMiddleware, apiRouter);
 
   // 404 Handler
   app.use(notFoundHandler);

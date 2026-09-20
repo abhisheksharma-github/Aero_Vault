@@ -10,7 +10,14 @@ import { g20CountriesData } from '../data/g20/g20Countries';
 import { g20AircraftData } from '../data/g20/g20Aircraft';
 import { aerospaceManufacturers } from '../data/g20/manufacturers';
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
+const rawApiBase = (import.meta.env.VITE_API_BASE_URL || '/api').trim().replace(/\/+$/, '');
+const API_BASE = cleanApiBase();
+
+function cleanApiBase() {
+  if (!rawApiBase || rawApiBase === '/api') return '/api';
+  if (rawApiBase.endsWith('/api')) return rawApiBase;
+  return `${rawApiBase}/api`;
+}
 
 
 export const apiService = {
