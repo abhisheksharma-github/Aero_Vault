@@ -10,6 +10,7 @@ import {
 } from '../data/vaultLoader.js';
 import { validatedParams, validatedQuery } from '../middleware/validate.middleware.js';
 import { computeCountryCoverage } from '../types/coverage.types.js';
+import { logger } from '../utils/logger.js';
 
 function getCoverageForCountry(countryName: string, countryCode?: string) {
   const cName = countryName.toLowerCase();
@@ -63,8 +64,10 @@ export class CountriesController {
           });
           return;
         }
-      } catch (dbErr) {
-        // Fallback to local verified G20 dataset
+      } catch (dbErr: any) {
+        logger.warn('Failed querying countries from database, using vault fallback', {
+          error: dbErr.message || dbErr,
+        });
       }
 
       const countriesWithCoverage = vaultCountries.map((c) => ({
@@ -116,8 +119,11 @@ export class CountriesController {
           });
           return;
         }
-      } catch (dbErr) {
-        // Fallback
+      } catch (dbErr: any) {
+        logger.warn('Failed querying country by name/code from database, using vault fallback', {
+          identifier: rawParam,
+          error: dbErr.message || dbErr,
+        });
       }
 
       const match = vaultCountries.find(

@@ -1,6 +1,7 @@
 import { prisma } from '../db.js';
 import { vaultIntelligence, vaultAircraft } from '../data/vaultLoader.js';
 import { AppError } from '../middleware/error.middleware.js';
+import { logger } from '../utils/logger.js';
 
 export interface NationAirpowerAnalysis {
   countryName: string;
@@ -74,8 +75,11 @@ export class RankingService {
           },
         });
       }
-    } catch {
-      // Offline fallback
+    } catch (dbErr: any) {
+      logger.warn('Failed querying nation analysis from database, using vault fallback', {
+        country: countryName,
+        error: dbErr.message || dbErr,
+      });
     }
 
     if (!nation) {

@@ -7,6 +7,7 @@ import dotenv from 'dotenv';
 import apiRouter from './routes/index.js';
 import { errorHandler } from './middleware/error.middleware.js';
 import { notFoundHandler } from './middleware/notFound.middleware.js';
+import { dataSourceHeaderMiddleware } from './repositories/index.js';
 
 dotenv.config();
 
@@ -20,6 +21,15 @@ export const createApp = (): Express => {
       crossOriginResourcePolicy: { policy: 'cross-origin' },
     })
   );
+
+  // CORS Configuration (registered BEFORE rate limiter)
+  const corsOptions = {
+    origin: process.env.CORS_ORIGIN || '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Admin-Key', 'X-AeroVault-Source'],
+    exposedHeaders: ['X-AeroVault-Source'],
+  };
+  app.use(cors(corsOptions));
 
   // Rate Limiting (1000 requests per 15 minutes in dev/test, 300 in production)
   const limiter = rateLimit({
@@ -37,15 +47,6 @@ export const createApp = (): Express => {
   });
   app.use('/api', limiter);
 
-  // CORS Configuration
-  app.use(
-    cors({
-      origin: process.env.CORS_ORIGIN || '*',
-      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
-      allowedHeaders: ['Content-Type', 'Authorization', 'X-Admin-Key'],
-    })
-  );
-
   // Request Logging
   if (process.env.NODE_ENV !== 'test') {
     app.use(morgan(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
@@ -56,10 +57,10 @@ export const createApp = (): Express => {
   app.use(express.urlencoded({ extended: true, limit: '5mb' }));
 
   // Root Welcome / Discovery
-  app.get('/', (req, res) => {
+  app.get('/', (_req, res) => {
     res.json({
       name: 'AeroVault Defense Intelligence API',
-      version: '2.0.0',
+      version: '3.0.0',
       status: 'operational',
       endpoints: {
         health: '/api/health',
@@ -70,8 +71,8 @@ export const createApp = (): Express => {
     });
   });
 
-  // Mount API Routers
-  app.use('/api', apiRouter);
+  // Data Source Source Header & Mount API Routers
+  app.use('/api', dataSourceHeaderMiddleware, apiRouter);
 
   // 404 Handler
   app.use(notFoundHandler);

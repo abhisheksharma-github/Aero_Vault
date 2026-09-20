@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { aircraftController } from '../controllers/aircraft.controller.js';
 import { validate } from '../middleware/validate.middleware.js';
+import { requireAdmin } from '../middleware/auth.middleware.js';
 import {
   AircraftQuerySchema,
   AircraftIdParamSchema,
@@ -54,6 +55,7 @@ router.get(
 // POST /api/aircraft - Create aircraft (Admin write)
 router.post(
   '/',
+  requireAdmin,
   validate({ body: CreateAircraftSchema }),
   aircraftController.createAircraft
 );
@@ -61,6 +63,7 @@ router.post(
 // PUT /api/aircraft/:id - Update aircraft (Admin write)
 router.put(
   '/:id',
+  requireAdmin,
   validate({ params: AircraftIdParamSchema, body: UpdateAircraftSchema }),
   aircraftController.updateAircraft
 );
@@ -68,6 +71,7 @@ router.put(
 // DELETE /api/aircraft/:id - Delete aircraft (Admin write)
 router.delete(
   '/:id',
+  requireAdmin,
   validate({ params: AircraftIdParamSchema }),
   aircraftController.deleteAircraft
 );

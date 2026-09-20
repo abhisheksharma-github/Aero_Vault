@@ -1,12 +1,13 @@
 import { Router, Request, Response } from 'express';
 import { prisma } from '../db.js';
 import { osintService } from '../services/osint.service.js';
-import { aircraftVault } from '../data/normalize.js';
+import { vaultAircraft } from '../data/vaultLoader.js';
+import { logger } from '../utils/logger.js';
 
 const router = Router();
 
 // GET /api/osint/quality — Automated Data Quality Audit Report
-router.get('/quality', async (req: Request, res: Response) => {
+router.get('/quality', async (_req: Request, res: Response) => {
   try {
     let aircraftList: any[] = [];
     try {
@@ -16,12 +17,14 @@ router.get('/quality', async (req: Request, res: Response) => {
           dataSources: true,
         },
       });
-    } catch {
-      // Fallback
+    } catch (dbErr: any) {
+      logger.warn('Failed querying aircraft for OSINT quality audit, using vault fallback', {
+        error: dbErr.message || dbErr,
+      });
     }
 
     if (!aircraftList || aircraftList.length === 0) {
-      aircraftList = aircraftVault as any[];
+      aircraftList = vaultAircraft as any[];
     }
 
     const report = osintService.generateQualityReport(aircraftList);
@@ -29,7 +32,8 @@ router.get('/quality', async (req: Request, res: Response) => {
       success: true,
       data: report,
     });
-  } catch {
+  } catch (err: any) {
+    logger.error('Failed generating OSINT quality audit', { error: err.message || err });
     res.status(500).json({
       success: false,
       error: { code: 'OSINT_AUDIT_ERROR', message: 'Failed generating OSINT quality audit' },
@@ -38,7 +42,7 @@ router.get('/quality', async (req: Request, res: Response) => {
 });
 
 // GET /api/osint/conflicts — Data conflict records pending review
-router.get('/conflicts', async (req: Request, res: Response) => {
+router.get('/conflicts', async (_req: Request, res: Response) => {
   try {
     let conflicts: any[] = [];
     try {
@@ -48,7 +52,8 @@ router.get('/conflicts', async (req: Request, res: Response) => {
         },
         orderBy: { createdAt: 'desc' },
       });
-    } catch {
+    } catch (dbErr: any) {
+      logger.warn('Failed querying data conflicts from database', { error: dbErr.message || dbErr });
       conflicts = [];
     }
 
@@ -56,7 +61,8 @@ router.get('/conflicts', async (req: Request, res: Response) => {
       success: true,
       data: conflicts,
     });
-  } catch {
+  } catch (err: any) {
+    logger.error('Failed fetching data conflicts', { error: err.message || err });
     res.status(500).json({
       success: false,
       error: { code: 'CONFLICTS_FETCH_ERROR', message: 'Failed fetching data conflicts' },
@@ -65,7 +71,7 @@ router.get('/conflicts', async (req: Request, res: Response) => {
 });
 
 // GET /api/osint/changes — "What Changed?" Historical Data Log
-router.get('/changes', async (req: Request, res: Response) => {
+router.get('/changes', async (_req: Request, res: Response) => {
   try {
     let changes: any[] = [];
     try {
@@ -73,7 +79,8 @@ router.get('/changes', async (req: Request, res: Response) => {
         orderBy: { recordedAt: 'desc' },
         take: 50,
       });
-    } catch {
+    } catch (dbErr: any) {
+      logger.warn('Failed querying data change logs from database', { error: dbErr.message || dbErr });
       changes = [];
     }
 
@@ -81,7 +88,8 @@ router.get('/changes', async (req: Request, res: Response) => {
       success: true,
       data: changes,
     });
-  } catch {
+  } catch (err: any) {
+    logger.error('Failed fetching change logs', { error: err.message || err });
     res.status(500).json({
       success: false,
       error: { code: 'CHANGES_FETCH_ERROR', message: 'Failed fetching change logs' },

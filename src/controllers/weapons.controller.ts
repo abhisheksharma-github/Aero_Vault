@@ -1,7 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 import { prisma } from '../db.js';
-import { initialWeaponsData } from '../data/multiDomainData.js';
+import { vaultWeapons } from '../data/vaultLoader.js';
 import { validatedQuery } from '../middleware/validate.middleware.js';
+import { logger } from '../utils/logger.js';
 
 export class WeaponsController {
   getWeapons = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
@@ -47,11 +48,13 @@ export class WeaponsController {
           });
           return;
         }
-      } catch {
-        // Fallback
+      } catch (dbErr: any) {
+        logger.warn('Failed querying weapons from database, using vault fallback', {
+          error: dbErr.message || dbErr,
+        });
       }
 
-      let weapons = [...(initialWeaponsData as any[])];
+      let weapons = [...(vaultWeapons as any[])];
       if (type && type !== 'ALL') {
         weapons = weapons.filter((w) => w.type === type);
       }

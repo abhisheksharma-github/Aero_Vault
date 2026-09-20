@@ -29,6 +29,7 @@ import {
 } from '../data/vaultLoader.js';
 import { validatedQuery, validatedParams } from '../middleware/validate.middleware.js';
 import { computeCountryCoverage } from '../types/coverage.types.js';
+import { logger } from '../utils/logger.js';
 
 function getCoverageForCountry(countryName: string, countryCode?: string) {
   const cName = (countryName || '').toLowerCase();
@@ -114,8 +115,10 @@ export class IntelligenceController {
             return;
           }
         }
-      } catch {
-        // Fallback to in-memory dataset
+      } catch (dbErr: any) {
+        logger.warn('Failed querying sitreps from database, using vault fallback', {
+          error: dbErr.message || dbErr,
+        });
       }
 
       let sitreps = [...(vaultSitrep as any[])];
@@ -179,8 +182,10 @@ export class IntelligenceController {
             return;
           }
         }
-      } catch {
-        // Fallback
+      } catch (dbErr: any) {
+        logger.warn('Failed querying country force profiles from database, using vault fallback', {
+          error: dbErr.message || dbErr,
+        });
       }
 
       const profiles = [...(vaultForceProfiles as any[])];
@@ -271,8 +276,11 @@ export class IntelligenceController {
             return;
           }
         }
-      } catch {
-        // Fallback
+      } catch (dbErr: any) {
+        logger.warn('Failed querying country inventory from database, using vault fallback', {
+          countryCode: code,
+          error: dbErr.message || dbErr,
+        });
       }
 
       const profile = (vaultForceProfiles as any[]).find(
@@ -372,8 +380,10 @@ export class IntelligenceController {
             return;
           }
         }
-      } catch {
-        // Fallback
+      } catch (dbErr: any) {
+        logger.warn('Failed querying naval vessels from database, using vault fallback', {
+          error: dbErr.message || dbErr,
+        });
       }
 
       let vessels = [...(vaultNaval as any[])];
@@ -458,8 +468,10 @@ export class IntelligenceController {
             return;
           }
         }
-      } catch {
-        // Fallback
+      } catch (dbErr: any) {
+        logger.warn('Failed querying ground vehicles from database, using vault fallback', {
+          error: dbErr.message || dbErr,
+        });
       }
 
       let vehicles = [...(vaultLand as any[])];
@@ -510,8 +522,10 @@ export class IntelligenceController {
           syncedCount: result.synced,
         });
         return;
-      } catch {
-        // Fallback
+      } catch (syncErr: any) {
+        logger.warn('Failed syncing atlas profiles in database, returning tactical in-memory sync count', {
+          error: syncErr.message || syncErr,
+        });
         res.status(200).json({
           success: true,
           message: 'Global force profiles re-indexed successfully (tactical in-memory sync)',

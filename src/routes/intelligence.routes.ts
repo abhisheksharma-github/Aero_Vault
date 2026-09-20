@@ -26,33 +26,28 @@ router.get(
   intelligenceController.getSitreps
 );
 
-// 2. GET /api/intelligence/rankings/countries - Global power rankings across ATLAS, AIRS, SEAS, ARMS
-router.get(
-  '/rankings/countries',
-  validate({ query: CountryRankingsQuerySchema }),
-  intelligenceController.getCountryRankings
-);
+// 2. GET /api/intelligence/rankings/countries -> 301 redirect to canonical /api/rankings/countries
+router.get('/rankings/countries', (req, res) => {
+  const queryStr = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
+  res.redirect(301, `/api/rankings/countries${queryStr}`);
+});
 
-// 3. GET /api/intelligence/countries/:countryCode/inventory - Multi-domain inventory by country
-router.get(
-  '/countries/:countryCode/inventory',
-  validate({ params: CountryInventoryParamsSchema }),
-  intelligenceController.getCountryInventory
-);
+// 3. GET /api/intelligence/countries/:countryCode/inventory -> 301 redirect to canonical /api/countries/:countryCode/inventory
+router.get('/countries/:countryCode/inventory', (req, res) => {
+  res.redirect(301, `/api/countries/${encodeURIComponent(req.params.countryCode)}/inventory`);
+});
 
-// 4. GET /api/intelligence/naval/vessels - Paginated naval combatant inventory
-router.get(
-  '/naval/vessels',
-  validate({ query: NavalVesselsQuerySchema }),
-  intelligenceController.getNavalVessels
-);
+// 4. GET /api/intelligence/naval/vessels -> 301 redirect to canonical /api/naval/vessels
+router.get('/naval/vessels', (req, res) => {
+  const queryStr = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
+  res.redirect(301, `/api/naval/vessels${queryStr}`);
+});
 
-// 5. GET /api/intelligence/land/vehicles - Paginated armor & land vehicle inventory
-router.get(
-  '/land/vehicles',
-  validate({ query: GroundVehiclesQuerySchema }),
-  intelligenceController.getGroundVehicles
-);
+// 5. GET /api/intelligence/land/vehicles -> 301 redirect to canonical /api/land/vehicles
+router.get('/land/vehicles', (req, res) => {
+  const queryStr = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
+  res.redirect(301, `/api/land/vehicles${queryStr}`);
+});
 
 // 6. POST /api/intelligence/reindex - Trigger ATLAS engine global force profile re-indexing
 router.post(

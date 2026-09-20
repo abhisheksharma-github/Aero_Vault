@@ -2,6 +2,7 @@ import { prisma } from '../db.js';
 import { AppError } from '../middleware/error.middleware.js';
 import { IntelligenceQueryParams } from '../schemas/intelligence.schema.js';
 import { vaultIntelligence, vaultAircraft } from '../data/vaultLoader.js';
+import { logger } from '../utils/logger.js';
 
 export class IntelligenceService {
   /**
@@ -49,8 +50,10 @@ export class IntelligenceService {
           },
         };
       }
-    } catch {
-      // Prisma offline, proceed to fallback
+    } catch (dbErr: any) {
+      logger.warn('Failed querying nation intelligence rankings from database, using vault fallback', {
+        error: dbErr.message || dbErr,
+      });
     }
 
     // High-fidelity in-memory fallback
@@ -118,8 +121,11 @@ export class IntelligenceService {
           orderBy: { tvrScore: 'desc' },
         });
       }
-    } catch {
-      // Offline fallback
+    } catch (dbErr: any) {
+      logger.warn('Failed querying country intelligence from database, using vault fallback', {
+        country: decodedCountry,
+        error: dbErr.message || dbErr,
+      });
     }
 
     if (!nation) {

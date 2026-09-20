@@ -1,8 +1,8 @@
 import { Router, Request, Response } from 'express';
 import { prisma } from '../db.js';
 import { reportService } from '../services/report.service.js';
-import { initialNationIntelligence } from '../data/multiDomainData.js';
-import { aircraftVault } from '../data/normalize.js';
+import { vaultIntelligence, vaultAircraft } from '../data/vaultLoader.js';
+import { logger } from '../utils/logger.js';
 
 const router = Router();
 
@@ -26,12 +26,15 @@ router.get('/nations/:country', async (req: Request, res: Response) => {
           },
         }),
       ]);
-    } catch {
-      // Fallback
+    } catch (dbErr: any) {
+      logger.warn('Failed querying nation intelligence report from database, using vault fallback', {
+        country: countryName,
+        error: dbErr.message || dbErr,
+      });
     }
 
     if (!nation) {
-      nation = (initialNationIntelligence as any[]).find(
+      nation = (vaultIntelligence as any[]).find(
         (n) =>
           n.countryName?.toLowerCase() === countryName.toLowerCase() ||
           n.countryCode?.toLowerCase() === countryName.toLowerCase()
@@ -46,7 +49,7 @@ router.get('/nations/:country', async (req: Request, res: Response) => {
     }
 
     if (!aircraftList || aircraftList.length === 0) {
-      aircraftList = aircraftVault.filter(
+      aircraftList = vaultAircraft.filter(
         (a) =>
           a.country?.toLowerCase() === nation.countryName?.toLowerCase() ||
           a.originCountry?.toLowerCase() === nation.countryName?.toLowerCase()
@@ -58,7 +61,8 @@ router.get('/nations/:country', async (req: Request, res: Response) => {
       success: true,
       data: report,
     });
-  } catch {
+  } catch (err: any) {
+    logger.error('Failed generating intelligence report', { error: err.message || err });
     res.status(500).json({
       success: false,
       error: { code: 'REPORT_GENERATION_ERROR', message: 'Failed generating intelligence report' },

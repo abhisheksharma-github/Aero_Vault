@@ -15,30 +15,12 @@ import {
   NavalVesselsQuerySchema,
   GroundVehiclesQuerySchema,
 } from '../schemas/intelligence.schema.js';
-import { prisma } from '../db.js';
+import healthRoutes from './health.routes.js';
 
 const router = Router();
 
-// Health Check Endpoint
-router.get('/health', async (req, res) => {
-  try {
-    await prisma.$queryRaw`SELECT 1`;
-    res.status(200).json({
-      status: 'healthy',
-      database: 'connected',
-      timestamp: new Date().toISOString(),
-      uptime: process.uptime(),
-      version: '3.0.0',
-    });
-  } catch (error) {
-    res.status(200).json({
-      status: 'degraded',
-      database: 'offline_or_unreachable',
-      note: 'AeroVault operating in autonomous local vault fallback mode.',
-      timestamp: new Date().toISOString(),
-    });
-  }
-});
+// Health Check Endpoints (/api/health, /api/health/live, /api/health/ready)
+router.use('/health', healthRoutes);
 
 // Top-Level Multi-Domain Direct Resource Endpoints
 router.get(

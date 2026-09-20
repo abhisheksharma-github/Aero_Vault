@@ -249,7 +249,7 @@ export class AircraftController {
 
       res.status(200).json({
         success: true,
-        message: `Aircraft '${deleted.name}' decommissioned and removed from active vault`,
+        message: `Aircraft decommissioned and removed from active vault`,
         data: deleted,
       });
     } catch (error) {

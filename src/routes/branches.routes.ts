@@ -1,11 +1,12 @@
 import { Router, Request, Response } from 'express';
 import { prisma } from '../db.js';
-import { aircraftVault } from '../data/normalize.js';
+import { vaultAircraft } from '../data/vaultLoader.js';
+import { logger } from '../utils/logger.js';
 
 const router = Router();
 
 // GET /api/branches — Summary of global military branches
-router.get('/', async (req: Request, res: Response) => {
+router.get('/', async (_req: Request, res: Response) => {
   try {
     const branches = [
       {
@@ -38,7 +39,8 @@ router.get('/', async (req: Request, res: Response) => {
       success: true,
       data: branches,
     });
-  } catch {
+  } catch (err: any) {
+    logger.error('Failed fetching branch profiles', { error: err.message || err });
     res.status(500).json({
       success: false,
       error: { code: 'BRANCH_FETCH_ERROR', message: 'Failed fetching branch profiles' },
@@ -70,11 +72,14 @@ router.get('/:branch/fleet', async (req: Request, res: Response) => {
         });
         return;
       }
-    } catch {
-      // Fallback
+    } catch (dbErr: any) {
+      logger.warn('Failed querying branch fleet from database, falling back to vault', {
+        branch: branchKey,
+        error: dbErr.message || dbErr,
+      });
     }
 
-    const filtered = aircraftVault.filter(
+    const filtered = vaultAircraft.filter(
       (a) => a.militaryBranch === branchKey
     );
 
@@ -82,7 +87,8 @@ router.get('/:branch/fleet', async (req: Request, res: Response) => {
       success: true,
       data: filtered,
     });
-  } catch {
+  } catch (err: any) {
+    logger.error('Failed fetching branch fleet', { error: err.message || err });
     res.status(500).json({
       success: false,
       error: { code: 'FLEET_FETCH_ERROR', message: 'Failed fetching branch fleet' },
