@@ -1,18 +1,25 @@
 {
   "name": "aerovault-backend",
   "version": "1.0.0",
+  "type": "module",
   "description": "AeroVault - High-end Military Aircraft Intelligence Platform Data Layer",
   "main": "dist/src/index.js",
   "scripts": {
+    "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "start": "node dist/src/index.js",
-    "dev": "tsx watch src/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:studio": "prisma studio",
+    "db:seed": "prisma db seed",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:deploy": "prisma migrate deploy",
     "prisma:studio": "prisma studio",
-    "db:seed": "prisma db seed",
-    "test": "tsx tests/runTests.ts",
     "client:dev": "npm --prefix client run dev",
     "client:build": "npm --prefix client run build"
   },
@@ -30,10 +37,6 @@
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^5.22.0",
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "@types/morgan": "^1.9.10",
-    "@types/node": "^20.17.6",
     "cors": "^2.8.6",
     "dotenv": "^16.4.5",
     "express": "^5.2.1",
@@ -46,6 +49,12 @@
     "zod": "^4.5.4"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^20.17.6",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0",
     "vitest": "^4.1.11"
   }
 }
