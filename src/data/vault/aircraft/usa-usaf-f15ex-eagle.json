@@ -1,0 +1,212 @@
+{
+  "id": "usa-usaf-f15ex-eagle",
+  "aliases": [
+    "usa-usaf-f15ex-eagle",
+    "boeing-f-15ex-eagle-ii",
+    "f-15ex-eagle-ii"
+  ],
+  "name": "Boeing F-15EX Eagle II",
+  "commonName": "F-15EX Eagle II",
+  "officialDesignation": "F-15EX Eagle II",
+  "natoReportingName": null,
+  "family": "McDonnell Douglas / Boeing F-15 Eagle",
+  "variant": "F-15EX Advanced Strike",
+  "block": "Lot 1 Production",
+  "manufacturer": "Boeing Defense, Space & Security",
+  "manufacturerCountry": "United States",
+  "originCountry": "United States",
+  "country": "United States",
+  "affiliation": "United States Air Force (Air Combat Command / ANG)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "AIR_SUPERIORITY",
+  "generation": "GEN_4_5",
+  "era": "MODERN",
+  "role": "Heavy Air Superiority & Deep Standoff Strike Missile Carrier",
+  "secondaryRoles": [
+    "Hypersonic Weapon Delivery",
+    "Homeland Defense",
+    "BVR Dominance"
+  ],
+  "firstFlightYear": 2021,
+  "introductionYear": 2021,
+  "retirementYear": null,
+  "productionCount": 104,
+  "fleetCount": 8,
+  "activeCount": 8,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "engineManufacturer": null,
+  "engineModel": "General Electric F110-GE-129 Afterburning Turbofans (Dual)",
+  "engineCount": 2,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 152,
+  "thrustAfterburnerKn": 262,
+  "topSpeedMach": 2.5,
+  "topSpeedKmh": 2655,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 18288,
+  "rateOfClimbMs": 254,
+  "gLimitPositive": 9,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 1270,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 4815,
+  "emptyWeightKg": 14300,
+  "maxTakeoffWeightKg": 36700,
+  "payloadCapacityKg": 13300,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "AESA",
+  "radarModel": "Raytheon AN/APG-82(V)1 AESA Radar",
+  "radarRangeAirKm": 280,
+  "hasAesa": true,
+  "hasIrst": true,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 95,
+  "stealthLevel": "REDUCED",
+  "rcsEstimatedM2": 2,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": true,
+  "maintenanceHoursPerFlightHour": 15,
+  "costPerFlightHourUsd": 27000,
+  "reliabilityScore": 90,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "The most advanced iteration of the undefeated F-15 air superiority fighter (104-0 combat record). Features AN/APG-82(V)1 AESA radar, EPAWSS electronic warfare suite, fly-by-wire controls, and an astounding 29,500 lb (13,300 kg) payload capacity carrying up to 12 AIM-120 missiles.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/F-15EX_Eagle_II_first_flight.jpg/1200px-F-15EX_Eagle_II_first_flight.jpg",
+  "tvrScore": 86,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "AIM-120D AMRAAM",
+        "type": "BVR_AAM",
+        "maxRangeKm": 160,
+        "speedMach": 4,
+        "guidance": "Active Radar / GPS"
+      }
+    },
+    {
+      "weapon": {
+        "name": "AGM-158 JASSM-ER",
+        "type": "LAND_ATTACK_CRUISE_MISSILE",
+        "maxRangeKm": 925,
+        "speedMach": 0.85,
+        "guidance": "GPS/INS/IIR"
+      }
+    },
+    {
+      "weapon": {
+        "name": "AIM-9X Sidewinder Block II",
+        "type": "WVR_AAM",
+        "maxRangeKm": 35,
+        "speedMach": 2.5,
+        "guidance": "HMS/Infrared"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 2021,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Boeing F-15EX Eagle II conducted."
+    },
+    {
+      "year": 2021,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with United States Air Force (Air Combat Command / ANG)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "AIR_SUPERIORITY",
+  "aircraftName": "Boeing F-15EX Eagle II",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 14300,
+      "maxTakeoffWeightKg": 36700,
+      "payloadCapacityKg": 13300
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "General Electric F110-GE-129 Afterburning Turbofans (Dual)",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 152,
+      "thrustAfterburnerKn": 262
+    },
+    "performance": {
+      "maxSpeedKmh": 2655,
+      "maxSpeedMach": 2.5,
+      "combatRadiusKm": 1270,
+      "ferryRangeKm": 4815,
+      "serviceCeilingM": 18288,
+      "rateOfClimbMs": 254,
+      "gLimitPositive": 9
+    }
+  },
+  "avionics": {
+    "radar": "Raytheon AN/APG-82(V)1 AESA Radar",
+    "radarType": "AESA",
+    "radarRangeAirKm": 280,
+    "hasAesa": true,
+    "hasIrst": true,
+    "hasSensorFusion": true,
+    "hasDatalink": true,
+    "helmetMountedDisplay": "Operational HMD",
+    "stealthLevel": "REDUCED",
+    "rcsEstimatedM2": 2
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": true,
+    "keyWeaponsIntegrated": [
+      "AIM-120D AMRAAM",
+      "AGM-158 JASSM-ER",
+      "AIM-9X Sidewinder Block II"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 8,
+    "estimatedQuantity": 8,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: ACTIVE. Active: 8, Retired: 0.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

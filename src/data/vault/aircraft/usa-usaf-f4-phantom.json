@@ -1,0 +1,211 @@
+{
+  "id": "usa-usaf-f4-phantom",
+  "aliases": [
+    "usa-usaf-f4-phantom",
+    "mcdonnell-douglas-f-4e-phantom-ii",
+    "f-4-phantom-ii"
+  ],
+  "name": "McDonnell Douglas F-4E Phantom II",
+  "commonName": "F-4 Phantom II",
+  "officialDesignation": "F-4E Phantom II",
+  "natoReportingName": null,
+  "family": "McDonnell Douglas F-4 Phantom",
+  "variant": "F-4E Advanced Fighter-Bomber",
+  "block": "USAF Standard",
+  "manufacturer": "McDonnell Douglas",
+  "manufacturerCountry": "United States",
+  "originCountry": "United States",
+  "country": "United States",
+  "affiliation": "United States Air Force / US Navy / USMC (1960–1996)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "FIGHTER",
+  "generation": "GEN_3",
+  "era": "COLD_WAR",
+  "role": "All-Weather Supersonic Fighter-Bomber & Interceptor",
+  "secondaryRoles": [
+    "Wild Weasel (SEAD)",
+    "Tactical Reconnaissance"
+  ],
+  "firstFlightYear": 1958,
+  "introductionYear": 1960,
+  "retirementYear": 1996,
+  "productionCount": 5195,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 5195,
+  "engineManufacturer": null,
+  "engineModel": "General Electric J79-GE-17A Turbojets (Dual)",
+  "engineCount": 2,
+  "engineType": "Turbojet",
+  "hasAfterburner": true,
+  "thrustDryKn": 105.8,
+  "thrustAfterburnerKn": 156,
+  "topSpeedMach": 2.23,
+  "topSpeedKmh": 2370,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 18300,
+  "rateOfClimbMs": 210,
+  "gLimitPositive": 8.5,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 680,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 2600,
+  "emptyWeightKg": 13757,
+  "maxTakeoffWeightKg": 28030,
+  "payloadCapacityKg": 8480,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "MECHANICAL_PULSE_DOPPLER",
+  "radarModel": "Westinghouse AN/APQ-120 Radar",
+  "radarRangeAirKm": 75,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": false,
+  "hasDatalink": false,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 72,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 7,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 25,
+  "costPerFlightHourUsd": 9000,
+  "reliabilityScore": 80,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "The defining twin-engine supersonic tactical fighter-bomber of the Cold War. Set 15 world speed and altitude records and served as the premier frontline multirole combat aircraft across the USAF, US Navy, and 11 allied nations.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/F-4E_Phantom_II_USAF.jpg/1200px-F-4E_Phantom_II_USAF.jpg",
+  "tvrScore": 63.9,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "AIM-7F Sparrow",
+        "type": "BVR_AAM",
+        "maxRangeKm": 70,
+        "speedMach": 4,
+        "guidance": "Semi-Active Radar"
+      }
+    },
+    {
+      "weapon": {
+        "name": "AIM-9L Sidewinder",
+        "type": "WVR_AAM",
+        "maxRangeKm": 18,
+        "speedMach": 2.5,
+        "guidance": "All-Aspect Infrared"
+      }
+    },
+    {
+      "weapon": {
+        "name": "AGM-88 HARM",
+        "type": "ANTI_RADIATION_MISSILE",
+        "maxRangeKm": 150,
+        "speedMach": 2,
+        "guidance": "Passive Radar Homing"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1958,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the McDonnell Douglas F-4E Phantom II conducted."
+    },
+    {
+      "year": 1960,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with United States Air Force / US Navy / USMC (1960–1996)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "FIGHTER",
+  "aircraftName": "McDonnell Douglas F-4E Phantom II",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 13757,
+      "maxTakeoffWeightKg": 28030,
+      "payloadCapacityKg": 8480
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "General Electric J79-GE-17A Turbojets (Dual)",
+      "engineType": "Turbojet",
+      "hasAfterburner": true,
+      "thrustDryKn": 105.8,
+      "thrustAfterburnerKn": 156
+    },
+    "performance": {
+      "maxSpeedKmh": 2370,
+      "maxSpeedMach": 2.23,
+      "combatRadiusKm": 680,
+      "ferryRangeKm": 2600,
+      "serviceCeilingM": 18300,
+      "rateOfClimbMs": 210,
+      "gLimitPositive": 8.5
+    }
+  },
+  "avionics": {
+    "radar": "Westinghouse AN/APQ-120 Radar",
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarRangeAirKm": 75,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": false,
+    "hasDatalink": false,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 7
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": true,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "AIM-7F Sparrow",
+      "AIM-9L Sidewinder",
+      "AGM-88 HARM"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 5195.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

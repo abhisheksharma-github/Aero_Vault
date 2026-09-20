@@ -1,0 +1,212 @@
+{
+  "id": "ind-iaf-jaguar-shamsher",
+  "aliases": [
+    "ind-iaf-jaguar-shamsher",
+    "sepecat-jaguar-is-ib-im-shamsher",
+    "jaguar-shamsher"
+  ],
+  "name": "SEPECAT Jaguar IS/IB/IM Shamsher",
+  "commonName": "Jaguar Shamsher",
+  "officialDesignation": "Jaguar DARIN III Standard",
+  "natoReportingName": null,
+  "family": "SEPECAT Jaguar",
+  "variant": "Jaguar IS (Strike) / IM (Maritime) / IB (Trainer)",
+  "block": "DARIN III Modernization Standard",
+  "manufacturer": "HAL / SEPECAT (Breguet / BAC)",
+  "manufacturerCountry": "India / UK / France",
+  "originCountry": "UK / France",
+  "country": "India",
+  "affiliation": "Indian Air Force (No. 5 Tuskers / No. 14 Bulls / No. 16 Cobras / No. 6 Dragons)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "GROUND_ATTACK",
+  "generation": "GEN_4",
+  "era": "MODERN",
+  "role": "Deep Penetration Strike & Maritime Interdiction",
+  "secondaryRoles": [
+    "Tactical Nuclear Delivery",
+    "Anti-Ship Strike",
+    "Low-Level Ingress"
+  ],
+  "firstFlightYear": 1969,
+  "introductionYear": 1979,
+  "retirementYear": null,
+  "productionCount": 160,
+  "fleetCount": 116,
+  "activeCount": 116,
+  "inactiveCount": 0,
+  "retiredCount": 44,
+  "engineManufacturer": null,
+  "engineModel": "Rolls-Royce Turbomeca Adour Mk 811 / 821 Turbofans",
+  "engineCount": 2,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 46,
+  "thrustAfterburnerKn": 76,
+  "topSpeedMach": 1.6,
+  "topSpeedKmh": 1699,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 14000,
+  "rateOfClimbMs": 120,
+  "gLimitPositive": 8.6,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 900,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 3524,
+  "emptyWeightKg": 7000,
+  "maxTakeoffWeightKg": 15700,
+  "payloadCapacityKg": 4750,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "AESA",
+  "radarModel": "EL/M-2052 AESA Radar (DARIN III Maritime / Strike)",
+  "radarRangeAirKm": 140,
+  "hasAesa": true,
+  "hasIrst": false,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 86,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 2.5,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": true,
+  "maintenanceHoursPerFlightHour": 15,
+  "costPerFlightHourUsd": 9500,
+  "reliabilityScore": 82,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "Deep penetration strike aircraft with over-wing missile pylons, upgraded under the DARIN III program with EL/M-2052 AESA radar, dual-cockpit MFDs, ASRAAM missiles, and Harpoon anti-ship missiles.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Indian_Air_Force_SEPECAT_Jaguar_IS.jpg/1200px-Indian_Air_Force_SEPECAT_Jaguar_IS.jpg",
+  "tvrScore": 73,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "AGM-84L Harpoon Block II",
+        "type": "ANTI_SHIP_MISSILE",
+        "maxRangeKm": 140,
+        "speedMach": 0.85,
+        "guidance": "Active Radar / GPS"
+      }
+    },
+    {
+      "weapon": {
+        "name": "ASRAAM WVR",
+        "type": "WVR_AAM",
+        "maxRangeKm": 25,
+        "speedMach": 3,
+        "guidance": "Imaging Infrared"
+      }
+    },
+    {
+      "weapon": {
+        "name": "CBU-105 Sensor Fuzed Weapon",
+        "type": "PRECISION_GUIDED_BOMB",
+        "maxRangeKm": 15,
+        "speedMach": 0.8,
+        "guidance": "Smart Submunitions"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1969,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the SEPECAT Jaguar IS/IB/IM Shamsher conducted."
+    },
+    {
+      "year": 1979,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Indian Air Force (No. 5 Tuskers / No. 14 Bulls / No. 16 Cobras / No. 6 Dragons)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "GROUND_ATTACK",
+  "aircraftName": "SEPECAT Jaguar IS/IB/IM Shamsher",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 7000,
+      "maxTakeoffWeightKg": 15700,
+      "payloadCapacityKg": 4750
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Rolls-Royce Turbomeca Adour Mk 811 / 821 Turbofans",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 46,
+      "thrustAfterburnerKn": 76
+    },
+    "performance": {
+      "maxSpeedKmh": 1699,
+      "maxSpeedMach": 1.6,
+      "combatRadiusKm": 900,
+      "ferryRangeKm": 3524,
+      "serviceCeilingM": 14000,
+      "rateOfClimbMs": 120,
+      "gLimitPositive": 8.6
+    }
+  },
+  "avionics": {
+    "radar": "EL/M-2052 AESA Radar (DARIN III Maritime / Strike)",
+    "radarType": "AESA",
+    "radarRangeAirKm": 140,
+    "hasAesa": true,
+    "hasIrst": false,
+    "hasSensorFusion": true,
+    "hasDatalink": true,
+    "helmetMountedDisplay": "Operational HMD",
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 2.5
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": true,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": true,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "AGM-84L Harpoon Block II",
+      "ASRAAM WVR",
+      "CBU-105 Sensor Fuzed Weapon"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 116,
+    "estimatedQuantity": 116,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: ACTIVE. Active: 116, Retired: 44.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

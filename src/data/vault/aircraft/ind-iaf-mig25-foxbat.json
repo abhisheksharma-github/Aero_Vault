@@ -1,0 +1,179 @@
+{
+  "id": "ind-iaf-mig25-foxbat",
+  "aliases": [
+    "ind-iaf-mig25-foxbat",
+    "mikoyan-mig-25r-foxbat-trishul-",
+    "mig-25-foxbat"
+  ],
+  "name": "Mikoyan MiG-25R Foxbat (Trishul)",
+  "commonName": "MiG-25 Foxbat",
+  "officialDesignation": "MiG-25RB / RU (Trishul)",
+  "natoReportingName": "Foxbat-B",
+  "family": "Mikoyan MiG-25",
+  "variant": "MiG-25RB Stratospheric Reconnaissance",
+  "block": "IAF No. 102 Trisonics Standard",
+  "manufacturer": "Mikoyan-Gurevich",
+  "manufacturerCountry": "Soviet Union",
+  "originCountry": "Soviet Union",
+  "country": "India",
+  "affiliation": "Indian Air Force (Historic Stratospheric Reconnaissance 1981–2006)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "RECONNAISSANCE",
+  "generation": "GEN_3",
+  "era": "COLD_WAR",
+  "role": "Mach 3.2 Stratospheric Strategic Reconnaissance",
+  "secondaryRoles": [
+    "High-Altitude Mapping",
+    "ELINT"
+  ],
+  "firstFlightYear": 1964,
+  "introductionYear": 1981,
+  "retirementYear": 2006,
+  "productionCount": 10,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 10,
+  "engineManufacturer": null,
+  "engineModel": "Tumansky R-15B-300 Afterburning Turbojets (Dual)",
+  "engineCount": 2,
+  "engineType": "Turbojet",
+  "hasAfterburner": true,
+  "thrustDryKn": 147,
+  "thrustAfterburnerKn": 200,
+  "topSpeedMach": 3.2,
+  "topSpeedKmh": 3400,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 24400,
+  "rateOfClimbMs": 208,
+  "gLimitPositive": 4.5,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 1730,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 2575,
+  "emptyWeightKg": 20000,
+  "maxTakeoffWeightKg": 41200,
+  "payloadCapacityKg": 0,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "NONE",
+  "radarModel": "SABIR High-Resolution Aerial Cameras & ELINT Suite",
+  "radarRangeAirKm": 0,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": false,
+  "hasDatalink": false,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 78,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 15,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 30,
+  "costPerFlightHourUsd": 25000,
+  "reliabilityScore": 80,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "The fastest combat aircraft to ever fly in South Asian airspace. Operated by the secretive No. 102 Squadron \"Trisonics\" from Bareilly, the Foxbat routinely flew at Mach 2.8+ at 80,000 feet, untouchable by enemy interceptors or SAM batteries.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/MiG-25_Foxbat_IAF_Museum.jpg/1200px-MiG-25_Foxbat_IAF_Museum.jpg",
+  "tvrScore": 55.8,
+  "weapons": [],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1964,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Mikoyan MiG-25R Foxbat (Trishul) conducted."
+    },
+    {
+      "year": 1981,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Indian Air Force (Historic Stratospheric Reconnaissance 1981–2006)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "RECONNAISSANCE",
+  "aircraftName": "Mikoyan MiG-25R Foxbat (Trishul)",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 20000,
+      "maxTakeoffWeightKg": 41200,
+      "payloadCapacityKg": 0
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Tumansky R-15B-300 Afterburning Turbojets (Dual)",
+      "engineType": "Turbojet",
+      "hasAfterburner": true,
+      "thrustDryKn": 147,
+      "thrustAfterburnerKn": 200
+    },
+    "performance": {
+      "maxSpeedKmh": 3400,
+      "maxSpeedMach": 3.2,
+      "combatRadiusKm": 1730,
+      "ferryRangeKm": 2575,
+      "serviceCeilingM": 24400,
+      "rateOfClimbMs": 208,
+      "gLimitPositive": 4.5
+    }
+  },
+  "avionics": {
+    "radar": "SABIR High-Resolution Aerial Cameras & ELINT Suite",
+    "radarType": "NONE",
+    "radarRangeAirKm": 0,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": false,
+    "hasDatalink": false,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 15
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": []
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 10.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

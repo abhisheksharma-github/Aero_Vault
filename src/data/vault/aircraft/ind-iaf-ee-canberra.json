@@ -1,0 +1,201 @@
+{
+  "id": "ind-iaf-ee-canberra",
+  "aliases": [
+    "ind-iaf-ee-canberra",
+    "english-electric-canberra-b-i-58-pr-57",
+    "canberra-bomber"
+  ],
+  "name": "English Electric Canberra B(I).58 / PR.57",
+  "commonName": "Canberra Bomber",
+  "officialDesignation": "Canberra B(I).58 / PR.57",
+  "natoReportingName": null,
+  "family": "English Electric Canberra",
+  "variant": "Canberra B(I).58 Interdictor / Bomber",
+  "block": "IAF Standard",
+  "manufacturer": "English Electric / HAL",
+  "manufacturerCountry": "UK / India",
+  "originCountry": "UK",
+  "country": "India",
+  "affiliation": "Indian Air Force (Historic Strategic Bomber 1957–2007)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "BOMBER",
+  "generation": "GEN_1",
+  "era": "VINTAGE",
+  "role": "Medium Jet Bomber & High-Altitude Photographic Reconnaissance",
+  "secondaryRoles": [
+    "Night Strike",
+    "UN Peacekeeping Operations"
+  ],
+  "firstFlightYear": 1949,
+  "introductionYear": 1957,
+  "retirementYear": 2007,
+  "productionCount": 110,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 110,
+  "engineManufacturer": null,
+  "engineModel": "Rolls-Royce Avon R.A.7 Turbojets (Dual)",
+  "engineCount": 2,
+  "engineType": "Turbojet",
+  "hasAfterburner": false,
+  "thrustDryKn": 33,
+  "thrustAfterburnerKn": 33,
+  "topSpeedMach": 0.88,
+  "topSpeedKmh": 933,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 14600,
+  "rateOfClimbMs": 20,
+  "gLimitPositive": 5,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 1300,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 5440,
+  "emptyWeightKg": 9820,
+  "maxTakeoffWeightKg": 25000,
+  "payloadCapacityKg": 3600,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "NONE",
+  "radarModel": "Blue Shadow / Green Satin Navigation Radar",
+  "radarRangeAirKm": 20,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": false,
+  "hasDatalink": false,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 45,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 8,
+  "hasRwr": false,
+  "hasEcm": false,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 15,
+  "costPerFlightHourUsd": 6000,
+  "reliabilityScore": 85,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "First jet bomber of the Indian Air Force. Flew combat missions in 1961 Congo UN operations, 1965 and 1971 Indo-Pak wars, and provided strategic optical reconnaissance during the 1999 Kargil War.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/English_Electric_Canberra_B%28I%2958_IAF.jpg/1200px-English_Electric_Canberra_B%28I%2958_IAF.jpg",
+  "tvrScore": 54.6,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "30mm Hispano Cannons (Pack of 4)",
+        "type": "GUN_POD",
+        "maxRangeKm": 2,
+        "speedMach": 1,
+        "guidance": "Optical"
+      }
+    },
+    {
+      "weapon": {
+        "name": "6,000 lb Bomb Bay Payload",
+        "type": "UNGUIDED_BOMB",
+        "maxRangeKm": 2,
+        "speedMach": 0.8,
+        "guidance": "Freefall"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1949,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the English Electric Canberra B(I).58 / PR.57 conducted."
+    },
+    {
+      "year": 1957,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Indian Air Force (Historic Strategic Bomber 1957–2007)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "BOMBER",
+  "aircraftName": "English Electric Canberra B(I).58 / PR.57",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 9820,
+      "maxTakeoffWeightKg": 25000,
+      "payloadCapacityKg": 3600
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Rolls-Royce Avon R.A.7 Turbojets (Dual)",
+      "engineType": "Turbojet",
+      "hasAfterburner": false,
+      "thrustDryKn": 33,
+      "thrustAfterburnerKn": 33
+    },
+    "performance": {
+      "maxSpeedKmh": 933,
+      "maxSpeedMach": 0.88,
+      "combatRadiusKm": 1300,
+      "ferryRangeKm": 5440,
+      "serviceCeilingM": 14600,
+      "rateOfClimbMs": 20,
+      "gLimitPositive": 5
+    }
+  },
+  "avionics": {
+    "radar": "Blue Shadow / Green Satin Navigation Radar",
+    "radarType": "NONE",
+    "radarRangeAirKm": 20,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": false,
+    "hasDatalink": false,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 8
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "30mm Hispano Cannons (Pack of 4)",
+      "6,000 lb Bomb Bay Payload"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 110.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

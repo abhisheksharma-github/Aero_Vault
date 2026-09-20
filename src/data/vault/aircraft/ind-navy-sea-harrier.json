@@ -1,0 +1,211 @@
+{
+  "id": "ind-navy-sea-harrier",
+  "aliases": [
+    "ind-navy-sea-harrier",
+    "bae-sea-harrier-frs-51",
+    "sea-harrier-white-tigers-"
+  ],
+  "name": "BAE Sea Harrier FRS.51",
+  "commonName": "Sea Harrier (White Tigers)",
+  "officialDesignation": "Sea Harrier FRS.Mk 51",
+  "natoReportingName": null,
+  "family": "Harrier Jump Jet",
+  "variant": "FRS.51 (Indian Navy)",
+  "block": "LUSH Upgraded Standard",
+  "manufacturer": "BAE Systems / HAL",
+  "manufacturerCountry": "UK / India",
+  "originCountry": "UK",
+  "country": "India",
+  "affiliation": "Indian Navy (INAS 300 White Tigers, INS Vikrant / INS Viraat 1983–2016)",
+  "militaryBranch": "NAVAL_AVIATION",
+  "serviceStatus": "RETIRED",
+  "category": "FIGHTER",
+  "generation": "GEN_3",
+  "era": "COLD_WAR",
+  "role": "Carrier-Borne V/STOL Fighter & Fleet Air Defense",
+  "secondaryRoles": [
+    "Anti-Ship Strike",
+    "Close Air Support"
+  ],
+  "firstFlightYear": 1978,
+  "introductionYear": 1983,
+  "retirementYear": 2016,
+  "productionCount": 30,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 30,
+  "engineManufacturer": null,
+  "engineModel": "Rolls-Royce Pegasus 104 Vectored-Thrust Turbofan",
+  "engineCount": 1,
+  "engineType": "Turbofan",
+  "hasAfterburner": false,
+  "thrustDryKn": 95.6,
+  "thrustAfterburnerKn": 95.6,
+  "topSpeedMach": 0.95,
+  "topSpeedKmh": 1185,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 15600,
+  "rateOfClimbMs": 250,
+  "gLimitPositive": 8,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 750,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 3600,
+  "emptyWeightKg": 6374,
+  "maxTakeoffWeightKg": 11880,
+  "payloadCapacityKg": 3630,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "MECHANICAL_PULSE_DOPPLER",
+  "radarModel": "ELTA EL/M-2032 Radar (LUSH Upgrade)",
+  "radarRangeAirKm": 100,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 76,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 2,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 22,
+  "costPerFlightHourUsd": 11000,
+  "reliabilityScore": 80,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "V/STOL carrier jump-jet that guarded Indian maritime frontiers from the decks of aircraft carriers INS Vikrant (R11) and INS Viraat (R22) for 33 years. Upgraded under Project LUSH with EL/M-2032 radar and Derby BVRAAM missiles.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sea_Harrier_INAS_300_White_Tigers.jpg/1200px-Sea_Harrier_INAS_300_White_Tigers.jpg",
+  "tvrScore": 63.4,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "Rafael Derby BVR-AAM",
+        "type": "BVR_AAM",
+        "maxRangeKm": 50,
+        "speedMach": 4,
+        "guidance": "Active Radar"
+      }
+    },
+    {
+      "weapon": {
+        "name": "Magic II WVR Missile",
+        "type": "WVR_AAM",
+        "maxRangeKm": 15,
+        "speedMach": 2.7,
+        "guidance": "Infrared"
+      }
+    },
+    {
+      "weapon": {
+        "name": "Sea Eagle Anti-Ship Missile",
+        "type": "ANTI_SHIP_MISSILE",
+        "maxRangeKm": 110,
+        "speedMach": 0.85,
+        "guidance": "Active Radar"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1978,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the BAE Sea Harrier FRS.51 conducted."
+    },
+    {
+      "year": 1983,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Indian Navy (INAS 300 White Tigers, INS Vikrant / INS Viraat 1983–2016)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "FIGHTER",
+  "aircraftName": "BAE Sea Harrier FRS.51",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 6374,
+      "maxTakeoffWeightKg": 11880,
+      "payloadCapacityKg": 3630
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 1,
+      "engineModel": "Rolls-Royce Pegasus 104 Vectored-Thrust Turbofan",
+      "engineType": "Turbofan",
+      "hasAfterburner": false,
+      "thrustDryKn": 95.6,
+      "thrustAfterburnerKn": 95.6
+    },
+    "performance": {
+      "maxSpeedKmh": 1185,
+      "maxSpeedMach": 0.95,
+      "combatRadiusKm": 750,
+      "ferryRangeKm": 3600,
+      "serviceCeilingM": 15600,
+      "rateOfClimbMs": 250,
+      "gLimitPositive": 8
+    }
+  },
+  "avionics": {
+    "radar": "ELTA EL/M-2032 Radar (LUSH Upgrade)",
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarRangeAirKm": 100,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": true,
+    "hasDatalink": true,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 2
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": true,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "Rafael Derby BVR-AAM",
+      "Magic II WVR Missile",
+      "Sea Eagle Anti-Ship Missile"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 30.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

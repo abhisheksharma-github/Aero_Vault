@@ -1,0 +1,212 @@
+{
+  "id": "chn-plaaf-j16",
+  "aliases": [
+    "chn-plaaf-j16",
+    "shenyang-j-16-hidden-dragon",
+    "j-16-hidden-dragon"
+  ],
+  "name": "Shenyang J-16 Hidden Dragon",
+  "commonName": "J-16 Hidden Dragon",
+  "officialDesignation": "J-16 Flanker-L",
+  "natoReportingName": "Flanker-L",
+  "family": "Shenyang J-11/16 Flanker Series",
+  "variant": "J-16 Heavy Strike Fighter",
+  "block": "Serial Standard",
+  "manufacturer": "Shenyang Aircraft Corporation",
+  "manufacturerCountry": "China",
+  "originCountry": "China",
+  "country": "China",
+  "affiliation": "People’s Liberation Army Air Force (PLAAF)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "MULTIROLE_FIGHTER",
+  "generation": "GEN_4_5",
+  "era": "MODERN",
+  "role": "Tandem-Seat Heavy Multirole Strike Fighter",
+  "secondaryRoles": [
+    "Air Dominance",
+    "SEAD (J-16D Electronic Attack)",
+    "Maritime Strike"
+  ],
+  "firstFlightYear": 2011,
+  "introductionYear": 2015,
+  "retirementYear": null,
+  "productionCount": 250,
+  "fleetCount": 220,
+  "activeCount": 220,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "engineManufacturer": null,
+  "engineModel": "Shenyang WS-10B Taihang Afterburning Turbofans (Dual)",
+  "engineCount": 2,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 178,
+  "thrustAfterburnerKn": 280,
+  "topSpeedMach": 2.2,
+  "topSpeedKmh": 2336,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 17300,
+  "rateOfClimbMs": 250,
+  "gLimitPositive": 9,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 1500,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 3900,
+  "emptyWeightKg": 17700,
+  "maxTakeoffWeightKg": 35000,
+  "payloadCapacityKg": 8000,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "AESA",
+  "radarModel": "Type 1493 GaN AESA Radar",
+  "radarRangeAirKm": 250,
+  "hasAesa": true,
+  "hasIrst": true,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 92,
+  "stealthLevel": "REDUCED",
+  "rcsEstimatedM2": 2.5,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": true,
+  "maintenanceHoursPerFlightHour": 16,
+  "costPerFlightHourUsd": 14000,
+  "reliabilityScore": 86,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "Indigenous twin-engine heavy multirole strike fighter. Equipped with Type 1493 GaN AESA radar, integrated EW self-protection pods, and capability to fire PL-15 (200 km) and ultra-long-range PL-17 (400 km) air-to-air missiles.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shenyang_J-16_PLAAF_in_flight.jpg/1200px-Shenyang_J-16_PLAAF_in_flight.jpg",
+  "tvrScore": 85.1,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "PL-15 Dual-Pulse BVRAAM",
+        "type": "BVR_AAM",
+        "maxRangeKm": 200,
+        "speedMach": 4.5,
+        "guidance": "Active Radar / AESA"
+      }
+    },
+    {
+      "weapon": {
+        "name": "PL-10 High-Off-Boresight WVR",
+        "type": "WVR_AAM",
+        "maxRangeKm": 25,
+        "speedMach": 3.5,
+        "guidance": "IIR / HMS"
+      }
+    },
+    {
+      "weapon": {
+        "name": "YJ-83K Anti-Ship Missile",
+        "type": "ANTI_SHIP_MISSILE",
+        "maxRangeKm": 200,
+        "speedMach": 0.9,
+        "guidance": "Active Radar"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 2011,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Shenyang J-16 Hidden Dragon conducted."
+    },
+    {
+      "year": 2015,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with People’s Liberation Army Air Force (PLAAF)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "MULTIROLE_FIGHTER",
+  "aircraftName": "Shenyang J-16 Hidden Dragon",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 17700,
+      "maxTakeoffWeightKg": 35000,
+      "payloadCapacityKg": 8000
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Shenyang WS-10B Taihang Afterburning Turbofans (Dual)",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 178,
+      "thrustAfterburnerKn": 280
+    },
+    "performance": {
+      "maxSpeedKmh": 2336,
+      "maxSpeedMach": 2.2,
+      "combatRadiusKm": 1500,
+      "ferryRangeKm": 3900,
+      "serviceCeilingM": 17300,
+      "rateOfClimbMs": 250,
+      "gLimitPositive": 9
+    }
+  },
+  "avionics": {
+    "radar": "Type 1493 GaN AESA Radar",
+    "radarType": "AESA",
+    "radarRangeAirKm": 250,
+    "hasAesa": true,
+    "hasIrst": true,
+    "hasSensorFusion": true,
+    "hasDatalink": true,
+    "helmetMountedDisplay": "Operational HMD",
+    "stealthLevel": "REDUCED",
+    "rcsEstimatedM2": 2.5
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": true,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "PL-15 Dual-Pulse BVRAAM",
+      "PL-10 High-Off-Boresight WVR",
+      "YJ-83K Anti-Ship Missile"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 220,
+    "estimatedQuantity": 220,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: ACTIVE. Active: 220, Retired: 0.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "id": "ind-iaf-mig27-bahadur",
+  "aliases": [
+    "ind-iaf-mig27-bahadur",
+    "mikoyan-mig-27ml-bahadur",
+    "mig-27-bahadur"
+  ],
+  "name": "Mikoyan MiG-27ML Bahadur",
+  "commonName": "MiG-27 Bahadur",
+  "officialDesignation": "MiG-27ML Flogger-J",
+  "natoReportingName": "Flogger-J",
+  "family": "Mikoyan MiG-27",
+  "variant": "MiG-27ML Bahadur",
+  "block": "IAF Upgraded Bahadur",
+  "manufacturer": "HAL Nashik / Mikoyan",
+  "manufacturerCountry": "India / Soviet Union",
+  "originCountry": "Soviet Union",
+  "country": "India",
+  "affiliation": "Indian Air Force (Historic Kargil Strike Hero 1985–2019)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "GROUND_ATTACK",
+  "generation": "GEN_3",
+  "era": "COLD_WAR",
+  "role": "Variable-Geometry Ground Attack & Strike Fighter",
+  "secondaryRoles": [
+    "Close Air Support",
+    "Interdiction"
+  ],
+  "firstFlightYear": 1970,
+  "introductionYear": 1985,
+  "retirementYear": 2019,
+  "productionCount": 165,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 165,
+  "engineManufacturer": null,
+  "engineModel": "Khachaturov R-29B-300 Afterburning Turbojet",
+  "engineCount": 1,
+  "engineType": "Turbojet",
+  "hasAfterburner": true,
+  "thrustDryKn": 78.4,
+  "thrustAfterburnerKn": 112.8,
+  "topSpeedMach": 1.77,
+  "topSpeedKmh": 1885,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 14000,
+  "rateOfClimbMs": 200,
+  "gLimitPositive": 7.5,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 780,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 2500,
+  "emptyWeightKg": 11908,
+  "maxTakeoffWeightKg": 20300,
+  "payloadCapacityKg": 4000,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "NONE",
+  "radarModel": "Klen-PRF Laser Rangefinder / Target Designator",
+  "radarRangeAirKm": 10,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": false,
+  "hasDatalink": false,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 65,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 3.5,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 18,
+  "costPerFlightHourUsd": 8500,
+  "reliabilityScore": 76,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "Variable-geometry swing-wing dedicated ground attack aircraft produced under license by HAL. Armed with a 30mm six-barrel Gatling cannon (GSh-6-30), the Bahadur was pivotal during Operation Safed Sagar in the 1999 Kargil War.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mikoyan-Gurevich_MiG-27ML_Bahadur_of_the_IAF.jpg/1200px-Mikoyan-Gurevich_MiG-27ML_Bahadur_of_the_IAF.jpg",
+  "tvrScore": 55.1,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "30mm GSh-6-30 Gatling Cannon",
+        "type": "GUN_POD",
+        "maxRangeKm": 3,
+        "speedMach": 1.5,
+        "guidance": "Ballistic"
+      }
+    },
+    {
+      "weapon": {
+        "name": "KAB-500L Laser Guided Bomb",
+        "type": "PRECISION_GUIDED_BOMB",
+        "maxRangeKm": 12,
+        "speedMach": 0.9,
+        "guidance": "Laser"
+      }
+    },
+    {
+      "weapon": {
+        "name": "R-60M Air-to-Air Missile",
+        "type": "WVR_AAM",
+        "maxRangeKm": 8,
+        "speedMach": 2.7,
+        "guidance": "Infrared"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1970,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Mikoyan MiG-27ML Bahadur conducted."
+    },
+    {
+      "year": 1985,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Indian Air Force (Historic Kargil Strike Hero 1985–2019)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "GROUND_ATTACK",
+  "aircraftName": "Mikoyan MiG-27ML Bahadur",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 11908,
+      "maxTakeoffWeightKg": 20300,
+      "payloadCapacityKg": 4000
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 1,
+      "engineModel": "Khachaturov R-29B-300 Afterburning Turbojet",
+      "engineType": "Turbojet",
+      "hasAfterburner": true,
+      "thrustDryKn": 78.4,
+      "thrustAfterburnerKn": 112.8
+    },
+    "performance": {
+      "maxSpeedKmh": 1885,
+      "maxSpeedMach": 1.77,
+      "combatRadiusKm": 780,
+      "ferryRangeKm": 2500,
+      "serviceCeilingM": 14000,
+      "rateOfClimbMs": 200,
+      "gLimitPositive": 7.5
+    }
+  },
+  "avionics": {
+    "radar": "Klen-PRF Laser Rangefinder / Target Designator",
+    "radarType": "NONE",
+    "radarRangeAirKm": 10,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": false,
+    "hasDatalink": false,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 3.5
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": true,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "30mm GSh-6-30 Gatling Cannon",
+      "KAB-500L Laser Guided Bomb",
+      "R-60M Air-to-Air Missile"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 165.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

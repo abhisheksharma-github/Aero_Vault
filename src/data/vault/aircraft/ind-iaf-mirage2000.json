@@ -1,0 +1,212 @@
+{
+  "id": "ind-iaf-mirage2000",
+  "aliases": [
+    "ind-iaf-mirage2000",
+    "dassault-mirage-2000h-th-vajra",
+    "mirage-2000-vajra"
+  ],
+  "name": "Dassault Mirage 2000H/TH Vajra",
+  "commonName": "Mirage 2000 Vajra",
+  "officialDesignation": "Mirage 2000 I/TI (Upgraded)",
+  "natoReportingName": null,
+  "family": "Dassault Mirage 2000",
+  "variant": "Mirage 2000-5 Mk2 Upgrade Standard",
+  "block": "Vajra Upgrade",
+  "manufacturer": "Dassault Aviation / HAL",
+  "manufacturerCountry": "France / India",
+  "originCountry": "France",
+  "country": "India",
+  "affiliation": "Indian Air Force (No. 1 Tigers / No. 7 Battleaxes / No. 9 Wolfpack)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "MULTIROLE_FIGHTER",
+  "generation": "GEN_4_5",
+  "era": "MODERN",
+  "role": "Precision Strike & Air Defense Fighter",
+  "secondaryRoles": [
+    "Laser Guided Bombing",
+    "Nuclear Standoff",
+    "Air Superiority"
+  ],
+  "firstFlightYear": 1978,
+  "introductionYear": 1985,
+  "retirementYear": null,
+  "productionCount": 50,
+  "fleetCount": 48,
+  "activeCount": 48,
+  "inactiveCount": 0,
+  "retiredCount": 2,
+  "engineManufacturer": null,
+  "engineModel": "Snecma M53-P2 Afterburning Turbofan",
+  "engineCount": 1,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 64.3,
+  "thrustAfterburnerKn": 95.1,
+  "topSpeedMach": 2.2,
+  "topSpeedKmh": 2336,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 17060,
+  "rateOfClimbMs": 285,
+  "gLimitPositive": 9,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 1550,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 3335,
+  "emptyWeightKg": 7500,
+  "maxTakeoffWeightKg": 17000,
+  "payloadCapacityKg": 6300,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "MECHANICAL_PULSE_DOPPLER",
+  "radarModel": "Thales RDY-2 Pulse-Doppler Multimode Radar",
+  "radarRangeAirKm": 130,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 89,
+  "stealthLevel": "REDUCED",
+  "rcsEstimatedM2": 1.2,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": true,
+  "maintenanceHoursPerFlightHour": 14,
+  "costPerFlightHourUsd": 11000,
+  "reliabilityScore": 86,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "The hero of the 1999 Kargil War and the 2019 Balakot airstrikes. Upgraded with RDY-2 radar, glass cockpits, MICA missiles, and Spice 2000 precision standoff munitions.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mirage-2000_%28IAF%29.jpg/1200px-Mirage-2000_%28IAF%29.jpg",
+  "tvrScore": 80.4,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "MICA EM BVR-AAM",
+        "type": "BVR_AAM",
+        "maxRangeKm": 80,
+        "speedMach": 4,
+        "guidance": "Active Radar"
+      }
+    },
+    {
+      "weapon": {
+        "name": "MICA IR WVR-AAM",
+        "type": "WVR_AAM",
+        "maxRangeKm": 60,
+        "speedMach": 4,
+        "guidance": "Imaging Infrared"
+      }
+    },
+    {
+      "weapon": {
+        "name": "Spice 2000 PG Munition",
+        "type": "PRECISION_GUIDED_BOMB",
+        "maxRangeKm": 60,
+        "speedMach": 0.9,
+        "guidance": "EO/GPS Standoff"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1978,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Dassault Mirage 2000H/TH Vajra conducted."
+    },
+    {
+      "year": 1985,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Indian Air Force (No. 1 Tigers / No. 7 Battleaxes / No. 9 Wolfpack)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "MULTIROLE_FIGHTER",
+  "aircraftName": "Dassault Mirage 2000H/TH Vajra",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 7500,
+      "maxTakeoffWeightKg": 17000,
+      "payloadCapacityKg": 6300
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 1,
+      "engineModel": "Snecma M53-P2 Afterburning Turbofan",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 64.3,
+      "thrustAfterburnerKn": 95.1
+    },
+    "performance": {
+      "maxSpeedKmh": 2336,
+      "maxSpeedMach": 2.2,
+      "combatRadiusKm": 1550,
+      "ferryRangeKm": 3335,
+      "serviceCeilingM": 17060,
+      "rateOfClimbMs": 285,
+      "gLimitPositive": 9
+    }
+  },
+  "avionics": {
+    "radar": "Thales RDY-2 Pulse-Doppler Multimode Radar",
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarRangeAirKm": 130,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": true,
+    "hasDatalink": true,
+    "helmetMountedDisplay": "Operational HMD",
+    "stealthLevel": "REDUCED",
+    "rcsEstimatedM2": 1.2
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": true,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "MICA EM BVR-AAM",
+      "MICA IR WVR-AAM",
+      "Spice 2000 PG Munition"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 48,
+    "estimatedQuantity": 48,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: ACTIVE. Active: 48, Retired: 2.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

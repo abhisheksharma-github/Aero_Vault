@@ -41,6 +41,7 @@ export default function AircraftDirectoryView({
   const [selectedBranch, setSelectedBranch] = useState('ALL');
   const [selectedGeneration, setSelectedGeneration] = useState('ALL');
   const [selectedStatus, setSelectedStatus] = useState('ALL');
+  const [selectedEra, setSelectedEra] = useState('ALL');
   const [sortBy, setSortBy] = useState('tvrScore');
   const [sortOrder, setSortOrder] = useState('desc');
 
@@ -60,6 +61,7 @@ export default function AircraftDirectoryView({
           category: selectedCategory,
           generation: selectedGeneration,
           status: selectedStatus,
+          era: selectedEra,
         });
         if (res && res.items) {
           setAircraftList(res.items);
@@ -71,7 +73,7 @@ export default function AircraftDirectoryView({
       }
     }
     loadAircraft();
-  }, [searchQuery, selectedCountry, selectedCategory, selectedGeneration, selectedStatus]);
+  }, [searchQuery, selectedCountry, selectedCategory, selectedGeneration, selectedStatus, selectedEra]);
 
   // Derived filter options
   const [categories, setCategories] = useState([
@@ -130,6 +132,18 @@ export default function AircraftDirectoryView({
       );
     }
 
+    if (selectedStatus && selectedStatus !== 'ALL') {
+      list = list.filter((a) => a.serviceStatus === selectedStatus);
+    }
+
+    if (selectedEra && selectedEra !== 'ALL') {
+      list = list.filter((a) => a.era === selectedEra);
+    }
+
+    if (selectedGeneration && selectedGeneration !== 'ALL') {
+      list = list.filter((a) => a.generation === selectedGeneration);
+    }
+
     list.sort((a, b) => {
       let valA = a[sortBy];
       let valB = b[sortBy];
@@ -158,7 +172,7 @@ export default function AircraftDirectoryView({
     });
 
     return list;
-  }, [aircraftList, selectedBranch, sortBy, sortOrder]);
+  }, [aircraftList, selectedBranch, selectedStatus, selectedEra, selectedGeneration, sortBy, sortOrder]);
 
   const getTvrColor = (score) => {
     if (score >= 92) return 'text-cyan-400 bg-cyan-500/10 border-cyan-400/40';
@@ -172,6 +186,14 @@ export default function AircraftDirectoryView({
     return gen.replace('GEN_', '').replace('_PLUS', '+').replace('_', '.') + ' Gen';
   };
 
+  const formatEra = (era) => {
+    if (era === 'VINTAGE') return 'Vintage (1947–60)';
+    if (era === 'COLD_WAR') return 'Cold War (1961–90)';
+    if (era === 'MODERN') return 'Modern (1991–Now)';
+    if (era === 'NEXT_GEN') return 'Next-Gen (2030+)';
+    return era || 'All Eras';
+  };
+
   return (
     <div className="space-y-8 animate-fade-in text-slate-100">
       {/* Top Header */}
@@ -180,13 +202,13 @@ export default function AircraftDirectoryView({
           <div className="space-y-2 max-w-2xl">
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-xl text-xs font-mono font-bold uppercase bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
               <Plane className="w-3.5 h-3.5" />
-              <span>G20 Military Aircraft Master Directory</span>
+              <span>Historical & Modern Military Aviation Vault (1947–2026+)</span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-display font-black text-white">
               Global Combat <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Aircraft Fleet</span>
             </h1>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed font-sans">
-              Real-time multi-spectrum exploration of verified military aircraft across all G20 nations. Standardized kinematics, Gallium Nitride (GaN) AESA radars, electronic warfare indices, and verified fleet inventories.
+              Comprehensive military aerospace database from 1947 to present day. Spanning active frontline air superiority fighters and retired historic interceptors/strike aircraft across India, USA, Russia, China, UK, France, and world powers.
             </p>
           </div>
 
@@ -216,6 +238,59 @@ export default function AircraftDirectoryView({
 
       {/* Search & Multi-Faceted Filters */}
       <div className="p-5 rounded-3xl bg-slate-900/90 border border-slate-800 space-y-4 shadow-xl">
+        {/* Status Filter Tab Pills */}
+        <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-800/80">
+          <div className="flex items-center space-x-2">
+            <span className="text-xs font-mono text-slate-400 font-bold uppercase mr-1">Status:</span>
+            {[
+              { id: 'ALL', label: 'All Statuses' },
+              { id: 'ACTIVE', label: 'In Service / Active', color: 'text-emerald-400', dot: true },
+              { id: 'RETIRED', label: 'Retired / Historic (Decommissioned)', color: 'text-rose-400' },
+            ].map((st) => (
+              <button
+                key={st.id}
+                onClick={() => {
+                  tacticalAudio.playClick();
+                  setSelectedStatus(st.id);
+                }}
+                className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all ${
+                  selectedStatus === st.id
+                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/50 shadow-glow-cyan'
+                    : 'bg-slate-950 text-slate-400 hover:text-white border border-slate-800'
+                }`}
+              >
+                {st.dot && <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />}
+                <span className={st.color || ''}>{st.label}</span>
+              </button>
+            ))}
+          </div>
+
+          <div className="flex items-center space-x-2">
+            <span className="text-xs font-mono text-slate-400 font-bold uppercase mr-1">Era:</span>
+            {[
+              { id: 'ALL', label: 'All Eras' },
+              { id: 'VINTAGE', label: 'Vintage (1947–60)' },
+              { id: 'COLD_WAR', label: 'Cold War (1961–90)' },
+              { id: 'MODERN', label: 'Modern (1991+)' },
+            ].map((er) => (
+              <button
+                key={er.id}
+                onClick={() => {
+                  tacticalAudio.playClick();
+                  setSelectedEra(er.id);
+                }}
+                className={`px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all ${
+                  selectedEra === er.id
+                    ? 'bg-amber-500/20 text-amber-300 border border-amber-500/50'
+                    : 'bg-slate-950 text-slate-400 hover:text-white border border-slate-800'
+                }`}
+              >
+                {er.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Search & Sort Row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="relative w-full sm:w-96">
@@ -266,7 +341,7 @@ export default function AircraftDirectoryView({
               className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono text-white focus:outline-none focus:border-cyan-500"
             >
               {countries.map((c) => (
-                <option key={c} value={c}>{c === 'ALL' ? 'All G20 Countries' : c}</option>
+                <option key={c} value={c}>{c === 'ALL' ? 'All Countries' : c}</option>
               ))}
             </select>
           </div>
@@ -310,10 +385,12 @@ export default function AircraftDirectoryView({
               className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono text-white focus:outline-none focus:border-cyan-500"
             >
               <option value="ALL">All Generations</option>
-              <option value="GEN_5">5th Generation (Stealth)</option>
+              <option value="GEN_5">5th Generation (Stealth / VLO)</option>
               <option value="GEN_4_5">4.5+ Generation (AESA/Supercruise)</option>
-              <option value="GEN_4">4th Generation</option>
-              <option value="GEN_3">3rd Generation</option>
+              <option value="GEN_4">4th Generation (BVR / Pulse-Doppler)</option>
+              <option value="GEN_3">3rd Generation (Mach 2 / Early Missiles)</option>
+              <option value="GEN_2">2nd Generation (Transonic / First Radars)</option>
+              <option value="GEN_1">1st Generation (Post-1947 Subsonic Jet)</option>
             </select>
           </div>
         </div>
@@ -324,6 +401,8 @@ export default function AircraftDirectoryView({
         <div>
           Showing <span className="text-cyan-400 font-bold">{filteredAndSortedAircraft.length}</span> verified airframes
           {selectedCountry !== 'ALL' && <span> in <strong className="text-white">{selectedCountry}</strong></span>}
+          {selectedStatus !== 'ALL' && <span> • <strong className={selectedStatus === 'ACTIVE' ? 'text-emerald-400' : 'text-rose-400'}>{selectedStatus === 'ACTIVE' ? 'Active In-Service' : 'Retired / Decommissioned'}</strong></span>}
+          {selectedEra !== 'ALL' && <span> • <strong className="text-amber-400">{formatEra(selectedEra)}</strong></span>}
         </div>
         <div className="flex items-center space-x-2">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
@@ -364,17 +443,29 @@ export default function AircraftDirectoryView({
           const country = aircraft.country;
           const role = aircraft.primaryCategory || aircraft.category || aircraft.role;
           const gen = formatGen(aircraft.generation);
+          const isActive = aircraft.serviceStatus === 'ACTIVE';
+          const isRetired = aircraft.serviceStatus === 'RETIRED';
+          const introYear = aircraft.introductionYear || aircraft.firstFlightYear;
+          const retireYear = aircraft.retirementYear;
+          
+          let serviceSpan = 'Active';
+          if (introYear && retireYear) {
+            serviceSpan = `${introYear}–${retireYear} (Retired)`;
+          } else if (introYear) {
+            serviceSpan = isRetired ? `${introYear} (Retired)` : `${introYear}–Present`;
+          }
+
           const fleetCount =
             aircraft.fleet?.confirmedQuantity ??
             aircraft.fleet?.estimatedQuantity ??
             aircraft.activeCount ??
-            '—';
+            (isRetired ? 0 : '—');
           const maxSpeed =
             aircraft.specifications?.performance?.maxSpeedMach
               ? `Mach ${aircraft.specifications.performance.maxSpeedMach}`
-              : (aircraft.topSpeed || 'Mach 2.0');
-          const radar = aircraft.avionics?.radar || aircraft.radar || 'AESA Radar';
-          const hasAesa = aircraft.avionics?.hasAesa ?? true;
+              : (aircraft.topSpeedMach ? `Mach ${aircraft.topSpeedMach}` : (aircraft.topSpeed || 'Mach 2.0'));
+          const radar = aircraft.avionics?.radar || aircraft.radar || aircraft.radarModel || 'Mechanical Radar';
+          const hasAesa = aircraft.avionics?.hasAesa ?? aircraft.hasAesa ?? false;
 
           return (
             <div
@@ -396,9 +487,21 @@ export default function AircraftDirectoryView({
 
                 {/* Top Badges */}
                 <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
-                  <span className="px-2.5 py-0.5 rounded-lg text-[10px] font-mono font-bold uppercase bg-slate-950/90 text-cyan-400 border border-cyan-500/40">
-                    {gen}
-                  </span>
+                  <div className="flex items-center space-x-1.5">
+                    {isActive ? (
+                      <span className="inline-flex items-center px-2 py-0.5 rounded-lg text-[10px] font-mono font-bold uppercase bg-emerald-950/90 text-emerald-400 border border-emerald-500/50">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1 animate-pulse" />
+                        ACTIVE
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center px-2 py-0.5 rounded-lg text-[10px] font-mono font-bold uppercase bg-rose-950/90 text-rose-400 border border-rose-500/50">
+                        RETIRED
+                      </span>
+                    )}
+                    <span className="px-2 py-0.5 rounded-lg text-[10px] font-mono font-bold uppercase bg-slate-950/90 text-cyan-400 border border-cyan-500/40">
+                      {gen}
+                    </span>
+                  </div>
 
                   <div className={`px-2.5 py-0.5 rounded-lg text-[10px] font-mono font-bold border ${getTvrColor(tvr)}`}>
                     TVR {tvr.toFixed(1)}
@@ -410,8 +513,8 @@ export default function AircraftDirectoryView({
                   <span className="px-2 py-0.5 rounded bg-slate-950/80 border border-slate-800/80">
                     {country}
                   </span>
-                  <span className="px-2 py-0.5 rounded bg-slate-950/80 border border-slate-800/80 text-emerald-400 font-bold">
-                    {fleetCount} Units
+                  <span className={`px-2 py-0.5 rounded bg-slate-950/80 border border-slate-800/80 font-bold ${isActive ? 'text-emerald-400' : 'text-slate-400'}`}>
+                    {serviceSpan}
                   </span>
                 </div>
               </div>
@@ -442,9 +545,9 @@ export default function AircraftDirectoryView({
                   <span className="text-white font-bold">{maxSpeed}</span>
                 </div>
                 <div>
-                  <span className="text-slate-500 text-[10px] block">Radar Standard</span>
+                  <span className="text-slate-500 text-[10px] block">Sensor / Radar</span>
                   <span className="text-purple-400 font-bold truncate block" title={radar}>
-                    {hasAesa ? 'GaN AESA' : 'Pulse-Doppler'}
+                    {hasAesa ? 'GaN AESA' : (radar.length > 18 ? radar.substring(0, 18) + '...' : radar)}
                   </span>
                 </div>
               </div>

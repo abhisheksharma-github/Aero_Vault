@@ -1,0 +1,178 @@
+{
+  "id": "usa-usaf-sr71-blackbird",
+  "aliases": [
+    "usa-usaf-sr71-blackbird",
+    "lockheed-sr-71a-blackbird",
+    "sr-71-blackbird"
+  ],
+  "name": "Lockheed SR-71A Blackbird",
+  "commonName": "SR-71 Blackbird",
+  "officialDesignation": "SR-71A Strategic Reconnaissance",
+  "natoReportingName": null,
+  "family": "Lockheed Blackbird Family",
+  "variant": "SR-71A",
+  "block": "USAF Strategic Reconnaissance",
+  "manufacturer": "Lockheed Corporation (Skunk Works)",
+  "manufacturerCountry": "United States",
+  "originCountry": "United States",
+  "country": "United States",
+  "affiliation": "United States Air Force / 9th Strategic Reconnaissance Wing (1966–1998)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "RECONNAISSANCE",
+  "generation": "GEN_3",
+  "era": "COLD_WAR",
+  "role": "Mach 3.3+ Stratospheric Strategic Reconnaissance",
+  "secondaryRoles": [
+    "High-Altitude Optical/ELINT Survey"
+  ],
+  "firstFlightYear": 1964,
+  "introductionYear": 1966,
+  "retirementYear": 1998,
+  "productionCount": 32,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 32,
+  "engineManufacturer": null,
+  "engineModel": "Pratt & Whitney J58-1 Continuous-Bleed Afterburning Turbojets",
+  "engineCount": 2,
+  "engineType": "Turbojet",
+  "hasAfterburner": true,
+  "thrustDryKn": 220,
+  "thrustAfterburnerKn": 290,
+  "topSpeedMach": 3.32,
+  "topSpeedKmh": 3540,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 25900,
+  "rateOfClimbMs": 60,
+  "gLimitPositive": 3.5,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 2000,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 5400,
+  "emptyWeightKg": 30600,
+  "maxTakeoffWeightKg": 78000,
+  "payloadCapacityKg": 1600,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "PESA",
+  "radarModel": "Advanced Synthetic Aperture Radar System (ASARS-1)",
+  "radarRangeAirKm": 160,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 94,
+  "stealthLevel": "HIGH",
+  "rcsEstimatedM2": 0.1,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 65,
+  "costPerFlightHourUsd": 85000,
+  "reliabilityScore": 84,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "The fastest and highest-flying air-breathing manned operational aircraft ever built. Designed by Kelly Johnson's Skunk Works, the SR-71 outflew over 4,000 surface-to-air missiles fired at it throughout its operational life, with zero losses to enemy action.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Lockheed_SR-71_Blackbird.jpg/1200px-Lockheed_SR-71_Blackbird.jpg",
+  "tvrScore": 83.2,
+  "weapons": [],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1964,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Lockheed SR-71A Blackbird conducted."
+    },
+    {
+      "year": 1966,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with United States Air Force / 9th Strategic Reconnaissance Wing (1966–1998)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "RECONNAISSANCE",
+  "aircraftName": "Lockheed SR-71A Blackbird",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 30600,
+      "maxTakeoffWeightKg": 78000,
+      "payloadCapacityKg": 1600
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Pratt & Whitney J58-1 Continuous-Bleed Afterburning Turbojets",
+      "engineType": "Turbojet",
+      "hasAfterburner": true,
+      "thrustDryKn": 220,
+      "thrustAfterburnerKn": 290
+    },
+    "performance": {
+      "maxSpeedKmh": 3540,
+      "maxSpeedMach": 3.32,
+      "combatRadiusKm": 2000,
+      "ferryRangeKm": 5400,
+      "serviceCeilingM": 25900,
+      "rateOfClimbMs": 60,
+      "gLimitPositive": 3.5
+    }
+  },
+  "avionics": {
+    "radar": "Advanced Synthetic Aperture Radar System (ASARS-1)",
+    "radarType": "PESA",
+    "radarRangeAirKm": 160,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": true,
+    "hasDatalink": true,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "HIGH",
+    "rcsEstimatedM2": 0.1
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": []
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 32.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

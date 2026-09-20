@@ -686,24 +686,24 @@ export const apiService = {
   async getG20AircraftList(params = {}) {
     try {
       const query = new URLSearchParams();
-      if (params.search) query.append('q', params.search);
-      const res = await fetch(`${API_BASE}/aircraft/search?${query.toString()}`);
+      if (params.search) query.append('search', params.search);
+      if (params.country && params.country !== 'ALL') query.append('country', params.country);
+      if (params.category && params.category !== 'ALL') query.append('category', params.category);
+      if (params.generation && params.generation !== 'ALL') query.append('generation', params.generation);
+      if (params.status && params.status !== 'ALL') query.append('serviceStatus', params.status);
+      if (params.era && params.era !== 'ALL') query.append('era', params.era);
+
+      const res = await fetch(`${API_BASE}/aircraft?${query.toString()}`);
       if (res.ok) {
         const json = await res.json();
         if (json.success && Array.isArray(json.data)) {
-          let items = json.data;
-          if (params.country && params.country !== 'ALL') {
-            items = items.filter((a) => a.country.toLowerCase() === params.country.toLowerCase());
-          }
-          if (params.category && params.category !== 'ALL') {
-            items = items.filter((a) => a.primaryCategory.toLowerCase() === params.category.toLowerCase());
-          }
-          if (params.generation && params.generation !== 'ALL') {
-            items = items.filter((a) => a.generation === params.generation);
-          }
-          if (params.status && params.status !== 'ALL') {
-            items = items.filter((a) => a.serviceStatus === params.status);
-          }
+          let items = json.data.map((item) => ({
+            ...item,
+            aircraftName: item.name || item.aircraftName,
+            officialDesignation: item.officialDesignation || item.name,
+            primaryCategory: item.role || item.category,
+            image: { primaryImageUrl: item.imageUrl },
+          }));
           return { items, count: items.length, source: 'live-db' };
         }
       }
@@ -738,6 +738,9 @@ export const apiService = {
     }
     if (params.status && params.status !== 'ALL') {
       items = items.filter((a) => a.serviceStatus === params.status);
+    }
+    if (params.era && params.era !== 'ALL') {
+      items = items.filter((a) => a.era === params.era);
     }
 
     return { items, count: items.length, source: 'offline-vault' };

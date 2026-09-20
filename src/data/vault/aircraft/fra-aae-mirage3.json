@@ -1,0 +1,211 @@
+{
+  "id": "fra-aae-mirage3",
+  "aliases": [
+    "fra-aae-mirage3",
+    "dassault-mirage-iii-c-e",
+    "mirage-iii"
+  ],
+  "name": "Dassault Mirage III C/E",
+  "commonName": "Mirage III",
+  "officialDesignation": "Mirage IIIE All-Weather Fighter",
+  "natoReportingName": null,
+  "family": "Dassault Mirage Family",
+  "variant": "Mirage IIIE Multi-Role",
+  "block": "Armée de l’Air Standard",
+  "manufacturer": "Dassault Aviation",
+  "manufacturerCountry": "France",
+  "originCountry": "France",
+  "country": "France",
+  "affiliation": "French Air Force (Armée de l’Air 1961–1994)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "FIGHTER",
+  "generation": "GEN_2",
+  "era": "COLD_WAR",
+  "role": "Mach 2.2 Delta-Wing Multirole Fighter-Interceptor",
+  "secondaryRoles": [
+    "Tactical Nuclear Strike (AN-52)",
+    "Reconnaissance"
+  ],
+  "firstFlightYear": 1956,
+  "introductionYear": 1961,
+  "retirementYear": 1994,
+  "productionCount": 1422,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 1422,
+  "engineManufacturer": null,
+  "engineModel": "Snecma Atar 09C Afterburning Turbojet",
+  "engineCount": 1,
+  "engineType": "Turbojet",
+  "hasAfterburner": true,
+  "thrustDryKn": 42,
+  "thrustAfterburnerKn": 60.8,
+  "topSpeedMach": 2.2,
+  "topSpeedKmh": 2350,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 17000,
+  "rateOfClimbMs": 140,
+  "gLimitPositive": 8.5,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 1200,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 4000,
+  "emptyWeightKg": 7050,
+  "maxTakeoffWeightKg": 13700,
+  "payloadCapacityKg": 4000,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "MECHANICAL_PULSE_DOPPLER",
+  "radarModel": "Thomson-CSF Cyrano II Bis Radar",
+  "radarRangeAirKm": 55,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": false,
+  "hasDatalink": false,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 60,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 2,
+  "hasRwr": true,
+  "hasEcm": false,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 15,
+  "costPerFlightHourUsd": 6500,
+  "reliabilityScore": 86,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "The premier European Mach 2 delta-wing fighter exported across 20 countries. Decisive in 1967 and 1973 Middle East conflicts and French nuclear deterrent doctrine.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mirage_IIIE_French_Air_Force.jpg/1200px-Mirage_IIIE_French_Air_Force.jpg",
+  "tvrScore": 58.6,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "Matra R.530 BVR",
+        "type": "BVR_AAM",
+        "maxRangeKm": 20,
+        "speedMach": 2.7,
+        "guidance": "Semi-Active Radar / IR"
+      }
+    },
+    {
+      "weapon": {
+        "name": "Matra Magic WVR",
+        "type": "WVR_AAM",
+        "maxRangeKm": 10,
+        "speedMach": 2.7,
+        "guidance": "Infrared"
+      }
+    },
+    {
+      "weapon": {
+        "name": "Two 30mm DEFA 552 Cannons",
+        "type": "GUN_POD",
+        "maxRangeKm": 2,
+        "speedMach": 1,
+        "guidance": "Optical"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1956,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Dassault Mirage III C/E conducted."
+    },
+    {
+      "year": 1961,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with French Air Force (Armée de l’Air 1961–1994)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "FIGHTER",
+  "aircraftName": "Dassault Mirage III C/E",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 7050,
+      "maxTakeoffWeightKg": 13700,
+      "payloadCapacityKg": 4000
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 1,
+      "engineModel": "Snecma Atar 09C Afterburning Turbojet",
+      "engineType": "Turbojet",
+      "hasAfterburner": true,
+      "thrustDryKn": 42,
+      "thrustAfterburnerKn": 60.8
+    },
+    "performance": {
+      "maxSpeedKmh": 2350,
+      "maxSpeedMach": 2.2,
+      "combatRadiusKm": 1200,
+      "ferryRangeKm": 4000,
+      "serviceCeilingM": 17000,
+      "rateOfClimbMs": 140,
+      "gLimitPositive": 8.5
+    }
+  },
+  "avionics": {
+    "radar": "Thomson-CSF Cyrano II Bis Radar",
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarRangeAirKm": 55,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": false,
+    "hasDatalink": false,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 2
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "Matra R.530 BVR",
+      "Matra Magic WVR",
+      "Two 30mm DEFA 552 Cannons"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 1422.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

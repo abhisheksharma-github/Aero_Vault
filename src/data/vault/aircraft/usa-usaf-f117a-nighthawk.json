@@ -1,0 +1,200 @@
+{
+  "id": "usa-usaf-f117a-nighthawk",
+  "aliases": [
+    "usa-usaf-f117a-nighthawk",
+    "lockheed-f-117a-nighthawk",
+    "f-117-nighthawk-stealth-fighter-"
+  ],
+  "name": "Lockheed F-117A Nighthawk",
+  "commonName": "F-117 Nighthawk (Stealth Fighter)",
+  "officialDesignation": "F-117A Nighthawk",
+  "natoReportingName": null,
+  "family": "Lockheed Stealth Series",
+  "variant": "F-117A Production Standard",
+  "block": "Senior Trend Standard",
+  "manufacturer": "Lockheed Corporation (Skunk Works)",
+  "manufacturerCountry": "United States",
+  "originCountry": "United States",
+  "country": "United States",
+  "affiliation": "United States Air Force (4450th Tactical Group / 49th FW 1983–2008)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "STRIKE",
+  "generation": "GEN_4",
+  "era": "COLD_WAR",
+  "role": "Low-Observable Precision Ground Attack Stealth Aircraft",
+  "secondaryRoles": [
+    "Deep Penetration Night Strike"
+  ],
+  "firstFlightYear": 1981,
+  "introductionYear": 1983,
+  "retirementYear": 2008,
+  "productionCount": 64,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 12,
+  "retiredCount": 52,
+  "engineManufacturer": null,
+  "engineModel": "General Electric F404-F1D2 Non-Afterburning Turbofans",
+  "engineCount": 2,
+  "engineType": "Turbofan",
+  "hasAfterburner": false,
+  "thrustDryKn": 96,
+  "thrustAfterburnerKn": 96,
+  "topSpeedMach": 0.92,
+  "topSpeedKmh": 1100,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 13716,
+  "rateOfClimbMs": 80,
+  "gLimitPositive": 6,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 900,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 2110,
+  "emptyWeightKg": 13380,
+  "maxTakeoffWeightKg": 23814,
+  "payloadCapacityKg": 2000,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "NONE",
+  "radarModel": "Forward-Looking Infrared (FLIR) & DLIR Laser Designation",
+  "radarRangeAirKm": 0,
+  "hasAesa": false,
+  "hasIrst": true,
+  "hasSensorFusion": true,
+  "hasDatalink": false,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 90,
+  "stealthLevel": "VERY_HIGH",
+  "rcsEstimatedM2": 0.001,
+  "hasRwr": true,
+  "hasEcm": false,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 55,
+  "costPerFlightHourUsd": 22000,
+  "reliabilityScore": 82,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "The world's first operational stealth combat aircraft, developed in secret by Lockheed's Skunk Works. Its revolutionary faceted surface design delivered a micro radar cross-section, penetrating Baghdad's dense air defenses during Operation Desert Storm in 1991 without detection.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/F-117_Nighthawk_Front.jpg/1200px-F-117_Nighthawk_Front.jpg",
+  "tvrScore": 65.5,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "GBU-27 Paveway III",
+        "type": "PRECISION_GUIDED_BOMB",
+        "maxRangeKm": 19,
+        "speedMach": 0.9,
+        "guidance": "Laser Bunker Buster"
+      }
+    },
+    {
+      "weapon": {
+        "name": "GBU-10 Paveway II",
+        "type": "PRECISION_GUIDED_BOMB",
+        "maxRangeKm": 15,
+        "speedMach": 0.9,
+        "guidance": "Semi-Active Laser"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1981,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Lockheed F-117A Nighthawk conducted."
+    },
+    {
+      "year": 1983,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with United States Air Force (4450th Tactical Group / 49th FW 1983–2008)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "STRIKE",
+  "aircraftName": "Lockheed F-117A Nighthawk",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 13380,
+      "maxTakeoffWeightKg": 23814,
+      "payloadCapacityKg": 2000
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "General Electric F404-F1D2 Non-Afterburning Turbofans",
+      "engineType": "Turbofan",
+      "hasAfterburner": false,
+      "thrustDryKn": 96,
+      "thrustAfterburnerKn": 96
+    },
+    "performance": {
+      "maxSpeedKmh": 1100,
+      "maxSpeedMach": 0.92,
+      "combatRadiusKm": 900,
+      "ferryRangeKm": 2110,
+      "serviceCeilingM": 13716,
+      "rateOfClimbMs": 80,
+      "gLimitPositive": 6
+    }
+  },
+  "avionics": {
+    "radar": "Forward-Looking Infrared (FLIR) & DLIR Laser Designation",
+    "radarType": "NONE",
+    "radarRangeAirKm": 0,
+    "hasAesa": false,
+    "hasIrst": true,
+    "hasSensorFusion": true,
+    "hasDatalink": false,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "VERY_HIGH",
+    "rcsEstimatedM2": 0.001
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": true,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "GBU-27 Paveway III",
+      "GBU-10 Paveway II"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 52.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

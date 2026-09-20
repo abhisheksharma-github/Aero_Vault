@@ -33,16 +33,25 @@ const categories = [
 
 const generations = [
   { id: 'ALL', label: 'All Gens' },
-  { id: 'GEN_5', label: '5th Gen Stealth' },
-  { id: 'GEN_4_5', label: '4.5+ Gen Advanced' },
-  { id: 'GEN_4_PLUS', label: '4+ Gen Enhanced' },
-  { id: 'GEN_4', label: '4th Gen Standard' },
+  { id: 'GEN_5', label: '5th Gen (Stealth)' },
+  { id: 'GEN_4_5', label: '4.5+ Gen (AESA)' },
+  { id: 'GEN_4', label: '4th Gen' },
+  { id: 'GEN_3', label: '3rd Gen' },
+  { id: 'GEN_2', label: '2nd Gen' },
+  { id: 'GEN_1', label: '1st Gen' },
+];
+
+const eras = [
+  { id: 'ALL', label: 'All Eras (1947–2026+)' },
+  { id: 'VINTAGE', label: 'Vintage (1947–60)' },
+  { id: 'COLD_WAR', label: 'Cold War (1961–90)' },
+  { id: 'MODERN', label: 'Modern (1991+)' },
 ];
 
 const statuses = [
   { id: 'ALL', label: 'All Statuses', icon: Layers },
-  { id: 'ACTIVE', label: 'Active Frontline', icon: ShieldCheck, color: 'text-emerald-400' },
-  { id: 'RETIRED', label: 'Retired Veterans', icon: Archive, color: 'text-rose-400' },
+  { id: 'ACTIVE', label: 'In Service / Active', icon: ShieldCheck, color: 'text-emerald-400' },
+  { id: 'RETIRED', label: 'Retired / Historic', icon: Archive, color: 'text-rose-400' },
 ];
 
 export default function InventoryGrid({
@@ -50,6 +59,8 @@ export default function InventoryGrid({
   loading,
   selectedStatus,
   setSelectedStatus,
+  selectedEra = 'ALL',
+  setSelectedEra,
   selectedCategory,
   setSelectedCategory,
   selectedGeneration,
@@ -79,6 +90,11 @@ export default function InventoryGrid({
   const handleStatusClick = (stId) => {
     tacticalAudio.playClick();
     setSelectedStatus(stId);
+  };
+
+  const handleEraClick = (eraId) => {
+    tacticalAudio.playClick();
+    if (setSelectedEra) setSelectedEra(eraId);
   };
 
   return (
@@ -194,7 +210,30 @@ export default function InventoryGrid({
           })}
         </div>
 
-        {/* Row 3: Generation Filter */}
+        {/* Row 3: Era Filter */}
+        <div className="flex items-center space-x-2 overflow-x-auto pb-1 pt-1 scrollbar-none border-t border-av-steel/15">
+          <span className="text-[11px] font-mono text-av-mist uppercase flex items-center pr-2">
+            <Compass className="w-3 h-3 mr-1 text-amber-400" /> Era:
+          </span>
+          {eras.map((era) => {
+            const isSelected = selectedEra === era.id;
+            return (
+              <button
+                key={era.id}
+                onClick={() => handleEraClick(era.id)}
+                className={`flex-shrink-0 px-2.5 py-0.5 rounded-lg text-[11px] font-mono transition-all ${
+                  isSelected
+                    ? 'bg-amber-950 text-amber-300 border border-amber-500/50 shadow-glow-amber font-bold'
+                    : 'bg-av-dark/60 text-av-mist hover:text-white hover:bg-av-blue/40 border border-av-steel/25'
+                }`}
+              >
+                {era.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Row 4: Generation Filter */}
         {(selectedCategory === 'ALL' || selectedCategory === 'FIGHTER' || selectedCategory === 'BOMBER') && (
           <div className="flex items-center space-x-2 overflow-x-auto pb-1 pt-1 scrollbar-none border-t border-av-steel/15">
             <span className="text-[11px] font-mono text-av-mist uppercase flex items-center pr-2">

@@ -209,9 +209,11 @@ export default function CountryExplorerView({ onSelectCountry, onSelectAircraft 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredCountries.map((country) => {
           const branches = country.militaryBranches || [];
-          const countryAircraftCount = g20AircraftData.filter(
+          const countryAircraft = g20AircraftData.filter(
             (a) => a.country.toLowerCase() === country.name.toLowerCase()
-          ).length;
+          );
+          const activeAircraftCount = countryAircraft.filter((a) => a.serviceStatus === 'ACTIVE').length;
+          const retiredAircraftCount = countryAircraft.filter((a) => a.serviceStatus === 'RETIRED').length;
 
           return (
             <div
@@ -245,7 +247,7 @@ export default function CountryExplorerView({ onSelectCountry, onSelectAircraft 
                       >
                         {country.coverage.completeness >= 1.0
                           ? '5/5 Domains'
-                          : `Limited coverage — ${Math.round(country.coverage.completeness * 5)}/5 domains`}
+                          : `Coverage — ${Math.round(country.coverage.completeness * 5)}/5 domains`}
                       </span>
                     )}
                   </div>
@@ -263,7 +265,7 @@ export default function CountryExplorerView({ onSelectCountry, onSelectAircraft 
                   <span className="text-emerald-400 font-bold">${country.defenseBudgetUsd || '—'}B USD</span>
                 </div>
                 <div>
-                  <span className="text-slate-500 text-[10px] block">Total Aircraft Est.</span>
+                  <span className="text-slate-500 text-[10px] block">Fleet Estimate</span>
                   <span className="text-white font-bold">{country.totalAircraftEstimate?.toLocaleString() || '—'}</span>
                 </div>
                 <div>
@@ -271,8 +273,10 @@ export default function CountryExplorerView({ onSelectCountry, onSelectAircraft 
                   <span className="text-cyan-400 font-bold">{country.modernizationIndex || '85.0'} / 100</span>
                 </div>
                 <div>
-                  <span className="text-slate-500 text-[10px] block">Dossier Records</span>
-                  <span className="text-purple-400 font-bold">{countryAircraftCount} Models</span>
+                  <span className="text-slate-500 text-[10px] block">Vault Fleet (1947–Now)</span>
+                  <span className="text-purple-300 font-bold">
+                    {countryAircraft.length} Types <span className="text-[10px] text-slate-400 font-normal">({activeAircraftCount} act / {retiredAircraftCount} ret)</span>
+                  </span>
                 </div>
               </div>
 

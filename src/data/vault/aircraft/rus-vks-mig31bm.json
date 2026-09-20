@@ -1,0 +1,211 @@
+{
+  "id": "rus-vks-mig31bm",
+  "aliases": [
+    "rus-vks-mig31bm",
+    "mikoyan-mig-31bm-foxhound",
+    "mig-31bm"
+  ],
+  "name": "Mikoyan MiG-31BM Foxhound",
+  "commonName": "MiG-31BM",
+  "officialDesignation": "MiG-31BM Modernized Interceptor",
+  "natoReportingName": "Foxhound",
+  "family": "Mikoyan MiG-25/31 Series",
+  "variant": "MiG-31BM Multirole Interceptor",
+  "block": "BM Upgrade Standard",
+  "manufacturer": "RSK MiG / Sokol Plant",
+  "manufacturerCountry": "Russia / Soviet Union",
+  "originCountry": "Soviet Union",
+  "country": "Russia",
+  "affiliation": "Russian Aerospace Forces (VKS / Naval Aviation)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "INTERCEPTOR",
+  "generation": "GEN_4",
+  "era": "MODERN",
+  "role": "Mach 2.83 High-Altitude Supersonic Strategic Interceptor",
+  "secondaryRoles": [
+    "Kinzhal Hypersonic Launch Platform",
+    "Cruise Missile Defense"
+  ],
+  "firstFlightYear": 1975,
+  "introductionYear": 1981,
+  "retirementYear": null,
+  "productionCount": 519,
+  "fleetCount": 130,
+  "activeCount": 130,
+  "inactiveCount": 20,
+  "retiredCount": 200,
+  "engineManufacturer": null,
+  "engineModel": "Soloviev D-30F6 Afterburning Turbofans (Dual)",
+  "engineCount": 2,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 190,
+  "thrustAfterburnerKn": 304,
+  "topSpeedMach": 2.83,
+  "topSpeedKmh": 3000,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 20600,
+  "rateOfClimbMs": 288,
+  "gLimitPositive": 5,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 1450,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 3300,
+  "emptyWeightKg": 21820,
+  "maxTakeoffWeightKg": 46200,
+  "payloadCapacityKg": 9000,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "PESA",
+  "radarModel": "Phazotron Zaslon-AM PESA Phased Array Radar",
+  "radarRangeAirKm": 320,
+  "hasAesa": false,
+  "hasIrst": true,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 88,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 10,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 28,
+  "costPerFlightHourUsd": 22000,
+  "reliabilityScore": 82,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "The world's heaviest and fastest operational combat interceptor. Zaslon-AM PESA radar enables simultaneous tracking of 24 aerial targets and engaging 6 with Mach 6 R-37M ultra-long-range missiles. Specialized MiG-31K variants carry the Kh-47M2 Kinzhal hypersonic aero-ballistic missile.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/MiG-31BM_in_flight_2016.jpg/1200px-MiG-31BM_in_flight_2016.jpg",
+  "tvrScore": 79,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "R-37M Ultra BVR (Mach 6)",
+        "type": "BVR_AAM",
+        "maxRangeKm": 398,
+        "speedMach": 6,
+        "guidance": "Active Radar"
+      }
+    },
+    {
+      "weapon": {
+        "name": "R-33 Long-Range Missile",
+        "type": "BVR_AAM",
+        "maxRangeKm": 160,
+        "speedMach": 4.5,
+        "guidance": "Semi-Active Radar"
+      }
+    },
+    {
+      "weapon": {
+        "name": "Kh-47M2 Kinzhal Hypersonic",
+        "type": "LAND_ATTACK_CRUISE_MISSILE",
+        "maxRangeKm": 2000,
+        "speedMach": 10,
+        "guidance": "GLONASS / Optical"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1975,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Mikoyan MiG-31BM Foxhound conducted."
+    },
+    {
+      "year": 1981,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Russian Aerospace Forces (VKS / Naval Aviation)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "INTERCEPTOR",
+  "aircraftName": "Mikoyan MiG-31BM Foxhound",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 21820,
+      "maxTakeoffWeightKg": 46200,
+      "payloadCapacityKg": 9000
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Soloviev D-30F6 Afterburning Turbofans (Dual)",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 190,
+      "thrustAfterburnerKn": 304
+    },
+    "performance": {
+      "maxSpeedKmh": 3000,
+      "maxSpeedMach": 2.83,
+      "combatRadiusKm": 1450,
+      "ferryRangeKm": 3300,
+      "serviceCeilingM": 20600,
+      "rateOfClimbMs": 288,
+      "gLimitPositive": 5
+    }
+  },
+  "avionics": {
+    "radar": "Phazotron Zaslon-AM PESA Phased Array Radar",
+    "radarType": "PESA",
+    "radarRangeAirKm": 320,
+    "hasAesa": false,
+    "hasIrst": true,
+    "hasSensorFusion": true,
+    "hasDatalink": true,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 10
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": true,
+    "keyWeaponsIntegrated": [
+      "R-37M Ultra BVR (Mach 6)",
+      "R-33 Long-Range Missile",
+      "Kh-47M2 Kinzhal Hypersonic"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 130,
+    "estimatedQuantity": 130,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: ACTIVE. Active: 130, Retired: 200.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

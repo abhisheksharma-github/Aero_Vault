@@ -1,0 +1,191 @@
+{
+  "id": "ind-iaf-dh-vampire",
+  "aliases": [
+    "ind-iaf-dh-vampire",
+    "de-havilland-vampire-fb-52",
+    "de-havilland-vampire"
+  ],
+  "name": "de Havilland Vampire FB.52",
+  "commonName": "de Havilland Vampire",
+  "officialDesignation": "Vampire FB.52 / T.55",
+  "natoReportingName": null,
+  "family": "de Havilland Vampire",
+  "variant": "Vampire FB.52 Fighter-Bomber",
+  "block": "IAF First Jet Standard",
+  "manufacturer": "de Havilland / HAL Bangalore",
+  "manufacturerCountry": "UK / India",
+  "originCountry": "UK",
+  "country": "India",
+  "affiliation": "Indian Air Force (Historic 1st Jet Aircraft of India, Inducted 1948)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "FIGHTER",
+  "generation": "GEN_1",
+  "era": "VINTAGE",
+  "role": "Pioneering Jet Fighter & Ground Attack Aircraft",
+  "secondaryRoles": [
+    "Air Defense",
+    "Night Fighter"
+  ],
+  "firstFlightYear": 1943,
+  "introductionYear": 1948,
+  "retirementYear": 1975,
+  "productionCount": 250,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 250,
+  "engineManufacturer": null,
+  "engineModel": "de Havilland Goblin 3 Centrifugal-Flow Turbojet",
+  "engineCount": 1,
+  "engineType": "Turbojet",
+  "hasAfterburner": false,
+  "thrustDryKn": 14.9,
+  "thrustAfterburnerKn": 14.9,
+  "topSpeedMach": 0.75,
+  "topSpeedKmh": 882,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 13045,
+  "rateOfClimbMs": 24,
+  "gLimitPositive": 6.5,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 500,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 1960,
+  "emptyWeightKg": 3300,
+  "maxTakeoffWeightKg": 5620,
+  "payloadCapacityKg": 900,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "NONE",
+  "radarModel": null,
+  "radarRangeAirKm": 0,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": false,
+  "hasDatalink": false,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 20,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 4,
+  "hasRwr": false,
+  "hasEcm": false,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 5,
+  "costPerFlightHourUsd": 1500,
+  "reliabilityScore": 85,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "The aircraft that ushered the Indian Air Force into the Jet Age in November 1948. Distinctive twin-boom configuration with wooden fuselage construction. Fought in the 1965 Indo-Pak War and Goa liberation 1961.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/De_Havilland_Vampire_FB52_IAF.jpg/1200px-De_Havilland_Vampire_FB52_IAF.jpg",
+  "tvrScore": 45.2,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "Four 20mm Hispano Cannons",
+        "type": "GUN_POD",
+        "maxRangeKm": 1.5,
+        "speedMach": 0.9,
+        "guidance": "Optical"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1943,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the de Havilland Vampire FB.52 conducted."
+    },
+    {
+      "year": 1948,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Indian Air Force (Historic 1st Jet Aircraft of India, Inducted 1948)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "FIGHTER",
+  "aircraftName": "de Havilland Vampire FB.52",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 3300,
+      "maxTakeoffWeightKg": 5620,
+      "payloadCapacityKg": 900
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 1,
+      "engineModel": "de Havilland Goblin 3 Centrifugal-Flow Turbojet",
+      "engineType": "Turbojet",
+      "hasAfterburner": false,
+      "thrustDryKn": 14.9,
+      "thrustAfterburnerKn": 14.9
+    },
+    "performance": {
+      "maxSpeedKmh": 882,
+      "maxSpeedMach": 0.75,
+      "combatRadiusKm": 500,
+      "ferryRangeKm": 1960,
+      "serviceCeilingM": 13045,
+      "rateOfClimbMs": 24,
+      "gLimitPositive": 6.5
+    }
+  },
+  "avionics": {
+    "radar": "Standard Suite",
+    "radarType": "NONE",
+    "radarRangeAirKm": 0,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": false,
+    "hasDatalink": false,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 4
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "Four 20mm Hispano Cannons"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 250.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

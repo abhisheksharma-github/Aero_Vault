@@ -1,0 +1,201 @@
+{
+  "id": "ind-iaf-mig29upg",
+  "aliases": [
+    "ind-iaf-mig29upg",
+    "mikoyan-mig-29upg-baaz",
+    "mig-29upg"
+  ],
+  "name": "Mikoyan MiG-29UPG Baaz",
+  "commonName": "MiG-29UPG",
+  "officialDesignation": "MiG-29UPG Modernized Standard",
+  "natoReportingName": null,
+  "family": "Mikoyan MiG-29 Fulcrum",
+  "variant": "UPG (Upgraded Baaz)",
+  "block": "IAF Upgrade Standard",
+  "manufacturer": "RSK MiG / 11 Base Repair Depot IAF",
+  "manufacturerCountry": "Russia / India",
+  "originCountry": "Russia",
+  "country": "India",
+  "affiliation": "Indian Air Force (No. 28 First Supersonics / No. 47 Black Archers / No. 223 Tridents)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "AIR_SUPERIORITY",
+  "generation": "GEN_4_5",
+  "era": "MODERN",
+  "role": "Air Superiority & Multi-Role Interceptor",
+  "secondaryRoles": [
+    "Precision Ground Attack",
+    "BVR Combat"
+  ],
+  "firstFlightYear": 1977,
+  "introductionYear": 1986,
+  "retirementYear": null,
+  "productionCount": 66,
+  "fleetCount": 60,
+  "activeCount": 60,
+  "inactiveCount": 0,
+  "retiredCount": 6,
+  "engineManufacturer": null,
+  "engineModel": "Klimov RD-33 Series 3 Turbofans",
+  "engineCount": 2,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 100,
+  "thrustAfterburnerKn": 166,
+  "topSpeedMach": 2.25,
+  "topSpeedKmh": 2400,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 18000,
+  "rateOfClimbMs": 330,
+  "gLimitPositive": 9,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 1430,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 2100,
+  "emptyWeightKg": 11000,
+  "maxTakeoffWeightKg": 18000,
+  "payloadCapacityKg": 4500,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "MECHANICAL_PULSE_DOPPLER",
+  "radarModel": "Phazotron Zhuk-M2E Slotted Array Radar",
+  "radarRangeAirKm": 120,
+  "hasAesa": false,
+  "hasIrst": true,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 84,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 3,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 16,
+  "costPerFlightHourUsd": 12000,
+  "reliabilityScore": 80,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "Upgraded IAF air superiority interceptor featuring Zhuk-M2E radar, enlarged dorsal fuel tank conformal spine, in-flight refueling probe, OLS-UEM IRST, and RVV-AE / R-77-1 BVR capability.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Indian_Air_Force_MiG-29UPG.jpg/1200px-Indian_Air_Force_MiG-29UPG.jpg",
+  "tvrScore": 78,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "R-77 (RVV-AE) BVR",
+        "type": "BVR_AAM",
+        "maxRangeKm": 100,
+        "speedMach": 4,
+        "guidance": "Active Radar"
+      }
+    },
+    {
+      "weapon": {
+        "name": "R-73E WVR Missile",
+        "type": "WVR_AAM",
+        "maxRangeKm": 30,
+        "speedMach": 2.5,
+        "guidance": "Infrared"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1977,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Mikoyan MiG-29UPG Baaz conducted."
+    },
+    {
+      "year": 1986,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Indian Air Force (No. 28 First Supersonics / No. 47 Black Archers / No. 223 Tridents)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "AIR_SUPERIORITY",
+  "aircraftName": "Mikoyan MiG-29UPG Baaz",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 11000,
+      "maxTakeoffWeightKg": 18000,
+      "payloadCapacityKg": 4500
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Klimov RD-33 Series 3 Turbofans",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 100,
+      "thrustAfterburnerKn": 166
+    },
+    "performance": {
+      "maxSpeedKmh": 2400,
+      "maxSpeedMach": 2.25,
+      "combatRadiusKm": 1430,
+      "ferryRangeKm": 2100,
+      "serviceCeilingM": 18000,
+      "rateOfClimbMs": 330,
+      "gLimitPositive": 9
+    }
+  },
+  "avionics": {
+    "radar": "Phazotron Zhuk-M2E Slotted Array Radar",
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarRangeAirKm": 120,
+    "hasAesa": false,
+    "hasIrst": true,
+    "hasSensorFusion": true,
+    "hasDatalink": true,
+    "helmetMountedDisplay": "Operational HMD",
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 3
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "R-77 (RVV-AE) BVR",
+      "R-73E WVR Missile"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 60,
+    "estimatedQuantity": 60,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: ACTIVE. Active: 60, Retired: 6.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

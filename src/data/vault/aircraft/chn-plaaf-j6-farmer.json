@@ -1,0 +1,201 @@
+{
+  "id": "chn-plaaf-j6-farmer",
+  "aliases": [
+    "chn-plaaf-j6-farmer",
+    "shenyang-j-6-farmer-",
+    "shenyang-j-6"
+  ],
+  "name": "Shenyang J-6 (Farmer)",
+  "commonName": "Shenyang J-6",
+  "officialDesignation": "J-6 / F-6 Fighter",
+  "natoReportingName": "Farmer",
+  "family": "Shenyang J-Series",
+  "variant": "J-6A / J-6III Standard",
+  "block": "PLAAF Mass Production",
+  "manufacturer": "Shenyang Aircraft Corporation",
+  "manufacturerCountry": "China",
+  "originCountry": "China / Soviet Union (MiG-19)",
+  "country": "China",
+  "affiliation": "People’s Liberation Army Air Force (Historic 1964–2010)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "FIGHTER",
+  "generation": "GEN_2",
+  "era": "COLD_WAR",
+  "role": "Supersonic Day Interceptor & Air Combat Fighter",
+  "secondaryRoles": [
+    "Tactical Ground Attack",
+    "Unmanned UCAV Conversion"
+  ],
+  "firstFlightYear": 1958,
+  "introductionYear": 1964,
+  "retirementYear": 2010,
+  "productionCount": 4500,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 150,
+  "retiredCount": 4350,
+  "engineManufacturer": null,
+  "engineModel": "Liming WP-6 Turbojets (Dual)",
+  "engineCount": 2,
+  "engineType": "Turbojet",
+  "hasAfterburner": true,
+  "thrustDryKn": 51,
+  "thrustAfterburnerKn": 64,
+  "topSpeedMach": 1.45,
+  "topSpeedKmh": 1540,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 17900,
+  "rateOfClimbMs": 180,
+  "gLimitPositive": 8,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 640,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 2200,
+  "emptyWeightKg": 5447,
+  "maxTakeoffWeightKg": 10000,
+  "payloadCapacityKg": 1000,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "NONE",
+  "radarModel": "Range-only Radar Gunsight",
+  "radarRangeAirKm": 5,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": false,
+  "hasDatalink": false,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 35,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 3,
+  "hasRwr": false,
+  "hasEcm": false,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 8,
+  "costPerFlightHourUsd": 2500,
+  "reliabilityScore": 82,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "The most produced supersonic jet fighter in Chinese aviation history (over 4,500 produced). Formed the numeric core of the PLAAF air defense throughout the Cold War, armed with heavy 30mm cannons.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Shenyang_J-6_PLAAF_Museum.jpg/1200px-Shenyang_J-6_PLAAF_Museum.jpg",
+  "tvrScore": 51.3,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "Three 30mm NR-30 Cannons",
+        "type": "GUN_POD",
+        "maxRangeKm": 2,
+        "speedMach": 1,
+        "guidance": "Optical"
+      }
+    },
+    {
+      "weapon": {
+        "name": "PL-2 Air-to-Air Missile",
+        "type": "WVR_AAM",
+        "maxRangeKm": 5,
+        "speedMach": 2,
+        "guidance": "Infrared"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1958,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Shenyang J-6 (Farmer) conducted."
+    },
+    {
+      "year": 1964,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with People’s Liberation Army Air Force (Historic 1964–2010)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "FIGHTER",
+  "aircraftName": "Shenyang J-6 (Farmer)",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 5447,
+      "maxTakeoffWeightKg": 10000,
+      "payloadCapacityKg": 1000
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Liming WP-6 Turbojets (Dual)",
+      "engineType": "Turbojet",
+      "hasAfterburner": true,
+      "thrustDryKn": 51,
+      "thrustAfterburnerKn": 64
+    },
+    "performance": {
+      "maxSpeedKmh": 1540,
+      "maxSpeedMach": 1.45,
+      "combatRadiusKm": 640,
+      "ferryRangeKm": 2200,
+      "serviceCeilingM": 17900,
+      "rateOfClimbMs": 180,
+      "gLimitPositive": 8
+    }
+  },
+  "avionics": {
+    "radar": "Range-only Radar Gunsight",
+    "radarType": "NONE",
+    "radarRangeAirKm": 5,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": false,
+    "hasDatalink": false,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 3
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "Three 30mm NR-30 Cannons",
+      "PL-2 Air-to-Air Missile"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 4350.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

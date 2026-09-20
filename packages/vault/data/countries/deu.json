@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "deu",
+  "countryCode": "DEU",
+  "name": "Germany",
+  "region": "Central and Western Europe",
+  "natoMember": true,
+  "defenceEconomics": {
+    "expenditureUsd": {
+      "value": 114000000000,
+      "unit": "USD (current 2025 prices)",
+      "confidence": "VERIFIED",
+      "sources": [
+        {
+          "name": "SIPRI Military Expenditure Database (Apr. 2026)",
+          "publisher": "Stockholm International Peace Research Institute",
+          "url": "https://www.sipri.org/sites/default/files/2026-04/2604_milex_2025.pdf",
+          "doi": "10.55163/ZLHQ1057",
+          "retrievedAt": "2026-09-20",
+          "coversYear": 2025
+        }
+      ]
+    },
+    "expenditureBillionsUsd": {
+      "value": 114.0,
+      "unit": "USD billions",
+      "confidence": "VERIFIED",
+      "sources": [
+        {
+          "name": "SIPRI Military Expenditure Database (Apr. 2026)",
+          "publisher": "Stockholm International Peace Research Institute",
+          "url": "https://www.sipri.org/sites/default/files/2026-04/2604_milex_2025.pdf",
+          "doi": "10.55163/ZLHQ1057",
+          "retrievedAt": "2026-09-20",
+          "coversYear": 2025
+        }
+      ]
+    },
+    "changePercent2024to2025": {
+      "value": 24.0,
+      "unit": "percent, real terms",
+      "confidence": "VERIFIED",
+      "sources": [
+        {
+          "name": "SIPRI Military Expenditure Database (Apr. 2026)",
+          "publisher": "Stockholm International Peace Research Institute",
+          "url": "https://www.sipri.org/sites/default/files/2026-04/2604_milex_2025.pdf",
+          "doi": "10.55163/ZLHQ1057",
+          "retrievedAt": "2026-09-20",
+          "coversYear": 2025
+        }
+      ]
+    },
+    "changePercent2016to2025": {
+      "value": 118,
+      "unit": "percent, real terms",
+      "confidence": "VERIFIED",
+      "sources": [
+        {
+          "name": "SIPRI Military Expenditure Database (Apr. 2026)",
+          "publisher": "Stockholm International Peace Research Institute",
+          "url": "https://www.sipri.org/sites/default/files/2026-04/2604_milex_2025.pdf",
+          "doi": "10.55163/ZLHQ1057",
+          "retrievedAt": "2026-09-20",
+          "coversYear": 2025
+        }
+      ]
+    },
+    "gdpSharePercent2025": {
+      "value": 2.3,
+      "unit": "percent of GDP",
+      "confidence": "VERIFIED",
+      "sources": [
+        {
+          "name": "SIPRI Military Expenditure Database (Apr. 2026)",
+          "publisher": "Stockholm International Peace Research Institute",
+          "url": "https://www.sipri.org/sites/default/files/2026-04/2604_milex_2025.pdf",
+          "doi": "10.55163/ZLHQ1057",
+          "retrievedAt": "2026-09-20",
+          "coversYear": 2025
+        }
+      ]
+    },
+    "gdpSharePercent2016": {
+      "value": 1.1,
+      "unit": "percent of GDP",
+      "confidence": "VERIFIED",
+      "sources": [
+        {
+          "name": "SIPRI Military Expenditure Database (Apr. 2026)",
+          "publisher": "Stockholm International Peace Research Institute",
+          "url": "https://www.sipri.org/sites/default/files/2026-04/2604_milex_2025.pdf",
+          "doi": "10.55163/ZLHQ1057",
+          "retrievedAt": "2026-09-20",
+          "coversYear": 2025
+        }
+      ]
+    },
+    "worldSharePercent2025": {
+      "value": 3.9,
+      "unit": "percent of world total",
+      "confidence": "VERIFIED",
+      "sources": [
+        {
+          "name": "SIPRI Military Expenditure Database (Apr. 2026)",
+          "publisher": "Stockholm International Peace Research Institute",
+          "url": "https://www.sipri.org/sites/default/files/2026-04/2604_milex_2025.pdf",
+          "doi": "10.55163/ZLHQ1057",
+          "retrievedAt": "2026-09-20",
+          "coversYear": 2025
+        }
+      ]
+    },
+    "sipriRank2025": 4,
+    "sipriRank2024": 5
+  },
+  "personnel": {
+    "activeDuty": {
+      "value": null,
+      "confidence": "UNKNOWN",
+      "note": "No citable open source located; awaiting IISS Military Balance ingestion.",
+      "sources": []
+    },
+    "reserve": {
+      "value": null,
+      "confidence": "UNKNOWN",
+      "note": "No citable open source located; awaiting IISS Military Balance ingestion.",
+      "sources": []
+    },
+    "paramilitary": {
+      "value": null,
+      "confidence": "UNKNOWN",
+      "note": "No citable open source located; awaiting IISS Military Balance ingestion.",
+      "sources": []
+    }
+  },
+  "inventory": {
+    "totalAircraft": {
+      "value": null,
+      "confidence": "UNKNOWN",
+      "note": "No citable open source located; awaiting IISS Military Balance ingestion.",
+      "sources": []
+    },
+    "combatAircraft": {
+      "value": null,
+      "confidence": "UNKNOWN",
+      "note": "No citable open source located; awaiting IISS Military Balance ingestion.",
+      "sources": []
+    },
+    "totalNavalVessels": {
+      "value": null,
+      "confidence": "UNKNOWN",
+      "note": "No citable open source located; awaiting IISS Military Balance ingestion.",
+      "sources": []
+    },
+    "principalSurfaceCombatants": {
+      "value": null,
+      "confidence": "UNKNOWN",
+      "note": "No citable open source located; awaiting IISS Military Balance ingestion.",
+      "sources": []
+    },
+    "submarines": {
+      "value": null,
+      "confidence": "UNKNOWN",
+      "note": "No citable open source located; awaiting IISS Military Balance ingestion.",
+      "sources": []
+    },
+    "mainBattleTanks": {
+      "value": null,
+      "confidence": "UNKNOWN",
+      "note": "No citable open source located; awaiting IISS Military Balance ingestion.",
+      "sources": []
+    },
+    "artillery": {
+      "value": null,
+      "confidence": "UNKNOWN",
+      "note": "No citable open source located; awaiting IISS Military Balance ingestion.",
+      "sources": []
+    }
+  },
+  "coverage": {
+    "defenceEconomics": "COMPLETE",
+    "personnel": "MISSING",
+    "inventory": "MISSING"
+  }
+}

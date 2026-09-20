@@ -1,0 +1,211 @@
+{
+  "id": "ind-iaf-hf24-marut",
+  "aliases": [
+    "ind-iaf-hf24-marut",
+    "hal-hf-24-marut",
+    "hf-24-marut"
+  ],
+  "name": "HAL HF-24 Marut",
+  "commonName": "HF-24 Marut",
+  "officialDesignation": "HF-24 Marut Mk.1",
+  "natoReportingName": null,
+  "family": "HAL Marut",
+  "variant": "Marut Mk.1 (Ground Attack Fighter)",
+  "block": "Production Series",
+  "manufacturer": "Hindustan Aeronautics Limited (HAL)",
+  "manufacturerCountry": "India",
+  "originCountry": "India",
+  "country": "India",
+  "affiliation": "Indian Air Force (Historic Indigenous Jet Fighter 1964–1990)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "GROUND_ATTACK",
+  "generation": "GEN_2",
+  "era": "COLD_WAR",
+  "role": "Low-Level Ground Attack & Tactical Strike Fighter",
+  "secondaryRoles": [
+    "Close Air Support",
+    "Air Defense"
+  ],
+  "firstFlightYear": 1961,
+  "introductionYear": 1964,
+  "retirementYear": 1990,
+  "productionCount": 147,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 147,
+  "engineManufacturer": null,
+  "engineModel": "Bristol Siddeley Orpheus 703 Turbojets (Dual Non-Afterburning)",
+  "engineCount": 2,
+  "engineType": "Turbojet",
+  "hasAfterburner": false,
+  "thrustDryKn": 43.1,
+  "thrustAfterburnerKn": 43.1,
+  "topSpeedMach": 0.98,
+  "topSpeedKmh": 1112,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 13750,
+  "rateOfClimbMs": 110,
+  "gLimitPositive": 8,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 600,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 1400,
+  "emptyWeightKg": 6195,
+  "maxTakeoffWeightKg": 10908,
+  "payloadCapacityKg": 1800,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "NONE",
+  "radarModel": "Gunsight Radar Rangefinder",
+  "radarRangeAirKm": 5,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": false,
+  "hasDatalink": false,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 40,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 3.5,
+  "hasRwr": false,
+  "hasEcm": false,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 10,
+  "costPerFlightHourUsd": 4000,
+  "reliabilityScore": 84,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "India's first indigenous jet fighter and the first indigenous supersonic-capable combat aircraft developed in Asia outside the USSR. Designed by Kurt Tank, the Marut saw heroic combat in the 1971 Indo-Pak War (including the Battle of Longewala) with zero air combat losses.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/HF-24_Marut_IAF_Museum_Delhi.jpg/1200px-HF-24_Marut_IAF_Museum_Delhi.jpg",
+  "tvrScore": 47.2,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "Four 30mm ADEN Mk.2 Cannons",
+        "type": "GUN_POD",
+        "maxRangeKm": 2,
+        "speedMach": 1,
+        "guidance": "Ballistic"
+      }
+    },
+    {
+      "weapon": {
+        "name": "68mm Matra SNEB Rocket Pod",
+        "type": "UNGUIDED_BOMB",
+        "maxRangeKm": 4,
+        "speedMach": 1.5,
+        "guidance": "Unguided"
+      }
+    },
+    {
+      "weapon": {
+        "name": "1,000 lb High Explosive Bombs",
+        "type": "UNGUIDED_BOMB",
+        "maxRangeKm": 2,
+        "speedMach": 0.9,
+        "guidance": "Freefall"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1961,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the HAL HF-24 Marut conducted."
+    },
+    {
+      "year": 1964,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Indian Air Force (Historic Indigenous Jet Fighter 1964–1990)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "GROUND_ATTACK",
+  "aircraftName": "HAL HF-24 Marut",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 6195,
+      "maxTakeoffWeightKg": 10908,
+      "payloadCapacityKg": 1800
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Bristol Siddeley Orpheus 703 Turbojets (Dual Non-Afterburning)",
+      "engineType": "Turbojet",
+      "hasAfterburner": false,
+      "thrustDryKn": 43.1,
+      "thrustAfterburnerKn": 43.1
+    },
+    "performance": {
+      "maxSpeedKmh": 1112,
+      "maxSpeedMach": 0.98,
+      "combatRadiusKm": 600,
+      "ferryRangeKm": 1400,
+      "serviceCeilingM": 13750,
+      "rateOfClimbMs": 110,
+      "gLimitPositive": 8
+    }
+  },
+  "avionics": {
+    "radar": "Gunsight Radar Rangefinder",
+    "radarType": "NONE",
+    "radarRangeAirKm": 5,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": false,
+    "hasDatalink": false,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 3.5
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "Four 30mm ADEN Mk.2 Cannons",
+      "68mm Matra SNEB Rocket Pod",
+      "1,000 lb High Explosive Bombs"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 147.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

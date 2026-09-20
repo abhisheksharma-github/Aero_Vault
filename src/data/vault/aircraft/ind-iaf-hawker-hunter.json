@@ -1,0 +1,201 @@
+{
+  "id": "ind-iaf-hawker-hunter",
+  "aliases": [
+    "ind-iaf-hawker-hunter",
+    "hawker-hunter-f-56-t-66",
+    "hawker-hunter"
+  ],
+  "name": "Hawker Hunter F.56 / T.66",
+  "commonName": "Hawker Hunter",
+  "officialDesignation": "Hunter F.56",
+  "natoReportingName": null,
+  "family": "Hawker Hunter",
+  "variant": "Hunter F.56 / T.66",
+  "block": "IAF Standard",
+  "manufacturer": "Hawker Aircraft / HAL",
+  "manufacturerCountry": "UK / India",
+  "originCountry": "UK",
+  "country": "India",
+  "affiliation": "Indian Air Force (Historic Battle of Longewala Hero 1957–2001)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "FIGHTER",
+  "generation": "GEN_1",
+  "era": "VINTAGE",
+  "role": "Transonic Strike Fighter & Close Air Support",
+  "secondaryRoles": [
+    "Interception",
+    "Trainer"
+  ],
+  "firstFlightYear": 1951,
+  "introductionYear": 1957,
+  "retirementYear": 2001,
+  "productionCount": 213,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 213,
+  "engineManufacturer": null,
+  "engineModel": "Rolls-Royce Avon 207 Turbojet",
+  "engineCount": 1,
+  "engineType": "Turbojet",
+  "hasAfterburner": false,
+  "thrustDryKn": 45.1,
+  "thrustAfterburnerKn": 45.1,
+  "topSpeedMach": 0.94,
+  "topSpeedKmh": 1150,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 15240,
+  "rateOfClimbMs": 87,
+  "gLimitPositive": 7.5,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 715,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 3060,
+  "emptyWeightKg": 6405,
+  "maxTakeoffWeightKg": 11158,
+  "payloadCapacityKg": 3400,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "NONE",
+  "radarModel": "Range-only Radar Gunsight",
+  "radarRangeAirKm": 5,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": false,
+  "hasDatalink": false,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 40,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 3,
+  "hasRwr": false,
+  "hasEcm": false,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 10,
+  "costPerFlightHourUsd": 3500,
+  "reliabilityScore": 86,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "The legendary British-designed transonic fighter famous for destroying Pakistani armor during the Battle of Longewala (1971). Served with distinction in 1965 and 1971 wars before serving as advanced trainers until 2001.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hawker_Hunter_F56_IAF.jpg/1200px-Hawker_Hunter_F56_IAF.jpg",
+  "tvrScore": 49.8,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "Four 30mm ADEN Cannons",
+        "type": "GUN_POD",
+        "maxRangeKm": 2,
+        "speedMach": 1,
+        "guidance": "Optical"
+      }
+    },
+    {
+      "weapon": {
+        "name": "T-10 / SNEB Unguided Rockets",
+        "type": "UNGUIDED_BOMB",
+        "maxRangeKm": 4,
+        "speedMach": 1.2,
+        "guidance": "Unguided"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1951,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Hawker Hunter F.56 / T.66 conducted."
+    },
+    {
+      "year": 1957,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Indian Air Force (Historic Battle of Longewala Hero 1957–2001)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "FIGHTER",
+  "aircraftName": "Hawker Hunter F.56 / T.66",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 6405,
+      "maxTakeoffWeightKg": 11158,
+      "payloadCapacityKg": 3400
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 1,
+      "engineModel": "Rolls-Royce Avon 207 Turbojet",
+      "engineType": "Turbojet",
+      "hasAfterburner": false,
+      "thrustDryKn": 45.1,
+      "thrustAfterburnerKn": 45.1
+    },
+    "performance": {
+      "maxSpeedKmh": 1150,
+      "maxSpeedMach": 0.94,
+      "combatRadiusKm": 715,
+      "ferryRangeKm": 3060,
+      "serviceCeilingM": 15240,
+      "rateOfClimbMs": 87,
+      "gLimitPositive": 7.5
+    }
+  },
+  "avionics": {
+    "radar": "Range-only Radar Gunsight",
+    "radarType": "NONE",
+    "radarRangeAirKm": 5,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": false,
+    "hasDatalink": false,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 3
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "Four 30mm ADEN Cannons",
+      "T-10 / SNEB Unguided Rockets"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 213.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

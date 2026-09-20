@@ -1,0 +1,212 @@
+{
+  "id": "ind-iaf-tejas-mk1a",
+  "aliases": [
+    "ind-iaf-tejas-mk1a",
+    "hal-tejas-mk1a",
+    "tejas-mk1a"
+  ],
+  "name": "HAL Tejas Mk1A",
+  "commonName": "Tejas Mk1A",
+  "officialDesignation": "LCA Tejas Mk1A",
+  "natoReportingName": null,
+  "family": "HAL LCA Tejas Family",
+  "variant": "Mk1A Enhanced Standard",
+  "block": "Batch 1 Production Standard",
+  "manufacturer": "Hindustan Aeronautics Limited (HAL)",
+  "manufacturerCountry": "India",
+  "originCountry": "India",
+  "country": "India",
+  "affiliation": "Indian Air Force (No. 45 Flying Daggers / No. 18 Flying Bullets)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "MULTIROLE_FIGHTER",
+  "generation": "GEN_4_5",
+  "era": "MODERN",
+  "role": "Lightweight Supersonic Multirole Fighter",
+  "secondaryRoles": [
+    "Air Defense",
+    "Precision Strike",
+    "Reconnaissance"
+  ],
+  "firstFlightYear": 2024,
+  "introductionYear": 2024,
+  "retirementYear": null,
+  "productionCount": 83,
+  "fleetCount": 83,
+  "activeCount": 38,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "engineManufacturer": null,
+  "engineModel": "General Electric F404-GE-IN20 Afterburning Turbofan",
+  "engineCount": 1,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 53.9,
+  "thrustAfterburnerKn": 89.8,
+  "topSpeedMach": 1.8,
+  "topSpeedKmh": 2205,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 16000,
+  "rateOfClimbMs": 280,
+  "gLimitPositive": 8.5,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 850,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 3000,
+  "emptyWeightKg": 6560,
+  "maxTakeoffWeightKg": 13500,
+  "payloadCapacityKg": 5300,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "AESA",
+  "radarModel": "EL/M-2052 / DRDO Uttam GaN AESA Radar",
+  "radarRangeAirKm": 150,
+  "hasAesa": true,
+  "hasIrst": false,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 92,
+  "stealthLevel": "REDUCED",
+  "rcsEstimatedM2": 0.5,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": true,
+  "maintenanceHoursPerFlightHour": 10,
+  "costPerFlightHourUsd": 7000,
+  "reliabilityScore": 88,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "Indigenous Indian 4.5-generation lightweight supersonic multirole fighter. Features ELTA EL/M-2052 / Uttam AESA radar, integrated Angad EW suite, in-flight refueling probe, and Astra BVRAAM integration.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/HAL_Tejas_LA-5018_Aero_India_2021.jpg/1200px-HAL_Tejas_LA-5018_Aero_India_2021.jpg",
+  "tvrScore": 82.4,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "Astra Mk1 BVR-AAM",
+        "type": "BVR_AAM",
+        "maxRangeKm": 110,
+        "speedMach": 4.5,
+        "guidance": "Active Radar"
+      }
+    },
+    {
+      "weapon": {
+        "name": "ASRAAM WVR",
+        "type": "WVR_AAM",
+        "maxRangeKm": 25,
+        "speedMach": 3,
+        "guidance": "Imaging Infrared"
+      }
+    },
+    {
+      "weapon": {
+        "name": "Hammer Precision Bomb",
+        "type": "PRECISION_GUIDED_BOMB",
+        "maxRangeKm": 70,
+        "speedMach": 1.2,
+        "guidance": "GPS/INS/Laser"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 2024,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the HAL Tejas Mk1A conducted."
+    },
+    {
+      "year": 2024,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Indian Air Force (No. 45 Flying Daggers / No. 18 Flying Bullets)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "MULTIROLE_FIGHTER",
+  "aircraftName": "HAL Tejas Mk1A",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 6560,
+      "maxTakeoffWeightKg": 13500,
+      "payloadCapacityKg": 5300
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 1,
+      "engineModel": "General Electric F404-GE-IN20 Afterburning Turbofan",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 53.9,
+      "thrustAfterburnerKn": 89.8
+    },
+    "performance": {
+      "maxSpeedKmh": 2205,
+      "maxSpeedMach": 1.8,
+      "combatRadiusKm": 850,
+      "ferryRangeKm": 3000,
+      "serviceCeilingM": 16000,
+      "rateOfClimbMs": 280,
+      "gLimitPositive": 8.5
+    }
+  },
+  "avionics": {
+    "radar": "EL/M-2052 / DRDO Uttam GaN AESA Radar",
+    "radarType": "AESA",
+    "radarRangeAirKm": 150,
+    "hasAesa": true,
+    "hasIrst": false,
+    "hasSensorFusion": true,
+    "hasDatalink": true,
+    "helmetMountedDisplay": "Operational HMD",
+    "stealthLevel": "REDUCED",
+    "rcsEstimatedM2": 0.5
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": true,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "Astra Mk1 BVR-AAM",
+      "ASRAAM WVR",
+      "Hammer Precision Bomb"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 38,
+    "estimatedQuantity": 83,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: ACTIVE. Active: 38, Retired: 0.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

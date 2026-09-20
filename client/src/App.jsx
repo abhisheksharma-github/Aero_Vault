@@ -42,6 +42,7 @@ export default function App() {
   const [selectedAffiliation, setSelectedAffiliation] = useState('ALL');
   const [selectedBranch, setSelectedBranch] = useState('ALL');
   const [selectedStatus, setSelectedStatus] = useState('ALL');
+  const [selectedEra, setSelectedEra] = useState('ALL');
   const [selectedCategory, setSelectedCategory] = useState('ALL');
   const [selectedGeneration, setSelectedGeneration] = useState('ALL');
   const [sortBy, setSortBy] = useState('tvrScore');
@@ -80,6 +81,7 @@ export default function App() {
             affiliation: selectedAffiliation,
             militaryBranch: selectedBranch,
             serviceStatus: selectedStatus,
+            era: selectedEra,
             category: selectedCategory,
             generation: selectedGeneration,
             search: searchQuery,
@@ -100,10 +102,9 @@ export default function App() {
         if (isMounted) setLoading(false);
       }
     }
-
     loadData();
     return () => { isMounted = false; };
-  }, [selectedCountry, selectedAffiliation, selectedBranch, selectedStatus, selectedCategory, selectedGeneration, searchQuery, sortBy, sortOrder]);
+  }, [selectedCountry, selectedAffiliation, selectedBranch, selectedStatus, selectedEra, selectedCategory, selectedGeneration, searchQuery, sortBy, sortOrder]);
 
   // Toggle Aircraft into Comparison Dock (Max 2)
   const handleToggleCompare = (aircraft) => {
@@ -132,6 +133,7 @@ export default function App() {
     setSelectedAffiliation('ALL');
     setSelectedBranch('ALL');
     setSelectedStatus('ALL');
+    setSelectedEra('ALL');
     setSelectedCategory('ALL');
     setSelectedGeneration('ALL');
     setSearchQuery('');
@@ -220,6 +222,8 @@ export default function App() {
                   loading={loading}
                   selectedStatus={selectedStatus}
                   setSelectedStatus={setSelectedStatus}
+                  selectedEra={selectedEra}
+                  setSelectedEra={setSelectedEra}
                   selectedCategory={selectedCategory}
                   setSelectedCategory={setSelectedCategory}
                   selectedGeneration={selectedGeneration}

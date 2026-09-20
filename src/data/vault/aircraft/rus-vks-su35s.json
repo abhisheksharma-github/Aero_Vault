@@ -1,0 +1,212 @@
+{
+  "id": "rus-vks-su35s",
+  "aliases": [
+    "rus-vks-su35s",
+    "sukhoi-su-35s-flanker-e",
+    "su-35s"
+  ],
+  "name": "Sukhoi Su-35S Flanker-E",
+  "commonName": "Su-35S",
+  "officialDesignation": "Su-35S Flanker-E+",
+  "natoReportingName": "Flanker-E",
+  "family": "Sukhoi Su-27/35 Family",
+  "variant": "Su-35S Serial Production",
+  "block": "VKS Standard",
+  "manufacturer": "Sukhoi / KnAAZ",
+  "manufacturerCountry": "Russia",
+  "originCountry": "Russia",
+  "country": "Russia",
+  "affiliation": "Russian Aerospace Forces (VKS)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "AIR_SUPERIORITY",
+  "generation": "GEN_4_5",
+  "era": "MODERN",
+  "role": "Super-Maneuverable Air Superiority Fighter",
+  "secondaryRoles": [
+    "SEAD",
+    "Precision Strike",
+    "Long-Range Interception"
+  ],
+  "firstFlightYear": 2008,
+  "introductionYear": 2014,
+  "retirementYear": null,
+  "productionCount": 154,
+  "fleetCount": 110,
+  "activeCount": 110,
+  "inactiveCount": 0,
+  "retiredCount": 14,
+  "engineManufacturer": null,
+  "engineModel": "Saturn AL-41F1S 3D Thrust-Vectoring Turbofans (Dual)",
+  "engineCount": 2,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 176,
+  "thrustAfterburnerKn": 284,
+  "topSpeedMach": 2.25,
+  "topSpeedKmh": 2400,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 18000,
+  "rateOfClimbMs": 280,
+  "gLimitPositive": 9,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 1600,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 3600,
+  "emptyWeightKg": 19000,
+  "maxTakeoffWeightKg": 34500,
+  "payloadCapacityKg": 8000,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "PESA",
+  "radarModel": "Tikhomirov NIIP Irbis-E PESA Radar",
+  "radarRangeAirKm": 400,
+  "hasAesa": false,
+  "hasIrst": true,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 90,
+  "stealthLevel": "REDUCED",
+  "rcsEstimatedM2": 2,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": true,
+  "maintenanceHoursPerFlightHour": 18,
+  "costPerFlightHourUsd": 14000,
+  "reliabilityScore": 84,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "Premier 4.5++ generation air dominance fighter equipped with Irbis-E passive electronically scanned array radar (detecting targets up to 400 km away) and 3D thrust-vectoring AL-41F1S engines enabling super-maneuverability.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Sukhoi_Su-35S_in_flight_2017.jpg/1200px-Sukhoi_Su-35S_in_flight_2017.jpg",
+  "tvrScore": 85,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "R-37M (RVV-BD) Mach 6 BVR",
+        "type": "BVR_AAM",
+        "maxRangeKm": 300,
+        "speedMach": 6,
+        "guidance": "Active Radar"
+      }
+    },
+    {
+      "weapon": {
+        "name": "R-77-1 BVR-AAM",
+        "type": "BVR_AAM",
+        "maxRangeKm": 110,
+        "speedMach": 4,
+        "guidance": "Active Radar"
+      }
+    },
+    {
+      "weapon": {
+        "name": "Kh-31P Anti-Radiation",
+        "type": "ANTI_RADIATION_MISSILE",
+        "maxRangeKm": 110,
+        "speedMach": 3.5,
+        "guidance": "Passive Radar"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 2008,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Sukhoi Su-35S Flanker-E conducted."
+    },
+    {
+      "year": 2014,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Russian Aerospace Forces (VKS)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "AIR_SUPERIORITY",
+  "aircraftName": "Sukhoi Su-35S Flanker-E",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 19000,
+      "maxTakeoffWeightKg": 34500,
+      "payloadCapacityKg": 8000
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Saturn AL-41F1S 3D Thrust-Vectoring Turbofans (Dual)",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 176,
+      "thrustAfterburnerKn": 284
+    },
+    "performance": {
+      "maxSpeedKmh": 2400,
+      "maxSpeedMach": 2.25,
+      "combatRadiusKm": 1600,
+      "ferryRangeKm": 3600,
+      "serviceCeilingM": 18000,
+      "rateOfClimbMs": 280,
+      "gLimitPositive": 9
+    }
+  },
+  "avionics": {
+    "radar": "Tikhomirov NIIP Irbis-E PESA Radar",
+    "radarType": "PESA",
+    "radarRangeAirKm": 400,
+    "hasAesa": false,
+    "hasIrst": true,
+    "hasSensorFusion": true,
+    "hasDatalink": true,
+    "helmetMountedDisplay": "Operational HMD",
+    "stealthLevel": "REDUCED",
+    "rcsEstimatedM2": 2
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": true,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "R-37M (RVV-BD) Mach 6 BVR",
+      "R-77-1 BVR-AAM",
+      "Kh-31P Anti-Radiation"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 110,
+    "estimatedQuantity": 110,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: ACTIVE. Active: 110, Retired: 14.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

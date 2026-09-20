@@ -1,0 +1,211 @@
+{
+  "id": "ind-iaf-mig21-bison",
+  "aliases": [
+    "ind-iaf-mig21-bison",
+    "mikoyan-mig-21-bison",
+    "mig-21-bison"
+  ],
+  "name": "Mikoyan MiG-21 Bison",
+  "commonName": "MiG-21 Bison",
+  "officialDesignation": "MiG-21-93 / Bison Standard",
+  "natoReportingName": "Fishbed",
+  "family": "Mikoyan MiG-21",
+  "variant": "MiG-21bis UPG Bison",
+  "block": "Bison Final IAF Standard",
+  "manufacturer": "HAL / Mikoyan-Gurevich",
+  "manufacturerCountry": "India / Soviet Union",
+  "originCountry": "Soviet Union",
+  "country": "India",
+  "affiliation": "Indian Air Force (Historic 1963–2025 Frontline Workhorse)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "INTERCEPTOR",
+  "generation": "GEN_3",
+  "era": "COLD_WAR",
+  "role": "Point Defense Supersonic Interceptor",
+  "secondaryRoles": [
+    "Tactical Strike",
+    "Close Air Support"
+  ],
+  "firstFlightYear": 1955,
+  "introductionYear": 1963,
+  "retirementYear": 2025,
+  "productionCount": 874,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 12,
+  "retiredCount": 862,
+  "engineManufacturer": null,
+  "engineModel": "Tumansky R-25-300 Afterburning Turbojet",
+  "engineCount": 1,
+  "engineType": "Turbojet",
+  "hasAfterburner": true,
+  "thrustDryKn": 40.2,
+  "thrustAfterburnerKn": 70,
+  "topSpeedMach": 2.05,
+  "topSpeedKmh": 2230,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 17500,
+  "rateOfClimbMs": 225,
+  "gLimitPositive": 8.5,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 650,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 1470,
+  "emptyWeightKg": 5895,
+  "maxTakeoffWeightKg": 10400,
+  "payloadCapacityKg": 1500,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "MECHANICAL_PULSE_DOPPLER",
+  "radarModel": "Phazotron Kopyo Lightweight Radar",
+  "radarRangeAirKm": 57,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": false,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 70,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 2,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 12,
+  "costPerFlightHourUsd": 5500,
+  "reliabilityScore": 75,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "The legendary supersonic delta-wing interceptor that formed the backbone of the IAF for 62 years (1963 to 2025). The Bison upgrade added Kopyo radar, helmet-mounted sights, and R-73 / R-77 BVR capability, famously engaging in the 2019 aerial duel.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/MiG-21_Bison_of_the_Indian_Air_Force.jpg/1200px-MiG-21_Bison_of_the_Indian_Air_Force.jpg",
+  "tvrScore": 61.8,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "R-73E Archer",
+        "type": "WVR_AAM",
+        "maxRangeKm": 30,
+        "speedMach": 2.5,
+        "guidance": "HMS/Infrared"
+      }
+    },
+    {
+      "weapon": {
+        "name": "R-77 (RVV-AE)",
+        "type": "BVR_AAM",
+        "maxRangeKm": 80,
+        "speedMach": 4,
+        "guidance": "Active Radar"
+      }
+    },
+    {
+      "weapon": {
+        "name": "23mm GSh-23L Cannon",
+        "type": "GUN_POD",
+        "maxRangeKm": 2,
+        "speedMach": 1,
+        "guidance": "Ballistic"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1955,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Mikoyan MiG-21 Bison conducted."
+    },
+    {
+      "year": 1963,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Indian Air Force (Historic 1963–2025 Frontline Workhorse)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "INTERCEPTOR",
+  "aircraftName": "Mikoyan MiG-21 Bison",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 5895,
+      "maxTakeoffWeightKg": 10400,
+      "payloadCapacityKg": 1500
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 1,
+      "engineModel": "Tumansky R-25-300 Afterburning Turbojet",
+      "engineType": "Turbojet",
+      "hasAfterburner": true,
+      "thrustDryKn": 40.2,
+      "thrustAfterburnerKn": 70
+    },
+    "performance": {
+      "maxSpeedKmh": 2230,
+      "maxSpeedMach": 2.05,
+      "combatRadiusKm": 650,
+      "ferryRangeKm": 1470,
+      "serviceCeilingM": 17500,
+      "rateOfClimbMs": 225,
+      "gLimitPositive": 8.5
+    }
+  },
+  "avionics": {
+    "radar": "Phazotron Kopyo Lightweight Radar",
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarRangeAirKm": 57,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": false,
+    "hasDatalink": true,
+    "helmetMountedDisplay": "Operational HMD",
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 2
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "R-73E Archer",
+      "R-77 (RVV-AE)",
+      "23mm GSh-23L Cannon"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 862.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

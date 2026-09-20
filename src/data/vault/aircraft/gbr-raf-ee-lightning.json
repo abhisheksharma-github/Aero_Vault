@@ -1,0 +1,210 @@
+{
+  "id": "gbr-raf-ee-lightning",
+  "aliases": [
+    "gbr-raf-ee-lightning",
+    "english-electric-lightning-f-6",
+    "ee-lightning"
+  ],
+  "name": "English Electric Lightning F.6",
+  "commonName": "EE Lightning",
+  "officialDesignation": "Lightning F.6 Point Defense Interceptor",
+  "natoReportingName": null,
+  "family": "English Electric Lightning",
+  "variant": "Lightning F.6",
+  "block": "RAF Final Standard",
+  "manufacturer": "English Electric / British Aircraft Corporation",
+  "manufacturerCountry": "United Kingdom",
+  "originCountry": "United Kingdom",
+  "country": "United Kingdom",
+  "affiliation": "Royal Air Force (Fighter Command / Strike Command 1959–1988)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "INTERCEPTOR",
+  "generation": "GEN_2",
+  "era": "COLD_WAR",
+  "role": "Mach 2.27 Vertical-Climb Point Defense Interceptor",
+  "secondaryRoles": [
+    "Supersonic QRA Interception"
+  ],
+  "firstFlightYear": 1954,
+  "introductionYear": 1959,
+  "retirementYear": 1988,
+  "productionCount": 337,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 337,
+  "engineManufacturer": null,
+  "engineModel": "Rolls-Royce Avon 302 Afterburning Turbojets (Vertically Stacked Dual)",
+  "engineCount": 2,
+  "engineType": "Turbojet",
+  "hasAfterburner": true,
+  "thrustDryKn": 108,
+  "thrustAfterburnerKn": 145,
+  "topSpeedMach": 2.27,
+  "topSpeedKmh": 2414,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 18000,
+  "rateOfClimbMs": 250,
+  "gLimitPositive": 7,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 600,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 1370,
+  "emptyWeightKg": 12700,
+  "maxTakeoffWeightKg": 20750,
+  "payloadCapacityKg": 1500,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "MECHANICAL_PULSE_DOPPLER",
+  "radarModel": "Ferranti AI.23 AIRPASS Radar",
+  "radarRangeAirKm": 50,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": false,
+  "hasDatalink": false,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 50,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 5,
+  "hasRwr": false,
+  "hasEcm": false,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 25,
+  "costPerFlightHourUsd": 12000,
+  "reliabilityScore": 80,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "Britain's only Mach 2 supersonic jet fighter developed entirely indigenously. Unique stacked engine configuration and exceptional climb rate (up to 50,000 ft in under 2.5 minutes), designed to intercept high-altitude Soviet nuclear bombers.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/English_Electric_Lightning_F6_XR770.jpg/1200px-English_Electric_Lightning_F6_XR770.jpg",
+  "tvrScore": 54.8,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "Red Top AAM",
+        "type": "WVR_AAM",
+        "maxRangeKm": 12,
+        "speedMach": 3.2,
+        "guidance": "Infrared"
+      }
+    },
+    {
+      "weapon": {
+        "name": "Firestreak AAM",
+        "type": "WVR_AAM",
+        "maxRangeKm": 6,
+        "speedMach": 3,
+        "guidance": "Infrared"
+      }
+    },
+    {
+      "weapon": {
+        "name": "Two 30mm ADEN Cannons",
+        "type": "GUN_POD",
+        "maxRangeKm": 2,
+        "speedMach": 1,
+        "guidance": "Optical"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1954,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the English Electric Lightning F.6 conducted."
+    },
+    {
+      "year": 1959,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with Royal Air Force (Fighter Command / Strike Command 1959–1988)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "INTERCEPTOR",
+  "aircraftName": "English Electric Lightning F.6",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 12700,
+      "maxTakeoffWeightKg": 20750,
+      "payloadCapacityKg": 1500
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Rolls-Royce Avon 302 Afterburning Turbojets (Vertically Stacked Dual)",
+      "engineType": "Turbojet",
+      "hasAfterburner": true,
+      "thrustDryKn": 108,
+      "thrustAfterburnerKn": 145
+    },
+    "performance": {
+      "maxSpeedKmh": 2414,
+      "maxSpeedMach": 2.27,
+      "combatRadiusKm": 600,
+      "ferryRangeKm": 1370,
+      "serviceCeilingM": 18000,
+      "rateOfClimbMs": 250,
+      "gLimitPositive": 7
+    }
+  },
+  "avionics": {
+    "radar": "Ferranti AI.23 AIRPASS Radar",
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarRangeAirKm": 50,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": false,
+    "hasDatalink": false,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 5
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "keyWeaponsIntegrated": [
+      "Red Top AAM",
+      "Firestreak AAM",
+      "Two 30mm ADEN Cannons"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 337.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}

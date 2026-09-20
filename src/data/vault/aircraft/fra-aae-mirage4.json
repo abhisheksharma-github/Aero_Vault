@@ -1,0 +1,200 @@
+{
+  "id": "fra-aae-mirage4",
+  "aliases": [
+    "fra-aae-mirage4",
+    "dassault-mirage-iv-a-p",
+    "mirage-iv-bomber"
+  ],
+  "name": "Dassault Mirage IV A/P",
+  "commonName": "Mirage IV Bomber",
+  "officialDesignation": "Mirage IVP Nuclear Strategic Penetrator",
+  "natoReportingName": null,
+  "family": "Dassault Mirage Strategic Series",
+  "variant": "Mirage IVP",
+  "block": "ASMP Nuclear Standoff Standard",
+  "manufacturer": "Dassault Aviation",
+  "manufacturerCountry": "France",
+  "originCountry": "France",
+  "country": "France",
+  "affiliation": "French Strategic Air Forces (FAS 1964–2005)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "RETIRED",
+  "category": "BOMBER",
+  "generation": "GEN_2",
+  "era": "COLD_WAR",
+  "role": "Mach 2.2 Strategic Supersonic Nuclear Penetration Bomber",
+  "secondaryRoles": [
+    "Strategic Optical Reconnaissance"
+  ],
+  "firstFlightYear": 1959,
+  "introductionYear": 1964,
+  "retirementYear": 2005,
+  "productionCount": 66,
+  "fleetCount": 0,
+  "activeCount": 0,
+  "inactiveCount": 0,
+  "retiredCount": 66,
+  "engineManufacturer": null,
+  "engineModel": "Snecma Atar 09K-50 Afterburning Turbojets (Dual)",
+  "engineCount": 2,
+  "engineType": "Turbojet",
+  "hasAfterburner": true,
+  "thrustDryKn": 98,
+  "thrustAfterburnerKn": 140,
+  "topSpeedMach": 2.2,
+  "topSpeedKmh": 2340,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 20000,
+  "rateOfClimbMs": 100,
+  "gLimitPositive": 5,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 1240,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 4000,
+  "emptyWeightKg": 14500,
+  "maxTakeoffWeightKg": 33475,
+  "payloadCapacityKg": 5000,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "MECHANICAL_PULSE_DOPPLER",
+  "radarModel": "Thomson-CSF Cyrano 55 Navigation & Strike Radar",
+  "radarRangeAirKm": 80,
+  "hasAesa": false,
+  "hasIrst": false,
+  "hasSensorFusion": false,
+  "hasDatalink": false,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 78,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 5,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": 35,
+  "costPerFlightHourUsd": 20000,
+  "reliabilityScore": 84,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 95,
+  "sourceCount": 5,
+  "lastVerified": "2026-09-20",
+  "description": "The core of the French nuclear triad (Force de Frappe) for over four decades. Flew sustained Mach 2 supersonic low-level penetration missions carrying the 300 km range ASMP nuclear standoff missile.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Mirage_IV_French_Air_Force.jpg/1200px-Mirage_IV_French_Air_Force.jpg",
+  "tvrScore": 61.4,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "ASMP Nuclear Standoff ALCM (300 kt)",
+        "type": "LAND_ATTACK_CRUISE_MISSILE",
+        "maxRangeKm": 300,
+        "speedMach": 3,
+        "guidance": "INS/Terrain Matching"
+      }
+    },
+    {
+      "weapon": {
+        "name": "AN-22 Freefall Thermonuclear Bomb",
+        "type": "UNGUIDED_BOMB",
+        "maxRangeKm": null,
+        "speedMach": 1,
+        "guidance": "Parachute Retarded"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [
+    {
+      "year": 1959,
+      "eventType": "FIRST_FLIGHT",
+      "title": "Initial Prototype Maiden Flight",
+      "description": "Official first flight of the Dassault Mirage IV A/P conducted."
+    },
+    {
+      "year": 1964,
+      "eventType": "COMMISSIONED",
+      "title": "Squadron Induction & Operational Service",
+      "description": "Commissioned into frontline operational service with French Strategic Air Forces (FAS 1964–2005)."
+    }
+  ],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "BOMBER",
+  "aircraftName": "Dassault Mirage IV A/P",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": null,
+      "wingspanM": null,
+      "heightM": null
+    },
+    "weights": {
+      "emptyWeightKg": 14500,
+      "maxTakeoffWeightKg": 33475,
+      "payloadCapacityKg": 5000
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Snecma Atar 09K-50 Afterburning Turbojets (Dual)",
+      "engineType": "Turbojet",
+      "hasAfterburner": true,
+      "thrustDryKn": 98,
+      "thrustAfterburnerKn": 140
+    },
+    "performance": {
+      "maxSpeedKmh": 2340,
+      "maxSpeedMach": 2.2,
+      "combatRadiusKm": 1240,
+      "ferryRangeKm": 4000,
+      "serviceCeilingM": 20000,
+      "rateOfClimbMs": 100,
+      "gLimitPositive": 5
+    }
+  },
+  "avionics": {
+    "radar": "Thomson-CSF Cyrano 55 Navigation & Strike Radar",
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarRangeAirKm": 80,
+    "hasAesa": false,
+    "hasIrst": false,
+    "hasSensorFusion": false,
+    "hasDatalink": false,
+    "helmetMountedDisplay": null,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 5
+  },
+  "capabilities": {
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": true,
+    "keyWeaponsIntegrated": [
+      "ASMP Nuclear Standoff ALCM (300 kt)",
+      "AN-22 Freefall Thermonuclear Bomb"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 0,
+    "estimatedQuantity": 0,
+    "quantityYear": 2026,
+    "quantityNotes": "Service Status: RETIRED. Active: 0, Retired: 66.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-20",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Jane's All the World's Aircraft / Official MoD Archives",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2026-02-15"
+    }
+  ]
+}
