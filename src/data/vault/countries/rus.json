@@ -8,7 +8,7 @@
   "description": "Strategic nuclear standoff bomber triad (Tu-160M, Tu-95MS), heavy supermaneuverable Flanker derivatives (Su-35S, Su-30SM2, Su-34M), 5th-generation Su-57 Felon, and advanced long-range hypersonic missiles (R-37M, Kinzhal).",
   "totalAircraftEstimate": 4100,
   "modernizationIndex": 76,
-  "defenseBudgetUsd": 86.4,
+  "defenseBudgetUsd": 190,
   "militaryBranches": [
     {
       "name": "Russian Aerospace Forces",
@@ -33,6 +33,16 @@
       "name": "SIPRI Military Expenditure Database",
       "url": "https://www.sipri.org/databases/milex",
       "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database (Apr. 2026)",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2026-09-20"
+    },
+    {
+      "name": "World Bank MS.MIL.TOTL.P1 / IISS Armed Forces Series",
+      "url": "https://data.worldbank.org/indicator/MS.MIL.TOTL.P1",
+      "retrievedAt": "2026-09-20"
     }
   ]
 }

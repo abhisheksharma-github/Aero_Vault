@@ -8,7 +8,7 @@
   "description": "Dynamic aerospace manufacturer developing the KF-21 Boramae 4.5-gen fighter, operating F-35A stealth fighters, F-15K Slam Eagles, FA-50 light combat jets, and advanced indigenous air defense.",
   "totalAircraftEstimate": 1580,
   "modernizationIndex": 91,
-  "defenseBudgetUsd": 47.9,
+  "defenseBudgetUsd": 47.8,
   "militaryBranches": [
     {
       "name": "Republic of Korea Air Force",
@@ -39,6 +39,16 @@
       "name": "SIPRI Military Expenditure Database",
       "url": "https://www.sipri.org/databases/milex",
       "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database (Apr. 2026)",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2026-09-20"
+    },
+    {
+      "name": "World Bank MS.MIL.TOTL.P1 / IISS Armed Forces Series",
+      "url": "https://data.worldbank.org/indicator/MS.MIL.TOTL.P1",
+      "retrievedAt": "2026-09-20"
     }
   ]
 }

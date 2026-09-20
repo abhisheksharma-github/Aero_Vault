@@ -8,7 +8,7 @@
   "description": "Rapidly rising sovereign aerospace power developing the TAI TF Kaan 5th-gen stealth fighter, operating large upgraded F-16 Block 50+ fleets, and leading world unmanned combat aviation (Bayraktar TB2/TB3, Akinci, Kizilelma).",
   "totalAircraftEstimate": 1050,
   "modernizationIndex": 85.5,
-  "defenseBudgetUsd": 25.2,
+  "defenseBudgetUsd": 30,
   "militaryBranches": [
     {
       "name": "Turkish Air Force",
@@ -39,6 +39,16 @@
       "name": "SIPRI Military Expenditure Database",
       "url": "https://www.sipri.org/databases/milex",
       "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database (Apr. 2026)",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2026-09-20"
+    },
+    {
+      "name": "World Bank MS.MIL.TOTL.P1 / IISS Armed Forces Series",
+      "url": "https://data.worldbank.org/indicator/MS.MIL.TOTL.P1",
+      "retrievedAt": "2026-09-20"
     }
   ]
 }

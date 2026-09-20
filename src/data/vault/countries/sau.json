@@ -8,7 +8,7 @@
   "description": "One of the best-funded frontline air arms in the world, operating advanced F-15SA Advanced Eagles with APG-63(V)3 AESA radars, Eurofighter Typhoons, Tornado IDS strike bombers, and E-3A AWACS.",
   "totalAircraftEstimate": 890,
   "modernizationIndex": 87,
-  "defenseBudgetUsd": 71.7,
+  "defenseBudgetUsd": 83.2,
   "militaryBranches": [
     {
       "name": "Royal Saudi Air Force",
@@ -39,6 +39,16 @@
       "name": "SIPRI Military Expenditure Database",
       "url": "https://www.sipri.org/databases/milex",
       "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database (Apr. 2026)",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2026-09-20"
+    },
+    {
+      "name": "World Bank MS.MIL.TOTL.P1 / IISS Armed Forces Series",
+      "url": "https://data.worldbank.org/indicator/MS.MIL.TOTL.P1",
+      "retrievedAt": "2026-09-20"
     }
   ]
 }

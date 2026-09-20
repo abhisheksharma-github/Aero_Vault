@@ -8,7 +8,7 @@
   "description": "Arctic and North American airspace defender operating modernized CF-188 Hornets (CF-18), CP-140 Aurora long-range patrol, CC-130J Hercules, and procuring 88 F-35A stealth fighters and P-8A Poseidons.",
   "totalAircraftEstimate": 390,
   "modernizationIndex": 82,
-  "defenseBudgetUsd": 26.9,
+  "defenseBudgetUsd": 37.5,
   "militaryBranches": [
     {
       "name": "Royal Canadian Air Force",
@@ -27,6 +27,16 @@
       "name": "SIPRI Military Expenditure Database",
       "url": "https://www.sipri.org/databases/milex",
       "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database (Apr. 2026)",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2026-09-20"
+    },
+    {
+      "name": "World Bank MS.MIL.TOTL.P1 / IISS Armed Forces Series",
+      "url": "https://data.worldbank.org/indicator/MS.MIL.TOTL.P1",
+      "retrievedAt": "2026-09-20"
     }
   ]
 }

@@ -37,7 +37,7 @@
       ]
     },
     "changePercent2024to2025": {
-      "value": 10.0,
+      "value": 10,
       "unit": "percent, real terms",
       "confidence": "VERIFIED",
       "sources": [
@@ -67,7 +67,7 @@
       ]
     },
     "gdpSharePercent2025": {
-      "value": 3.0,
+      "value": 3,
       "unit": "percent of GDP",
       "confidence": "VERIFIED",
       "sources": [
@@ -116,10 +116,21 @@
   },
   "personnel": {
     "activeDuty": {
-      "value": null,
-      "confidence": "UNKNOWN",
-      "note": "No citable open source located; awaiting IISS Military Balance ingestion.",
-      "sources": []
+      "value": 59000,
+      "unit": "personnel (armed forces incl. paramilitary)",
+      "confidence": "STALE",
+      "observationYear": 2020,
+      "note": "World Bank series MS.MIL.TOTL.P1 combines armed forces and paramilitary personnel into a single total; IISS reports them separately. Treat as total uniformed personnel, not strict active-duty establishment.",
+      "sources": [
+        {
+          "name": "World Development Indicators — Armed forces personnel, total (MS.MIL.TOTL.P1)",
+          "publisher": "World Bank (data originally from IISS, The Military Balance)",
+          "url": "https://data.worldbank.org/indicator/MS.MIL.TOTL.P1",
+          "licence": "CC BY 4.0",
+          "coversYear": 2020,
+          "retrievedAt": "2026-09-20"
+        }
+      ]
     },
     "reserve": {
       "value": null,
@@ -180,7 +191,7 @@
   },
   "coverage": {
     "defenceEconomics": "COMPLETE",
-    "personnel": "MISSING",
+    "personnel": "PARTIAL",
     "inventory": "MISSING"
   }
 }

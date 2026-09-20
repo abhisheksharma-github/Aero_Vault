@@ -8,7 +8,7 @@
   "description": "European powerhouse operating both CTOL and STOVL F-35A/B stealth fighters, Eurofighter Typhoons, G550 CAEW early warning, and Cavour / Trieste aircraft carrier aviation.",
   "totalAircraftEstimate": 780,
   "modernizationIndex": 88.2,
-  "defenseBudgetUsd": 31.6,
+  "defenseBudgetUsd": 48.1,
   "militaryBranches": [
     {
       "name": "Italian Air Force",
@@ -39,6 +39,16 @@
       "name": "SIPRI Military Expenditure Database",
       "url": "https://www.sipri.org/databases/milex",
       "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database (Apr. 2026)",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2026-09-20"
+    },
+    {
+      "name": "World Bank MS.MIL.TOTL.P1 / IISS Armed Forces Series",
+      "url": "https://data.worldbank.org/indicator/MS.MIL.TOTL.P1",
+      "retrievedAt": "2026-09-20"
     }
   ]
 }
