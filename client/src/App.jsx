@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import OverviewDashboard from './components/OverviewDashboard';
@@ -107,27 +107,30 @@ export default function App() {
   }, [selectedCountry, selectedAffiliation, selectedBranch, selectedStatus, selectedEra, selectedCategory, selectedGeneration, searchQuery, sortBy, sortOrder]);
 
   // Toggle Aircraft into Comparison Dock (Max 2)
-  const handleToggleCompare = (aircraft) => {
+  const handleToggleCompare = useCallback((aircraft) => {
     setComparisonList((prev) => {
-      const exists = prev.some((item) => item.id === aircraft.id || item.name === aircraft.name);
+      const exists = prev.some((item) => (item.id && item.id === aircraft.id) || item.name === aircraft.name);
       if (exists) {
-        return prev.filter((item) => item.id !== aircraft.id && item.name !== aircraft.name);
+        return prev.filter((item) => (item.id ? item.id !== aircraft.id : item.name !== aircraft.name));
       } else {
         if (prev.length >= 2) return [prev[0], aircraft];
         return [...prev, aircraft];
       }
     });
-  };
+  }, []);
 
-  const handleLaunchComparisonFromModal = (aircraft) => {
-    if (!comparisonList.some((a) => a.name === aircraft.name)) {
-      setComparisonList([aircraft, comparisonList[0] || initialAircraftData[1]]);
-    }
+  const handleLaunchComparisonFromModal = useCallback((aircraft) => {
+    setComparisonList((prev) => {
+      if (!prev.some((a) => a.name === aircraft.name)) {
+        return [aircraft, prev[0] || initialAircraftData[1]];
+      }
+      return prev;
+    });
     setSelectedAircraftForModal(null);
     setIsComparisonOpen(true);
-  };
+  }, []);
 
-  const handleResetFilters = () => {
+  const handleResetFilters = useCallback(() => {
     tacticalAudio.playClick();
     setSelectedCountry('ALL');
     setSelectedAffiliation('ALL');
@@ -137,13 +140,18 @@ export default function App() {
     setSelectedCategory('ALL');
     setSelectedGeneration('ALL');
     setSearchQuery('');
-  };
+  }, []);
 
-  const handleCountryDrilldown = (countryName) => {
+  const handleCountryDrilldown = useCallback((countryName) => {
     tacticalAudio.playClick();
     setSelectedCountry(countryName);
     setActiveTab('directory');
-  };
+  }, []);
+
+  const handleSelectAircraft = useCallback((aircraft) => {
+    setSelectedAircraftForModal(aircraft);
+  }, []);
+
 
   return (
     <div className="min-h-screen bg-av-navy text-av-light flex flex-col font-sans radar-grid selection:bg-av-sky/20 selection:text-av-sky">
@@ -184,7 +192,7 @@ export default function App() {
                 nationsData={nationsData}
                 onNavigateTab={(tab) => setActiveTab(tab)}
                 onSelectCountry={handleCountryDrilldown}
-                onSelectAircraft={(a) => setSelectedAircraftForModal(a)}
+                onSelectAircraft={handleSelectAircraft}
               />
             )}
 

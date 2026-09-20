@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import {
   Zap,
   Gauge,
@@ -17,7 +17,7 @@ import { tacticalAudio } from '../services/tacticalAudio';
 
 import TacticalImage from './TacticalImage';
 
-export default function AircraftCard({
+function AircraftCard({
   aircraft,
   onSelect,
   onToggleCompare,
@@ -193,3 +193,6 @@ export default function AircraftCard({
     </div>
   );
 }
+
+export default memo(AircraftCard);
+
