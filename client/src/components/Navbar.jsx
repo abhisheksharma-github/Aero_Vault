@@ -35,11 +35,11 @@ export default function Navbar({
   const [audioEnabled, setAudioEnabled] = useState(tacticalAudio.isEnabled);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Live UTC Clock
+  // Live Device Local Clock
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
-      setTimeStr(now.toUTCString().slice(17, 25) + ' UTC');
+      setTimeStr(now.toLocaleTimeString());
     };
     updateTime();
     const interval = setInterval(updateTime, 1000);
@@ -77,7 +77,7 @@ export default function Navbar({
             <span>GLOBAL MILITARY INTEL ONLINE</span>
           </span>
           <span className="text-slate-700">|</span>
-          <span>TIME: <strong className="text-white font-bold">{timeStr || '00:00:00 UTC'}</strong></span>
+          <span>TIME: <strong className="text-white font-bold">{timeStr || '00:00:00'}</strong></span>
           <span className="text-slate-700">|</span>
           <span>DOMAINS: <strong className="text-cyan-400">AIR • NAVAL • LAND • ATLAS COMPOSITE</strong></span>
         </div>
@@ -262,7 +262,7 @@ export default function Navbar({
               <span className="w-2 h-2 rounded-full bg-cyan-400 mr-1.5 animate-pulse" />
               GLOBAL INTEL ONLINE
             </span>
-            <span className="text-white font-bold">{timeStr || 'UTC'}</span>
+            <span className="text-white font-bold">{timeStr || 'LOCAL'}</span>
           </div>
         </div>
       )}
