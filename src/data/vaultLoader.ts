@@ -6,7 +6,26 @@ import { CanonicalAircraft } from '../types/aircraft.types.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const vaultRoot = path.resolve(__dirname, './vault');
+
+function findVaultRoot(): string {
+  const candidateDirs = [
+    path.resolve(__dirname, './vault'),
+    path.resolve(__dirname, '../../../src/data/vault'),
+    path.resolve(process.cwd(), 'src/data/vault'),
+    path.resolve(process.cwd(), 'packages/vault/data'),
+    path.resolve(process.cwd(), 'dist/src/data/vault')
+  ];
+
+  for (const dir of candidateDirs) {
+    if (fs.existsSync(dir) && (fs.existsSync(path.join(dir, 'countries')) || fs.existsSync(path.join(dir, 'aircraft')))) {
+      return dir;
+    }
+  }
+  return path.resolve(process.cwd(), 'src/data/vault');
+}
+
+const vaultRoot = findVaultRoot();
+
 
 // Schema definitions
 const SourceRecordSchema = z.object({

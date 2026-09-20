@@ -6,7 +6,7 @@
   "main": "dist/src/index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "tsc",
+    "build": "tsc && node scripts/copyVaultToDist.js",
     "start": "node dist/src/index.js",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
