@@ -631,7 +631,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": null,
     "description": "PLA Army primary attack helicopter featuring stepped tandem cockpit, mast-mounted millimeter wave radar, 23mm revolving cannon turret, HJ-10 anti-tank missiles, and TY-90 dedicated helicopter dogfight AAMs.",
-    "imageUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/CAIC_WZ-10_in_flight_at_Airshow_China_2012.jpg",
     "tvrScore": 80.8,
     "weapons": [
       {
@@ -962,7 +962,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": null,
     "description": "Catapult-assisted takeoff barrier-arrested recovery (CATOBAR) carrier fighter designed for the CNS Fujian (Type 003). Upgraded with AESA radar, WS-10B engines, and PL-15 BVR missile compatibility.",
-    "imageUrl": "https://images.unsplash.com/photo-1517976487507-5b3b118b625b?auto=format&fit=crop&w=1200&q=80",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Shenyang_J-15_%28cropped%29.jpg",
     "tvrScore": 84.4,
     "weapons": [
       {
@@ -2471,7 +2471,7 @@ export const initialAircraftData = [
     "sourceCount": 6,
     "lastVerified": null,
     "description": "Premier heavy attack helicopter equipped with Longbow millimeter-wave fire control radar, AGM-114 Hellfire laser/RF missiles, Stinger air-to-air missiles, and 30mm M230 chain gun.",
-    "imageUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/AH-64D_Apache_Longbow_2005.jpg",
     "tvrScore": 86.2,
     "weapons": [
       {

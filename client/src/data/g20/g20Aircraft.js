@@ -482,8 +482,8 @@ export const g20AircraftData = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
-      "thumbnailUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/CAIC_WZ-10_in_flight_at_Airshow_China_2012.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/CAIC_WZ-10_in_flight_at_Airshow_China_2012.jpg",
       "caption": "Changhe Z-10 Fierce Thunderbolt in service with China"
     },
     "sources": [
@@ -732,8 +732,8 @@ export const g20AircraftData = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://images.unsplash.com/photo-1517976487507-5b3b118b625b?auto=format&fit=crop&w=1200&q=80",
-      "thumbnailUrl": "https://images.unsplash.com/photo-1517976487507-5b3b118b625b?auto=format&fit=crop&w=1200&q=80",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Shenyang_J-15_%28cropped%29.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Shenyang_J-15_%28cropped%29.jpg",
       "caption": "Shenyang J-15T Flying Shark in service with China"
     },
     "sources": [
@@ -1707,8 +1707,8 @@ export const g20AircraftData = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
-      "thumbnailUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/AH-64D_Apache_Longbow_2005.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/AH-64D_Apache_Longbow_2005.jpg",
       "caption": "Boeing AH-64E Apache Guardian (Army) in service with India"
     },
     "sources": [

@@ -36,6 +36,7 @@ const curatedImages: Record<string, string> = {
   'ind-iaf-a50ei-phalcon': 'https://upload.wikimedia.org/wikipedia/commons/e/e4/Beriev_A-50EI_Mainstay_Indian_Air_Force.jpg',
   'ind-c17-globe': 'https://upload.wikimedia.org/wikipedia/commons/b/b6/C-17_Globemaster_III_Indian_Air_Force.jpg',
   'ind-p8i-navy': 'https://upload.wikimedia.org/wikipedia/commons/9/94/Boeing_P-8I_Poseidon_at_Aero_India_2013.jpg',
+  'ind-apache-army': 'https://upload.wikimedia.org/wikipedia/commons/e/ec/AH-64D_Apache_Longbow_2005.jpg',
 
   // USA
   'usa-f22a': 'https://upload.wikimedia.org/wikipedia/commons/1/1e/F-22_Raptor_edit1_%28cropped%29.jpg',
@@ -63,10 +64,10 @@ const curatedImages: Record<string, string> = {
 
   // China
   'chn-j20a-plaaf': 'https://upload.wikimedia.org/wikipedia/commons/8/87/Chengdu_J-20_at_Airshow_China_2018.jpg',
-  'chn-j15t-plan': 'https://upload.wikimedia.org/wikipedia/commons/6/69/Shenyang_J-15_%28cropped%29.jpg',
+  'chn-j15t-planaf': 'https://upload.wikimedia.org/wikipedia/commons/6/69/Shenyang_J-15_%28cropped%29.jpg',
   'chn-plaaf-j16': 'https://upload.wikimedia.org/wikipedia/commons/2/27/Shenyang_J-16_PLAAF_in_flight.jpg',
   'chn-plaaf-j6-farmer': 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Shenyang_J-6_PLAAF_Museum.jpg',
-  'chn-z10-pla': 'https://upload.wikimedia.org/wikipedia/commons/7/7b/CAIC_WZ-10_in_flight_at_Airshow_China_2012.jpg',
+  'chn-z10-army': 'https://upload.wikimedia.org/wikipedia/commons/7/7b/CAIC_WZ-10_in_flight_at_Airshow_China_2012.jpg',
 
   // UK & France
   'gbr-raf-typhoon-fgr4': 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Eurofighter_Typhoon_FGR4_RAF.jpg',
@@ -88,22 +89,22 @@ const curatedImages: Record<string, string> = {
   'sau-rsaf-f15sa-advanced': 'https://upload.wikimedia.org/wikipedia/commons/e/ea/Boeing_F-15SA_Advanced_Eagle_RSAF.jpg',
 };
 
-// Fallback high-quality representative images by category/generation
+// Fallback military aviation images (genuine fighter aircraft)
 const categoryFallbacks: Record<string, string> = {
-  FIGHTER: 'https://images.unsplash.com/photo-1517976487507-5b3b118b625b?auto=format&fit=crop&w=1200&q=80',
-  MULTIROLE_FIGHTER: 'https://images.unsplash.com/photo-1517976487507-5b3b118b625b?auto=format&fit=crop&w=1200&q=80',
+  FIGHTER: 'https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1200&q=80',
+  MULTIROLE_FIGHTER: 'https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1200&q=80',
   AIR_SUPERIORITY: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80',
-  GROUND_ATTACK: 'https://images.unsplash.com/photo-1519074069444-1ba4fff16def?auto=format&fit=crop&w=1200&q=80',
+  GROUND_ATTACK: 'https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1200&q=80',
   BOMBER: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80',
-  HELICOPTER: 'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80',
-  ATTACK_HELICOPTER: 'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80',
-  UAV: 'https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=1200&q=80',
-  MALE_UAV: 'https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=1200&q=80',
+  HELICOPTER: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80',
+  ATTACK_HELICOPTER: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80',
+  UAV: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80',
+  MALE_UAV: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80',
   TRANSPORT: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80',
   STRATEGIC_TRANSPORT: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80',
   AEWC: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80',
   MARITIME_PATROL: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80',
-  DEFAULT: 'https://images.unsplash.com/photo-1517976487507-5b3b118b625b?auto=format&fit=crop&w=1200&q=80',
+  DEFAULT: 'https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1200&q=80',
 };
 
 for (const file of files) {
@@ -113,8 +114,7 @@ for (const file of files) {
   
   if (curatedImages[idLower]) {
     data.imageUrl = curatedImages[idLower];
-  } else if (!data.imageUrl || data.imageUrl.includes('1200px-') || data.imageUrl.includes('1280px-')) {
-    // If it has thumbnail path that is prone to 400/404, fallback to clean category image
+  } else if (!data.imageUrl || data.imageUrl.includes('1200px-') || data.imageUrl.includes('1280px-') || data.imageUrl.includes('photo-1508614589041') || data.imageUrl.includes('photo-1517976487507')) {
     const fallback = categoryFallbacks[data.category] || categoryFallbacks.DEFAULT;
     data.imageUrl = fallback;
   }
@@ -122,4 +122,5 @@ for (const file of files) {
   fs.writeFileSync(fullPath, JSON.stringify(data, null, 2), 'utf8');
 }
 
-console.log('✅ Updated all 58 vault aircraft records with clean image URLs');
+console.log('✅ Updated all 58 vault aircraft records with clean non-drone image URLs');
+
