@@ -136,11 +136,14 @@ CORS_ORIGIN="http://localhost:5173"
 ADMIN_API_KEY="aerovault_secure_admin_key_2026"
 ```
 
-### 3. Run Automated Tests
+### 3. Run Automated Tests & Seed Verification
 ```bash
+# Run complete vitest test suite (40+ contract, integration & unit tests)
 npm test
+
+# Verify JSON vault seed consistency
+npm run db:seed:verify
 ```
-*Outputs: 16/16 Passed test suites for TVR kinetics, rotary attack profiles, UAV weightings, OSINT consensus, and multi-domain scenarios.*
 
 ### 4. Start Development Servers
 ```bash
@@ -151,25 +154,36 @@ npm run dev
 npm run client:dev
 ```
 
-- **Frontend Application:** `http://localhost:5173`
-- **Backend API:** `http://localhost:4000/api`
-- **Health Check Endpoint:** `http://localhost:4000/api/health`
+- **Frontend Tactical Cockpit:** `http://localhost:5173`
+- **Backend REST API:** `http://localhost:4000/api`
+- **Interactive OpenAPI 3.1 Documentation:** `http://localhost:4000/api/docs`
+- **Health Check & Readiness Endpoints:** `http://localhost:4000/api/health/live` & `/api/health/ready`
 
 ---
 
 ## 📡 API Endpoints Reference
 
-| Method | Endpoint | Description | Query Parameters |
+Interactive OpenAPI 3.1 Swagger UI documentation is available live at [`http://localhost:4000/api/docs`](http://localhost:4000/api/docs).
+
+| Method | Endpoint | Description | Query Parameters / Auth |
 | :--- | :--- | :--- | :--- |
-| `GET` | `/api/health` | Service health status & database connectivity | — |
-| `GET` | `/api/aircraft` | Paginated military aircraft directory with filters | `country`, `militaryBranch`, `category`, `generation`, `search`, `sortBy`, `page`, `limit` |
-| `GET` | `/api/aircraft/:id` | Detailed aircraft specification & weapons payload | — |
+| `GET` | `/api/docs` | Interactive Swagger UI API documentation | — |
+| `GET` | `/api/docs/openapi.json` | OpenAPI 3.1.0 JSON specification schema | — |
+| `GET` | `/api/health/live` | Process liveness probe | — |
+| `GET` | `/api/health/ready` | Database readiness probe | — |
+| `GET` | `/api/aircraft` | Paginated aircraft directory with multi-filter | `country`, `militaryBranch`, `category`, `generation`, `search`, `sortBy`, `page`, `limit` |
+| `POST` | `/api/aircraft` | Register new aircraft into vault/database | `X-Admin-Key` header |
+| `GET` | `/api/aircraft/:id` | Detailed aircraft specification & payload | Resolves IDs and aliases |
+| `GET` | `/api/aircraft/:id/tvr` | 7-dimension TVR capability breakdown | — |
 | `GET` | `/api/rankings/countries` | Global Military Power Index (ATLAS) rankings | `sortBy` (`atlasIndex`, `airsIndex`, `seasIndex`, `armsIndex`), `order` |
-| `GET` | `/api/intelligence/sitrep` | Multi-domain defense situation reports | `domain` (`AIR`, `NAVY`, `LAND`, `STRATEGIC_DEFENSE`), `limit`, `page` |
+| `GET` | `/api/countries` | Sovereign nation dossiers & defense budgets | `region`, `search` |
+| `GET` | `/api/countries/:id/inventory` | Multi-domain air, naval, and land inventory | — |
 | `GET` | `/api/naval/vessels` | Warships, aircraft carriers, destroyers & SSBNs | `vesselType`, `country`, `status` |
-| `GET` | `/api/ground/vehicles` | Main battle tanks, artillery & SAM batteries | `category`, `country`, `status` |
-| `GET` | `/api/intelligence` | National OrBat air intelligence profiles | `countryCode` |
+| `GET` | `/api/land/vehicles` | Main battle tanks, artillery & SAM batteries | `category`, `country`, `status` |
 | `GET` | `/api/weapons` | Guided missiles, bombs, torpedoes & autocannons | `type`, `search` |
+| `GET` | `/api/intelligence/compare` | Tactical comparison between combat platforms | `aircraftA`, `aircraftB` |
+| `GET` | `/api/osint/quality` | OSINT data quality index & citation audit | — |
+| `GET` | `/api/osint/changes` | Tracked data changes and telemetry log | — |
 
 ---
 

@@ -5,9 +5,26 @@ import { initRepositories } from '../src/repositories/index.js';
 
 const app = createApp();
 
-describe('Phase 5: Public API Contract & Response Schema Verification', () => {
+describe('Phase 5 & 6: Public API Contract, OpenAPI 3.1 & Response Schema Verification', () => {
   beforeAll(async () => {
     await initRepositories();
+  });
+
+  describe('OpenAPI 3.1 Documentation Endpoints', () => {
+    it('GET /api/docs/openapi.json returns valid OpenAPI 3.1.0 specification', async () => {
+      const res = await request(app).get('/api/docs/openapi.json');
+      expect(res.status).toBe(200);
+      expect(res.body.openapi).toBe('3.1.0');
+      expect(res.body.info.title).toMatch(/AeroVault/i);
+      expect(res.body.paths).toHaveProperty('/aircraft');
+    });
+
+    it('GET /api/docs returns interactive Swagger UI HTML page', async () => {
+      const res = await request(app).get('/api/docs');
+      expect(res.status).toBe(200);
+      expect(res.headers['content-type']).toMatch(/text\/html/);
+      expect(res.text).toContain('AEROVAULT DEFENSE INTELLIGENCE ENGINE');
+    });
   });
 
   describe('Core Aircraft Endpoints', () => {

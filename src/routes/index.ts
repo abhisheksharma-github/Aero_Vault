@@ -16,11 +16,16 @@ import {
   GroundVehiclesQuerySchema,
 } from '../schemas/intelligence.schema.js';
 import healthRoutes from './health.routes.js';
+import docsRoutes from './docs.routes.js';
 
 const router = Router();
 
 // Health Check Endpoints (/api/health, /api/health/live, /api/health/ready)
 router.use('/health', healthRoutes);
+
+// OpenAPI 3.1 Documentation (/api/docs, /api/openapi.json)
+router.use('/docs', docsRoutes);
+router.get('/openapi.json', (_req, res) => res.redirect('/api/docs/openapi.json'));
 
 // Top-Level Multi-Domain Direct Resource Endpoints
 router.get(
