@@ -23,6 +23,7 @@ import { apiService } from '../services/api';
 import { g20AircraftData } from '../data/g20/g20Aircraft';
 import { g20CountriesData } from '../data/g20/g20Countries';
 import { tacticalAudio } from '../services/tacticalAudio';
+import TacticalImage from '../components/TacticalImage';
 
 export default function AircraftDirectoryView({
   onSelectAircraft,
@@ -474,16 +475,16 @@ export default function AircraftDirectoryView({
             >
               {/* Image & Badges */}
               <div className="relative h-48 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800">
-                <img
+                <TacticalImage
                   src={imageUrl}
                   alt={name}
+                  name={name}
+                  country={country}
+                  role={role}
+                  generation={gen}
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                  onError={(e) => {
-                    e.currentTarget.src =
-                      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rafale_-_RIAT_2018_%2843577785532%29.jpg/1200px-Rafale_-_RIAT_2018_%2843577785532%29.jpg';
-                  }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent pointer-events-none" />
 
                 {/* Top Badges */}
                 <div className="absolute top-3 left-3 right-3 flex items-center justify-between">

@@ -31,6 +31,7 @@ import {
   Target
 } from 'lucide-react';
 import { tacticalAudio } from '../services/tacticalAudio';
+import TacticalImage from './TacticalImage';
 
 export default function AircraftDetailModal({
   aircraft,
@@ -237,17 +238,15 @@ export default function AircraftDetailModal({
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
                 <div className="lg:col-span-7 space-y-4">
                   <div className="relative h-56 sm:h-72 rounded-2xl overflow-hidden border border-slate-800 shadow-xl bg-slate-950">
-                    <img
-
+                    <TacticalImage
                       src={imageUrl}
                       alt={name}
+                      name={name}
+                      country={country}
+                      role={category}
                       className="w-full h-full object-cover object-center"
-                      onError={(e) => {
-                        e.currentTarget.src =
-                          'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rafale_-_RIAT_2018_%2843577785532%29.jpg/1200px-Rafale_-_RIAT_2018_%2843577785532%29.jpg';
-                      }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent pointer-events-none" />
                     <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] font-mono text-white">
                       <span className="px-2 py-0.5 rounded bg-slate-950/90 border border-slate-800">
                         {category}

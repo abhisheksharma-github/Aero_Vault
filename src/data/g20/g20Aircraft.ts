@@ -137,8 +137,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "",
-      "thumbnailUrl": "",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Lockheed_Martin_A-4AR_Fightinghawk.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Lockheed_Martin_A-4AR_Fightinghawk.jpg",
       "caption": "Lockheed Martin A-4AR Fightinghawk in service with Argentina"
     },
     "sources": [
@@ -261,8 +261,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "",
-      "thumbnailUrl": "",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Saab_F-39_Gripen_FAB.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Saab_F-39_Gripen_FAB.jpg",
       "caption": "Saab F-39E/F Gripen in service with Brazil"
     },
     "sources": [
@@ -384,8 +384,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "",
-      "thumbnailUrl": "",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/CF-188_Hornet_RCAF.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/CF-188_Hornet_RCAF.jpg",
       "caption": "McDonnell Douglas CF-188 Hornet in service with Canada"
     },
     "sources": [
@@ -509,8 +509,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/CAIC_WZ-10_in_flight_at_Airshow_China_2012.jpg/1280px-CAIC_WZ-10_in_flight_at_Airshow_China_2012.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/CAIC_WZ-10_in_flight_at_Airshow_China_2012.jpg/1280px-CAIC_WZ-10_in_flight_at_Airshow_China_2012.jpg",
+      "primaryImageUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
       "caption": "Changhe Z-10 Fierce Thunderbolt in service with China"
     },
     "sources": [
@@ -634,8 +634,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Chengdu_J-20_at_Airshow_China_2018.jpg/1280px-Chengdu_J-20_at_Airshow_China_2018.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Chengdu_J-20_at_Airshow_China_2018.jpg/1280px-Chengdu_J-20_at_Airshow_China_2018.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Chengdu_J-20_at_Airshow_China_2018.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Chengdu_J-20_at_Airshow_China_2018.jpg",
       "caption": "Chengdu J-20A Mighty Dragon in service with China"
     },
     "sources": [
@@ -759,8 +759,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Shenyang_J-15_%28cropped%29.jpg/1280px-Shenyang_J-15_%28cropped%29.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Shenyang_J-15_%28cropped%29.jpg/1280px-Shenyang_J-15_%28cropped%29.jpg",
+      "primaryImageUrl": "https://images.unsplash.com/photo-1517976487507-5b3b118b625b?auto=format&fit=crop&w=1200&q=80",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1517976487507-5b3b118b625b?auto=format&fit=crop&w=1200&q=80",
       "caption": "Shenyang J-15T Flying Shark in service with China"
     },
     "sources": [
@@ -886,8 +886,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shenyang_J-16_PLAAF_in_flight.jpg/1200px-Shenyang_J-16_PLAAF_in_flight.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shenyang_J-16_PLAAF_in_flight.jpg/1200px-Shenyang_J-16_PLAAF_in_flight.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Shenyang_J-16_PLAAF_in_flight.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Shenyang_J-16_PLAAF_in_flight.jpg",
       "caption": "Shenyang J-16 Hidden Dragon in service with China"
     },
     "sources": [
@@ -1006,8 +1006,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Shenyang_J-6_PLAAF_Museum.jpg/1200px-Shenyang_J-6_PLAAF_Museum.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Shenyang_J-6_PLAAF_Museum.jpg/1200px-Shenyang_J-6_PLAAF_Museum.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Shenyang_J-6_PLAAF_Museum.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Shenyang_J-6_PLAAF_Museum.jpg",
       "caption": "Shenyang J-6 (Farmer) in service with China"
     },
     "sources": [
@@ -1125,8 +1125,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "",
-      "thumbnailUrl": "",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/Airbus_A400M_Atlas_RAF.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/Airbus_A400M_Atlas_RAF.jpg",
       "caption": "Airbus A400M Atlas in service with European Union"
     },
     "sources": [
@@ -1251,8 +1251,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mirage_IIIE_French_Air_Force.jpg/1200px-Mirage_IIIE_French_Air_Force.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mirage_IIIE_French_Air_Force.jpg/1200px-Mirage_IIIE_French_Air_Force.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Mirage_IIIE_French_Air_Force.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Mirage_IIIE_French_Air_Force.jpg",
       "caption": "Dassault Mirage III C/E in service with France"
     },
     "sources": [
@@ -1370,8 +1370,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Mirage_IV_French_Air_Force.jpg/1200px-Mirage_IV_French_Air_Force.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Mirage_IV_French_Air_Force.jpg/1200px-Mirage_IV_French_Air_Force.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Mirage_IV_French_Air_Force.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Mirage_IV_French_Air_Force.jpg",
       "caption": "Dassault Mirage IV A/P in service with France"
     },
     "sources": [
@@ -1491,8 +1491,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sea_Harrier_INAS_300_White_Tigers.jpg/1200px-Sea_Harrier_INAS_300_White_Tigers.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sea_Harrier_INAS_300_White_Tigers.jpg/1200px-Sea_Harrier_INAS_300_White_Tigers.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/BAE_Sea_Harrier_FRS.51_Indian_Navy.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/BAE_Sea_Harrier_FRS.51_Indian_Navy.jpg",
       "caption": "BAE Sea Harrier FRS.51 in service with India"
     },
     "sources": [
@@ -1609,8 +1609,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "",
-      "thumbnailUrl": "",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Beriev_A-50EI_Mainstay_Indian_Air_Force.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Beriev_A-50EI_Mainstay_Indian_Air_Force.jpg",
       "caption": "Beriev A-50EI Phalcon AWACS in service with India"
     },
     "sources": [
@@ -1734,8 +1734,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/AH-64D_Apache_Longbow.jpg/1280px-AH-64D_Apache_Longbow.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/AH-64D_Apache_Longbow.jpg/1280px-AH-64D_Apache_Longbow.jpg",
+      "primaryImageUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
       "caption": "Boeing AH-64E Apache Guardian (Army) in service with India"
     },
     "sources": [
@@ -1859,8 +1859,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Boeing_P-8I_Poseidon_at_Aero_India_2013_%288484196144%29.jpg/1280px-Boeing_P-8I_Poseidon_at_Aero_India_2013_%288484196144%29.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Boeing_P-8I_Poseidon_at_Aero_India_2013_%288484196144%29.jpg/1280px-Boeing_P-8I_Poseidon_at_Aero_India_2013_%288484196144%29.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Boeing_P-8I_Poseidon_at_Aero_India_2013.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Boeing_P-8I_Poseidon_at_Aero_India_2013.jpg",
       "caption": "Boeing P-8I Neptune in service with India"
     },
     "sources": [
@@ -1986,8 +1986,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mirage-2000_%28IAF%29.jpg/1200px-Mirage-2000_%28IAF%29.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mirage-2000_%28IAF%29.jpg/1200px-Mirage-2000_%28IAF%29.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mirage-2000_%28IAF%29.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mirage-2000_%28IAF%29.jpg",
       "caption": "Dassault Mirage 2000H/TH Vajra in service with India"
     },
     "sources": [
@@ -2109,8 +2109,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rafale_-_RIAT_2018_%2843577785532%29.jpg/1200px-Rafale_-_RIAT_2018_%2843577785532%29.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rafale_-_RIAT_2018_%2843577785532%29.jpg/1200px-Rafale_-_RIAT_2018_%2843577785532%29.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rafale_-_RIAT_2018_%2843577785532%29.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rafale_-_RIAT_2018_%2843577785532%29.jpg",
       "caption": "Dassault Rafale EH/DH in service with India"
     },
     "sources": [
@@ -2233,8 +2233,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/De_Havilland_Vampire_FB52_IAF.jpg/1200px-De_Havilland_Vampire_FB52_IAF.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/De_Havilland_Vampire_FB52_IAF.jpg/1200px-De_Havilland_Vampire_FB52_IAF.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/De_Havilland_Vampire_FB.52_Indian_Air_Force.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/De_Havilland_Vampire_FB.52_Indian_Air_Force.jpg",
       "caption": "de Havilland Vampire FB.52 in service with India"
     },
     "sources": [
@@ -2350,8 +2350,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/DRDO_AEW%26CS_Netra_at_Aero_India_2023.jpg/1280px-DRDO_AEW%26CS_Netra_at_Aero_India_2023.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/DRDO_AEW%26CS_Netra_at_Aero_India_2023.jpg/1280px-DRDO_AEW%26CS_Netra_at_Aero_India_2023.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/DRDO_AEW%26CS_Netra_at_Aero_India_2023.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/DRDO_AEW%26CS_Netra_at_Aero_India_2023.jpg",
       "caption": "DRDO Netra AEW&C in service with India"
     },
     "sources": [
@@ -2475,8 +2475,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/English_Electric_Canberra_B%28I%2958_IAF.jpg/1200px-English_Electric_Canberra_B%28I%2958_IAF.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/English_Electric_Canberra_B%28I%2958_IAF.jpg/1200px-English_Electric_Canberra_B%28I%2958_IAF.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/English_Electric_Canberra_B%28I%29.58_IAF.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/English_Electric_Canberra_B%28I%29.58_IAF.jpg",
       "caption": "English Electric Canberra B(I).58 / PR.57 in service with India"
     },
     "sources": [
@@ -2595,8 +2595,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Folland_Gnat_IAF_Museum_Palam.jpg/1200px-Folland_Gnat_IAF_Museum_Palam.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Folland_Gnat_IAF_Museum_Palam.jpg/1200px-Folland_Gnat_IAF_Museum_Palam.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Folland_Gnat_F.1_E248_Indian_Air_Force.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Folland_Gnat_F.1_E248_Indian_Air_Force.jpg",
       "caption": "Folland Gnat / HAL Ajeet in service with India"
     },
     "sources": [
@@ -2716,8 +2716,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/HF-24_Marut_IAF_Museum_Delhi.jpg/1200px-HF-24_Marut_IAF_Museum_Delhi.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/HF-24_Marut_IAF_Museum_Delhi.jpg/1200px-HF-24_Marut_IAF_Museum_Delhi.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/HF-24_Marut_IAF_Museum_Delhi.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/HF-24_Marut_IAF_Museum_Delhi.jpg",
       "caption": "HAL HF-24 Marut in service with India"
     },
     "sources": [
@@ -2837,8 +2837,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/HAL_Light_Combat_Helicopter_at_Aero_India_2017.jpg/1280px-HAL_Light_Combat_Helicopter_at_Aero_India_2017.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/HAL_Light_Combat_Helicopter_at_Aero_India_2017.jpg/1280px-HAL_Light_Combat_Helicopter_at_Aero_India_2017.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/HAL_Light_Combat_Helicopter_at_Aero_India_2017.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/HAL_Light_Combat_Helicopter_at_Aero_India_2017.jpg",
       "caption": "HAL LCH Prachand in service with India"
     },
     "sources": [
@@ -2964,8 +2964,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/HAL_Tejas_LA-5018_Aero_India_2021.jpg/1200px-HAL_Tejas_LA-5018_Aero_India_2021.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/HAL_Tejas_LA-5018_Aero_India_2021.jpg/1200px-HAL_Tejas_LA-5018_Aero_India_2021.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg",
       "caption": "HAL Tejas Mk1A in service with India"
     },
     "sources": [
@@ -3084,8 +3084,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg/1200px-HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg/1200px-HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg",
       "caption": "HAL Tejas Mk1A in service with India"
     },
     "sources": [
@@ -3209,8 +3209,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hawker_Hunter_F56_IAF.jpg/1200px-Hawker_Hunter_F56_IAF.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hawker_Hunter_F56_IAF.jpg/1200px-Hawker_Hunter_F56_IAF.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Hawker_Hunter_F.56_BA360_IAF.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Hawker_Hunter_F.56_BA360_IAF.jpg",
       "caption": "Hawker Hunter F.56 / T.66 in service with India"
     },
     "sources": [
@@ -3330,8 +3330,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/MiG-21_Bison_of_the_Indian_Air_Force.jpg/1200px-MiG-21_Bison_of_the_Indian_Air_Force.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/MiG-21_Bison_of_the_Indian_Air_Force.jpg/1200px-MiG-21_Bison_of_the_Indian_Air_Force.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/MiG-21_Bison_of_the_Indian_Air_Force.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/MiG-21_Bison_of_the_Indian_Air_Force.jpg",
       "caption": "Mikoyan MiG-21 Bison in service with India"
     },
     "sources": [
@@ -3447,8 +3447,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/MiG-25_Foxbat_IAF_Museum.jpg/1200px-MiG-25_Foxbat_IAF_Museum.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/MiG-25_Foxbat_IAF_Museum.jpg/1200px-MiG-25_Foxbat_IAF_Museum.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/MiG-25RB_Foxbat_Indian_Air_Force.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/MiG-25RB_Foxbat_Indian_Air_Force.jpg",
       "caption": "Mikoyan MiG-25R Foxbat (Trishul) in service with India"
     },
     "sources": [
@@ -3568,8 +3568,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mikoyan-Gurevich_MiG-27ML_Bahadur_of_the_IAF.jpg/1200px-Mikoyan-Gurevich_MiG-27ML_Bahadur_of_the_IAF.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mikoyan-Gurevich_MiG-27ML_Bahadur_of_the_IAF.jpg/1200px-Mikoyan-Gurevich_MiG-27ML_Bahadur_of_the_IAF.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/MiG-27ML_Bahadur_Indian_Air_Force.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/MiG-27ML_Bahadur_Indian_Air_Force.jpg",
       "caption": "Mikoyan MiG-27ML Bahadur in service with India"
     },
     "sources": [
@@ -3688,8 +3688,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/MiG-29K_takes_off_from_INS_Vikramaditya.jpg/1200px-MiG-29K_takes_off_from_INS_Vikramaditya.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/MiG-29K_takes_off_from_INS_Vikramaditya.jpg/1200px-MiG-29K_takes_off_from_INS_Vikramaditya.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/MiG-29K_takes_off_from_INS_Vikramaditya.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/MiG-29K_takes_off_from_INS_Vikramaditya.jpg",
       "caption": "Mikoyan MiG-29K Fulcrum-D in service with India"
     },
     "sources": [
@@ -3813,8 +3813,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Indian_Air_Force_MiG-29UPG.jpg/1200px-Indian_Air_Force_MiG-29UPG.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Indian_Air_Force_MiG-29UPG.jpg/1200px-Indian_Air_Force_MiG-29UPG.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/MiG-29UPG_of_the_Indian_Air_Force_in_flight.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/MiG-29UPG_of_the_Indian_Air_Force_in_flight.jpg",
       "caption": "Mikoyan MiG-29UPG Baaz in service with India"
     },
     "sources": [
@@ -3935,8 +3935,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Indian_Air_Force_SEPECAT_Jaguar_IS.jpg/1200px-Indian_Air_Force_SEPECAT_Jaguar_IS.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Indian_Air_Force_SEPECAT_Jaguar_IS.jpg/1200px-Indian_Air_Force_SEPECAT_Jaguar_IS.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/SEPECAT_Jaguar_IS_of_the_Indian_Air_Force.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/SEPECAT_Jaguar_IS_of_the_Indian_Air_Force.jpg",
       "caption": "SEPECAT Jaguar IS/IB/IM Shamsher in service with India"
     },
     "sources": [
@@ -4055,8 +4055,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/MH-60R_of_HSM-77_in_flight_over_Pacific_Ocean_2013.JPG/1280px-MH-60R_of_HSM-77_in_flight_over_Pacific_Ocean_2013.JPG",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/MH-60R_of_HSM-77_in_flight_over_Pacific_Ocean_2013.JPG/1280px-MH-60R_of_HSM-77_in_flight_over_Pacific_Ocean_2013.JPG",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/MH-60R_of_HSM-77_in_flight_over_Pacific_Ocean_2013.JPG",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/MH-60R_of_HSM-77_in_flight_over_Pacific_Ocean_2013.JPG",
       "caption": "Sikorsky MH-60R Seahawk in service with India"
     },
     "sources": [
@@ -4183,8 +4183,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Sukhoi_Su-30MKI_of_the_Indian_Air_Force_at_Aero_India_2023.jpg/1200px-Sukhoi_Su-30MKI_of_the_Indian_Air_Force_at_Aero_India_2023.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Sukhoi_Su-30MKI_of_the_Indian_Air_Force_at_Aero_India_2023.jpg/1200px-Sukhoi_Su-30MKI_of_the_Indian_Air_Force_at_Aero_India_2023.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sukhoi_Su-30MKI_of_the_Indian_Air_Force_at_Aero_India_2023.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sukhoi_Su-30MKI_of_the_Indian_Air_Force_at_Aero_India_2023.jpg",
       "caption": "Sukhoi Su-30MKI Flanker-H in service with India"
     },
     "sources": [
@@ -4306,8 +4306,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "",
-      "thumbnailUrl": "",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Indonesian_Air_Force_Sukhoi_Su-30MK2.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Indonesian_Air_Force_Sukhoi_Su-30MK2.jpg",
       "caption": "Sukhoi Su-30MK2 Flanker-G in service with Indonesia"
     },
     "sources": [
@@ -4429,8 +4429,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "",
-      "thumbnailUrl": "",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mitsubishi_F-2A_JASDF.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mitsubishi_F-2A_JASDF.jpg",
       "caption": "Mitsubishi F-2A Viper Zero in service with Japan"
     },
     "sources": [
@@ -4552,8 +4552,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "",
-      "thumbnailUrl": "",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Northrop_F-5E_Tiger_II_FAM.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Northrop_F-5E_Tiger_II_FAM.jpg",
       "caption": "Northrop F-5E Tiger II in service with Mexico"
     },
     "sources": [
@@ -4677,8 +4677,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Kamov_Ka-52_at_MAKS-2019_%28cropped%29.jpg/1280px-Kamov_Ka-52_at_MAKS-2019_%28cropped%29.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Kamov_Ka-52_at_MAKS-2019_%28cropped%29.jpg/1280px-Kamov_Ka-52_at_MAKS-2019_%28cropped%29.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Kamov_Ka-52_at_MAKS-2019.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Kamov_Ka-52_at_MAKS-2019.jpg",
       "caption": "Kamov Ka-52M Alligator in service with Russia"
     },
     "sources": [
@@ -4803,8 +4803,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/MiG-31BM_in_flight_2016.jpg/1200px-MiG-31BM_in_flight_2016.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/MiG-31BM_in_flight_2016.jpg/1200px-MiG-31BM_in_flight_2016.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/MiG-31BM_in_flight_2016.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/MiG-31BM_in_flight_2016.jpg",
       "caption": "Mikoyan MiG-31BM Foxhound in service with Russia"
     },
     "sources": [
@@ -4925,8 +4925,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Sukhoi_Su-35S_in_flight_2017.jpg/1200px-Sukhoi_Su-35S_in_flight_2017.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Sukhoi_Su-35S_in_flight_2017.jpg/1200px-Sukhoi_Su-35S_in_flight_2017.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sukhoi_Su-35S_in_flight_2017.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sukhoi_Su-35S_in_flight_2017.jpg",
       "caption": "Sukhoi Su-35S Flanker-E in service with Russia"
     },
     "sources": [
@@ -5045,8 +5045,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sukhoi_Su-57_at_MAKS-2019_%28cropped%29.jpg/1280px-Sukhoi_Su-57_at_MAKS-2019_%28cropped%29.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sukhoi_Su-57_at_MAKS-2019_%28cropped%29.jpg/1280px-Sukhoi_Su-57_at_MAKS-2019_%28cropped%29.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Sukhoi_Su-57_at_MAKS-2019_%28cropped%29.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Sukhoi_Su-57_at_MAKS-2019_%28cropped%29.jpg",
       "caption": "Sukhoi Su-57 Felon in service with Russia"
     },
     "sources": [
@@ -5169,8 +5169,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "",
-      "thumbnailUrl": "",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Boeing_F-15SA_Advanced_Eagle_RSAF.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Boeing_F-15SA_Advanced_Eagle_RSAF.jpg",
       "caption": "Boeing F-15SA Advanced Eagle in service with Saudi Arabia"
     },
     "sources": [
@@ -5292,8 +5292,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "",
-      "thumbnailUrl": "",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Saab_JAS-39C_Gripen_SAAF.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Saab_JAS-39C_Gripen_SAAF.jpg",
       "caption": "Saab JAS-39C Gripen in service with South Africa"
     },
     "sources": [
@@ -5415,8 +5415,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "",
-      "thumbnailUrl": "",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/KAI_KF-21_Boramae_first_flight.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/KAI_KF-21_Boramae_first_flight.jpg",
       "caption": "KAI KF-21 Boramae in service with South Korea"
     },
     "sources": [
@@ -5538,8 +5538,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "",
-      "thumbnailUrl": "",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/TAI_TF_Kaan_first_flight.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/TAI_TF_Kaan_first_flight.jpg",
       "caption": "TAI TF Kaan in service with Türkiye"
     },
     "sources": [
@@ -5664,8 +5664,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Avro_Vulcan_XH558_in_flight.jpg/1200px-Avro_Vulcan_XH558_in_flight.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Avro_Vulcan_XH558_in_flight.jpg/1200px-Avro_Vulcan_XH558_in_flight.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Avro_Vulcan_XH558_in_flight.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Avro_Vulcan_XH558_in_flight.jpg",
       "caption": "Avro Vulcan B.2 in service with United Kingdom"
     },
     "sources": [
@@ -5784,8 +5784,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/English_Electric_Lightning_F6_XR770.jpg/1200px-English_Electric_Lightning_F6_XR770.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/English_Electric_Lightning_F6_XR770.jpg/1200px-English_Electric_Lightning_F6_XR770.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/English_Electric_Lightning_F6_XR770.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/English_Electric_Lightning_F6_XR770.jpg",
       "caption": "English Electric Lightning F.6 in service with United Kingdom"
     },
     "sources": [
@@ -5903,8 +5903,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "",
-      "thumbnailUrl": "",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Eurofighter_Typhoon_FGR4_RAF.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Eurofighter_Typhoon_FGR4_RAF.jpg",
       "caption": "Eurofighter Typhoon FGR4 in service with United Kingdom"
     },
     "sources": [
@@ -6030,8 +6030,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/F-15EX_Eagle_II_first_flight.jpg/1200px-F-15EX_Eagle_II_first_flight.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/F-15EX_Eagle_II_first_flight.jpg/1200px-F-15EX_Eagle_II_first_flight.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/F-15EX_Eagle_II_first_flight.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/F-15EX_Eagle_II_first_flight.jpg",
       "caption": "Boeing F-15EX Eagle II in service with United States"
     },
     "sources": [
@@ -6152,8 +6152,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/FA-18F_Super_Hornet_of_VFA-103_in_flight_in_2015.JPG/1280px-FA-18F_Super_Hornet_of_VFA-103_in_flight_in_2015.JPG",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/FA-18F_Super_Hornet_of_VFA-103_in_flight_in_2015.JPG/1280px-FA-18F_Super_Hornet_of_VFA-103_in_flight_in_2015.JPG",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/FA-18F_Super_Hornet_of_VFA-103_in_flight_in_2015.JPG",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/FA-18F_Super_Hornet_of_VFA-103_in_flight_in_2015.JPG",
       "caption": "Boeing F/A-18F Super Hornet in service with United States"
     },
     "sources": [
@@ -6277,8 +6277,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/MQ-9_Reaper_in_flight_%282007%29.jpg/1280px-MQ-9_Reaper_in_flight_%282007%29.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/MQ-9_Reaper_in_flight_%282007%29.jpg/1280px-MQ-9_Reaper_in_flight_%282007%29.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/MQ-9_Reaper_in_flight_%282007%29.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/MQ-9_Reaper_in_flight_%282007%29.jpg",
       "caption": "General Atomics MQ-9A Reaper in service with United States"
     },
     "sources": [
@@ -6403,8 +6403,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/F-14D_VF-31_landing_USS_Theodore_Roosevelt_%28CVN-71%29.jpg/1200px-F-14D_VF-31_landing_USS_Theodore_Roosevelt_%28CVN-71%29.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/F-14D_VF-31_landing_USS_Theodore_Roosevelt_%28CVN-71%29.jpg/1200px-F-14D_VF-31_landing_USS_Theodore_Roosevelt_%28CVN-71%29.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/F-14D_VF-31_landing_USS_Theodore_Roosevelt_%28CVN-71%29.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/F-14D_VF-31_landing_USS_Theodore_Roosevelt_%28CVN-71%29.jpg",
       "caption": "Grumman F-14D Super Tomcat in service with United States"
     },
     "sources": [
@@ -6522,8 +6522,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/F-117_Nighthawk_Front.jpg/1200px-F-117_Nighthawk_Front.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/F-117_Nighthawk_Front.jpg/1200px-F-117_Nighthawk_Front.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/F-117_Nighthawk_Front.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/F-117_Nighthawk_Front.jpg",
       "caption": "Lockheed F-117A Nighthawk in service with United States"
     },
     "sources": [
@@ -6642,8 +6642,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/F-22_Raptor_edit1_%28cropped%29.jpg/1280px-F-22_Raptor_edit1_%28cropped%29.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/F-22_Raptor_edit1_%28cropped%29.jpg/1280px-F-22_Raptor_edit1_%28cropped%29.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/F-22_Raptor_edit1_%28cropped%29.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/F-22_Raptor_edit1_%28cropped%29.jpg",
       "caption": "Lockheed Martin F-22A Raptor in service with United States"
     },
     "sources": [
@@ -6769,8 +6769,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/F-35A_flight_%28cropped%29.jpg/1200px-F-35A_flight_%28cropped%29.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/F-35A_flight_%28cropped%29.jpg/1200px-F-35A_flight_%28cropped%29.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/F-35A_flight_%28cropped%29.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/F-35A_flight_%28cropped%29.jpg",
       "caption": "Lockheed Martin F-35A Lightning II in service with United States"
     },
     "sources": [
@@ -6895,8 +6895,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/F-35C_CF-1_flight.jpg/1280px-F-35C_CF-1_flight.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/F-35C_CF-1_flight.jpg/1280px-F-35C_CF-1_flight.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/F-35C_CF-1_flight.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/F-35C_CF-1_flight.jpg",
       "caption": "Lockheed Martin F-35C Lightning II in service with United States"
     },
     "sources": [
@@ -7016,8 +7016,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       "keyWeaponsIntegrated": []
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Lockheed_SR-71_Blackbird.jpg/1200px-Lockheed_SR-71_Blackbird.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Lockheed_SR-71_Blackbird.jpg/1200px-Lockheed_SR-71_Blackbird.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lockheed_SR-71_Blackbird.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lockheed_SR-71_Blackbird.jpg",
       "caption": "Lockheed SR-71A Blackbird in service with United States"
     },
     "sources": [
@@ -7137,8 +7137,8 @@ export const g20AircraftData: NormalizedG20Aircraft[] = [
       ]
     },
     "image": {
-      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/F-4E_Phantom_II_USAF.jpg/1200px-F-4E_Phantom_II_USAF.jpg",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/F-4E_Phantom_II_USAF.jpg/1200px-F-4E_Phantom_II_USAF.jpg",
+      "primaryImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/F-4E_Phantom_II_USAF.jpg",
+      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/F-4E_Phantom_II_USAF.jpg",
       "caption": "McDonnell Douglas F-4E Phantom II in service with United States"
     },
     "sources": [

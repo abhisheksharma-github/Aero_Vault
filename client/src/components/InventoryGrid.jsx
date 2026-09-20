@@ -19,6 +19,7 @@ import {
   Crosshair
 } from 'lucide-react';
 import { tacticalAudio } from '../services/tacticalAudio';
+import TacticalImage from './TacticalImage';
 
 const categories = [
   { id: 'ALL', label: 'All Categories' },
@@ -351,7 +352,15 @@ export default function InventoryGrid({
                       className="hover:bg-av-sky/5 cursor-pointer transition-colors"
                     >
                       <td className="p-4 font-sans font-bold text-white flex items-center gap-3">
-                        <img src={a.imageUrl} alt="" className="w-10 h-8 rounded-lg object-cover border border-av-steel/30 flex-shrink-0" />
+                        <div className="w-10 h-8 rounded-lg overflow-hidden border border-av-steel/30 flex-shrink-0 bg-av-navy">
+                          <TacticalImage
+                            src={a.imageUrl || a.image?.primaryImageUrl}
+                            alt={a.name}
+                            name={a.name}
+                            country={a.country}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <span className="truncate max-w-xs">{a.name}</span>
                       </td>
                       <td className="p-4 text-av-light">{a.country}</td>

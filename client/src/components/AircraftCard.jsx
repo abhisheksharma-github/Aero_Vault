@@ -15,6 +15,8 @@ import {
 } from 'lucide-react';
 import { tacticalAudio } from '../services/tacticalAudio';
 
+import TacticalImage from './TacticalImage';
+
 export default function AircraftCard({
   aircraft,
   onSelect,
@@ -71,19 +73,18 @@ export default function AircraftCard({
         className="relative h-48 w-full overflow-hidden bg-av-navy cursor-pointer" 
         onClick={handleCardClick}
       >
-        <img
-          src={aircraft.imageUrl}
+        <TacticalImage
+          src={aircraft.imageUrl || aircraft.image?.primaryImageUrl}
           alt={aircraft.name}
+          name={aircraft.name}
+          country={aircraft.country}
+          role={aircraft.role || aircraft.primaryCategory}
+          generation={formatGen(aircraft.generation)}
           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
-          loading="lazy"
-          onError={(e) => {
-            e.currentTarget.src =
-              'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rafale_-_RIAT_2018_%2843577785532%29.jpg/800px-Rafale_-_RIAT_2018_%2843577785532%29.jpg';
-          }}
         />
 
         {/* Ambient Dark Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-av-navy via-av-navy/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-av-navy via-av-navy/30 to-transparent pointer-events-none" />
 
         {/* Top Badges */}
         <div className="absolute top-3 left-3 right-3 flex items-center justify-between">

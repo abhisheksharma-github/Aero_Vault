@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { tacticalAudio } from '../services/tacticalAudio';
 import SitrepWidget from './SitrepWidget';
+import TacticalImage from './TacticalImage';
 
 
 export default function OverviewDashboard({
@@ -275,11 +276,15 @@ export default function OverviewDashboard({
                 className="p-3 rounded-2xl bg-av-blue/30 border border-av-steel/20 hover:border-av-sky/40 transition-all flex items-center justify-between cursor-pointer group"
               >
                 <div className="flex items-center space-x-3 min-w-0">
-                  <img
-                    src={ac.imageUrl}
-                    alt={ac.name}
-                    className="w-12 h-12 rounded-xl object-cover border border-av-steel/30 flex-shrink-0"
-                  />
+                  <div className="w-12 h-12 rounded-xl overflow-hidden border border-av-steel/30 flex-shrink-0 bg-av-navy">
+                    <TacticalImage
+                      src={ac.imageUrl || ac.image?.primaryImageUrl}
+                      alt={ac.name}
+                      name={ac.name}
+                      country={ac.country}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <div className="min-w-0">
                     <div className="text-xs font-bold text-white truncate group-hover:text-av-sky transition-colors font-sans">
                       {ac.name}

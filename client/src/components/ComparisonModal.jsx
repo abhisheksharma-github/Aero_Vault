@@ -24,6 +24,7 @@ import {
   Plane
 } from 'lucide-react';
 import { tacticalAudio } from '../services/tacticalAudio';
+import TacticalImage from './TacticalImage';
 
 export default function ComparisonModal({
   isOpen,
@@ -221,7 +222,14 @@ export default function ComparisonModal({
               </div>
 
               <div className="h-32 sm:h-40 rounded-2xl overflow-hidden border border-av-steel/30 bg-av-navy">
-                <img src={aircraftA.imageUrl} alt={aircraftA.name} className="w-full h-full object-cover" />
+                <TacticalImage
+                  src={aircraftA.imageUrl || aircraftA.image?.primaryImageUrl}
+                  alt={aircraftA.name}
+                  name={aircraftA.name}
+                  country={aircraftA.country}
+                  role={aircraftA.role || aircraftA.primaryCategory}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               <div className="grid grid-cols-2 gap-2 text-xs font-mono">
@@ -278,7 +286,14 @@ export default function ComparisonModal({
               </div>
 
               <div className="h-32 sm:h-40 rounded-2xl overflow-hidden border border-av-steel/30 bg-av-navy">
-                <img src={secondAircraft.imageUrl} alt={secondAircraft.name} className="w-full h-full object-cover" />
+                <TacticalImage
+                  src={secondAircraft.imageUrl || secondAircraft.image?.primaryImageUrl}
+                  alt={secondAircraft.name}
+                  name={secondAircraft.name}
+                  country={secondAircraft.country}
+                  role={secondAircraft.role || secondAircraft.primaryCategory}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               <div className="grid grid-cols-2 gap-2 text-xs font-mono">

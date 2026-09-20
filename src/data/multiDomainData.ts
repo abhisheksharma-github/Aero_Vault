@@ -89,7 +89,7 @@ export const initialAircraftData = [
     "sourceCount": 1,
     "lastVerified": "2026-02-01",
     "description": "Light attack and tactical fighter upgraded by Lockheed Martin with F-16 radar and digital avionics, currently serving as primary combat aviation asset of the Argentine Air Force.",
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Lockheed_Martin_A-4AR_Fightinghawk.jpg",
     "tvrScore": 0,
     "weapons": [],
     "sources": [
@@ -267,7 +267,7 @@ export const initialAircraftData = [
     "sourceCount": 1,
     "lastVerified": "2026-02-11",
     "description": "Smart 4.5+ generation multirole fighter featuring Brazilian Wide Area Display (WAD) panoramic cockpit, Raven ES-05 swashplate AESA radar providing 200-degree field of regard, and Meteor BVRAAM long-range standoff combat capability.",
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Saab_F-39_Gripen_FAB.jpg",
     "tvrScore": 0,
     "weapons": [],
     "sources": [
@@ -451,7 +451,7 @@ export const initialAircraftData = [
     "sourceCount": 1,
     "lastVerified": "2026-02-03",
     "description": "Core frontline multirole fighter of the Royal Canadian Air Force guarding North American Arctic airspace under NORAD. Upgraded under HEP II with AN/APG-79(V)4 AESA radar and AIM-9X Block II missiles.",
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/CF-188_Hornet_RCAF.jpg",
     "tvrScore": 0,
     "weapons": [],
     "sources": [
@@ -631,7 +631,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": null,
     "description": "PLA Army primary attack helicopter featuring stepped tandem cockpit, mast-mounted millimeter wave radar, 23mm revolving cannon turret, HJ-10 anti-tank missiles, and TY-90 dedicated helicopter dogfight AAMs.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/CAIC_WZ-10_in_flight_at_Airshow_China_2012.jpg/1280px-CAIC_WZ-10_in_flight_at_Airshow_China_2012.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
     "tvrScore": 80.8,
     "weapons": [
       {
@@ -758,7 +758,7 @@ export const initialAircraftData = [
     "sourceCount": 6,
     "lastVerified": null,
     "description": "PLAAF flagship 5th-generation heavy stealth fighter featuring canard-delta configuration, internal weapons bay carrying long-range PL-15 and ultra-long PL-17 BVRAAMs, and electro-optical distributed aperture sensors.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Chengdu_J-20_at_Airshow_China_2018.jpg/1280px-Chengdu_J-20_at_Airshow_China_2018.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Chengdu_J-20_at_Airshow_China_2018.jpg",
     "tvrScore": 93.2,
     "weapons": [
       {
@@ -962,7 +962,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": null,
     "description": "Catapult-assisted takeoff barrier-arrested recovery (CATOBAR) carrier fighter designed for the CNS Fujian (Type 003). Upgraded with AESA radar, WS-10B engines, and PL-15 BVR missile compatibility.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Shenyang_J-15_%28cropped%29.jpg/1280px-Shenyang_J-15_%28cropped%29.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1517976487507-5b3b118b625b?auto=format&fit=crop&w=1200&q=80",
     "tvrScore": 84.4,
     "weapons": [
       {
@@ -1090,7 +1090,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "Indigenous twin-engine heavy multirole strike fighter. Equipped with Type 1493 GaN AESA radar, integrated EW self-protection pods, and capability to fire PL-15 (200 km) and ultra-long-range PL-17 (400 km) air-to-air missiles.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shenyang_J-16_PLAAF_in_flight.jpg/1200px-Shenyang_J-16_PLAAF_in_flight.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Shenyang_J-16_PLAAF_in_flight.jpg",
     "tvrScore": 85.1,
     "weapons": [
       {
@@ -1301,7 +1301,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The most produced supersonic jet fighter in Chinese aviation history (over 4,500 produced). Formed the numeric core of the PLAAF air defense throughout the Cold War, armed with heavy 30mm cannons.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Shenyang_J-6_PLAAF_Museum.jpg/1200px-Shenyang_J-6_PLAAF_Museum.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Shenyang_J-6_PLAAF_Museum.jpg",
     "tvrScore": 51.3,
     "weapons": [
       {
@@ -1503,7 +1503,7 @@ export const initialAircraftData = [
     "sourceCount": 1,
     "lastVerified": "2026-02-10",
     "description": "European high-capacity tactical and strategic airlifter bridging the payload gap between the C-130J and C-17, capable of landing on short unprepared rough runways with 37 tonnes of cargo and aerial refueling fighter jets in flight.",
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/Airbus_A400M_Atlas_RAF.jpg",
     "tvrScore": 0,
     "weapons": [],
     "sources": [
@@ -1676,7 +1676,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The premier European Mach 2 delta-wing fighter exported across 20 countries. Decisive in 1967 and 1973 Middle East conflicts and French nuclear deterrent doctrine.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mirage_IIIE_French_Air_Force.jpg/1200px-Mirage_IIIE_French_Air_Force.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Mirage_IIIE_French_Air_Force.jpg",
     "tvrScore": 58.6,
     "weapons": [
       {
@@ -1886,7 +1886,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The core of the French nuclear triad (Force de Frappe) for over four decades. Flew sustained Mach 2 supersonic low-level penetration missions carrying the 300 km range ASMP nuclear standoff missile.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Mirage_IV_French_Air_Force.jpg/1200px-Mirage_IV_French_Air_Force.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Mirage_IV_French_Air_Force.jpg",
     "tvrScore": 61.4,
     "weapons": [
       {
@@ -2087,7 +2087,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "V/STOL carrier jump-jet that guarded Indian maritime frontiers from the decks of aircraft carriers INS Vikrant (R11) and INS Viraat (R22) for 33 years. Upgraded under Project LUSH with EL/M-2032 radar and Derby BVRAAM missiles.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sea_Harrier_INAS_300_White_Tigers.jpg/1200px-Sea_Harrier_INAS_300_White_Tigers.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/BAE_Sea_Harrier_FRS.51_Indian_Navy.jpg",
     "tvrScore": 63.4,
     "weapons": [
       {
@@ -2298,7 +2298,7 @@ export const initialAircraftData = [
     "sourceCount": 1,
     "lastVerified": "2026-01-25",
     "description": "Premier strategic airborne early warning and command platform of the IAF. Integrates Israeli IAI Elta EL/W-2090 L-band AESA stationary rotodome on a heavy Il-76TD airframe powered by modern PS-90A engines.",
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Beriev_A-50EI_Mainstay_Indian_Air_Force.jpg",
     "tvrScore": 0,
     "weapons": [],
     "sources": [
@@ -2471,7 +2471,7 @@ export const initialAircraftData = [
     "sourceCount": 6,
     "lastVerified": null,
     "description": "Premier heavy attack helicopter equipped with Longbow millimeter-wave fire control radar, AGM-114 Hellfire laser/RF missiles, Stinger air-to-air missiles, and 30mm M230 chain gun.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/AH-64D_Apache_Longbow.jpg/1280px-AH-64D_Apache_Longbow.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80",
     "tvrScore": 86.2,
     "weapons": [
       {
@@ -2598,7 +2598,7 @@ export const initialAircraftData = [
     "sourceCount": 7,
     "lastVerified": null,
     "description": "Premier maritime patrol and submarine hunting platform. Features aft Magnetic Anomaly Detector (MAD) boom, AN/APY-10 multi-mission radar, sonobuoys, Mk 54 lightweight torpedoes, and AGM-84L Harpoon anti-ship missiles.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Boeing_P-8I_Poseidon_at_Aero_India_2013_%288484196144%29.jpg/1280px-Boeing_P-8I_Poseidon_at_Aero_India_2013_%288484196144%29.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Boeing_P-8I_Poseidon_at_Aero_India_2013.jpg",
     "tvrScore": 89.4,
     "weapons": [
       {
@@ -2802,7 +2802,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The hero of the 1999 Kargil War and the 2019 Balakot airstrikes. Upgraded with RDY-2 radar, glass cockpits, MICA missiles, and Spice 2000 precision standoff munitions.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mirage-2000_%28IAF%29.jpg/1200px-Mirage-2000_%28IAF%29.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mirage-2000_%28IAF%29.jpg",
     "tvrScore": 80.4,
     "weapons": [
       {
@@ -3016,7 +3016,7 @@ export const initialAircraftData = [
     "sourceCount": 8,
     "lastVerified": null,
     "description": "Frontline omnirole fighter platform equipped with SPECTRA internal electronic warfare suite, Meteor ramjet-powered BVR missiles, SCALP standoff cruise missiles, and HAMMER precision munitions.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rafale_-_RIAT_2018_%2843577785532%29.jpg/1200px-Rafale_-_RIAT_2018_%2843577785532%29.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rafale_-_RIAT_2018_%2843577785532%29.jpg",
     "tvrScore": 91.2,
     "weapons": [
       {
@@ -3242,7 +3242,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The aircraft that ushered the Indian Air Force into the Jet Age in November 1948. Distinctive twin-boom configuration with wooden fuselage construction. Fought in the 1965 Indo-Pak War and Goa liberation 1961.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/De_Havilland_Vampire_FB52_IAF.jpg/1200px-De_Havilland_Vampire_FB52_IAF.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/De_Havilland_Vampire_FB.52_Indian_Air_Force.jpg",
     "tvrScore": 45.2,
     "weapons": [
       {
@@ -3431,7 +3431,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": null,
     "description": "Indigenous AEW&C platform utilizing an active electronically scanned array antenna mounted atop an ERJ-145 airframe for 240-degree tactical air tracking and command-and-control datalinks.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/DRDO_AEW%26CS_Netra_at_Aero_India_2023.jpg/1280px-DRDO_AEW%26CS_Netra_at_Aero_India_2023.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/DRDO_AEW%26CS_Netra_at_Aero_India_2023.jpg",
     "tvrScore": 83.8,
     "weapons": [],
     "dataSources": [],
@@ -3539,7 +3539,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "First jet bomber of the Indian Air Force. Flew combat missions in 1961 Congo UN operations, 1965 and 1971 Indo-Pak wars, and provided strategic optical reconnaissance during the 1999 Kargil War.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/English_Electric_Canberra_B%28I%2958_IAF.jpg/1200px-English_Electric_Canberra_B%28I%2958_IAF.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/English_Electric_Canberra_B%28I%29.58_IAF.jpg",
     "tvrScore": 54.6,
     "weapons": [
       {
@@ -3740,7 +3740,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The legendary \"Sabre Slayer\" of the 1965 and 1971 Indo-Pak Wars. Renowned for its diminutive size, extraordinary roll rate, and supreme agility in dogfights. Flown by Flying Officer Nirmal Jit Singh Sekhon, PVC, defending Srinagar airfield in 1971.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Folland_Gnat_IAF_Museum_Palam.jpg/1200px-Folland_Gnat_IAF_Museum_Palam.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Folland_Gnat_F.1_E248_Indian_Air_Force.jpg",
     "tvrScore": 46.3,
     "weapons": [
       {
@@ -3941,7 +3941,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "India's first indigenous jet fighter and the first indigenous supersonic-capable combat aircraft developed in Asia outside the USSR. Designed by Kurt Tank, the Marut saw heroic combat in the 1971 Indo-Pak War (including the Battle of Longewala) with zero air combat losses.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/HF-24_Marut_IAF_Museum_Delhi.jpg/1200px-HF-24_Marut_IAF_Museum_Delhi.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/HF-24_Marut_IAF_Museum_Delhi.jpg",
     "tvrScore": 47.2,
     "weapons": [
       {
@@ -4153,7 +4153,7 @@ export const initialAircraftData = [
     "sourceCount": 4,
     "lastVerified": null,
     "description": "The world’s only dedicated attack helicopter designed specifically for sustained combat operations above 5,000 meters in the Himalayas (Siachen / Ladakh sectors). Equipped with 20mm nose turret, Helina anti-tank missiles, and Mistral AAMs.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/HAL_Light_Combat_Helicopter_at_Aero_India_2017.jpg/1280px-HAL_Light_Combat_Helicopter_at_Aero_India_2017.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/HAL_Light_Combat_Helicopter_at_Aero_India_2017.jpg",
     "tvrScore": 78.5,
     "weapons": [
       {
@@ -4354,7 +4354,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "Indigenous Indian 4.5-generation lightweight supersonic multirole fighter. Features ELTA EL/M-2052 / Uttam AESA radar, integrated Angad EW suite, in-flight refueling probe, and Astra BVRAAM integration.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/HAL_Tejas_LA-5018_Aero_India_2021.jpg/1200px-HAL_Tejas_LA-5018_Aero_India_2021.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg",
     "tvrScore": 82.4,
     "weapons": [
       {
@@ -4565,7 +4565,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": null,
     "description": "Indigenous single-engine delta-wing light combat fighter featuring Uttam AESA radar, Astra Mk1 BVRAAM, self-protection EW jammer pod, and high-agility fly-by-wire flight control system.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg/1200px-HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg",
     "tvrScore": 81.4,
     "weapons": [
       {
@@ -4773,7 +4773,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The legendary British-designed transonic fighter famous for destroying Pakistani armor during the Battle of Longewala (1971). Served with distinction in 1965 and 1971 wars before serving as advanced trainers until 2001.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hawker_Hunter_F56_IAF.jpg/1200px-Hawker_Hunter_F56_IAF.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Hawker_Hunter_F.56_BA360_IAF.jpg",
     "tvrScore": 49.8,
     "weapons": [
       {
@@ -4974,7 +4974,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The legendary supersonic delta-wing interceptor that formed the backbone of the IAF for 62 years (1963 to 2025). The Bison upgrade added Kopyo radar, helmet-mounted sights, and R-73 / R-77 BVR capability, famously engaging in the 2019 aerial duel.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/MiG-21_Bison_of_the_Indian_Air_Force.jpg/1200px-MiG-21_Bison_of_the_Indian_Air_Force.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/MiG-21_Bison_of_the_Indian_Air_Force.jpg",
     "tvrScore": 61.8,
     "weapons": [
       {
@@ -5185,7 +5185,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The fastest combat aircraft to ever fly in South Asian airspace. Operated by the secretive No. 102 Squadron \"Trisonics\" from Bareilly, the Foxbat routinely flew at Mach 2.8+ at 80,000 feet, untouchable by enemy interceptors or SAM batteries.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/MiG-25_Foxbat_IAF_Museum.jpg/1200px-MiG-25_Foxbat_IAF_Museum.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/MiG-25RB_Foxbat_Indian_Air_Force.jpg",
     "tvrScore": 55.8,
     "weapons": [],
     "dataSources": [],
@@ -5364,7 +5364,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "Variable-geometry swing-wing dedicated ground attack aircraft produced under license by HAL. Armed with a 30mm six-barrel Gatling cannon (GSh-6-30), the Bahadur was pivotal during Operation Safed Sagar in the 1999 Kargil War.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mikoyan-Gurevich_MiG-27ML_Bahadur_of_the_IAF.jpg/1200px-Mikoyan-Gurevich_MiG-27ML_Bahadur_of_the_IAF.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/MiG-27ML_Bahadur_Indian_Air_Force.jpg",
     "tvrScore": 55.1,
     "weapons": [
       {
@@ -5575,7 +5575,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": null,
     "description": "Carrier-borne multirole fighter operating from INS Vikramaditya and INS Vikrant aircraft carriers with ski-jump launch (STOBAR) and arrested landing recovery. Armed with Kh-35 anti-ship missiles and R-77 BVR missiles.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/MiG-29K_takes_off_from_INS_Vikramaditya.jpg/1200px-MiG-29K_takes_off_from_INS_Vikramaditya.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/MiG-29K_takes_off_from_INS_Vikramaditya.jpg",
     "tvrScore": 77.8,
     "weapons": [
       {
@@ -5780,7 +5780,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "Upgraded IAF air superiority interceptor featuring Zhuk-M2E radar, enlarged dorsal fuel tank conformal spine, in-flight refueling probe, OLS-UEM IRST, and RVV-AE / R-77-1 BVR capability.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Indian_Air_Force_MiG-29UPG.jpg/1200px-Indian_Air_Force_MiG-29UPG.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/MiG-29UPG_of_the_Indian_Air_Force_in_flight.jpg",
     "tvrScore": 78,
     "weapons": [
       {
@@ -5982,7 +5982,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "Deep penetration strike aircraft with over-wing missile pylons, upgraded under the DARIN III program with EL/M-2052 AESA radar, dual-cockpit MFDs, ASRAAM missiles, and Harpoon anti-ship missiles.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Indian_Air_Force_SEPECAT_Jaguar_IS.jpg/1200px-Indian_Air_Force_SEPECAT_Jaguar_IS.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/SEPECAT_Jaguar_IS_of_the_Indian_Air_Force.jpg",
     "tvrScore": 73,
     "weapons": [
       {
@@ -6191,7 +6191,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": null,
     "description": "Advanced naval helicopter deployed across Indian Navy destroyers and frigates. Features airborne low frequency dipping sonar (ALFS), Mk 54 ASW torpedoes, and Hellfire anti-surface precision missiles.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/MH-60R_of_HSM-77_in_flight_over_Pacific_Ocean_2013.JPG/1280px-MH-60R_of_HSM-77_in_flight_over_Pacific_Ocean_2013.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/MH-60R_of_HSM-77_in_flight_over_Pacific_Ocean_2013.JPG",
     "tvrScore": 84.8,
     "weapons": [
       {
@@ -6319,7 +6319,7 @@ export const initialAircraftData = [
     "sourceCount": 6,
     "lastVerified": null,
     "description": "The backbone of the Indian Air Force. Twin-engine, two-seat air superiority fighter featuring 2D thrust-vectoring engines and compatibility with BrahMos-A supersonic cruise missiles and Astra Mk1/Mk2 BVR missiles.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Sukhoi_Su-30MKI_of_the_Indian_Air_Force_at_Aero_India_2023.jpg/1200px-Sukhoi_Su-30MKI_of_the_Indian_Air_Force_at_Aero_India_2023.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sukhoi_Su-30MKI_of_the_Indian_Air_Force_at_Aero_India_2023.jpg",
     "tvrScore": 84.6,
     "weapons": [
       {
@@ -6545,7 +6545,7 @@ export const initialAircraftData = [
     "sourceCount": 1,
     "lastVerified": "2026-02-02",
     "description": "Heavy twin-engine multirole fighter providing long-range maritime and archipelagic air defense for Indonesia vast island territories, armed with supersonic Kh-31 anti-ship missiles.",
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Indonesian_Air_Force_Sukhoi_Su-30MK2.jpg",
     "tvrScore": 0,
     "weapons": [],
     "sources": [
@@ -6726,7 +6726,7 @@ export const initialAircraftData = [
     "sourceCount": 1,
     "lastVerified": "2026-02-04",
     "description": "Japanese multirole fighter evolved from the F-16 with a 25% larger carbon-composite wing area, J/APG-2 AESA radar, and specialized long-range anti-ship strike capabilities.",
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mitsubishi_F-2A_JASDF.jpg",
     "tvrScore": 0,
     "weapons": [],
     "sources": [
@@ -6907,7 +6907,7 @@ export const initialAircraftData = [
     "sourceCount": 1,
     "lastVerified": "2026-01-28",
     "description": "Lightweight supersonic air defense fighter of the Mexican Air Force, providing fast interception and border security missions.",
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Northrop_F-5E_Tiger_II_FAM.jpg",
     "tvrScore": 0,
     "weapons": [],
     "sources": [
@@ -7082,7 +7082,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": null,
     "description": "Heavy twin-seat coaxial rotor combat helicopter. Modernized with V006 AESA radar, GOES-451M electro-optical turret, and integration of LMUR (Izdeliye 305) long-range precision-guided anti-tank missiles.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Kamov_Ka-52_at_MAKS-2019_%28cropped%29.jpg/1280px-Kamov_Ka-52_at_MAKS-2019_%28cropped%29.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Kamov_Ka-52_at_MAKS-2019.jpg",
     "tvrScore": 83.4,
     "weapons": [
       {
@@ -7209,7 +7209,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The world's heaviest and fastest operational combat interceptor. Zaslon-AM PESA radar enables simultaneous tracking of 24 aerial targets and engaging 6 with Mach 6 R-37M ultra-long-range missiles. Specialized MiG-31K variants carry the Kh-47M2 Kinzhal hypersonic aero-ballistic missile.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/MiG-31BM_in_flight_2016.jpg/1200px-MiG-31BM_in_flight_2016.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/MiG-31BM_in_flight_2016.jpg",
     "tvrScore": 79,
     "weapons": [
       {
@@ -7421,7 +7421,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "Premier 4.5++ generation air dominance fighter equipped with Irbis-E passive electronically scanned array radar (detecting targets up to 400 km away) and 3D thrust-vectoring AL-41F1S engines enabling super-maneuverability.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Sukhoi_Su-35S_in_flight_2017.jpg/1200px-Sukhoi_Su-35S_in_flight_2017.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sukhoi_Su-35S_in_flight_2017.jpg",
     "tvrScore": 85,
     "weapons": [
       {
@@ -7632,7 +7632,7 @@ export const initialAircraftData = [
     "sourceCount": 6,
     "lastVerified": null,
     "description": "Russia’s 5th-gen combat platform. Features 3D thrust vectoring, distributed multi-band X/L-band radar arrays, internal weapon bays carrying R-77M and R-37M extreme-range missiles, and 101KS Atoll optical suite.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sukhoi_Su-57_at_MAKS-2019_%28cropped%29.jpg/1280px-Sukhoi_Su-57_at_MAKS-2019_%28cropped%29.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Sukhoi_Su-57_at_MAKS-2019_%28cropped%29.jpg",
     "tvrScore": 92.6,
     "weapons": [
       {
@@ -7839,7 +7839,7 @@ export const initialAircraftData = [
     "sourceCount": 1,
     "lastVerified": "2026-02-09",
     "description": "Heavy multirole strike fighter with immense 13,300 kg payload capacity across 12 external weapon stations, fly-by-wire flight control system, AN/APG-63(V)3 AESA radar, and DEWS digital electronic warfare suite.",
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Boeing_F-15SA_Advanced_Eagle_RSAF.jpg",
     "tvrScore": 0,
     "weapons": [],
     "sources": [
@@ -8022,7 +8022,7 @@ export const initialAircraftData = [
     "sourceCount": 1,
     "lastVerified": "2026-01-24",
     "description": "Frontline delta-canard multirole combat fighter of the South African Air Force, operating from AFB Makhado armed with indigenous A-Darter and IRIS-T air-to-air missiles.",
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Saab_JAS-39C_Gripen_SAAF.jpg",
     "tvrScore": 0,
     "weapons": [],
     "sources": [
@@ -8203,7 +8203,7 @@ export const initialAircraftData = [
     "sourceCount": 1,
     "lastVerified": "2026-02-12",
     "description": "South Korea 4.5+ generation indigenous supersonic fighter featuring 5th-gen stealth airframe shaping, Hanwha GaN AESA radar, twin F414 turbofans, and Meteor BVRAAM long-range missile integration.",
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/KAI_KF-21_Boramae_first_flight.jpg",
     "tvrScore": 0,
     "weapons": [],
     "sources": [
@@ -8386,7 +8386,7 @@ export const initialAircraftData = [
     "sourceCount": 1,
     "lastVerified": "2026-01-30",
     "description": "Indigenous Turkish 5th-generation heavy stealth multirole fighter. Features twin engines, internal weapons bays, all-aspect radar cross section reduction, Aselsan MURAD GaN AESA radar, and loyal wingman drone teaming capability with Bayraktar Kizilelma and ANKA-3.",
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/TAI_TF_Kaan_first_flight.jpg",
     "tvrScore": 0,
     "weapons": [],
     "sources": [
@@ -8568,7 +8568,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The iconic tailless delta-wing strategic bomber that served as Britain's airborne nuclear deterrent. Famed for the historic 1982 'Operation Black Buck' bombing raids during the Falklands War, flying 12,000 km return from Ascension Island with complex aerial refueling.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Avro_Vulcan_XH558_in_flight.jpg/1200px-Avro_Vulcan_XH558_in_flight.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Avro_Vulcan_XH558_in_flight.jpg",
     "tvrScore": 67.9,
     "weapons": [
       {
@@ -8778,7 +8778,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "Britain's only Mach 2 supersonic jet fighter developed entirely indigenously. Unique stacked engine configuration and exceptional climb rate (up to 50,000 ft in under 2.5 minutes), designed to intercept high-altitude Soviet nuclear bombers.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/English_Electric_Lightning_F6_XR770.jpg/1200px-English_Electric_Lightning_F6_XR770.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/English_Electric_Lightning_F6_XR770.jpg",
     "tvrScore": 54.8,
     "weapons": [
       {
@@ -8990,7 +8990,7 @@ export const initialAircraftData = [
     "sourceCount": 1,
     "lastVerified": "2026-02-08",
     "description": "Premier agile delta-canard swing-role combat aircraft of the Royal Air Force and European NATO air arms. Renowned for extreme thrust-to-weight ratio, supercruise, Meteor BVRAAM reach, and Storm Shadow deep standoff strike.",
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Eurofighter_Typhoon_FGR4_RAF.jpg",
     "tvrScore": 0,
     "weapons": [],
     "sources": [
@@ -9174,7 +9174,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The most advanced iteration of the undefeated F-15 air superiority fighter (104-0 combat record). Features AN/APG-82(V)1 AESA radar, EPAWSS electronic warfare suite, fly-by-wire controls, and an astounding 29,500 lb (13,300 kg) payload capacity carrying up to 12 AIM-120 missiles.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/F-15EX_Eagle_II_first_flight.jpg/1200px-F-15EX_Eagle_II_first_flight.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/F-15EX_Eagle_II_first_flight.jpg",
     "tvrScore": 86,
     "weapons": [
       {
@@ -9386,7 +9386,7 @@ export const initialAircraftData = [
     "sourceCount": 8,
     "lastVerified": null,
     "description": "Workhorse of US Navy CATOBAR supercarriers. Block III upgrade adds conformal fuel tanks (CFTs), advanced cockpit system (ACS), TTNT networking, and APG-79 AESA radar integration.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/FA-18F_Super_Hornet_of_VFA-103_in_flight_in_2015.JPG/1280px-FA-18F_Super_Hornet_of_VFA-103_in_flight_in_2015.JPG",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/FA-18F_Super_Hornet_of_VFA-103_in_flight_in_2015.JPG",
     "tvrScore": 88.5,
     "weapons": [
       {
@@ -9600,7 +9600,7 @@ export const initialAircraftData = [
     "sourceCount": 7,
     "lastVerified": null,
     "description": "Armed MALE unmanned aircraft system executing continuous hunter-killer ISR operations. Capable of 27 hours endurance armed with GBU-12 Paveway laser-guided bombs and AGM-114 Hellfire missiles.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/MQ-9_Reaper_in_flight_%282007%29.jpg/1280px-MQ-9_Reaper_in_flight_%282007%29.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/MQ-9_Reaper_in_flight_%282007%29.jpg",
     "tvrScore": 82.5,
     "weapons": [
       {
@@ -9727,7 +9727,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "Iconic carrier-borne twin-engine variable-sweep wing air superiority fighter. Armed with the 190 km range AIM-54 Phoenix missile and AWG-9 / APG-71 radar capable of tracking 24 targets and engaging 6 simultaneously.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/F-14D_VF-31_landing_USS_Theodore_Roosevelt_%28CVN-71%29.jpg/1200px-F-14D_VF-31_landing_USS_Theodore_Roosevelt_%28CVN-71%29.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/F-14D_VF-31_landing_USS_Theodore_Roosevelt_%28CVN-71%29.jpg",
     "tvrScore": 74,
     "weapons": [
       {
@@ -9937,7 +9937,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The world's first operational stealth combat aircraft, developed in secret by Lockheed's Skunk Works. Its revolutionary faceted surface design delivered a micro radar cross-section, penetrating Baghdad's dense air defenses during Operation Desert Storm in 1991 without detection.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/F-117_Nighthawk_Front.jpg/1200px-F-117_Nighthawk_Front.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/F-117_Nighthawk_Front.jpg",
     "tvrScore": 65.5,
     "weapons": [
       {
@@ -10138,7 +10138,7 @@ export const initialAircraftData = [
     "sourceCount": 9,
     "lastVerified": null,
     "description": "The world benchmark for stealth air dominance. Combines extreme low-observability shaping, Mach 1.82 supercruise without afterburners, 2D thrust-vectoring agility, and advanced AN/APG-77 AESA radar.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/F-22_Raptor_edit1_%28cropped%29.jpg/1280px-F-22_Raptor_edit1_%28cropped%29.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/F-22_Raptor_edit1_%28cropped%29.jpg",
     "tvrScore": 95.8,
     "weapons": [
       {
@@ -10343,7 +10343,7 @@ export const initialAircraftData = [
     "sourceCount": 12,
     "lastVerified": null,
     "description": "Premier networked 5th-generation strike fighter. Features all-aspect stealth, automated sensor fusion combining AN/APG-81 AESA radar, AN/AAQ-37 Electro-Optical Distributed Aperture System (DAS), and MADL secure datalink.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/F-35A_flight_%28cropped%29.jpg/1200px-F-35A_flight_%28cropped%29.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/F-35A_flight_%28cropped%29.jpg",
     "tvrScore": 94.2,
     "weapons": [
       {
@@ -10558,7 +10558,7 @@ export const initialAircraftData = [
     "sourceCount": 8,
     "lastVerified": null,
     "description": "First catapult-capable 5th-generation stealth aircraft. Features enlarged folding wings, strengthened landing gear with heavy catapult bar and arrestor hook, and internal bays for stealth standoff ordnance.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/F-35C_CF-1_flight.jpg/1280px-F-35C_CF-1_flight.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/F-35C_CF-1_flight.jpg",
     "tvrScore": 93.8,
     "weapons": [
       {
@@ -10684,7 +10684,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The fastest and highest-flying air-breathing manned operational aircraft ever built. Designed by Kelly Johnson's Skunk Works, the SR-71 outflew over 4,000 surface-to-air missiles fired at it throughout its operational life, with zero losses to enemy action.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Lockheed_SR-71_Blackbird.jpg/1200px-Lockheed_SR-71_Blackbird.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lockheed_SR-71_Blackbird.jpg",
     "tvrScore": 83.2,
     "weapons": [],
     "dataSources": [],
@@ -10863,7 +10863,7 @@ export const initialAircraftData = [
     "sourceCount": 5,
     "lastVerified": "2026-09-20",
     "description": "The defining twin-engine supersonic tactical fighter-bomber of the Cold War. Set 15 world speed and altitude records and served as the premier frontline multirole combat aircraft across the USAF, US Navy, and 11 allied nations.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/F-4E_Phantom_II_USAF.jpg/1200px-F-4E_Phantom_II_USAF.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/F-4E_Phantom_II_USAF.jpg",
     "tvrScore": 63.9,
     "weapons": [
       {
