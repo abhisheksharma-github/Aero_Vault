@@ -1,0 +1,32 @@
+{
+  "country": "China",
+  "countryCode": "CHN",
+  "flagEmoji": "🇨🇳",
+  "region": "Asia-Pacific",
+  "atlasIndex": 92.1,
+  "airsIndex": 88.4,
+  "seasIndex": 91.2,
+  "armsIndex": 94,
+  "activeTroops": 2035000,
+  "reserveTroops": 510000,
+  "paramilitary": 660000,
+  "defenseBudgetUsd": 292,
+  "totalAircraft": 3300,
+  "totalWarships": 730,
+  "totalVehicles": 35000,
+  "nuclearWarheads": 500,
+  "aircraftCarriers": 3,
+  "submarines": 61,
+  "sources": [
+    {
+      "name": "China Military Power Report (DoD)",
+      "url": "https://www.defense.gov",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Yearbook 2025",
+      "url": "https://www.sipri.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

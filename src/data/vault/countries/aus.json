@@ -1,0 +1,44 @@
+{
+  "id": "country-aus",
+  "name": "Australia",
+  "countryCode": "AUS",
+  "isoCode": "AU",
+  "flag": "🇦🇺",
+  "region": "Oceania / Indo-Pacific",
+  "description": "High-interoperability network-centric airpower operating 5th-gen F-35A stealth fighters, F/A-18F Super Hornets, EA-18G Growler electronic attack aircraft, E-7A Wedgetail, and MQ-28 Ghost Bat loyal wingman drones.",
+  "totalAircraftEstimate": 510,
+  "modernizationIndex": 93,
+  "defenseBudgetUsd": 32.3,
+  "militaryBranches": [
+    {
+      "name": "Royal Australian Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "RAAF",
+      "description": "F-35A Lightning II, F/A-18F Super Hornet, EA-18G Growler, E-7A Wedgetail, and P-8A Poseidon."
+    },
+    {
+      "name": "Royal Australian Navy Fleet Air Arm",
+      "type": "NAVAL_AVIATION",
+      "officialName": "RAN Fleet Air Arm",
+      "description": "MH-60R Seahawk maritime combat helicopters."
+    },
+    {
+      "name": "Australian Army Aviation",
+      "type": "ARMY_AVIATION",
+      "officialName": "Australian Army Aviation Corps",
+      "description": "AH-64E Apache Guardian on order, CH-47F Chinook, and UH-60M Black Hawk."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

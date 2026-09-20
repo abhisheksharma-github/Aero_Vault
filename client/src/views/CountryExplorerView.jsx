@@ -231,9 +231,24 @@ export default function CountryExplorerView({ onSelectCountry, onSelectAircraft 
                     </div>
                   </div>
 
-                  <span className="px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold uppercase bg-slate-950 text-cyan-400 border border-slate-800">
-                    {country.countryCode}
-                  </span>
+                  <div className="flex flex-col items-end gap-1">
+                    <span className="px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold uppercase bg-slate-950 text-cyan-400 border border-slate-800">
+                      {country.countryCode}
+                    </span>
+                    {country.coverage && (
+                      <span
+                        className={`text-[9px] font-mono px-2 py-0.5 rounded border ${
+                          country.coverage.completeness >= 0.8
+                            ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30'
+                            : 'bg-amber-500/10 text-amber-400 border-amber-500/30'
+                        }`}
+                      >
+                        {country.coverage.completeness >= 1.0
+                          ? '5/5 Domains'
+                          : `Limited coverage — ${Math.round(country.coverage.completeness * 5)}/5 domains`}
+                      </span>
+                    )}
+                  </div>
                 </div>
 
                 <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed font-sans">
@@ -335,6 +350,28 @@ export default function CountryExplorerView({ onSelectCountry, onSelectAircraft 
                 ✕
               </button>
             </div>
+
+            {selectedCountryDossier.coverage && (
+              <div className={`p-4 rounded-2xl border text-xs font-mono flex items-center justify-between ${
+                selectedCountryDossier.coverage.completeness >= 0.8
+                  ? 'bg-emerald-950/30 border-emerald-500/30 text-emerald-300'
+                  : 'bg-amber-950/30 border-amber-500/30 text-amber-300'
+              }`}>
+                <div>
+                  <div className="font-bold">
+                    {selectedCountryDossier.coverage.completeness >= 1.0
+                      ? 'Full Sovereign Force Coverage'
+                      : `Limited coverage — ${Math.round(selectedCountryDossier.coverage.completeness * 5)} of 5 domains indexed`}
+                  </div>
+                  <div className="text-[11px] text-slate-400 mt-0.5">
+                    Indexed: {selectedCountryDossier.coverage.aircraftCount} Aircraft • {selectedCountryDossier.coverage.warshipCount} Warships • {selectedCountryDossier.coverage.vehicleCount} Ground Vehicles
+                  </div>
+                </div>
+                <span className="text-lg font-bold font-display">
+                  {Math.round(selectedCountryDossier.coverage.completeness * 100)}%
+                </span>
+              </div>
+            )}
 
             <p className="text-sm text-slate-300 leading-relaxed font-sans bg-slate-950/60 p-4 rounded-2xl border border-slate-800/80">
               {selectedCountryDossier.description}

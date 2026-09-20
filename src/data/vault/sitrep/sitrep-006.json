@@ -1,0 +1,14 @@
+{
+  "id": "sitrep-6",
+  "eventType": "SHOT_DOWN",
+  "domain": "AIR",
+  "country": "Russia",
+  "countryCode": "RUS",
+  "countryFlag": "🇷🇺",
+  "entityName": "Su-34 Fullback",
+  "location": "Eastern Operational Theater",
+  "summary": "Visual OSINT confirms tactical fighter-bomber loss over eastern operational theater.",
+  "sourceUrl": "https://aviation-safety.net",
+  "confidence": "VERIFIED",
+  "eventDate": "2024-12-05T00:00:00.000Z"
+}

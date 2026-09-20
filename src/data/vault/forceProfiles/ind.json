@@ -1,0 +1,32 @@
+{
+  "country": "India",
+  "countryCode": "IND",
+  "flagEmoji": "🇮🇳",
+  "region": "South Asia / Indo-Pacific",
+  "atlasIndex": 81.7,
+  "airsIndex": 79.5,
+  "seasIndex": 76.2,
+  "armsIndex": 85,
+  "activeTroops": 1455000,
+  "reserveTroops": 1155000,
+  "paramilitary": 2527000,
+  "defenseBudgetUsd": 81.4,
+  "totalAircraft": 2210,
+  "totalWarships": 295,
+  "totalVehicles": 12000,
+  "nuclearWarheads": 172,
+  "aircraftCarriers": 2,
+  "submarines": 18,
+  "sources": [
+    {
+      "name": "Ministry of Defence (MoD) India Report",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

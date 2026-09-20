@@ -1,0 +1,32 @@
+{
+  "country": "Pakistan",
+  "countryCode": "PAK",
+  "flagEmoji": "🇵🇰",
+  "region": "South Asia",
+  "atlasIndex": 61.5,
+  "airsIndex": 62,
+  "seasIndex": 54,
+  "armsIndex": 68.5,
+  "activeTroops": 654000,
+  "reserveTroops": 550000,
+  "paramilitary": 291000,
+  "defenseBudgetUsd": 8.5,
+  "totalAircraft": 1410,
+  "totalWarships": 120,
+  "totalVehicles": 10000,
+  "nuclearWarheads": 170,
+  "aircraftCarriers": 0,
+  "submarines": 8,
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "SIPRI Nuclear Forces Data",
+      "url": "https://www.sipri.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

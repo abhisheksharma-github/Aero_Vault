@@ -1,5 +1,5 @@
 import { prisma } from '../db.js';
-import { aircraftVault } from '../data/normalize.js';
+import { vaultAircraft } from '../data/vaultLoader.js';
 
 export interface DataAnomaly {
   aircraftId: string;
@@ -38,7 +38,7 @@ export class DataQualityService {
     }
 
     if (!aircraftList || aircraftList.length === 0) {
-      aircraftList = aircraftVault as any[];
+      aircraftList = vaultAircraft as any[];
     }
 
     const anomalies: DataAnomaly[] = [];

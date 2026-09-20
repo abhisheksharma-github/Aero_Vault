@@ -1,0 +1,32 @@
+{
+  "country": "Germany",
+  "countryCode": "DEU",
+  "flagEmoji": "🇩🇪",
+  "region": "Europe / NATO",
+  "atlasIndex": 68.4,
+  "airsIndex": 68,
+  "seasIndex": 62,
+  "armsIndex": 71,
+  "activeTroops": 181500,
+  "reserveTroops": 34000,
+  "paramilitary": 0,
+  "defenseBudgetUsd": 73.4,
+  "totalAircraft": 620,
+  "totalWarships": 65,
+  "totalVehicles": 4500,
+  "nuclearWarheads": 0,
+  "aircraftCarriers": 0,
+  "submarines": 6,
+  "sources": [
+    {
+      "name": "Bundeswehr Official Telemetry",
+      "url": "https://www.bundeswehr.de",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

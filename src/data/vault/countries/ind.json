@@ -1,0 +1,44 @@
+{
+  "id": "country-ind",
+  "name": "India",
+  "countryCode": "IND",
+  "isoCode": "IN",
+  "flag": "🇮🇳",
+  "region": "South Asia / Indo-Pacific",
+  "description": "Operating a diverse multi-spectrum tri-branch aviation architecture with world-class high-altitude Himalayan combat mastery and indigenous aerospace production (HAL Tejas, LCH Prachand, ALH Dhruv).",
+  "totalAircraftEstimate": 2210,
+  "modernizationIndex": 78.5,
+  "defenseBudgetUsd": 81.4,
+  "militaryBranches": [
+    {
+      "name": "Indian Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "Bhartiya Vayu Sena (IAF)",
+      "description": "Primary air defense and strategic deterrence branch operating 4.5-gen fighters (Rafale, Su-30MKI, Tejas Mk1A), heavy transports (C-17, C-130J), and AEW&C force multipliers."
+    },
+    {
+      "name": "Indian Navy Air Arm",
+      "type": "NAVAL_AVIATION",
+      "officialName": "Indian Naval Air Arm (IN)",
+      "description": "Carrier-borne strike fighter wings (MiG-29K, Rafale-M), long-range maritime anti-submarine reconnaissance (P-8I Neptune), and shipborne ASW helicopters (MH-60R Seahawk, ALH Mk III)."
+    },
+    {
+      "name": "Indian Army Aviation Corps",
+      "type": "ARMY_AVIATION",
+      "officialName": "Army Aviation Corps (AAC)",
+      "description": "Dedicated high-altitude attack helicopter divisions (LCH Prachand, Apache AH-64E, Rudra), tactical utility (Dhruv ALH), and battlefield reconnaissance UAVs."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

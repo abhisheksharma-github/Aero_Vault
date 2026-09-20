@@ -1,0 +1,33 @@
+{
+  "id": "gv-2",
+  "name": "M1A2 SEPv3 Abrams",
+  "category": "MAIN_BATTLE_TANK",
+  "country": "United States",
+  "countryCode": "USA",
+  "militaryBranch": "ARMY_AVIATION",
+  "status": "ACTIVE",
+  "activeCount": 2500,
+  "reserveCount": 2000,
+  "generation": "3rd Gen MBT",
+  "mainArmament": "120mm M256 Smoothbore Cannon",
+  "enginePowerHp": 1500,
+  "topSpeedKmh": 67,
+  "weightTons": 66.8,
+  "tvrScore": 92.5,
+  "crew": 4,
+  "description": "System Enhancement Package version 3 featuring Trophy Active Protection System (APS), joint tactical datalinks, and depleted uranium composite armor.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/M1A2_Abrams_SEPv3_tank_in_Grafenwoehr%2C_Germany%2C_2021.jpg/1200px-M1A2_Abrams_SEPv3_tank_in_Grafenwoehr%2C_Germany%2C_2021.jpg",
+  "armorProtection": "Depleted Uranium Mesh + Trophy Hard-Kill APS",
+  "sources": [
+    {
+      "name": "Jane's Land Warfare Platforms: Armoured Fighting Vehicles",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Army Technology & MoD Procurement Records",
+      "url": "https://www.army.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

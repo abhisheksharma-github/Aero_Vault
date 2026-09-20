@@ -1,0 +1,32 @@
+{
+  "country": "Turkey",
+  "countryCode": "TUR",
+  "flagEmoji": "🇹🇷",
+  "region": "Middle East / NATO",
+  "atlasIndex": 67.8,
+  "airsIndex": 66.5,
+  "seasIndex": 68,
+  "armsIndex": 72,
+  "activeTroops": 355200,
+  "reserveTroops": 378700,
+  "paramilitary": 150000,
+  "defenseBudgetUsd": 25,
+  "totalAircraft": 1060,
+  "totalWarships": 185,
+  "totalVehicles": 13000,
+  "nuclearWarheads": 0,
+  "aircraftCarriers": 1,
+  "submarines": 12,
+  "sources": [
+    {
+      "name": "Turkish Ministry of National Defence",
+      "url": "https://www.msb.gov.tr",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

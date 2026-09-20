@@ -1,0 +1,44 @@
+{
+  "id": "country-arg",
+  "name": "Argentina",
+  "countryCode": "ARG",
+  "isoCode": "AR",
+  "flag": "🇦🇷",
+  "region": "South America",
+  "description": "Rebuilding supersonic combat capabilities through the acquisition of 24 Lockheed Martin F-16A/B MLU Fighting Falcons from Denmark, alongside indigenous IA-63 Pampa III trainers.",
+  "totalAircraftEstimate": 230,
+  "modernizationIndex": 65,
+  "defenseBudgetUsd": 3.2,
+  "militaryBranches": [
+    {
+      "name": "Argentine Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "Fuerza Aérea Argentina (FAA)",
+      "description": "F-16A/B MLU (procured), A-4AR Fightinghawk, IA-63 Pampa III, and KC-130H Hercules."
+    },
+    {
+      "name": "Argentine Naval Aviation",
+      "type": "NAVAL_AVIATION",
+      "officialName": "Comando de la Aviación Naval (COAN)",
+      "description": "Super Étendard / Modernisé, P-3C Orion (ex-Norway), and B200 Super King Air maritime patrol."
+    },
+    {
+      "name": "Argentine Army Aviation",
+      "type": "ARMY_AVIATION",
+      "officialName": "Aviación de Ejército",
+      "description": "Bell UH-1H Huey II and Eurocopter AS332 Super Puma."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

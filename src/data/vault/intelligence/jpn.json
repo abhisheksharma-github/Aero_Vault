@@ -1,0 +1,58 @@
+{
+  "countryName": "Japan",
+  "countryCode": "JPN",
+  "flag": "🇯🇵",
+  "airForceName": "Japan Air Force",
+  "armyAviationName": "Japan Army Aviation",
+  "navalAviationName": "Japan Naval Air Arm",
+  "globalRanking": 7,
+  "tvrTotal": 71,
+  "combatPowerScore": 75.5,
+  "strikeScore": 74,
+  "mobilityScore": 70.3,
+  "aewcScore": 66.6,
+  "tankerScore": 62.9,
+  "uavScore": 68.1,
+  "navalAirScore": 76.5,
+  "armyAirScore": 64,
+  "modernizationIndex": 71.5,
+  "logisticsScore": 68.1,
+  "forceReadiness": 85,
+  "totalActiveUnits": 1450,
+  "airForceUnits": 943,
+  "armyAviationUnits": 290,
+  "navalAviationUnits": 218,
+  "marineUnits": 0,
+  "totalFighters": 653,
+  "totalBombers": 0,
+  "totalTransports": 218,
+  "totalHelicopters": 435,
+  "totalUAVs": 116,
+  "totalAEWC": 22,
+  "totalTankers": 29,
+  "totalTrainers": 290,
+  "gen5Count": 0,
+  "gen45Count": 363,
+  "gen4Count": 507,
+  "legacyCount": 145,
+  "primaryStrengths": [
+    "Comprehensive Asia-Pacific force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "Japan Ministry of Defense Whitepaper 2025",
+      "url": "https://www.mod.go.jp/en/",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

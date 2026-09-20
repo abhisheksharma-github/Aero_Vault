@@ -1,0 +1,32 @@
+{
+  "country": "Saudi Arabia",
+  "countryCode": "SAU",
+  "flagEmoji": "🇸🇦",
+  "region": "Middle East",
+  "atlasIndex": 62.7,
+  "airsIndex": 69,
+  "seasIndex": 52,
+  "armsIndex": 64,
+  "activeTroops": 257000,
+  "reserveTroops": 0,
+  "paramilitary": 24500,
+  "defenseBudgetUsd": 71.7,
+  "totalAircraft": 890,
+  "totalWarships": 55,
+  "totalVehicles": 6000,
+  "nuclearWarheads": 0,
+  "aircraftCarriers": 0,
+  "submarines": 0,
+  "sources": [
+    {
+      "name": "SIPRI Military Expenditure 2025",
+      "url": "https://www.sipri.org",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "country": "Italy",
+  "countryCode": "ITA",
+  "flagEmoji": "🇮🇹",
+  "region": "Europe / NATO",
+  "atlasIndex": 66.2,
+  "airsIndex": 67,
+  "seasIndex": 69.5,
+  "armsIndex": 61,
+  "activeTroops": 165500,
+  "reserveTroops": 18300,
+  "paramilitary": 175000,
+  "defenseBudgetUsd": 31.6,
+  "totalAircraft": 800,
+  "totalWarships": 135,
+  "totalVehicles": 3000,
+  "nuclearWarheads": 0,
+  "aircraftCarriers": 2,
+  "submarines": 8,
+  "sources": [
+    {
+      "name": "Ministero della Difesa (Italy)",
+      "url": "https://www.difesa.it",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

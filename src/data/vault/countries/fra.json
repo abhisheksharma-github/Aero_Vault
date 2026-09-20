@@ -1,0 +1,44 @@
+{
+  "id": "country-fra",
+  "name": "France",
+  "countryCode": "FRA",
+  "isoCode": "FR",
+  "flag": "🇫🇷",
+  "region": "Europe / NATO",
+  "description": "Independent indigenous aerospace sovereignty powered by the Dassault Rafale omnirole fighter (F3-R / F4 standard), airborne nuclear deterrence (ASMP-A), and CATOBAR carrier aviation aboard Charles de Gaulle.",
+  "totalAircraftEstimate": 970,
+  "modernizationIndex": 90,
+  "defenseBudgetUsd": 56.6,
+  "militaryBranches": [
+    {
+      "name": "French Air and Space Force",
+      "type": "AIR_FORCE",
+      "officialName": "Armée de l'Air et de l'Espace",
+      "description": "Dassault Rafale B/C, Mirage 2000D RMV, A330 MRTT Phénix tankers, and E-3F AWACS."
+    },
+    {
+      "name": "French Naval Aviation",
+      "type": "NAVAL_AVIATION",
+      "officialName": "Aéronautique Navale (Aéronavale)",
+      "description": "Nuclear carrier-based Rafale-M fighters, E-2C Hawkeye AEW&C, and Atlantique 2 (ATL2) maritime patrol."
+    },
+    {
+      "name": "French Army Light Aviation",
+      "type": "ARMY_AVIATION",
+      "officialName": "ALAT (Aviation Légère de l'Armée de Terre)",
+      "description": "Eurocopter Tiger HAD attack helicopters and NH90 Caïman tactical transport."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

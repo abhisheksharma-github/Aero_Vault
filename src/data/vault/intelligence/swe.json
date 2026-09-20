@@ -1,0 +1,58 @@
+{
+  "countryName": "Sweden",
+  "countryCode": "SWE",
+  "flag": "🇸🇪",
+  "airForceName": "Sweden Air Force",
+  "armyAviationName": "Sweden Army Aviation",
+  "navalAviationName": "Sweden Naval Air Arm",
+  "globalRanking": 20,
+  "tvrTotal": 54.7,
+  "combatPowerScore": 62.2,
+  "strikeScore": 61,
+  "mobilityScore": 57.9,
+  "aewcScore": 54.9,
+  "tankerScore": 51.9,
+  "uavScore": 56.1,
+  "navalAirScore": 54,
+  "armyAirScore": 52,
+  "modernizationIndex": 55.7,
+  "logisticsScore": 52.5,
+  "forceReadiness": 85,
+  "totalActiveUnits": 210,
+  "airForceUnits": 137,
+  "armyAviationUnits": 42,
+  "navalAviationUnits": 32,
+  "marineUnits": 0,
+  "totalFighters": 95,
+  "totalBombers": 0,
+  "totalTransports": 32,
+  "totalHelicopters": 63,
+  "totalUAVs": 17,
+  "totalAEWC": 3,
+  "totalTankers": 4,
+  "totalTrainers": 42,
+  "gen5Count": 0,
+  "gen45Count": 53,
+  "gen4Count": 74,
+  "legacyCount": 21,
+  "primaryStrengths": [
+    "Comprehensive Europe / NATO force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "Swedish Armed Forces (Försvarsmakten)",
+      "url": "https://www.forsvarsmakten.se",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

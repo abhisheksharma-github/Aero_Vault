@@ -1,0 +1,33 @@
+{
+  "id": "gv-6",
+  "name": "K9 Vajra-T",
+  "category": "ARTILLERY",
+  "country": "India",
+  "countryCode": "IND",
+  "militaryBranch": "ARMY_AVIATION",
+  "status": "ACTIVE",
+  "activeCount": 200,
+  "reserveCount": 100,
+  "generation": "Tracked Self-Propelled Howitzer",
+  "mainArmament": "155mm / 52-calibre Long-Range Gun (40-50 km range)",
+  "enginePowerHp": 1000,
+  "topSpeedKmh": 67,
+  "weightTons": 47,
+  "tvrScore": 88,
+  "crew": 5,
+  "description": "Self-propelled 155mm howitzer adapted for high-altitude Ladakh deployments and desert strike brigades with automated burst-firing capability.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/K9_Vajra-T_at_Republic_Day_Parade_2020.jpg/1200px-K9_Vajra-T_at_Republic_Day_Parade_2020.jpg",
+  "armorProtection": "All-Welded Steel Armor (14.5mm AP protection)",
+  "sources": [
+    {
+      "name": "Jane's Land Warfare Platforms: Armoured Fighting Vehicles",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Army Technology & MoD Procurement Records",
+      "url": "https://www.army.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

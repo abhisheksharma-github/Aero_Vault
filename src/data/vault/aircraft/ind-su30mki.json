@@ -1,0 +1,227 @@
+{
+  "id": "ind-su30mki",
+  "aliases": [
+    "ind-su30mki",
+    "IND-IAF-SU30MKI",
+    "ind-iaf-su30mki"
+  ],
+  "name": "Sukhoi Su-30MKI Flanker-H",
+  "commonName": "Su-30MKI",
+  "officialDesignation": "Su-30MKI Super Sukhoi",
+  "natoReportingName": null,
+  "family": "Su-30 Flanker Family",
+  "variant": "Su-30MKI Super Sukhoi",
+  "block": "Phase 3 / Super Sukhoi Upgrade",
+  "manufacturer": "Hindustan Aeronautics Limited / Sukhoi",
+  "manufacturerCountry": "Russia / India",
+  "originCountry": "Russia / India",
+  "country": "India",
+  "affiliation": "Indian Air Force",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "MULTIROLE_FIGHTER",
+  "generation": "GEN_5",
+  "era": "MODERN",
+  "role": "Air Dominance & Long-Range Strike Fighter",
+  "secondaryRoles": [
+    "Maritime Strike",
+    "SEAD",
+    "Strategic Nuclear Delivery"
+  ],
+  "firstFlightYear": 2000,
+  "introductionYear": 2002,
+  "retirementYear": null,
+  "productionCount": 272,
+  "fleetCount": 260,
+  "activeCount": 260,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "engineManufacturer": null,
+  "engineModel": "AL-31FP Thrust-Vectoring Turbofans",
+  "engineCount": 2,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 150,
+  "thrustAfterburnerKn": 246,
+  "topSpeedMach": 2,
+  "topSpeedKmh": 2120,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 17300,
+  "rateOfClimbMs": 300,
+  "gLimitPositive": 9,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 1500,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 3000,
+  "emptyWeightKg": 18400,
+  "maxTakeoffWeightKg": 38800,
+  "payloadCapacityKg": 8130,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "PESA",
+  "radarModel": "N011M Bars PESA (Upgrading to Uttam AESA)",
+  "radarRangeAirKm": 140,
+  "hasAesa": false,
+  "hasIrst": true,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 88,
+  "stealthLevel": "REDUCED",
+  "rcsEstimatedM2": 4,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": true,
+  "maintenanceHoursPerFlightHour": 18,
+  "costPerFlightHourUsd": 14500,
+  "reliabilityScore": 78,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 96,
+  "sourceCount": 6,
+  "lastVerified": null,
+  "description": "The backbone of the Indian Air Force. Twin-engine, two-seat air superiority fighter featuring 2D thrust-vectoring engines and compatibility with BrahMos-A supersonic cruise missiles and Astra Mk1/Mk2 BVR missiles.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Sukhoi_Su-30MKI_of_the_Indian_Air_Force_at_Aero_India_2023.jpg/1200px-Sukhoi_Su-30MKI_of_the_Indian_Air_Force_at_Aero_India_2023.jpg",
+  "tvrScore": 84.6,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "BrahMos-A ALCM",
+        "type": "LAND_ATTACK_CRUISE_MISSILE",
+        "maxRangeKm": 450,
+        "speedMach": 3,
+        "guidance": "Active Radar / INS / GPS"
+      }
+    },
+    {
+      "weapon": {
+        "name": "Astra Mk1 BVR-AAM",
+        "type": "BVR_AAM",
+        "maxRangeKm": 110,
+        "speedMach": 4.5,
+        "guidance": "Active Radar Homing"
+      }
+    },
+    {
+      "weapon": {
+        "name": "R-77-1",
+        "type": "BVR_AAM",
+        "maxRangeKm": 110,
+        "speedMach": 4,
+        "guidance": "Active Radar"
+      }
+    },
+    {
+      "weapon": {
+        "name": "R-73E",
+        "type": "WVR_AAM",
+        "maxRangeKm": 30,
+        "speedMach": 2.5,
+        "guidance": "All-Aspect Infrared"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "MULTIROLE_FIGHTER",
+  "aircraftName": "Sukhoi Su-30MKI Flanker-H",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 21.93,
+      "wingspanM": 14.7,
+      "heightM": 6.36
+    },
+    "weights": {
+      "emptyWeightKg": 18400,
+      "maxTakeoffWeightKg": 38800,
+      "payloadCapacityKg": 8000,
+      "internalFuelKg": 9400
+    },
+    "crew": {
+      "minimumCrew": 2,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "NPO Saturn AL-31FP Thrust-Vectoring Turbofans",
+      "engineManufacturer": "Saturn / HAL Koraput Engine Division",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 150,
+      "thrustAfterburnerKn": 245.2
+    },
+    "performance": {
+      "maxSpeedKmh": 2120,
+      "maxSpeedMach": 2,
+      "cruiseSpeedKmh": 1050,
+      "combatRadiusKm": 1500,
+      "ferryRangeKm": 3000,
+      "serviceCeilingM": 17300,
+      "serviceCeilingFt": 56800,
+      "rateOfClimbMs": 300,
+      "gLimitPositive": 9
+    }
+  },
+  "avionics": {
+    "radar": "NIIP N011M Bars PESA (Upgrading to Indigenous DRDO Virupaksha AESA)",
+    "radarType": "PESA",
+    "radarArchitecture": "Passive Electronically Scanned Array / GaN AESA Upgrade",
+    "radarRangeAirKm": 350,
+    "hasAesa": false,
+    "hasIrst": true,
+    "irstModel": "OLS-30 Infrared Search and Track System",
+    "electronicWarfare": "DRDO Tarang RWR, Elta EL/M-8222 Jamming Pod, D-29 Internal EW",
+    "ewScore": 89,
+    "targetingSystem": "Rafael Litening Targeting Pod & OLS-30 Optical Locator",
+    "helmetMountedDisplay": "Thales Topsight / Elbit DASH IV HMD",
+    "hasDatalink": true,
+    "datalinkProtocol": "IAF Tactical Datalink & AFNET Integration",
+    "sensorFusion": true,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 4
+  },
+  "capabilities": {
+    "internalGun": "30mm Gryazev-Shipunov GSh-30-1 Autocannon (150 rounds)",
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": true,
+    "antiRadiationCapable": true,
+    "guidedBombCapable": true,
+    "cruiseMissileCapable": true,
+    "maximumPayloadKg": 8000,
+    "keyWeaponsIntegrated": [
+      "BrahMos-A Supersonic Cruise Missile (Mach 3.0, 450 km)",
+      "Astra Mk1/Mk2 BVRAAM",
+      "R-77 / RVV-AE BVRAAM",
+      "Rudram-1 Anti-Radiation Missile",
+      "Spice 2000 Precision Guided Bomb"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 260,
+    "estimatedQuantity": 260,
+    "quantityYear": 2026,
+    "quantityNotes": "Backbone of IAF fighter fleet with 260+ operational aircraft produced under license by HAL Nashik Division. 84 airframes currently undergoing Super Sukhoi upgrade with Virupaksha AESA radar and indigenous avionics.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-10",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Official DoD/MoD Technical Specs & Flight Manual",
+      "url": "https://www.defense.gov",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "Jane's All the World's Aircraft 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

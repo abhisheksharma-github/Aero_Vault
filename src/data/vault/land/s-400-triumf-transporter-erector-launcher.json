@@ -1,0 +1,33 @@
+{
+  "id": "gv-8",
+  "name": "S-400 Triumf (Transporter Erector Launcher)",
+  "category": "AIR_DEFENSE",
+  "country": "India",
+  "countryCode": "IND",
+  "militaryBranch": "ARMY_AVIATION",
+  "status": "ACTIVE",
+  "activeCount": 5,
+  "reserveCount": 0,
+  "generation": "Long-Range Surface-to-Air Missile System",
+  "mainArmament": "40N6E (400 km) & 48N6DM (250 km) Multi-Layer Interceptors",
+  "enginePowerHp": 500,
+  "topSpeedKmh": 60,
+  "weightTons": 33,
+  "tvrScore": 97,
+  "crew": 3,
+  "description": "Multi-layer strategic air defense system capable of engaging stealth aircraft, cruise missiles, and intermediate ballistic targets up to 400 km.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/5P85TE2_TEL_of_S-400_system_-_ParkPatriot2015part1-39.jpg/1200px-5P85TE2_TEL_of_S-400_system_-_ParkPatriot2015part1-39.jpg",
+  "armorProtection": "Mobile 8x8 All-Terrain Armored Chassis (BAZ-64022)",
+  "sources": [
+    {
+      "name": "Jane's Land Warfare Platforms: Armoured Fighting Vehicles",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Army Technology & MoD Procurement Records",
+      "url": "https://www.army.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

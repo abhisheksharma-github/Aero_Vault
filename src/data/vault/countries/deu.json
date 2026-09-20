@@ -1,0 +1,44 @@
+{
+  "id": "country-deu",
+  "name": "Germany",
+  "countryCode": "DEU",
+  "isoCode": "DE",
+  "flag": "🇩🇪",
+  "region": "Europe / NATO",
+  "description": "Key European NATO cornerstone operating Eurofighter Typhoon Tranche 4 with Captor-E AESA radars, Panavia Tornado ECR electronic combat reconnaissance, and future F-35A dual-capable nuclear strike aircraft.",
+  "totalAircraftEstimate": 620,
+  "modernizationIndex": 86,
+  "defenseBudgetUsd": 55.8,
+  "militaryBranches": [
+    {
+      "name": "German Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "Luftwaffe",
+      "description": "Eurofighter Typhoon, Tornado IDS/ECR, Airbus A400M Atlas, and F-35A on order."
+    },
+    {
+      "name": "German Naval Aviation",
+      "type": "NAVAL_AVIATION",
+      "officialName": "Marineflieger",
+      "description": "Boeing P-8A Poseidon maritime reconnaissance and Sea Lynx Mk88A shipborne ASW."
+    },
+    {
+      "name": "German Army Aviation",
+      "type": "ARMY_AVIATION",
+      "officialName": "Heeresfliegertruppe",
+      "description": "Tiger UHT combat attack helicopters and NH90 TTH tactical transport."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

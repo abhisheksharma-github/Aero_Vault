@@ -1,0 +1,32 @@
+{
+  "id": "country-zaf",
+  "name": "South Africa",
+  "countryCode": "ZAF",
+  "isoCode": "ZA",
+  "flag": "🇿🇦",
+  "region": "Sub-Saharan Africa",
+  "description": "Historic African aerospace pioneer that developed the Rooivalk attack helicopter, operating Saab JAS-39C/D Gripen multirole fighters with Litening targeting pods and BAE Hawk Mk 120 jet trainers.",
+  "totalAircraftEstimate": 220,
+  "modernizationIndex": 71,
+  "defenseBudgetUsd": 3.1,
+  "militaryBranches": [
+    {
+      "name": "South African Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "SAAF",
+      "description": "Saab JAS-39C/D Gripen, BAE Hawk Mk 120 Lead-In Fighter Trainer, Denel Rooivalk CSH-2 attack helicopter, and Oryx medium utility transport."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

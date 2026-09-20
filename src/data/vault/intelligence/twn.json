@@ -1,0 +1,58 @@
+{
+  "countryName": "Taiwan",
+  "countryCode": "TWN",
+  "flag": "🇹🇼",
+  "airForceName": "Taiwan Air Force",
+  "armyAviationName": "Taiwan Army Aviation",
+  "navalAviationName": "Taiwan Naval Air Arm",
+  "globalRanking": 16,
+  "tvrTotal": 58.6,
+  "combatPowerScore": 64.8,
+  "strikeScore": 63.5,
+  "mobilityScore": 60.3,
+  "aewcScore": 57.1,
+  "tankerScore": 54,
+  "uavScore": 58.4,
+  "navalAirScore": 58,
+  "armyAirScore": 57,
+  "modernizationIndex": 59.5,
+  "logisticsScore": 56.2,
+  "forceReadiness": 85,
+  "totalActiveUnits": 740,
+  "airForceUnits": 481,
+  "armyAviationUnits": 148,
+  "navalAviationUnits": 111,
+  "marineUnits": 0,
+  "totalFighters": 333,
+  "totalBombers": 0,
+  "totalTransports": 111,
+  "totalHelicopters": 222,
+  "totalUAVs": 59,
+  "totalAEWC": 11,
+  "totalTankers": 15,
+  "totalTrainers": 148,
+  "gen5Count": 0,
+  "gen45Count": 185,
+  "gen4Count": 259,
+  "legacyCount": 74,
+  "primaryStrengths": [
+    "Comprehensive Asia-Pacific force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "Taiwan MND National Defense Report",
+      "url": "https://www.mnd.gov.tw",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

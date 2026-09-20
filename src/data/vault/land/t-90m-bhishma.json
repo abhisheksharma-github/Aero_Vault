@@ -1,0 +1,33 @@
+{
+  "id": "gv-1",
+  "name": "T-90M Bhishma",
+  "category": "MAIN_BATTLE_TANK",
+  "country": "India",
+  "countryCode": "IND",
+  "militaryBranch": "ARMY_AVIATION",
+  "status": "ACTIVE",
+  "activeCount": 1300,
+  "reserveCount": 350,
+  "generation": "3rd Gen MBT",
+  "mainArmament": "125mm 2A46M-5 Smoothbore Gun (Refleks ATGM capable)",
+  "enginePowerHp": 1000,
+  "topSpeedKmh": 60,
+  "weightTons": 46.5,
+  "tvrScore": 84,
+  "crew": 3,
+  "description": "Main battle tank with third-generation composite armor, Kontakt-5 / Relikt explosive reactive armor, and automated fire control with Catherine-FC thermal sight.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/T-90M_Proryv-3_-_Armiya2021-36.jpg/1200px-T-90M_Proryv-3_-_Armiya2021-36.jpg",
+  "armorProtection": "Relikt ERA + Composite Hull / Turret",
+  "sources": [
+    {
+      "name": "Jane's Land Warfare Platforms: Armoured Fighting Vehicles",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Army Technology & MoD Procurement Records",
+      "url": "https://www.army.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

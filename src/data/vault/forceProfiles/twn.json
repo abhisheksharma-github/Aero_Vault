@@ -1,0 +1,32 @@
+{
+  "country": "Taiwan",
+  "countryCode": "TWN",
+  "flagEmoji": "🇹🇼",
+  "region": "Asia-Pacific",
+  "atlasIndex": 59.8,
+  "airsIndex": 63.5,
+  "seasIndex": 58,
+  "armsIndex": 57,
+  "activeTroops": 169000,
+  "reserveTroops": 1657000,
+  "paramilitary": 11800,
+  "defenseBudgetUsd": 19.1,
+  "totalAircraft": 740,
+  "totalWarships": 115,
+  "totalVehicles": 4000,
+  "nuclearWarheads": 0,
+  "aircraftCarriers": 0,
+  "submarines": 4,
+  "sources": [
+    {
+      "name": "Taiwan MND National Defense Report",
+      "url": "https://www.mnd.gov.tw",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

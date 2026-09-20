@@ -1,0 +1,32 @@
+{
+  "country": "Canada",
+  "countryCode": "CAN",
+  "flagEmoji": "🇨🇦",
+  "region": "North America / NATO",
+  "atlasIndex": 56.9,
+  "airsIndex": 58,
+  "seasIndex": 55,
+  "armsIndex": 56,
+  "activeTroops": 68000,
+  "reserveTroops": 27000,
+  "paramilitary": 4500,
+  "defenseBudgetUsd": 27.2,
+  "totalAircraft": 380,
+  "totalWarships": 60,
+  "totalVehicles": 2200,
+  "nuclearWarheads": 0,
+  "aircraftCarriers": 0,
+  "submarines": 4,
+  "sources": [
+    {
+      "name": "Department of National Defence (Canada)",
+      "url": "https://www.canada.ca/en/department-national-defence.html",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

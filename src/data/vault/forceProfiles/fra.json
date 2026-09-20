@@ -1,0 +1,32 @@
+{
+  "country": "France",
+  "countryCode": "FRA",
+  "flagEmoji": "🇫🇷",
+  "region": "Europe / NATO",
+  "atlasIndex": 73.8,
+  "airsIndex": 73.5,
+  "seasIndex": 74.1,
+  "armsIndex": 69.5,
+  "activeTroops": 200000,
+  "reserveTroops": 41000,
+  "paramilitary": 175000,
+  "defenseBudgetUsd": 56.6,
+  "totalAircraft": 970,
+  "totalWarships": 120,
+  "totalVehicles": 2500,
+  "nuclearWarheads": 290,
+  "aircraftCarriers": 1,
+  "submarines": 10,
+  "sources": [
+    {
+      "name": "Ministère des Armées (France)",
+      "url": "https://www.defense.gouv.fr",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

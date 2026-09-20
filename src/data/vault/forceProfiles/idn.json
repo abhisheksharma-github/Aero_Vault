@@ -1,0 +1,32 @@
+{
+  "country": "Indonesia",
+  "countryCode": "IDN",
+  "flagEmoji": "🇮🇩",
+  "region": "Southeast Asia",
+  "atlasIndex": 57.4,
+  "airsIndex": 55,
+  "seasIndex": 61.5,
+  "armsIndex": 56.5,
+  "activeTroops": 400000,
+  "reserveTroops": 400000,
+  "paramilitary": 280000,
+  "defenseBudgetUsd": 8.8,
+  "totalAircraft": 470,
+  "totalWarships": 280,
+  "totalVehicles": 2800,
+  "nuclearWarheads": 0,
+  "aircraftCarriers": 0,
+  "submarines": 4,
+  "sources": [
+    {
+      "name": "Ministry of Defence (Indonesia)",
+      "url": "https://www.kemhan.go.id",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

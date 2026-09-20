@@ -1,0 +1,32 @@
+{
+  "country": "Israel",
+  "countryCode": "ISR",
+  "flagEmoji": "🇮🇱",
+  "region": "Middle East",
+  "atlasIndex": 65.9,
+  "airsIndex": 75,
+  "seasIndex": 51,
+  "armsIndex": 71.5,
+  "activeTroops": 169500,
+  "reserveTroops": 465000,
+  "paramilitary": 8000,
+  "defenseBudgetUsd": 27.5,
+  "totalAircraft": 610,
+  "totalWarships": 60,
+  "totalVehicles": 7500,
+  "nuclearWarheads": 90,
+  "aircraftCarriers": 0,
+  "submarines": 5,
+  "sources": [
+    {
+      "name": "Israel Ministry of Defense",
+      "url": "https://www.mod.gov.il",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Arms Transfer Database",
+      "url": "https://www.sipri.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

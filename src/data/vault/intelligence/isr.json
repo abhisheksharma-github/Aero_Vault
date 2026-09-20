@@ -1,0 +1,58 @@
+{
+  "countryName": "Israel",
+  "countryCode": "ISR",
+  "flag": "🇮🇱",
+  "airForceName": "Israel Air Force",
+  "armyAviationName": "Israel Army Aviation",
+  "navalAviationName": "Israel Naval Air Arm",
+  "globalRanking": 12,
+  "tvrTotal": 64.6,
+  "combatPowerScore": 76.5,
+  "strikeScore": 75,
+  "mobilityScore": 71.3,
+  "aewcScore": 67.5,
+  "tankerScore": 63.8,
+  "uavScore": 69,
+  "navalAirScore": 51,
+  "armyAirScore": 71.5,
+  "modernizationIndex": 65.8,
+  "logisticsScore": 61.9,
+  "forceReadiness": 85,
+  "totalActiveUnits": 610,
+  "airForceUnits": 397,
+  "armyAviationUnits": 122,
+  "navalAviationUnits": 92,
+  "marineUnits": 0,
+  "totalFighters": 275,
+  "totalBombers": 0,
+  "totalTransports": 92,
+  "totalHelicopters": 183,
+  "totalUAVs": 49,
+  "totalAEWC": 9,
+  "totalTankers": 12,
+  "totalTrainers": 122,
+  "gen5Count": 0,
+  "gen45Count": 153,
+  "gen4Count": 214,
+  "legacyCount": 61,
+  "primaryStrengths": [
+    "Comprehensive Middle East force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "Israel Ministry of Defense",
+      "url": "https://www.mod.gov.il",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Arms Transfer Database",
+      "url": "https://www.sipri.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

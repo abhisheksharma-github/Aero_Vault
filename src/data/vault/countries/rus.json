@@ -1,0 +1,38 @@
+{
+  "id": "country-rus",
+  "name": "Russia",
+  "countryCode": "RUS",
+  "isoCode": "RU",
+  "flag": "🇷🇺",
+  "region": "Eurasia",
+  "description": "Strategic nuclear standoff bomber triad (Tu-160M, Tu-95MS), heavy supermaneuverable Flanker derivatives (Su-35S, Su-30SM2, Su-34M), 5th-generation Su-57 Felon, and advanced long-range hypersonic missiles (R-37M, Kinzhal).",
+  "totalAircraftEstimate": 4100,
+  "modernizationIndex": 76,
+  "defenseBudgetUsd": 86.4,
+  "militaryBranches": [
+    {
+      "name": "Russian Aerospace Forces",
+      "type": "AIR_FORCE",
+      "officialName": "Vozdushno-Kosmicheskiye Sily (VKS)",
+      "description": "Frontline fighter-bombers (Su-57, Su-35S, Su-34M), long-range strategic bombers (Tu-160M), and attack helicopters (Ka-52M, Mi-28NM)."
+    },
+    {
+      "name": "Russian Naval Aviation",
+      "type": "NAVAL_AVIATION",
+      "officialName": "Morskaya Aviatsiya VMF",
+      "description": "Maritime strike (Su-30SM2), carrier aviation (MiG-29K), and anti-submarine warfare (Il-38N Sea Dragon, Ka-27PL)."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

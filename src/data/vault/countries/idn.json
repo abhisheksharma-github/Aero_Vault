@@ -1,0 +1,44 @@
+{
+  "id": "country-idn",
+  "name": "Indonesia",
+  "countryCode": "IDN",
+  "isoCode": "ID",
+  "flag": "🇮🇩",
+  "region": "Southeast Asia / Indo-Pacific",
+  "description": "Archipelagic maritime defender undergoing massive modernization with 42 Dassault Rafale F4 fighters contracted, partner on the KF-21 Boramae program, and operating F-16C/D Block 52ID and Sukhoi Su-27/30 fighters.",
+  "totalAircraftEstimate": 470,
+  "modernizationIndex": 74,
+  "defenseBudgetUsd": 9.3,
+  "militaryBranches": [
+    {
+      "name": "Indonesian Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "Tentara Nasional Indonesia Angkatan Udara (TNI-AU)",
+      "description": "Dassault Rafale F4 (under delivery), Sukhoi Su-30MK2/Su-27SKM, F-16C/D Block 52ID, T-50i Golden Eagle."
+    },
+    {
+      "name": "Indonesian Naval Aviation",
+      "type": "NAVAL_AVIATION",
+      "officialName": "Puspenerbal (TNI-AL)",
+      "description": "CN-235 MPA, NC-212 Aviocar, and AS565 MBe Panther ASW."
+    },
+    {
+      "name": "Indonesian Army Aviation",
+      "type": "ARMY_AVIATION",
+      "officialName": "Puspenerbad (TNI-AD)",
+      "description": "Boeing AH-64E Apache Guardian and Mil Mi-35P Hind."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

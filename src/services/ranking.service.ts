@@ -1,6 +1,5 @@
 import { prisma } from '../db.js';
-import { initialNationIntelligence } from '../data/multiDomainData.js';
-import { aircraftVault } from '../data/normalize.js';
+import { vaultIntelligence, vaultAircraft } from '../data/vaultLoader.js';
 import { AppError } from '../middleware/error.middleware.js';
 
 export interface NationAirpowerAnalysis {
@@ -80,7 +79,7 @@ export class RankingService {
     }
 
     if (!nation) {
-      nation = (initialNationIntelligence as any[]).find(
+      nation = (vaultIntelligence as any[]).find(
         (n) =>
           n.countryName?.toLowerCase() === countryName.trim().toLowerCase() ||
           n.countryCode?.toLowerCase() === countryName.trim().toLowerCase()
@@ -92,7 +91,7 @@ export class RankingService {
     }
 
     if (!aircraft || aircraft.length === 0) {
-      aircraft = aircraftVault.filter(
+      aircraft = vaultAircraft.filter(
         (a) =>
           (a.country?.toLowerCase() === nation.countryName?.toLowerCase() ||
             a.originCountry?.toLowerCase() === nation.countryName?.toLowerCase() ||

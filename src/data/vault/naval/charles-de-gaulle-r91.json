@@ -1,0 +1,36 @@
+{
+  "id": "nv-10",
+  "name": "Charles de Gaulle (R91)",
+  "shipClass": "Charles de Gaulle-class Nuclear Carrier",
+  "vesselType": "AIRCRAFT_CARRIER",
+  "country": "France",
+  "countryCode": "FRA",
+  "militaryBranch": "NAVAL_AVIATION",
+  "status": "ACTIVE",
+  "displacementTons": 42500,
+  "maxSpeedKnots": 27,
+  "commissionedYear": 2001,
+  "crewComplement": 1350,
+  "activeCount": 1,
+  "originCountry": "France (Naval Group)",
+  "pennantNumber": "R91",
+  "radarType": "AESA",
+  "hasAesa": true,
+  "tvrScore": 91,
+  "description": "European nuclear-powered CATOBAR aircraft carrier deploying Rafale-M omnirole fighters and E-2C Hawkeye AEW&C aircraft.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/PLAN_Nanchang_101_20190423.jpg/1200px-PLAN_Nanchang_101_20190423.jpg",
+  "weapons": "Aster 15 SAM (32-cell Sylver A43), Sadral Mistral SAM, 20mm cannons",
+  "propulsion": "2x K15 Pressurized Water Nuclear Reactors",
+  "sources": [
+    {
+      "name": "Jane's Fighting Ships 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Official Naval Registry / Ministry of Defence",
+      "url": "https://www.navy.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

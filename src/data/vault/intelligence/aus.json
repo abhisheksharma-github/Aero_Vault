@@ -1,0 +1,58 @@
+{
+  "countryName": "Australia",
+  "countryCode": "AUS",
+  "flag": "🇦🇺",
+  "airForceName": "Australia Air Force",
+  "armyAviationName": "Australia Army Aviation",
+  "navalAviationName": "Australia Naval Air Arm",
+  "globalRanking": 13,
+  "tvrTotal": 62.8,
+  "combatPowerScore": 66.8,
+  "strikeScore": 65.5,
+  "mobilityScore": 62.2,
+  "aewcScore": 59,
+  "tankerScore": 55.7,
+  "uavScore": 60.3,
+  "navalAirScore": 66,
+  "armyAirScore": 58,
+  "modernizationIndex": 63.2,
+  "logisticsScore": 60.3,
+  "forceReadiness": 85,
+  "totalActiveUnits": 430,
+  "airForceUnits": 280,
+  "armyAviationUnits": 86,
+  "navalAviationUnits": 65,
+  "marineUnits": 0,
+  "totalFighters": 194,
+  "totalBombers": 0,
+  "totalTransports": 65,
+  "totalHelicopters": 129,
+  "totalUAVs": 34,
+  "totalAEWC": 6,
+  "totalTankers": 9,
+  "totalTrainers": 86,
+  "gen5Count": 0,
+  "gen45Count": 108,
+  "gen4Count": 151,
+  "legacyCount": 43,
+  "primaryStrengths": [
+    "Comprehensive Oceania / Indo-Pacific force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "Australian Defence Strategic Review 2024",
+      "url": "https://www.defence.gov.au",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

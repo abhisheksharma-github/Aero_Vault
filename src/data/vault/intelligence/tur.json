@@ -1,0 +1,58 @@
+{
+  "countryName": "Turkey",
+  "countryCode": "TUR",
+  "flag": "🇹🇷",
+  "airForceName": "Turkey Air Force",
+  "armyAviationName": "Turkey Army Aviation",
+  "navalAviationName": "Turkey Naval Air Arm",
+  "globalRanking": 10,
+  "tvrTotal": 66.4,
+  "combatPowerScore": 67.8,
+  "strikeScore": 66.5,
+  "mobilityScore": 63.2,
+  "aewcScore": 59.9,
+  "tankerScore": 56.5,
+  "uavScore": 61.2,
+  "navalAirScore": 68,
+  "armyAirScore": 72,
+  "modernizationIndex": 68.8,
+  "logisticsScore": 63.7,
+  "forceReadiness": 85,
+  "totalActiveUnits": 1060,
+  "airForceUnits": 689,
+  "armyAviationUnits": 212,
+  "navalAviationUnits": 159,
+  "marineUnits": 0,
+  "totalFighters": 477,
+  "totalBombers": 0,
+  "totalTransports": 159,
+  "totalHelicopters": 318,
+  "totalUAVs": 85,
+  "totalAEWC": 16,
+  "totalTankers": 21,
+  "totalTrainers": 212,
+  "gen5Count": 0,
+  "gen45Count": 265,
+  "gen4Count": 371,
+  "legacyCount": 106,
+  "primaryStrengths": [
+    "Comprehensive Middle East / NATO force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "Turkish Ministry of National Defence",
+      "url": "https://www.msb.gov.tr",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

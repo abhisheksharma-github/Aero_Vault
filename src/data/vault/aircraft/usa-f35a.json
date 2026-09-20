@@ -1,0 +1,217 @@
+{
+  "id": "usa-f35a",
+  "aliases": [
+    "usa-f35a",
+    "USA-USAF-F35-A",
+    "usa-usaf-f35-a"
+  ],
+  "name": "Lockheed Martin F-35A Lightning II",
+  "commonName": "F-35A Lightning II",
+  "officialDesignation": "F-35A Conventional Takeoff & Landing (CTOL)",
+  "natoReportingName": null,
+  "family": "F-35 Joint Strike Fighter",
+  "variant": "F-35A Conventional Takeoff & Landing (CTOL)",
+  "block": "Block 4 Standard",
+  "manufacturer": "Lockheed Martin",
+  "manufacturerCountry": "United States",
+  "originCountry": "United States",
+  "country": "United States",
+  "affiliation": "United States Air Force",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "MULTIROLE_FIGHTER",
+  "generation": "GEN_5",
+  "era": "MODERN",
+  "role": "5th-Generation Multi-Role Stealth Strike Fighter",
+  "secondaryRoles": [
+    "Electronic Attack",
+    "Intelligence Surveillance Reconnaissance (ISR)",
+    "SEAD"
+  ],
+  "firstFlightYear": 2006,
+  "introductionYear": 2016,
+  "retirementYear": null,
+  "productionCount": 1000,
+  "fleetCount": 360,
+  "activeCount": 360,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "engineManufacturer": null,
+  "engineModel": "Pratt & Whitney F135-PW-100",
+  "engineCount": 1,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 125,
+  "thrustAfterburnerKn": 191,
+  "topSpeedMach": 1.6,
+  "topSpeedKmh": 1960,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 15240,
+  "rateOfClimbMs": 230,
+  "gLimitPositive": 9,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 1200,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 2800,
+  "emptyWeightKg": 13290,
+  "maxTakeoffWeightKg": 31800,
+  "payloadCapacityKg": 8160,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "AESA",
+  "radarModel": "AN/APG-81 (Upgrading to APG-85 GaN AESA)",
+  "radarRangeAirKm": 220,
+  "hasAesa": true,
+  "hasIrst": true,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 99,
+  "stealthLevel": "VERY_HIGH",
+  "rcsEstimatedM2": 0.001,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": true,
+  "maintenanceHoursPerFlightHour": 15,
+  "costPerFlightHourUsd": 33000,
+  "reliabilityScore": 82,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 99,
+  "sourceCount": 12,
+  "lastVerified": null,
+  "description": "Premier networked 5th-generation strike fighter. Features all-aspect stealth, automated sensor fusion combining AN/APG-81 AESA radar, AN/AAQ-37 Electro-Optical Distributed Aperture System (DAS), and MADL secure datalink.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/F-35A_flight_%28cropped%29.jpg/1200px-F-35A_flight_%28cropped%29.jpg",
+  "tvrScore": 94.2,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "AIM-120D AMRAAM",
+        "type": "BVR_AAM",
+        "maxRangeKm": 160,
+        "speedMach": 4,
+        "guidance": "Active Radar Homing"
+      }
+    },
+    {
+      "weapon": {
+        "name": "GBU-39 Small Diameter Bomb",
+        "type": "PRECISION_GUIDED_BOMB",
+        "maxRangeKm": 110,
+        "speedMach": 0.9,
+        "guidance": "GPS/INS Standoff"
+      }
+    },
+    {
+      "weapon": {
+        "name": "JSM Joint Strike Missile",
+        "type": "ANTI_SHIP_MISSILE",
+        "maxRangeKm": 550,
+        "speedMach": 0.9,
+        "guidance": "IIR / Passive RF"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "MULTIROLE_FIGHTER",
+  "aircraftName": "Lockheed Martin F-35A Lightning II",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 15.67,
+      "wingspanM": 10.7,
+      "heightM": 4.33
+    },
+    "weights": {
+      "emptyWeightKg": 13290,
+      "maxTakeoffWeightKg": 31800,
+      "payloadCapacityKg": 8160,
+      "internalFuelKg": 8278
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 1
+    },
+    "propulsion": {
+      "engineCount": 1,
+      "engineModel": "Pratt & Whitney F135-PW-100 Afterburning Turbofan",
+      "engineManufacturer": "Pratt & Whitney",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 125,
+      "thrustAfterburnerKn": 191
+    },
+    "performance": {
+      "maxSpeedKmh": 1960,
+      "maxSpeedMach": 1.6,
+      "cruiseSpeedKmh": 1050,
+      "combatRadiusKm": 1200,
+      "ferryRangeKm": 2800,
+      "serviceCeilingM": 15240,
+      "serviceCeilingFt": 50000,
+      "rateOfClimbMs": 230,
+      "gLimitPositive": 9
+    }
+  },
+  "avionics": {
+    "radar": "Northrop Grumman AN/APG-81 (Upgrading to AN/APG-85 GaN AESA)",
+    "radarType": "AESA",
+    "radarArchitecture": "Gallium Arsenide (GaAs) / GaN Upgrade",
+    "radarRangeAirKm": 220,
+    "hasAesa": true,
+    "hasIrst": true,
+    "irstModel": "AN/AAQ-40 Electro-Optical Targeting System (EOTS) & AN/AAQ-37 DAS 360-degree IR suite",
+    "electronicWarfare": "BAE Systems AN/ASQ-239 Electronic Warfare / Countermeasures System",
+    "ewScore": 99,
+    "helmetMountedDisplay": "Collins Aerospace Gen III Helmet Mounted Display System (HMDS)",
+    "hasDatalink": true,
+    "datalinkProtocol": "Multifunction Advanced Data Link (MADL) & Link 16",
+    "sensorFusion": true,
+    "stealthLevel": "VERY_HIGH",
+    "rcsEstimatedM2": 0.001
+  },
+  "capabilities": {
+    "internalGun": "25mm GAU-22/A 4-Barrel Rotary Cannon (182 rounds)",
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": true,
+    "antiRadiationCapable": true,
+    "guidedBombCapable": true,
+    "cruiseMissileCapable": true,
+    "maximumPayloadKg": 8160,
+    "keyWeaponsIntegrated": [
+      "AIM-120D AMRAAM BVRAAM",
+      "AIM-9X Sidewinder Block II",
+      "GBU-39 Small Diameter Bomb (SDB I/II)",
+      "AGM-158 JASSM / LRASM Standoff Missiles",
+      "Joint Strike Missile (JSM)"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 360,
+    "estimatedQuantity": 380,
+    "quantityYear": 2026,
+    "quantityNotes": "Over 360 operational F-35A airframes in USAF active service with full-rate production exceeding 140 jets annually across international programs.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-10",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Official DoD/MoD Technical Specs & Flight Manual",
+      "url": "https://www.defense.gov",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "Jane's All the World's Aircraft 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "w-4",
+  "name": "AIM-120D AMRAAM",
+  "type": "BVR_AAM",
+  "manufacturer": "Raytheon Technologies",
+  "originCountry": "United States",
+  "guidance": "Active Radar Homing / Two-Way GPS Datalink",
+  "maxRangeKm": 160,
+  "speedMach": 4,
+  "warheadKg": 20,
+  "description": "Premier US BVR air-to-air missile featuring high-off-boresight capability and extended range envelope.",
+  "sources": [
+    {
+      "name": "Jane's Weapons: Air-Launched",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

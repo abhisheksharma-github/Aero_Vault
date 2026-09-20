@@ -1,0 +1,33 @@
+{
+  "id": "gv-3",
+  "name": "Type 99A MBT",
+  "category": "MAIN_BATTLE_TANK",
+  "country": "China",
+  "countryCode": "CHN",
+  "militaryBranch": "ARMY_AVIATION",
+  "status": "ACTIVE",
+  "activeCount": 1200,
+  "reserveCount": 400,
+  "generation": "3rd Gen MBT",
+  "mainArmament": "125mm ZPT-98 Smoothbore Gun with ATGM",
+  "enginePowerHp": 1500,
+  "topSpeedKmh": 80,
+  "weightTons": 55,
+  "tvrScore": 90,
+  "crew": 3,
+  "description": "China premier main battle tank featuring digital battlefield management system, laser active defense countermeasure suite, and FY-4 composite ERA.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Type_99A_tank_in_2015_Victory_Day_Parade.jpg/1200px-Type_99A_tank_in_2015_Victory_Day_Parade.jpg",
+  "armorProtection": "FY-4 ERA + Laser Warning Active Countermeasure",
+  "sources": [
+    {
+      "name": "Jane's Land Warfare Platforms: Armoured Fighting Vehicles",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Army Technology & MoD Procurement Records",
+      "url": "https://www.army.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "sitrep-4",
+  "eventType": "COMMISSIONED",
+  "domain": "NAVY",
+  "country": "United States",
+  "countryCode": "USA",
+  "countryFlag": "🇺🇸",
+  "entityName": "USS New Jersey (SSN-796)",
+  "location": "Naval Weapons Station Earle, NJ",
+  "summary": "US Navy commissions Virginia-class fast attack submarine USS New Jersey into the fleet.",
+  "sourceUrl": "https://navy.mil",
+  "confidence": "VERIFIED",
+  "eventDate": "2024-09-14T00:00:00.000Z"
+}

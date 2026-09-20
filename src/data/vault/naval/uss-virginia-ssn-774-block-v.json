@@ -1,0 +1,36 @@
+{
+  "id": "nv-8",
+  "name": "USS Virginia (SSN-774 Block V)",
+  "shipClass": "Virginia-class Nuclear Fast Attack Submarine",
+  "vesselType": "ATTACK_SUBMARINE",
+  "country": "United States",
+  "countryCode": "USA",
+  "militaryBranch": "NAVAL_AVIATION",
+  "status": "ACTIVE",
+  "displacementTons": 10200,
+  "maxSpeedKnots": 32,
+  "commissionedYear": 2024,
+  "crewComplement": 135,
+  "activeCount": 22,
+  "originCountry": "United States (General Dynamics Electric Boat)",
+  "pennantNumber": "SSN-802",
+  "radarType": "AESA",
+  "hasAesa": true,
+  "tvrScore": 96.2,
+  "description": "Block V variant with Virginia Payload Module (VPM) expanding Tomahawk cruise missile capacity to 40 strike missiles.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/INS_Arihant.jpg/1200px-INS_Arihant.jpg",
+  "weapons": "4x 533mm Torpedo tubes (Mk 48 ADCAP), 28x VPM + 12x VPT Tomahawk strike missiles",
+  "propulsion": "S9G Nuclear Reactor",
+  "sources": [
+    {
+      "name": "Jane's Fighting Ships 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Official Naval Registry / Ministry of Defence",
+      "url": "https://www.navy.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

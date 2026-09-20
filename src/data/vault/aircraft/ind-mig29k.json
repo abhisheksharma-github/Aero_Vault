@@ -1,0 +1,205 @@
+{
+  "id": "ind-mig29k",
+  "aliases": [
+    "ind-mig29k",
+    "IND-NAVY-MIG29K",
+    "ind-navy-mig29k"
+  ],
+  "name": "Mikoyan MiG-29K Fulcrum-D",
+  "commonName": "MiG-29K",
+  "officialDesignation": "MiG-29K (Item 9.41)",
+  "natoReportingName": null,
+  "family": "MiG-29 Fulcrum Family",
+  "variant": "MiG-29K (Item 9.41)",
+  "block": "Carrier Operational Standard",
+  "manufacturer": "RSK MiG",
+  "manufacturerCountry": "Russia",
+  "originCountry": "Russia",
+  "country": "India",
+  "affiliation": "Indian Naval Air Arm (INAS 300 / 303)",
+  "militaryBranch": "NAVAL_AVIATION",
+  "serviceStatus": "ACTIVE",
+  "category": "FIGHTER",
+  "generation": "GEN_4_5",
+  "era": "MODERN",
+  "role": "Carrier-Borne Multirole Strike Fighter",
+  "secondaryRoles": [
+    "Fleet Air Defense",
+    "Anti-Surface Warfare (ASuW)"
+  ],
+  "firstFlightYear": 1988,
+  "introductionYear": 2010,
+  "retirementYear": null,
+  "productionCount": 45,
+  "fleetCount": 40,
+  "activeCount": 40,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "engineManufacturer": null,
+  "engineModel": "Klimov RD-33MK Smokeless Turbofans",
+  "engineCount": 2,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 106,
+  "thrustAfterburnerKn": 176,
+  "topSpeedMach": 2.2,
+  "topSpeedKmh": 2200,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 17500,
+  "rateOfClimbMs": 330,
+  "gLimitPositive": 8,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 850,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 2000,
+  "emptyWeightKg": 11000,
+  "maxTakeoffWeightKg": 24500,
+  "payloadCapacityKg": 5500,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "MECHANICAL_PULSE_DOPPLER",
+  "radarModel": "Zhuk-ME Pulse-Doppler Phased Array",
+  "radarRangeAirKm": 120,
+  "hasAesa": false,
+  "hasIrst": true,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 78,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": 3.5,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": null,
+  "costPerFlightHourUsd": null,
+  "reliabilityScore": 72,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 90,
+  "sourceCount": 5,
+  "lastVerified": null,
+  "description": "Carrier-borne multirole fighter operating from INS Vikramaditya and INS Vikrant aircraft carriers with ski-jump launch (STOBAR) and arrested landing recovery. Armed with Kh-35 anti-ship missiles and R-77 BVR missiles.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/MiG-29K_takes_off_from_INS_Vikramaditya.jpg/1200px-MiG-29K_takes_off_from_INS_Vikramaditya.jpg",
+  "tvrScore": 77.8,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "Kh-35E Uran",
+        "type": "ANTI_SHIP_MISSILE",
+        "maxRangeKm": 130,
+        "speedMach": 0.8,
+        "guidance": "Active Radar Terminal"
+      }
+    },
+    {
+      "weapon": {
+        "name": "R-77 BVR-AAM",
+        "type": "BVR_AAM",
+        "maxRangeKm": 80,
+        "speedMach": 4,
+        "guidance": "Active Radar Homing"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "FIGHTER",
+  "aircraftName": "Mikoyan MiG-29K Fulcrum-D",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 17.3,
+      "wingspanM": 11.99,
+      "heightM": 4.4
+    },
+    "weights": {
+      "emptyWeightKg": 11000,
+      "maxTakeoffWeightKg": 24500,
+      "payloadCapacityKg": 5500,
+      "internalFuelKg": 5200
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Klimov RD-33MK Smokeless Turbofans",
+      "engineManufacturer": "Klimov",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 106,
+      "thrustAfterburnerKn": 176
+    },
+    "performance": {
+      "maxSpeedKmh": 2200,
+      "maxSpeedMach": 2.2,
+      "cruiseSpeedKmh": 950,
+      "combatRadiusKm": 850,
+      "ferryRangeKm": 2000,
+      "serviceCeilingM": 17500,
+      "serviceCeilingFt": 57400,
+      "rateOfClimbMs": 330,
+      "gLimitPositive": 8
+    }
+  },
+  "avionics": {
+    "radar": "Zhuk-ME Multi-Mode Pulse-Doppler Phased Array Radar",
+    "radarType": "MECHANICAL_PULSE_DOPPLER",
+    "radarRangeAirKm": 120,
+    "hasAesa": false,
+    "hasIrst": true,
+    "irstModel": "OLS-UEM Electro-Optical Infrared Search & Track",
+    "electronicWarfare": "DRDO / Elisra Integrated Self-Protection Jammer and Chaff/Flare",
+    "ewScore": 82,
+    "helmetMountedDisplay": "TopSight-E Helmet Mounted Sight",
+    "hasDatalink": true,
+    "sensorFusion": true,
+    "stealthLevel": "LOW",
+    "rcsEstimatedM2": 3.5
+  },
+  "capabilities": {
+    "internalGun": "30mm GSh-30-1 Autocannon (150 rounds)",
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": true,
+    "antiRadiationCapable": true,
+    "guidedBombCapable": true,
+    "cruiseMissileCapable": false,
+    "maximumPayloadKg": 5500,
+    "keyWeaponsIntegrated": [
+      "Kh-35E Sea-Skimming Anti-Ship Missile",
+      "Kh-31A/P Supersonic Anti-Ship/Anti-Radiation Missile",
+      "R-77 (RVV-AE) Active Radar BVRAAM",
+      "R-73 High-Off-Boresight AAM",
+      "KAB-500Kr Precision Guided Bombs"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 40,
+    "estimatedQuantity": 40,
+    "quantityYear": 2026,
+    "quantityNotes": "Operational carrier strike wing deployed aboard INS Vikrant (IAC-1) and INS Vikramaditya, based at INS Hansa, Goa.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-05",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Official DoD/MoD Technical Specs & Flight Manual",
+      "url": "https://www.defense.gov",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "Jane's All the World's Aircraft 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

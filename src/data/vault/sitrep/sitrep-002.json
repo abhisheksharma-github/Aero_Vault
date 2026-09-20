@@ -1,0 +1,14 @@
+{
+  "id": "sitrep-2",
+  "eventType": "COMMISSIONED",
+  "domain": "NAVY",
+  "country": "India",
+  "countryCode": "IND",
+  "countryFlag": "🇮🇳",
+  "entityName": "INS Arighat",
+  "location": "Visakhapatnam Naval Base",
+  "summary": "Indian Navy commissions second Arihant-class nuclear ballistic missile submarine (SSBN) INS Arighat into service at Visakhapatnam.",
+  "sourceUrl": "https://indiannavy.nic.in",
+  "confidence": "VERIFIED",
+  "eventDate": "2024-08-29T00:00:00.000Z"
+}

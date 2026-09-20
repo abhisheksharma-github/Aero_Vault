@@ -1,0 +1,58 @@
+{
+  "countryName": "United Kingdom",
+  "countryCode": "GBR",
+  "flag": "🇬🇧",
+  "airForceName": "United Kingdom Air Force",
+  "armyAviationName": "United Kingdom Army Aviation",
+  "navalAviationName": "United Kingdom Naval Air Arm",
+  "globalRanking": 5,
+  "tvrTotal": 72.7,
+  "combatPowerScore": 73.4,
+  "strikeScore": 72,
+  "mobilityScore": 68.4,
+  "aewcScore": 64.8,
+  "tankerScore": 61.2,
+  "uavScore": 66.2,
+  "navalAirScore": 75.8,
+  "armyAirScore": 68,
+  "modernizationIndex": 71.9,
+  "logisticsScore": 69.7,
+  "forceReadiness": 85,
+  "totalActiveUnits": 660,
+  "airForceUnits": 429,
+  "armyAviationUnits": 132,
+  "navalAviationUnits": 99,
+  "marineUnits": 0,
+  "totalFighters": 297,
+  "totalBombers": 0,
+  "totalTransports": 99,
+  "totalHelicopters": 198,
+  "totalUAVs": 53,
+  "totalAEWC": 10,
+  "totalTankers": 13,
+  "totalTrainers": 132,
+  "gen5Count": 0,
+  "gen45Count": 165,
+  "gen4Count": 231,
+  "legacyCount": 66,
+  "primaryStrengths": [
+    "Comprehensive Europe / NATO force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "UK MoD Defence in a Competitive Age",
+      "url": "https://www.gov.uk/government/organisations/ministry-of-defence",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

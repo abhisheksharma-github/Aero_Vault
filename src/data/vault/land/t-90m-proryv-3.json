@@ -1,0 +1,33 @@
+{
+  "id": "gv-4",
+  "name": "T-90M Proryv-3",
+  "category": "MAIN_BATTLE_TANK",
+  "country": "Russia",
+  "countryCode": "RUS",
+  "militaryBranch": "ARMY_AVIATION",
+  "status": "ACTIVE",
+  "activeCount": 400,
+  "reserveCount": 150,
+  "generation": "3rd Gen MBT",
+  "mainArmament": "125mm 2A46M-5 Smoothbore Cannon",
+  "enginePowerHp": 1130,
+  "topSpeedKmh": 60,
+  "weightTons": 48,
+  "tvrScore": 86.5,
+  "crew": 3,
+  "description": "Modernized Russian frontline main battle tank with Relikt ERA, Kalina automated fire control system, and Afghanit-derived countermeasures.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/T-14_Armata_Alabino_2015_01.jpg/1200px-T-14_Armata_Alabino_2015_01.jpg",
+  "armorProtection": "Relikt Modular ERA + Slat Cage Shields",
+  "sources": [
+    {
+      "name": "Jane's Land Warfare Platforms: Armoured Fighting Vehicles",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Army Technology & MoD Procurement Records",
+      "url": "https://www.army.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "nv-5",
+  "name": "USS Arleigh Burke (DDG-51 Flight III)",
+  "shipClass": "Arleigh Burke Flight III Destroyer",
+  "vesselType": "GUIDED_MISSILE_DESTROYER",
+  "country": "United States",
+  "countryCode": "USA",
+  "militaryBranch": "NAVAL_AVIATION",
+  "status": "ACTIVE",
+  "displacementTons": 9700,
+  "maxSpeedKnots": 31,
+  "commissionedYear": 2023,
+  "crewComplement": 329,
+  "activeCount": 14,
+  "originCountry": "United States (General Dynamics Bath Iron Works)",
+  "pennantNumber": "DDG-125",
+  "radarType": "AESA",
+  "hasAesa": true,
+  "tvrScore": 94.6,
+  "description": "Aegis Baseline 10 combat system with AN/SPY-6(V)1 Air and Missile Defense Radar (AMDR) delivering ballistic missile defense capabilities.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Admiral_Flota_Sovetskogo_Soyuza_Gorshkov_underway.jpg/1200px-Admiral_Flota_Sovetskogo_Soyuza_Gorshkov_underway.jpg",
+  "weapons": "96-cell Mk 41 VLS (SM-2, SM-6, SM-3 BMD, Tomahawk), Mk 45 5-inch gun",
+  "propulsion": "4x GE LM2500 Gas Turbines",
+  "sources": [
+    {
+      "name": "Jane's Fighting Ships 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Official Naval Registry / Ministry of Defence",
+      "url": "https://www.navy.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

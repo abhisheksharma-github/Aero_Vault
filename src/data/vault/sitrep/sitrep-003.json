@@ -1,0 +1,14 @@
+{
+  "id": "sitrep-3",
+  "eventType": "RETIRED",
+  "domain": "AIR",
+  "country": "United States",
+  "countryCode": "USA",
+  "countryFlag": "🇺🇸",
+  "entityName": "EC-130H Compass Call",
+  "location": "Davis-Monthan AFB, Arizona",
+  "summary": "USAF completes final operational retirement flight of EC-130H Compass Call electronic warfare airframe from Davis-Monthan AFB.",
+  "sourceUrl": "https://af.mil",
+  "confidence": "VERIFIED",
+  "eventDate": "2024-11-10T00:00:00.000Z"
+}

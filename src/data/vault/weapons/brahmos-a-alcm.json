@@ -1,0 +1,19 @@
+{
+  "id": "w-2",
+  "name": "BrahMos-A ALCM",
+  "type": "LAND_ATTACK_CRUISE_MISSILE",
+  "manufacturer": "BrahMos Aerospace (DRDO / NPO Mashinostroyeniya)",
+  "originCountry": "India / Russia",
+  "guidance": "Active Radar / GPS / G3OM Indian Satellite Navigation",
+  "maxRangeKm": 450,
+  "speedMach": 3,
+  "warheadKg": 300,
+  "description": "Air-launched supersonic standoff cruise missile capable of Mach 3 sea-skimming and deep terminal dive.",
+  "sources": [
+    {
+      "name": "Jane's Weapons: Air-Launched",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

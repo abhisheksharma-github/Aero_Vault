@@ -1,0 +1,58 @@
+{
+  "countryName": "France",
+  "countryCode": "FRA",
+  "flag": "🇫🇷",
+  "airForceName": "France Air Force",
+  "armyAviationName": "France Army Aviation",
+  "navalAviationName": "France Naval Air Arm",
+  "globalRanking": 6,
+  "tvrTotal": 72.3,
+  "combatPowerScore": 75,
+  "strikeScore": 73.5,
+  "mobilityScore": 69.8,
+  "aewcScore": 66.2,
+  "tankerScore": 62.5,
+  "uavScore": 67.6,
+  "navalAirScore": 74.1,
+  "armyAirScore": 69.5,
+  "modernizationIndex": 72.4,
+  "logisticsScore": 69.4,
+  "forceReadiness": 85,
+  "totalActiveUnits": 970,
+  "airForceUnits": 631,
+  "armyAviationUnits": 194,
+  "navalAviationUnits": 146,
+  "marineUnits": 0,
+  "totalFighters": 437,
+  "totalBombers": 0,
+  "totalTransports": 146,
+  "totalHelicopters": 291,
+  "totalUAVs": 78,
+  "totalAEWC": 15,
+  "totalTankers": 19,
+  "totalTrainers": 194,
+  "gen5Count": 0,
+  "gen45Count": 243,
+  "gen4Count": 340,
+  "legacyCount": 97,
+  "primaryStrengths": [
+    "Comprehensive Europe / NATO force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "Ministère des Armées (France)",
+      "url": "https://www.defense.gouv.fr",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

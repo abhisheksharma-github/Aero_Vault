@@ -1,0 +1,58 @@
+{
+  "countryName": "United States",
+  "countryCode": "USA",
+  "flag": "🇺🇸",
+  "airForceName": "United States Air Force",
+  "armyAviationName": "United States Army Aviation",
+  "navalAviationName": "United States Naval Air Arm",
+  "globalRanking": 1,
+  "tvrTotal": 96.5,
+  "combatPowerScore": 101.2,
+  "strikeScore": 99.2,
+  "mobilityScore": 94.2,
+  "aewcScore": 89.3,
+  "tankerScore": 84.3,
+  "uavScore": 91.3,
+  "navalAirScore": 97.8,
+  "armyAirScore": 91.4,
+  "modernizationIndex": 96.1,
+  "logisticsScore": 92.6,
+  "forceReadiness": 85,
+  "totalActiveUnits": 13200,
+  "airForceUnits": 8580,
+  "armyAviationUnits": 2640,
+  "navalAviationUnits": 1980,
+  "marineUnits": 0,
+  "totalFighters": 5940,
+  "totalBombers": 140,
+  "totalTransports": 1980,
+  "totalHelicopters": 3960,
+  "totalUAVs": 1056,
+  "totalAEWC": 198,
+  "totalTankers": 264,
+  "totalTrainers": 2640,
+  "gen5Count": 543,
+  "gen45Count": 3300,
+  "gen4Count": 4620,
+  "legacyCount": 1320,
+  "primaryStrengths": [
+    "Comprehensive North America / NATO force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "DoD Budget SAR 2025",
+      "url": "https://www.defense.gov",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

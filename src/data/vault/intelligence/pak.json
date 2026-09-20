@@ -1,0 +1,58 @@
+{
+  "countryName": "Pakistan",
+  "countryCode": "PAK",
+  "flag": "🇵🇰",
+  "airForceName": "Pakistan Air Force",
+  "armyAviationName": "Pakistan Army Aviation",
+  "navalAviationName": "Pakistan Naval Air Arm",
+  "globalRanking": 15,
+  "tvrTotal": 60.3,
+  "combatPowerScore": 63.2,
+  "strikeScore": 62,
+  "mobilityScore": 58.9,
+  "aewcScore": 55.8,
+  "tankerScore": 52.7,
+  "uavScore": 57,
+  "navalAirScore": 54,
+  "armyAirScore": 68.5,
+  "modernizationIndex": 61.5,
+  "logisticsScore": 57.8,
+  "forceReadiness": 85,
+  "totalActiveUnits": 1410,
+  "airForceUnits": 917,
+  "armyAviationUnits": 282,
+  "navalAviationUnits": 212,
+  "marineUnits": 0,
+  "totalFighters": 635,
+  "totalBombers": 0,
+  "totalTransports": 212,
+  "totalHelicopters": 423,
+  "totalUAVs": 113,
+  "totalAEWC": 21,
+  "totalTankers": 28,
+  "totalTrainers": 282,
+  "gen5Count": 0,
+  "gen45Count": 353,
+  "gen4Count": 493,
+  "legacyCount": 141,
+  "primaryStrengths": [
+    "Comprehensive South Asia force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "SIPRI Nuclear Forces Data",
+      "url": "https://www.sipri.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

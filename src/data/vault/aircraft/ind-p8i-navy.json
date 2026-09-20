@@ -1,0 +1,203 @@
+{
+  "id": "ind-p8i-navy",
+  "aliases": [
+    "ind-p8i-navy",
+    "IND-NAVY-P8I-NEPTUNE",
+    "ind-navy-p8i-neptune"
+  ],
+  "name": "Boeing P-8I Neptune",
+  "commonName": "P-8I Neptune",
+  "officialDesignation": "P-8I (India Custom Acoustic / Radar)",
+  "natoReportingName": null,
+  "family": "Boeing 737 Maritime Multi-Mission",
+  "variant": "P-8I (India Custom Acoustic / Radar)",
+  "block": "Batch 1 & 2",
+  "manufacturer": "Boeing",
+  "manufacturerCountry": "United States",
+  "originCountry": "United States",
+  "country": "India",
+  "affiliation": "Indian Naval Air Arm (INAS 312)",
+  "militaryBranch": "NAVAL_AVIATION",
+  "serviceStatus": "ACTIVE",
+  "category": "MARITIME_PATROL",
+  "generation": "GEN_5",
+  "era": "MODERN",
+  "role": "Long-Range Maritime Reconnaissance & Anti-Submarine Warfare (ASW)",
+  "secondaryRoles": [
+    "Anti-Surface Warfare",
+    "Electronic Intelligence (ELINT)"
+  ],
+  "firstFlightYear": 2009,
+  "introductionYear": 2013,
+  "retirementYear": null,
+  "productionCount": 12,
+  "fleetCount": 12,
+  "activeCount": 12,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "engineManufacturer": null,
+  "engineModel": "CFM International CFM56-7B Turbofans",
+  "engineCount": 2,
+  "engineType": "Turbofan",
+  "hasAfterburner": false,
+  "thrustDryKn": null,
+  "thrustAfterburnerKn": null,
+  "topSpeedMach": 0.79,
+  "topSpeedKmh": 907,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 12500,
+  "rateOfClimbMs": 25,
+  "gLimitPositive": null,
+  "gLimitNegative": null,
+  "enduranceHours": null,
+  "combatRangeKm": 2222,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 8300,
+  "emptyWeightKg": null,
+  "maxTakeoffWeightKg": null,
+  "payloadCapacityKg": null,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "AESA",
+  "radarModel": "Raytheon AN/APY-10 Multi-Mission Surface Radar",
+  "radarRangeAirKm": 370,
+  "hasAesa": true,
+  "hasIrst": false,
+  "hasSensorFusion": false,
+  "hasDatalink": true,
+  "hasHmd": false,
+  "electronicWarfare": null,
+  "ewScore": 94,
+  "stealthLevel": "LOW",
+  "rcsEstimatedM2": null,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": false,
+  "maintenanceHoursPerFlightHour": null,
+  "costPerFlightHourUsd": null,
+  "reliabilityScore": 90,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 98,
+  "sourceCount": 7,
+  "lastVerified": null,
+  "description": "Premier maritime patrol and submarine hunting platform. Features aft Magnetic Anomaly Detector (MAD) boom, AN/APY-10 multi-mission radar, sonobuoys, Mk 54 lightweight torpedoes, and AGM-84L Harpoon anti-ship missiles.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Boeing_P-8I_Poseidon_at_Aero_India_2013_%288484196144%29.jpg/1280px-Boeing_P-8I_Poseidon_at_Aero_India_2013_%288484196144%29.jpg",
+  "tvrScore": 89.4,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "AGM-84L Harpoon Block II",
+        "type": "ANTI_SHIP_MISSILE",
+        "maxRangeKm": 124,
+        "speedMach": 0.71,
+        "guidance": "Active Radar Homing"
+      }
+    },
+    {
+      "weapon": {
+        "name": "Mk 54 Mod 0 ASW Torpedo",
+        "type": "TORPEDO",
+        "maxRangeKm": 15,
+        "speedMach": 0.08,
+        "guidance": "Active/Passive Acoustic Homing"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "MARITIME_PATROL",
+  "aircraftName": "Boeing P-8I Neptune",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 39.47,
+      "wingspanM": 37.64,
+      "heightM": 12.83
+    },
+    "weights": {
+      "emptyWeightKg": 62730,
+      "maxTakeoffWeightKg": 85820,
+      "payloadCapacityKg": 10000,
+      "internalFuelKg": 34096
+    },
+    "crew": {
+      "minimumCrew": 9,
+      "maximumCrew": 11
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "CFM International CFM56-7B27A High-Bypass Turbofans",
+      "engineManufacturer": "CFM International",
+      "engineType": "Turbofan",
+      "hasAfterburner": false,
+      "thrustDryKn": 120
+    },
+    "performance": {
+      "maxSpeedKmh": 907,
+      "maxSpeedMach": 0.79,
+      "cruiseSpeedKmh": 815,
+      "combatRadiusKm": 2222,
+      "ferryRangeKm": 8300,
+      "serviceCeilingM": 12500,
+      "serviceCeilingFt": 41000,
+      "rateOfClimbMs": 25,
+      "enduranceHours": 10
+    }
+  },
+  "avionics": {
+    "radar": "Raytheon AN/APY-10 Multi-Mission Maritime Surface Search & Synthetic Aperture Radar",
+    "radarType": "AESA",
+    "radarArchitecture": "Solid-State Surface Tracking and Inverse Synthetic Aperture (ISAR)",
+    "radarRangeAirKm": 370,
+    "hasAesa": true,
+    "hasIrst": true,
+    "irstModel": "L3Harris WESCAM MX-20HD Electro-Optical / Infrared Sensor Turret",
+    "electronicWarfare": "DRDO / Bharat Electronics Advanced Electronic Support Measures (ESM)",
+    "ewScore": 95,
+    "hasDatalink": true,
+    "datalinkProtocol": "COMCASA Link-16, Tactical Datalink, Indian Navy SATCOM",
+    "sensorFusion": true,
+    "stealthLevel": "LOW"
+  },
+  "capabilities": {
+    "internalGun": null,
+    "airToAirCapable": false,
+    "airToGroundCapable": true,
+    "antiShipCapable": true,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": true,
+    "maximumPayloadKg": 10000,
+    "keyWeaponsIntegrated": [
+      "AGM-84L Harpoon Block II Anti-Ship Missile",
+      "Mk 54 Mod 0 Lightweight ASW Torpedo",
+      "Directional Sonobuoys (SSQ-53F / SSQ-62E)",
+      "AN/ASQ-508A Magnetic Anomaly Detector (MAD) Boom"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 12,
+    "estimatedQuantity": 12,
+    "quantityYear": 2026,
+    "quantityNotes": "12 operational aircraft stationed at INS Rajali (Arakkonam) and INS Hansa (Goa) with additional 6 airframes under procurement consideration.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-12",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Official DoD/MoD Technical Specs & Flight Manual",
+      "url": "https://www.defense.gov",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "Jane's All the World's Aircraft 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

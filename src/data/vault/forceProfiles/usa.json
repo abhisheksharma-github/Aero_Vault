@@ -1,0 +1,32 @@
+{
+  "country": "United States",
+  "countryCode": "USA",
+  "flagEmoji": "🇺🇸",
+  "region": "North America / NATO",
+  "atlasIndex": 98.5,
+  "airsIndex": 99.2,
+  "seasIndex": 97.8,
+  "armsIndex": 91.4,
+  "activeTroops": 1328000,
+  "reserveTroops": 799500,
+  "paramilitary": 0,
+  "defenseBudgetUsd": 877,
+  "totalAircraft": 13200,
+  "totalWarships": 480,
+  "totalVehicles": 45000,
+  "nuclearWarheads": 5244,
+  "aircraftCarriers": 11,
+  "submarines": 67,
+  "sources": [
+    {
+      "name": "DoD Budget SAR 2025",
+      "url": "https://www.defense.gov",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

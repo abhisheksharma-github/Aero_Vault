@@ -1,0 +1,14 @@
+{
+  "id": "sitrep-5",
+  "eventType": "DELIVERED",
+  "domain": "LAND",
+  "country": "India",
+  "countryCode": "IND",
+  "countryFlag": "🇮🇳",
+  "entityName": "T-90M Bhishma",
+  "location": "Heavy Vehicles Factory (HVF), Avadi",
+  "summary": "Indian Army receives upgraded T-90M Bhishma main battle tanks with thermal imaging and localized explosive reactive armor (ERA).",
+  "sourceUrl": "https://drdo.gov.in",
+  "confidence": "VERIFIED",
+  "eventDate": "2025-01-20T00:00:00.000Z"
+}

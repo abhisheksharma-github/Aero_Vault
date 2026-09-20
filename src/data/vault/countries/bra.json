@@ -1,0 +1,44 @@
+{
+  "id": "country-bra",
+  "name": "Brazil",
+  "countryCode": "BRA",
+  "isoCode": "BR",
+  "flag": "🇧🇷",
+  "region": "Latin America",
+  "description": "Latin America largest aerospace power, manufacturing the Embraer KC-390 Millennium strategic airlifter, A-29 Super Tucano light attack/trainer, and operating Saab F-39E/F Gripen multirole fighters with Raven ES-05 AESA radar.",
+  "totalAircraftEstimate": 710,
+  "modernizationIndex": 79,
+  "defenseBudgetUsd": 22.9,
+  "militaryBranches": [
+    {
+      "name": "Brazilian Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "Força Aérea Brasileira (FAB)",
+      "description": "Saab F-39E/F Gripen, Embraer KC-390, A-29 Super Tucano, AMX A-1M, and E-99M AEW&C."
+    },
+    {
+      "name": "Brazilian Naval Aviation",
+      "type": "NAVAL_AVIATION",
+      "officialName": "Aviação Naval da Marinha do Brasil",
+      "description": "AF-1 Skyhawk (Upgraded A-4KU) and MH-16 Seahawk (S-70B)."
+    },
+    {
+      "name": "Brazilian Army Aviation",
+      "type": "ARMY_AVIATION",
+      "officialName": "Aviação do Exército Brasileiro (AvEx)",
+      "description": "Eurocopter EC725 Caracal and AS565 Panther."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

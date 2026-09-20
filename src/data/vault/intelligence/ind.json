@@ -1,0 +1,58 @@
+{
+  "countryName": "India",
+  "countryCode": "IND",
+  "flag": "🇮🇳",
+  "airForceName": "India Air Force",
+  "armyAviationName": "India Army Aviation",
+  "navalAviationName": "India Naval Air Arm",
+  "globalRanking": 4,
+  "tvrTotal": 80.1,
+  "combatPowerScore": 81.1,
+  "strikeScore": 79.5,
+  "mobilityScore": 75.5,
+  "aewcScore": 71.5,
+  "tankerScore": 67.6,
+  "uavScore": 73.1,
+  "navalAirScore": 76.2,
+  "armyAirScore": 85,
+  "modernizationIndex": 80.2,
+  "logisticsScore": 76.8,
+  "forceReadiness": 85,
+  "totalActiveUnits": 2210,
+  "airForceUnits": 1437,
+  "armyAviationUnits": 442,
+  "navalAviationUnits": 332,
+  "marineUnits": 0,
+  "totalFighters": 995,
+  "totalBombers": 0,
+  "totalTransports": 332,
+  "totalHelicopters": 663,
+  "totalUAVs": 177,
+  "totalAEWC": 33,
+  "totalTankers": 44,
+  "totalTrainers": 442,
+  "gen5Count": 0,
+  "gen45Count": 553,
+  "gen4Count": 774,
+  "legacyCount": 221,
+  "primaryStrengths": [
+    "Comprehensive South Asia / Indo-Pacific force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "Ministry of Defence (MoD) India Report",
+      "url": "https://mod.gov.in",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

@@ -643,6 +643,29 @@ export default function CountryRankingsView({ onSelectCountry, onNavigateTab }) 
               </button>
             </div>
 
+            {/* Coverage Banner */}
+            {selectedCountryDetail.coverage && (
+              <div className={`p-3.5 rounded-2xl border text-xs font-mono flex items-center justify-between ${
+                selectedCountryDetail.coverage.completeness >= 0.8
+                  ? 'bg-emerald-950/30 border-emerald-500/30 text-emerald-300'
+                  : 'bg-amber-950/30 border-amber-500/30 text-amber-300'
+              }`}>
+                <div>
+                  <div className="font-bold">
+                    {selectedCountryDetail.coverage.completeness >= 1.0
+                      ? 'Full Multi-Domain Coverage (5/5 Domains)'
+                      : `Limited coverage — ${Math.round(selectedCountryDetail.coverage.completeness * 5)} of 5 domains indexed`}
+                  </div>
+                  <div className="text-[11px] text-slate-400 mt-0.5">
+                    Indexed Assets: {selectedCountryDetail.coverage.aircraftCount} Aircraft • {selectedCountryDetail.coverage.warshipCount} Warships • {selectedCountryDetail.coverage.vehicleCount} Vehicles
+                  </div>
+                </div>
+                <span className="text-base font-bold font-display">
+                  {Math.round(selectedCountryDetail.coverage.completeness * 100)}%
+                </span>
+              </div>
+            )}
+
             {/* Metric Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
               <div className="p-3 rounded-2xl bg-slate-950 border border-slate-800">

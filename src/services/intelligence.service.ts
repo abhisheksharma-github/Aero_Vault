@@ -1,8 +1,7 @@
 import { prisma } from '../db.js';
 import { AppError } from '../middleware/error.middleware.js';
 import { IntelligenceQueryParams } from '../schemas/intelligence.schema.js';
-import { initialNationIntelligence } from '../data/multiDomainData.js';
-import { aircraftVault } from '../data/normalize.js';
+import { vaultIntelligence, vaultAircraft } from '../data/vaultLoader.js';
 
 export class IntelligenceService {
   /**
@@ -55,7 +54,7 @@ export class IntelligenceService {
     }
 
     // High-fidelity in-memory fallback
-    const nations = [...(initialNationIntelligence as any[])];
+    const nations = [...(vaultIntelligence as any[])];
     const mult = sortOrder === 'asc' ? 1 : -1;
     nations.sort((a, b) => {
       const valA = a[sortBy] ?? 0;
@@ -67,7 +66,7 @@ export class IntelligenceService {
     const paginatedNations = nations.slice(0, limit);
     const totalNations = nations.length;
     const totalActiveUnits = nations.reduce((sum, n) => sum + (n.totalActiveUnits || 0), 0);
-    const totalAircraft = aircraftVault.filter((a) => a.serviceStatus === 'ACTIVE').length;
+    const totalAircraft = vaultAircraft.filter((a) => a.serviceStatus === 'ACTIVE').length;
     const avgTvr = Number((nations.reduce((sum, n) => sum + (n.tvrTotal || 0), 0) / (totalNations || 1)).toFixed(1));
     const avgMod = Number((nations.reduce((sum, n) => sum + (n.modernizationIndex || 0), 0) / (totalNations || 1)).toFixed(1));
     const avgLog = Number((nations.reduce((sum, n) => sum + (n.logisticsScore || 0), 0) / (totalNations || 1)).toFixed(1));
@@ -124,7 +123,7 @@ export class IntelligenceService {
     }
 
     if (!nation) {
-      nation = (initialNationIntelligence as any[]).find(
+      nation = (vaultIntelligence as any[]).find(
         (n) =>
           n.countryName?.toLowerCase() === decodedCountry.toLowerCase() ||
           n.countryCode?.toLowerCase() === decodedCountry.toLowerCase()
@@ -140,7 +139,7 @@ export class IntelligenceService {
     }
 
     if (!aircraftList || aircraftList.length === 0) {
-      aircraftList = aircraftVault
+      aircraftList = vaultAircraft
         .filter(
           (a) =>
             a.country?.toLowerCase() === nation.countryName?.toLowerCase() ||

@@ -1,0 +1,58 @@
+{
+  "countryName": "Brazil",
+  "countryCode": "BRA",
+  "flag": "🇧🇷",
+  "airForceName": "Brazil Air Force",
+  "armyAviationName": "Brazil Army Aviation",
+  "navalAviationName": "Brazil Naval Air Arm",
+  "globalRanking": 17,
+  "tvrTotal": 57.4,
+  "combatPowerScore": 58.1,
+  "strikeScore": 57,
+  "mobilityScore": 54.1,
+  "aewcScore": 51.3,
+  "tankerScore": 48.4,
+  "uavScore": 52.4,
+  "navalAirScore": 59,
+  "armyAirScore": 60.5,
+  "modernizationIndex": 58.8,
+  "logisticsScore": 55.1,
+  "forceReadiness": 85,
+  "totalActiveUnits": 660,
+  "airForceUnits": 429,
+  "armyAviationUnits": 132,
+  "navalAviationUnits": 99,
+  "marineUnits": 0,
+  "totalFighters": 297,
+  "totalBombers": 0,
+  "totalTransports": 99,
+  "totalHelicopters": 198,
+  "totalUAVs": 53,
+  "totalAEWC": 10,
+  "totalTankers": 13,
+  "totalTrainers": 132,
+  "gen5Count": 0,
+  "gen45Count": 165,
+  "gen4Count": 231,
+  "legacyCount": 66,
+  "primaryStrengths": [
+    "Comprehensive South America force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "Ministério da Defesa (Brazil)",
+      "url": "https://www.gov.br/defesa",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

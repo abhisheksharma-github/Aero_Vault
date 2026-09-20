@@ -1,0 +1,58 @@
+{
+  "countryName": "Indonesia",
+  "countryCode": "IDN",
+  "flag": "🇮🇩",
+  "airForceName": "Indonesia Air Force",
+  "armyAviationName": "Indonesia Army Aviation",
+  "navalAviationName": "Indonesia Naval Air Arm",
+  "globalRanking": 18,
+  "tvrTotal": 56.3,
+  "combatPowerScore": 56.1,
+  "strikeScore": 55,
+  "mobilityScore": 52.3,
+  "aewcScore": 49.5,
+  "tankerScore": 46.8,
+  "uavScore": 50.6,
+  "navalAirScore": 61.5,
+  "armyAirScore": 56.5,
+  "modernizationIndex": 57.7,
+  "logisticsScore": 54,
+  "forceReadiness": 85,
+  "totalActiveUnits": 470,
+  "airForceUnits": 306,
+  "armyAviationUnits": 94,
+  "navalAviationUnits": 71,
+  "marineUnits": 0,
+  "totalFighters": 212,
+  "totalBombers": 0,
+  "totalTransports": 71,
+  "totalHelicopters": 141,
+  "totalUAVs": 38,
+  "totalAEWC": 7,
+  "totalTankers": 9,
+  "totalTrainers": 94,
+  "gen5Count": 0,
+  "gen45Count": 118,
+  "gen4Count": 165,
+  "legacyCount": 47,
+  "primaryStrengths": [
+    "Comprehensive Southeast Asia force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "Ministry of Defence (Indonesia)",
+      "url": "https://www.kemhan.go.id",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

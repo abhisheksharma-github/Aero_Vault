@@ -1,0 +1,50 @@
+{
+  "id": "country-usa",
+  "name": "United States",
+  "countryCode": "USA",
+  "isoCode": "US",
+  "flag": "🇺🇸",
+  "region": "North America",
+  "description": "Global benchmark for 5th-generation stealth combat airpower, strategic heavy stealth bomber reach (B-21 Raider, B-2A), global carrier strike group naval aviation, and massive tanker/AEW&C force multiplier fleets.",
+  "totalAircraftEstimate": 13200,
+  "modernizationIndex": 94.2,
+  "defenseBudgetUsd": 877,
+  "militaryBranches": [
+    {
+      "name": "United States Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "USAF",
+      "description": "Stealth air dominance (F-22A, F-35A, F-15EX), strategic standoff bombers (B-21, B-2A, B-52H), and worldwide aerial refueling (KC-46A)."
+    },
+    {
+      "name": "United States Navy",
+      "type": "NAVAL_AVIATION",
+      "officialName": "Naval Air Forces (NAVAIR)",
+      "description": "11 nuclear-powered supercarrier air wings operating F-35C stealth fighters, F/A-18F Super Hornets, EA-18G Growlers, and E-2D Hawkeyes."
+    },
+    {
+      "name": "United States Marine Corps",
+      "type": "MARINE_AVIATION",
+      "officialName": "USMC Aviation",
+      "description": "Amphibious assault aviation operating F-35B STOVL stealth fighters, MV-22B Osprey tiltrotors, and AH-1Z Viper attack helicopters."
+    },
+    {
+      "name": "United States Army Aviation",
+      "type": "ARMY_AVIATION",
+      "officialName": "US Army Aviation Branch",
+      "description": "Heavy battlefield attack helicopters (AH-64E Apache Guardian), tactical assault lift (UH-60M Black Hawk, CH-47F Chinook), and armed UAVs."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

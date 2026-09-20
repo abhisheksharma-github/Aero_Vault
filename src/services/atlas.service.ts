@@ -1,9 +1,9 @@
 import { prisma } from '../db.js';
 import {
-  initialCountryForceProfiles,
-  initialNavalVessels,
-  initialGroundVehicles,
-} from '../data/multiDomainData.js';
+  vaultForceProfiles,
+  vaultNaval,
+  vaultLand,
+} from '../data/vaultLoader.js';
 
 export class AtlasEngineService {
   /**
@@ -37,7 +37,7 @@ export class AtlasEngineService {
       // Fallback
     }
 
-    const matched = (initialCountryForceProfiles as any[]).find(
+    const matched = (vaultForceProfiles as any[]).find(
       (c) => c.country?.toLowerCase() === countryName.toLowerCase()
     );
     return matched ? matched.airsIndex : 75.0;
@@ -75,7 +75,7 @@ export class AtlasEngineService {
       // Fallback
     }
 
-    const matched = (initialCountryForceProfiles as any[]).find(
+    const matched = (vaultForceProfiles as any[]).find(
       (c) => c.country?.toLowerCase() === countryName.toLowerCase()
     );
     return matched ? matched.seasIndex : 70.0;
@@ -113,7 +113,7 @@ export class AtlasEngineService {
       // Fallback
     }
 
-    const matched = (initialCountryForceProfiles as any[]).find(
+    const matched = (vaultForceProfiles as any[]).find(
       (c) => c.country?.toLowerCase() === countryName.toLowerCase()
     );
     return matched ? matched.armsIndex : 70.0;
@@ -216,7 +216,7 @@ export class AtlasEngineService {
       // Offline fallback
     }
 
-    return { synced: initialCountryForceProfiles.length };
+    return { synced: vaultForceProfiles.length };
   }
 }
 

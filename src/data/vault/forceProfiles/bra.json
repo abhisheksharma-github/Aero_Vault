@@ -1,0 +1,32 @@
+{
+  "country": "Brazil",
+  "countryCode": "BRA",
+  "flagEmoji": "🇧🇷",
+  "region": "South America",
+  "atlasIndex": 58.6,
+  "airsIndex": 57,
+  "seasIndex": 59,
+  "armsIndex": 60.5,
+  "activeTroops": 360000,
+  "reserveTroops": 1340000,
+  "paramilitary": 395000,
+  "defenseBudgetUsd": 22.9,
+  "totalAircraft": 660,
+  "totalWarships": 110,
+  "totalVehicles": 3500,
+  "nuclearWarheads": 0,
+  "aircraftCarriers": 0,
+  "submarines": 6,
+  "sources": [
+    {
+      "name": "Ministério da Defesa (Brazil)",
+      "url": "https://www.gov.br/defesa",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

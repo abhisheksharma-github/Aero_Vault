@@ -1,0 +1,36 @@
+{
+  "id": "nv-4",
+  "name": "INS Surat (D69)",
+  "shipClass": "Visakhapatnam-class Guided Missile Destroyer (Project 15B)",
+  "vesselType": "GUIDED_MISSILE_DESTROYER",
+  "country": "India",
+  "countryCode": "IND",
+  "militaryBranch": "NAVAL_AVIATION",
+  "status": "ACTIVE",
+  "displacementTons": 7400,
+  "maxSpeedKnots": 30,
+  "commissionedYear": 2024,
+  "crewComplement": 312,
+  "activeCount": 1,
+  "originCountry": "India (Mazagon Dock Shipbuilders)",
+  "pennantNumber": "D69",
+  "radarType": "AESA",
+  "hasAesa": true,
+  "tvrScore": 89.2,
+  "description": "Next-generation stealth guided-missile destroyer armed with BrahMos supersonic cruise missiles and Barak-8 long-range surface-to-air missiles.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Chinese_aircraft_carrier_Fujian.jpg/1200px-Chinese_aircraft_carrier_Fujian.jpg",
+  "weapons": "16x BrahMos VLS, 32x Barak-8 ER SAM, 76mm Super Rapid Gun",
+  "propulsion": "COGAG 2x Zorya M36N Gas Turbines",
+  "sources": [
+    {
+      "name": "Jane's Fighting Ships 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Official Naval Registry / Ministry of Defence",
+      "url": "https://www.navy.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

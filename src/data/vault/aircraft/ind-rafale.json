@@ -1,0 +1,229 @@
+{
+  "id": "ind-rafale",
+  "aliases": [
+    "ind-rafale",
+    "IND-IAF-RAFALE-EH",
+    "ind-iaf-rafale-eh",
+    "FRA-AAE-RAFALE-C",
+    "fra-aae-rafale-c"
+  ],
+  "name": "Dassault Rafale EH/DH",
+  "commonName": "Rafale",
+  "officialDesignation": "Rafale F3-R (India Specific Enhancements)",
+  "natoReportingName": null,
+  "family": "Dassault Rafale",
+  "variant": "Rafale F3-R (India Specific Enhancements)",
+  "block": "F3-R Standard",
+  "manufacturer": "Dassault Aviation",
+  "manufacturerCountry": "France",
+  "originCountry": "France",
+  "country": "India",
+  "affiliation": "Indian Air Force",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "MULTIROLE_FIGHTER",
+  "generation": "GEN_5",
+  "era": "MODERN",
+  "role": "Omnirole Multirole Combat Fighter",
+  "secondaryRoles": [
+    "Deep Strike",
+    "Nuclear Deterrence",
+    "Reconnaissance"
+  ],
+  "firstFlightYear": 1986,
+  "introductionYear": 2020,
+  "retirementYear": null,
+  "productionCount": 36,
+  "fleetCount": 36,
+  "activeCount": 36,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "engineManufacturer": null,
+  "engineModel": "Snecma M88-4E Turbofans",
+  "engineCount": 2,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 100,
+  "thrustAfterburnerKn": 150,
+  "topSpeedMach": 1.8,
+  "topSpeedKmh": 1912,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 15835,
+  "rateOfClimbMs": 305,
+  "gLimitPositive": 9,
+  "gLimitNegative": -3.2,
+  "enduranceHours": null,
+  "combatRangeKm": 1850,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 3700,
+  "emptyWeightKg": 10300,
+  "maxTakeoffWeightKg": 24500,
+  "payloadCapacityKg": 9500,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "AESA",
+  "radarModel": "Thales RBE2-AA Active Electronically Scanned Array",
+  "radarRangeAirKm": 180,
+  "hasAesa": true,
+  "hasIrst": true,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 96,
+  "stealthLevel": "REDUCED",
+  "rcsEstimatedM2": 0.75,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": true,
+  "maintenanceHoursPerFlightHour": 10,
+  "costPerFlightHourUsd": 16500,
+  "reliabilityScore": 88,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 98,
+  "sourceCount": 8,
+  "lastVerified": null,
+  "description": "Frontline omnirole fighter platform equipped with SPECTRA internal electronic warfare suite, Meteor ramjet-powered BVR missiles, SCALP standoff cruise missiles, and HAMMER precision munitions.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rafale_-_RIAT_2018_%2843577785532%29.jpg/1200px-Rafale_-_RIAT_2018_%2843577785532%29.jpg",
+  "tvrScore": 91.2,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "Meteor BVRAAM",
+        "type": "BVR_AAM",
+        "maxRangeKm": 200,
+        "speedMach": 4,
+        "guidance": "Active Radar / Ramjet"
+      }
+    },
+    {
+      "weapon": {
+        "name": "SCALP EG",
+        "type": "LAND_ATTACK_CRUISE_MISSILE",
+        "maxRangeKm": 560,
+        "speedMach": 0.8,
+        "guidance": "GPS/INS/IIR Terminal"
+      }
+    },
+    {
+      "weapon": {
+        "name": "MICA EM/IR",
+        "type": "WVR_AAM",
+        "maxRangeKm": 80,
+        "speedMach": 3,
+        "guidance": "Dual Active Radar / IR"
+      }
+    },
+    {
+      "weapon": {
+        "name": "HAMMER AASM",
+        "type": "PRECISION_GUIDED_BOMB",
+        "maxRangeKm": 70,
+        "speedMach": 1,
+        "guidance": "GPS/INS/Laser"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "MULTIROLE_FIGHTER",
+  "aircraftName": "Dassault Rafale EH/DH",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 15.27,
+      "wingspanM": 10.9,
+      "heightM": 5.34
+    },
+    "weights": {
+      "emptyWeightKg": 9850,
+      "maxTakeoffWeightKg": 24500,
+      "payloadCapacityKg": 9500,
+      "internalFuelKg": 4700
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 1
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Snecma M88-4E Turbofans",
+      "engineManufacturer": "Safran Aircraft Engines",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 100,
+      "thrustAfterburnerKn": 150
+    },
+    "performance": {
+      "maxSpeedKmh": 2223,
+      "maxSpeedMach": 1.8,
+      "cruiseSpeedKmh": 1000,
+      "combatRadiusKm": 1850,
+      "ferryRangeKm": 3700,
+      "serviceCeilingM": 15835,
+      "serviceCeilingFt": 52000,
+      "rateOfClimbMs": 305,
+      "gLimitPositive": 9
+    }
+  },
+  "avionics": {
+    "radar": "Thales RBE2-AA Active Electronically Scanned Array (AESA)",
+    "radarType": "AESA",
+    "radarArchitecture": "Gallium Arsenide (GaAs) / GaN Hybrid",
+    "radarRangeAirKm": 200,
+    "hasAesa": true,
+    "hasIrst": true,
+    "irstModel": "Thales Optronique Sector Frontal (FSO) with dual IR/Laser channel",
+    "electronicWarfare": "SPECTRA Integrated Electronic Warfare Suite with 3D multi-spectral jamming and radar warning",
+    "ewScore": 97,
+    "targetingSystem": "Thales TALIOS Advanced Targeting Pod & Contact 21 SDR",
+    "helmetMountedDisplay": "Scorpion Helmet Mounted Cueing System",
+    "hasDatalink": true,
+    "datalinkProtocol": "Link 16 & Contact Tactical High-Data-Rate SDR",
+    "sensorFusion": true,
+    "stealthLevel": "REDUCED",
+    "rcsEstimatedM2": 0.1
+  },
+  "capabilities": {
+    "internalGun": "30mm GIAT 30/M791 Auto-cannon (125 rounds)",
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": true,
+    "antiRadiationCapable": true,
+    "guidedBombCapable": true,
+    "cruiseMissileCapable": true,
+    "maximumPayloadKg": 9500,
+    "keyWeaponsIntegrated": [
+      "MBDA Meteor BVRAAM",
+      "ASMP-A Nuclear Standoff Missile",
+      "SCALP-EG Standoff Cruise Missile",
+      "AASM HAMMER Precision Standoff Bomb",
+      "MICA IR/EM AAM"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 102,
+    "estimatedQuantity": 102,
+    "quantityYear": 2026,
+    "quantityNotes": "102 Rafale B/C fighters in active French Air & Space Force service undergoing F4.1 standard upgrades and integration with Syracuse IV satellite comms.",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-14",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Official DoD/MoD Technical Specs & Flight Manual",
+      "url": "https://www.defense.gov",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "Jane's All the World's Aircraft 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

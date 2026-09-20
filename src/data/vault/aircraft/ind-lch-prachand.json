@@ -1,0 +1,201 @@
+{
+  "id": "ind-lch-prachand",
+  "aliases": [
+    "ind-lch-prachand",
+    "IND-ARMY-LCH-PRACHAND",
+    "ind-army-lch-prachand"
+  ],
+  "name": "HAL LCH Prachand",
+  "commonName": "Prachand",
+  "officialDesignation": "LCH Series Production",
+  "natoReportingName": null,
+  "family": "Light Combat Helicopter",
+  "variant": "LCH Series Production",
+  "block": "Initial Operational Clearance (IOC)",
+  "manufacturer": "Hindustan Aeronautics Limited (HAL)",
+  "manufacturerCountry": "India",
+  "originCountry": "India",
+  "country": "India",
+  "affiliation": "Indian Army Aviation Corps",
+  "militaryBranch": "ARMY_AVIATION",
+  "serviceStatus": "ACTIVE",
+  "category": "ATTACK_HELICOPTER",
+  "generation": "GEN_5",
+  "era": "MODERN",
+  "role": "High-Altitude Attack Helicopter",
+  "secondaryRoles": [
+    "Anti-Tank",
+    "Counter-UAV",
+    "Close Combat Attack"
+  ],
+  "firstFlightYear": 2010,
+  "introductionYear": 2022,
+  "retirementYear": null,
+  "productionCount": 15,
+  "fleetCount": 15,
+  "activeCount": 15,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "engineManufacturer": null,
+  "engineModel": "HAL/Turbomeca Shakti Turboshafts",
+  "engineCount": 2,
+  "engineType": "Turboshaft",
+  "hasAfterburner": false,
+  "thrustDryKn": null,
+  "thrustAfterburnerKn": null,
+  "topSpeedMach": null,
+  "topSpeedKmh": 268,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 6500,
+  "rateOfClimbMs": 12,
+  "gLimitPositive": null,
+  "gLimitNegative": null,
+  "enduranceHours": null,
+  "combatRangeKm": 550,
+  "combatRadiusKm": null,
+  "ferryRangeKm": null,
+  "emptyWeightKg": null,
+  "maxTakeoffWeightKg": null,
+  "payloadCapacityKg": 1750,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "NONE",
+  "radarModel": null,
+  "radarRangeAirKm": null,
+  "hasAesa": false,
+  "hasIrst": true,
+  "hasSensorFusion": false,
+  "hasDatalink": false,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 84,
+  "stealthLevel": "REDUCED",
+  "rcsEstimatedM2": null,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": true,
+  "maintenanceHoursPerFlightHour": null,
+  "costPerFlightHourUsd": null,
+  "reliabilityScore": 82,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 92,
+  "sourceCount": 4,
+  "lastVerified": null,
+  "description": "The world’s only dedicated attack helicopter designed specifically for sustained combat operations above 5,000 meters in the Himalayas (Siachen / Ladakh sectors). Equipped with 20mm nose turret, Helina anti-tank missiles, and Mistral AAMs.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/HAL_Light_Combat_Helicopter_at_Aero_India_2017.jpg/1280px-HAL_Light_Combat_Helicopter_at_Aero_India_2017.jpg",
+  "tvrScore": 78.5,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "Helina / Dhruvastra ATGM",
+        "type": "ANTI_TANK_MISSILE",
+        "maxRangeKm": 8,
+        "speedMach": 0.8,
+        "guidance": "IIR Top Attack"
+      }
+    },
+    {
+      "weapon": {
+        "name": "Mistral 2 ATAM",
+        "type": "WVR_AAM",
+        "maxRangeKm": 6.5,
+        "speedMach": 2.5,
+        "guidance": "Infrared Homing"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "ATTACK_HELICOPTER",
+  "aircraftName": "HAL LCH Prachand",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 15.8,
+      "wingspanM": 4.6,
+      "heightM": 4.7
+    },
+    "weights": {
+      "emptyWeightKg": 2250,
+      "maxTakeoffWeightKg": 5800,
+      "payloadCapacityKg": 1750,
+      "internalFuelKg": 1300
+    },
+    "crew": {
+      "minimumCrew": 2,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "HAL / Turbomeca Shakti-1H1 (Ardiden 1H1) Turboshafts",
+      "engineManufacturer": "HAL Engine Division / Safran Helicopter Engines",
+      "engineType": "Turboshaft",
+      "hasAfterburner": false,
+      "thrustDryKn": null
+    },
+    "performance": {
+      "maxSpeedKmh": 268,
+      "maxSpeedMach": 0.22,
+      "cruiseSpeedKmh": 240,
+      "combatRadiusKm": 350,
+      "ferryRangeKm": 700,
+      "serviceCeilingM": 6500,
+      "serviceCeilingFt": 21300,
+      "rateOfClimbMs": 12
+    }
+  },
+  "avionics": {
+    "radar": null,
+    "radarType": "NONE",
+    "hasAesa": false,
+    "hasIrst": true,
+    "irstModel": "Elbit CoMPASS (Compact Multi-Purpose Advanced Stabilized System) Electro-Optical Turret",
+    "electronicWarfare": "DRDO Integrated Helicopter EW Suite with Radar/Laser Warning Receiver (RWR/LWR) and Missile Approach Warning (MAWS)",
+    "ewScore": 86,
+    "helmetMountedDisplay": "Elbit Systems Integrated Helmet and Display Sighting System (I-HMDSS)",
+    "hasDatalink": true,
+    "sensorFusion": true,
+    "stealthLevel": "REDUCED",
+    "rcsEstimatedM2": 0.8
+  },
+  "capabilities": {
+    "internalGun": "20mm Nexter THL-20 Turret Gun (800 rounds/min)",
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": false,
+    "cruiseMissileCapable": false,
+    "maximumPayloadKg": 1750,
+    "keyWeaponsIntegrated": [
+      "Helina / Dhruvastra Anti-Tank Guided Missiles (ATGM)",
+      "Mistral-2 Air-to-Air Missiles",
+      "70mm FZ231 Laser-Guided / Unguided Rocket Pods"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 15,
+    "estimatedQuantity": 20,
+    "quantityYear": 2026,
+    "quantityNotes": "15 LSP helicopters inducted across Army Aviation and IAF, with procurement clearance for 156 additional series production helicopters (90 for Army, 66 for IAF).",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-14",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Official DoD/MoD Technical Specs & Flight Manual",
+      "url": "https://www.defense.gov",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "Jane's All the World's Aircraft 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

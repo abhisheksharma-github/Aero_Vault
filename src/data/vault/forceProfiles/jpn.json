@@ -1,0 +1,32 @@
+{
+  "country": "Japan",
+  "countryCode": "JPN",
+  "flagEmoji": "🇯🇵",
+  "region": "Asia-Pacific",
+  "atlasIndex": 72.5,
+  "airsIndex": 74,
+  "seasIndex": 76.5,
+  "armsIndex": 64,
+  "activeTroops": 247000,
+  "reserveTroops": 56000,
+  "paramilitary": 14000,
+  "defenseBudgetUsd": 55,
+  "totalAircraft": 1450,
+  "totalWarships": 155,
+  "totalVehicles": 3000,
+  "nuclearWarheads": 0,
+  "aircraftCarriers": 2,
+  "submarines": 22,
+  "sources": [
+    {
+      "name": "Japan Ministry of Defense Whitepaper 2025",
+      "url": "https://www.mod.go.jp/en/",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

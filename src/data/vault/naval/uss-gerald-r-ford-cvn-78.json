@@ -1,0 +1,36 @@
+{
+  "id": "nv-2",
+  "name": "USS Gerald R. Ford (CVN-78)",
+  "shipClass": "Gerald R. Ford-class Supercarrier",
+  "vesselType": "AIRCRAFT_CARRIER",
+  "country": "United States",
+  "countryCode": "USA",
+  "militaryBranch": "NAVAL_AVIATION",
+  "status": "ACTIVE",
+  "displacementTons": 100000,
+  "maxSpeedKnots": 30,
+  "commissionedYear": 2017,
+  "crewComplement": 4539,
+  "activeCount": 1,
+  "originCountry": "United States (Huntington Ingalls)",
+  "pennantNumber": "CVN-78",
+  "radarType": "AESA",
+  "hasAesa": true,
+  "tvrScore": 98.4,
+  "description": "Premier nuclear-powered supercarrier equipped with Electromagnetic Aircraft Launch System (EMALS), AAG arresting gear, and Dual Band Radar.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/USS_Gerald_R._Ford_%28CVN-78%29_underway_in_the_Atlantic_Ocean_on_8_April_2017_%28170408-N-WJ386-067%29.jpg/1200px-USS_Gerald_R._Ford_%28CVN-78%29_underway_in_the_Atlantic_Ocean_on_8_April_2017_%28170408-N-WJ386-067%29.jpg",
+  "weapons": "RIM-162 ESSM, RIM-116 RAM, Phalanx CIWS",
+  "propulsion": "2x A1B Nuclear Reactors",
+  "sources": [
+    {
+      "name": "Jane's Fighting Ships 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Official Naval Registry / Ministry of Defence",
+      "url": "https://www.navy.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

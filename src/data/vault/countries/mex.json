@@ -1,0 +1,38 @@
+{
+  "id": "country-mex",
+  "name": "Mexico",
+  "countryCode": "MEX",
+  "isoCode": "MX",
+  "flag": "🇲🇽",
+  "region": "North America / Latin America",
+  "description": "Focused on sovereign airspace sovereignty, counter-narcotics, and disaster relief, operating Northrop F-5E/F Tiger II interceptors, T-6C+ Texan II light attack, and heavy rotorcraft fleets.",
+  "totalAircraftEstimate": 470,
+  "modernizationIndex": 72,
+  "defenseBudgetUsd": 8.5,
+  "militaryBranches": [
+    {
+      "name": "Mexican Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "Fuerza Aérea Mexicana (FAM)",
+      "description": "Northrop F-5E/F Tiger II, Beechcraft T-6C+ Texan II, C-295M, C-130J, and UH-60M Black Hawk."
+    },
+    {
+      "name": "Mexican Naval Aviation",
+      "type": "NAVAL_AVIATION",
+      "officialName": "Aviación Naval Mexicana (SEMAR)",
+      "description": "CN-235-300 Persuader maritime patrol, Panther AS565, and Mi-17V-5."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

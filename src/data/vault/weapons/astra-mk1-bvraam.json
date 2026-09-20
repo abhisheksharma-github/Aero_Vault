@@ -1,0 +1,19 @@
+{
+  "id": "w-3",
+  "name": "Astra Mk1 BVRAAM",
+  "type": "BVR_AAM",
+  "manufacturer": "Bharat Dynamics Limited (DRDO)",
+  "originCountry": "India",
+  "guidance": "Active Radar Homing / Mid-Course Datalink",
+  "maxRangeKm": 110,
+  "speedMach": 4.5,
+  "warheadKg": 15,
+  "description": "Indigenous all-weather beyond-visual-range air-to-air missile with smokeless solid propellant.",
+  "sources": [
+    {
+      "name": "Jane's Weapons: Air-Launched",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

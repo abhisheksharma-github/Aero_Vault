@@ -1,0 +1,36 @@
+{
+  "id": "nv-1",
+  "name": "INS Vikrant (IAC-1)",
+  "shipClass": "Vikrant-class Aircraft Carrier",
+  "vesselType": "AIRCRAFT_CARRIER",
+  "country": "India",
+  "countryCode": "IND",
+  "militaryBranch": "NAVAL_AVIATION",
+  "status": "ACTIVE",
+  "displacementTons": 45000,
+  "maxSpeedKnots": 28,
+  "commissionedYear": 2022,
+  "crewComplement": 1645,
+  "activeCount": 1,
+  "originCountry": "India (Cochin Shipyard)",
+  "pennantNumber": "R11",
+  "radarType": "AESA",
+  "hasAesa": true,
+  "tvrScore": 88.5,
+  "description": "Indigenous aircraft carrier operating STOBAR ski-jump ski configurations with MiG-29K, Rafale-M, and MH-60R Seahawk air wings.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/INS_Vikrant_underway_during_sea_trials.jpg/1200px-INS_Vikrant_underway_during_sea_trials.jpg",
+  "weapons": "Barak-8 LRSAM, AK-630 CIWS, Otobreda 76mm Gun",
+  "propulsion": "4x GE LM2500+ Gas Turbines (88 MW)",
+  "sources": [
+    {
+      "name": "Jane's Fighting Ships 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Official Naval Registry / Ministry of Defence",
+      "url": "https://www.navy.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "w-7",
+  "name": "Rudram-1 NGARM",
+  "type": "ANTI_RADIATION_MISSILE",
+  "manufacturer": "DRDO",
+  "originCountry": "India",
+  "guidance": "Passive Radar Homing / Millimetric Wave Active Terminal",
+  "maxRangeKm": 140,
+  "speedMach": 2,
+  "warheadKg": 55,
+  "description": "Next-generation anti-radiation missile designed to neutralize hostile air defense radars across multiple frequency bands.",
+  "sources": [
+    {
+      "name": "Jane's Weapons: Air-Launched",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

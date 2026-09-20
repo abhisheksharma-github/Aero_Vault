@@ -1,0 +1,44 @@
+{
+  "id": "country-kor",
+  "name": "South Korea",
+  "countryCode": "KOR",
+  "isoCode": "KR",
+  "flag": "🇰🇷",
+  "region": "East Asia",
+  "description": "Dynamic aerospace manufacturer developing the KF-21 Boramae 4.5-gen fighter, operating F-35A stealth fighters, F-15K Slam Eagles, FA-50 light combat jets, and advanced indigenous air defense.",
+  "totalAircraftEstimate": 1580,
+  "modernizationIndex": 91,
+  "defenseBudgetUsd": 47.9,
+  "militaryBranches": [
+    {
+      "name": "Republic of Korea Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "ROKAF",
+      "description": "F-35A Lightning II, KAI KF-21 Boramae, F-15K Slam Eagle, KF-16V, FA-50, and E-737 Peace Eye."
+    },
+    {
+      "name": "Republic of Korea Navy Air Wing",
+      "type": "NAVAL_AVIATION",
+      "officialName": "ROKN Aviation Command",
+      "description": "Boeing P-8A Poseidon ASW, P-3C/CK Orion, and AW159 Wildcat maritime helicopters."
+    },
+    {
+      "name": "Republic of Korea Army Aviation",
+      "type": "ARMY_AVIATION",
+      "officialName": "ROK Army Aviation Command",
+      "description": "Boeing AH-64E Apache Guardian and KAI KUH-1 Surion utility helicopters."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

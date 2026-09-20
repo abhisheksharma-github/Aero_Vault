@@ -1,0 +1,44 @@
+{
+  "id": "country-tur",
+  "name": "Türkiye",
+  "countryCode": "TUR",
+  "isoCode": "TR",
+  "flag": "🇹🇷",
+  "region": "Eurasia / Middle East / NATO",
+  "description": "Rapidly rising sovereign aerospace power developing the TAI TF Kaan 5th-gen stealth fighter, operating large upgraded F-16 Block 50+ fleets, and leading world unmanned combat aviation (Bayraktar TB2/TB3, Akinci, Kizilelma).",
+  "totalAircraftEstimate": 1050,
+  "modernizationIndex": 85.5,
+  "defenseBudgetUsd": 25.2,
+  "militaryBranches": [
+    {
+      "name": "Turkish Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "Türk Hava Kuvvetleri",
+      "description": "TAI TF Kaan (Testing), F-16C/D Fighting Falcon (Özgür Modernization), Akinci UCAV, and E-7T Peace Eagle."
+    },
+    {
+      "name": "Turkish Naval Aviation",
+      "type": "NAVAL_AVIATION",
+      "officialName": "Türk Deniz Havacılığı",
+      "description": "TCG Anadolu drone carrier wings (Bayraktar TB3, Kizilelma), P-72 ASW, and S-70B Seahawk."
+    },
+    {
+      "name": "Turkish Army Aviation",
+      "type": "ARMY_AVIATION",
+      "officialName": "Kara Havacılık Komutanlığı",
+      "description": "T129 ATAK attack helicopters, T929 Heavy Attack, and CH-47F Chinooks."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

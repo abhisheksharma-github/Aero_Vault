@@ -1,0 +1,32 @@
+{
+  "country": "Australia",
+  "countryCode": "AUS",
+  "flagEmoji": "🇦🇺",
+  "region": "Oceania / Indo-Pacific",
+  "atlasIndex": 64.1,
+  "airsIndex": 65.5,
+  "seasIndex": 66,
+  "armsIndex": 58,
+  "activeTroops": 58600,
+  "reserveTroops": 29700,
+  "paramilitary": 0,
+  "defenseBudgetUsd": 32.3,
+  "totalAircraft": 430,
+  "totalWarships": 45,
+  "totalVehicles": 1800,
+  "nuclearWarheads": 0,
+  "aircraftCarriers": 0,
+  "submarines": 6,
+  "sources": [
+    {
+      "name": "Australian Defence Strategic Review 2024",
+      "url": "https://www.defence.gov.au",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

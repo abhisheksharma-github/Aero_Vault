@@ -1,0 +1,44 @@
+{
+  "id": "country-jpn",
+  "name": "Japan",
+  "countryCode": "JPN",
+  "isoCode": "JP",
+  "flag": "🇯🇵",
+  "region": "Asia-Pacific",
+  "description": "Indo-Pacific high-tech bastion operating large fleets of F-35A/B stealth fighters, indigenous Mitsubishi F-2 AESA fighters, Kawasaki P-1 four-engine turbofan ASW aircraft, and Izumo-class carrier conversions.",
+  "totalAircraftEstimate": 1450,
+  "modernizationIndex": 92.4,
+  "defenseBudgetUsd": 54,
+  "militaryBranches": [
+    {
+      "name": "Japan Air Self-Defense Force",
+      "type": "AIR_FORCE",
+      "officialName": "Kōkū Jieitai (JASDF)",
+      "description": "F-35A/B stealth fighters, Mitsubishi F-2A/B, F-15J/DJ Eagle Peace Eagle II, and E-2D Hawkeyes."
+    },
+    {
+      "name": "Japan Maritime Self-Defense Force",
+      "type": "NAVAL_AVIATION",
+      "officialName": "Kaijō Jieitai Aviation (JMSDF)",
+      "description": "Kawasaki P-1 maritime patrol, SH-60K/L Seahawk ASW, and F-35B carrier operations from JS Izumo."
+    },
+    {
+      "name": "Japan Ground Self-Defense Force",
+      "type": "ARMY_AVIATION",
+      "officialName": "Rikujō Jieitai Aviation (JGSDF)",
+      "description": "Boeing AH-64D Apache Longbow, Bell AH-1S Cobra, and V-22 Osprey tiltrotors."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

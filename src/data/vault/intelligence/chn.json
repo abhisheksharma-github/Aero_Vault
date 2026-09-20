@@ -1,0 +1,58 @@
+{
+  "countryName": "China",
+  "countryCode": "CHN",
+  "flag": "🇨🇳",
+  "airForceName": "China Air Force",
+  "armyAviationName": "China Army Aviation",
+  "navalAviationName": "China Naval Air Arm",
+  "globalRanking": 2,
+  "tvrTotal": 90.3,
+  "combatPowerScore": 90.2,
+  "strikeScore": 88.4,
+  "mobilityScore": 84,
+  "aewcScore": 79.6,
+  "tankerScore": 75.1,
+  "uavScore": 81.3,
+  "navalAirScore": 91.2,
+  "armyAirScore": 94,
+  "modernizationIndex": 91.2,
+  "logisticsScore": 86.6,
+  "forceReadiness": 85,
+  "totalActiveUnits": 3300,
+  "airForceUnits": 2145,
+  "armyAviationUnits": 660,
+  "navalAviationUnits": 495,
+  "marineUnits": 0,
+  "totalFighters": 1485,
+  "totalBombers": 120,
+  "totalTransports": 495,
+  "totalHelicopters": 990,
+  "totalUAVs": 264,
+  "totalAEWC": 50,
+  "totalTankers": 66,
+  "totalTrainers": 660,
+  "gen5Count": 250,
+  "gen45Count": 825,
+  "gen4Count": 1155,
+  "legacyCount": 330,
+  "primaryStrengths": [
+    "Comprehensive Asia-Pacific force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "China Military Power Report (DoD)",
+      "url": "https://www.defense.gov",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Yearbook 2025",
+      "url": "https://www.sipri.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

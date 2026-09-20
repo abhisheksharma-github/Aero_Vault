@@ -1,0 +1,58 @@
+{
+  "countryName": "South Korea",
+  "countryCode": "KOR",
+  "flag": "🇰🇷",
+  "airForceName": "South Korea Air Force",
+  "armyAviationName": "South Korea Army Aviation",
+  "navalAviationName": "South Korea Naval Air Arm",
+  "globalRanking": 8,
+  "tvrTotal": 70.5,
+  "combatPowerScore": 74,
+  "strikeScore": 72.5,
+  "mobilityScore": 68.9,
+  "aewcScore": 65.3,
+  "tankerScore": 61.6,
+  "uavScore": 66.7,
+  "navalAirScore": 70,
+  "armyAirScore": 78.5,
+  "modernizationIndex": 73.7,
+  "logisticsScore": 67.6,
+  "forceReadiness": 85,
+  "totalActiveUnits": 1600,
+  "airForceUnits": 1040,
+  "armyAviationUnits": 320,
+  "navalAviationUnits": 240,
+  "marineUnits": 0,
+  "totalFighters": 720,
+  "totalBombers": 0,
+  "totalTransports": 240,
+  "totalHelicopters": 480,
+  "totalUAVs": 128,
+  "totalAEWC": 24,
+  "totalTankers": 32,
+  "totalTrainers": 320,
+  "gen5Count": 0,
+  "gen45Count": 400,
+  "gen4Count": 560,
+  "legacyCount": 160,
+  "primaryStrengths": [
+    "Comprehensive Asia-Pacific force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "ROK MND Defense Whitepaper",
+      "url": "https://www.mnd.go.kr",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

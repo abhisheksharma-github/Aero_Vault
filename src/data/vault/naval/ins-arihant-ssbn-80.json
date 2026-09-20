@@ -1,0 +1,36 @@
+{
+  "id": "nv-7",
+  "name": "INS Arihant (SSBN-80)",
+  "shipClass": "Arihant-class Nuclear Ballistic Submarine",
+  "vesselType": "BALLISTIC_MISSILE_SUBMARINE",
+  "country": "India",
+  "countryCode": "IND",
+  "militaryBranch": "NAVAL_AVIATION",
+  "status": "ACTIVE",
+  "displacementTons": 6000,
+  "maxSpeedKnots": 24,
+  "commissionedYear": 2016,
+  "crewComplement": 95,
+  "activeCount": 2,
+  "originCountry": "India (Ship Building Centre, Visakhapatnam)",
+  "pennantNumber": "S73",
+  "radarType": "AESA",
+  "hasAesa": false,
+  "tvrScore": 86,
+  "description": "Lead ship of India nuclear-powered ballistic missile submarines completing the sea leg of India strategic nuclear triad.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Charles_de_Gaulle_in_Toulon.jpg/1200px-Charles_de_Gaulle_in_Toulon.jpg",
+  "weapons": "4x VLS tubes for 12x K-15 Sagarika SLBMs or 4x K-4 SLBMs",
+  "propulsion": "83 MW Pressurized Light-Water Nuclear Reactor",
+  "sources": [
+    {
+      "name": "Jane's Fighting Ships 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Official Naval Registry / Ministry of Defence",
+      "url": "https://www.navy.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

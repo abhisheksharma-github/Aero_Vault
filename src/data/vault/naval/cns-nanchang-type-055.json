@@ -1,0 +1,36 @@
+{
+  "id": "nv-6",
+  "name": "CNS Nanchang (Type 055)",
+  "shipClass": "Type 055 Renhai-class Guided Missile Destroyer",
+  "vesselType": "GUIDED_MISSILE_DESTROYER",
+  "country": "China",
+  "countryCode": "CHN",
+  "militaryBranch": "NAVAL_AVIATION",
+  "status": "ACTIVE",
+  "displacementTons": 13000,
+  "maxSpeedKnots": 30,
+  "commissionedYear": 2020,
+  "crewComplement": 300,
+  "activeCount": 8,
+  "originCountry": "China (Jiangnan / Dalian)",
+  "pennantNumber": "101",
+  "radarType": "AESA",
+  "hasAesa": true,
+  "tvrScore": 93.8,
+  "description": "Heavy stealth guided-missile cruiser/destroyer equipped with dual-band AESA radar and 112 universal vertical launch cells.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/HMS_Queen_Elizabeth_%28R08%29_underway_in_the_Atlantic_Ocean_on_20_August_2018.jpg/1200px-HMS_Queen_Elizabeth_%28R08%29_underway_in_the_Atlantic_Ocean_on_20_August_2018.jpg",
+  "weapons": "112-cell VLS (YJ-21 Hypersonic AShM, HQ-9B SAM, YJ-18)",
+  "propulsion": "4x QC-280 Gas Turbines (112 MW)",
+  "sources": [
+    {
+      "name": "Jane's Fighting Ships 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Official Naval Registry / Ministry of Defence",
+      "url": "https://www.navy.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

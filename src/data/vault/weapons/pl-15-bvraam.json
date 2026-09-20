@@ -1,0 +1,19 @@
+{
+  "id": "w-5",
+  "name": "PL-15 BVRAAM",
+  "type": "BVR_AAM",
+  "manufacturer": "Aviation Industry Corporation of China (AVIC)",
+  "originCountry": "China",
+  "guidance": "Active AESA Radar Seeker / Two-Way Datalink",
+  "maxRangeKm": 200,
+  "speedMach": 4.5,
+  "warheadKg": 22,
+  "description": "Dual-pulse solid rocket motor active-radar air-to-air missile equipping J-20A and J-16 fighters.",
+  "sources": [
+    {
+      "name": "Jane's Weapons: Air-Launched",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

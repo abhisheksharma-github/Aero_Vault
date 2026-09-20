@@ -1,0 +1,32 @@
+{
+  "id": "country-can",
+  "name": "Canada",
+  "countryCode": "CAN",
+  "isoCode": "CA",
+  "flag": "🇨🇦",
+  "region": "North America / Arctic NATO",
+  "description": "Arctic and North American airspace defender operating modernized CF-188 Hornets (CF-18), CP-140 Aurora long-range patrol, CC-130J Hercules, and procuring 88 F-35A stealth fighters and P-8A Poseidons.",
+  "totalAircraftEstimate": 390,
+  "modernizationIndex": 82,
+  "defenseBudgetUsd": 26.9,
+  "militaryBranches": [
+    {
+      "name": "Royal Canadian Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "RCAF / Aviation Royale Canadienne",
+      "description": "CF-188 Hornet, CP-140 Aurora, CC-177 Globemaster, and CH-148 Cyclone shipborne ASW."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

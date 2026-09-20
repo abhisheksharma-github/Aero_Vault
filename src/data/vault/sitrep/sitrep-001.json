@@ -1,0 +1,14 @@
+{
+  "id": "sitrep-1",
+  "eventType": "DELIVERED",
+  "domain": "AIR",
+  "country": "India",
+  "countryCode": "IND",
+  "countryFlag": "🇮🇳",
+  "entityName": "Tejas Mk1A",
+  "location": "Sulur AFS, Tamil Nadu",
+  "summary": "Indian Air Force officially accepts delivery of batch Tejas Mk1A fighters fitted with Uttam AESA radar at Sulur AFS.",
+  "sourceUrl": "https://mod.gov.in",
+  "confidence": "VERIFIED",
+  "eventDate": "2025-02-15T00:00:00.000Z"
+}

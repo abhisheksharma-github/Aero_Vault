@@ -1,0 +1,58 @@
+{
+  "countryName": "Germany",
+  "countryCode": "DEU",
+  "flag": "🇩🇪",
+  "airForceName": "Germany Air Force",
+  "armyAviationName": "Germany Army Aviation",
+  "navalAviationName": "Germany Naval Air Arm",
+  "globalRanking": 9,
+  "tvrTotal": 67,
+  "combatPowerScore": 69.4,
+  "strikeScore": 68,
+  "mobilityScore": 64.6,
+  "aewcScore": 61.2,
+  "tankerScore": 57.8,
+  "uavScore": 62.6,
+  "navalAirScore": 62,
+  "armyAirScore": 71,
+  "modernizationIndex": 67,
+  "logisticsScore": 64.3,
+  "forceReadiness": 85,
+  "totalActiveUnits": 620,
+  "airForceUnits": 403,
+  "armyAviationUnits": 124,
+  "navalAviationUnits": 93,
+  "marineUnits": 0,
+  "totalFighters": 279,
+  "totalBombers": 0,
+  "totalTransports": 93,
+  "totalHelicopters": 186,
+  "totalUAVs": 50,
+  "totalAEWC": 9,
+  "totalTankers": 12,
+  "totalTrainers": 124,
+  "gen5Count": 0,
+  "gen45Count": 155,
+  "gen4Count": 217,
+  "legacyCount": 62,
+  "primaryStrengths": [
+    "Comprehensive Europe / NATO force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "Bundeswehr Official Telemetry",
+      "url": "https://www.bundeswehr.de",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

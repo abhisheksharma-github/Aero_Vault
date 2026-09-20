@@ -1,0 +1,58 @@
+{
+  "countryName": "Russia",
+  "countryCode": "RUS",
+  "flag": "🇷🇺",
+  "airForceName": "Russia Air Force",
+  "armyAviationName": "Russia Army Aviation",
+  "navalAviationName": "Russia Naval Air Arm",
+  "globalRanking": 3,
+  "tvrTotal": 82.6,
+  "combatPowerScore": 82.6,
+  "strikeScore": 81,
+  "mobilityScore": 77,
+  "aewcScore": 72.9,
+  "tankerScore": 68.8,
+  "uavScore": 74.5,
+  "navalAirScore": 78.5,
+  "armyAirScore": 89.2,
+  "modernizationIndex": 82.9,
+  "logisticsScore": 79.2,
+  "forceReadiness": 85,
+  "totalActiveUnits": 4100,
+  "airForceUnits": 2665,
+  "armyAviationUnits": 820,
+  "navalAviationUnits": 615,
+  "marineUnits": 0,
+  "totalFighters": 1845,
+  "totalBombers": 130,
+  "totalTransports": 615,
+  "totalHelicopters": 1230,
+  "totalUAVs": 328,
+  "totalAEWC": 62,
+  "totalTankers": 82,
+  "totalTrainers": 820,
+  "gen5Count": 22,
+  "gen45Count": 1025,
+  "gen4Count": 1435,
+  "legacyCount": 410,
+  "primaryStrengths": [
+    "Comprehensive Eurasia force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "SIPRI Data 2025",
+      "url": "https://www.sipri.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "countryName": "Saudi Arabia",
+  "countryCode": "SAU",
+  "flag": "🇸🇦",
+  "airForceName": "Saudi Arabia Air Force",
+  "armyAviationName": "Saudi Arabia Army Aviation",
+  "navalAviationName": "Saudi Arabia Naval Air Arm",
+  "globalRanking": 14,
+  "tvrTotal": 61.4,
+  "combatPowerScore": 70.4,
+  "strikeScore": 69,
+  "mobilityScore": 65.5,
+  "aewcScore": 62.1,
+  "tankerScore": 58.6,
+  "uavScore": 63.5,
+  "navalAirScore": 52,
+  "armyAirScore": 64,
+  "modernizationIndex": 61.7,
+  "logisticsScore": 58.9,
+  "forceReadiness": 85,
+  "totalActiveUnits": 890,
+  "airForceUnits": 579,
+  "armyAviationUnits": 178,
+  "navalAviationUnits": 134,
+  "marineUnits": 0,
+  "totalFighters": 401,
+  "totalBombers": 0,
+  "totalTransports": 134,
+  "totalHelicopters": 267,
+  "totalUAVs": 71,
+  "totalAEWC": 13,
+  "totalTankers": 18,
+  "totalTrainers": 178,
+  "gen5Count": 0,
+  "gen45Count": 223,
+  "gen4Count": 312,
+  "legacyCount": 89,
+  "primaryStrengths": [
+    "Comprehensive Middle East force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "SIPRI Military Expenditure 2025",
+      "url": "https://www.sipri.org",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

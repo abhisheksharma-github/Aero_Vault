@@ -1,0 +1,206 @@
+{
+  "id": "chn-j20a-plaaf",
+  "aliases": [
+    "chn-j20a-plaaf",
+    "CHN-PLAAF-J20-A",
+    "chn-plaaf-j20-a"
+  ],
+  "name": "Chengdu J-20A Mighty Dragon",
+  "commonName": "J-20A",
+  "officialDesignation": "J-20A (WS-10C Engines)",
+  "natoReportingName": null,
+  "family": "Chengdu J-20 Mighty Dragon",
+  "variant": "J-20A (WS-10C Engines)",
+  "block": "Production Batch 03",
+  "manufacturer": "Chengdu Aircraft Industry Group",
+  "manufacturerCountry": "China",
+  "originCountry": "China",
+  "country": "China",
+  "affiliation": "People's Liberation Army Air Force (PLAAF)",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "AIR_SUPERIORITY",
+  "generation": "GEN_5",
+  "era": "MODERN",
+  "role": "5th-Gen Heavy Stealth Air Superiority & Long-Range Interceptor",
+  "secondaryRoles": [
+    "Deep Penetration Strike",
+    "Anti-AWACS Interdiction"
+  ],
+  "firstFlightYear": 2011,
+  "introductionYear": 2017,
+  "retirementYear": null,
+  "productionCount": 250,
+  "fleetCount": 220,
+  "activeCount": 220,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "engineManufacturer": null,
+  "engineModel": "Shenyang WS-10C / WS-15 Turbofans",
+  "engineCount": 2,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 180,
+  "thrustAfterburnerKn": 294,
+  "topSpeedMach": 2,
+  "topSpeedKmh": 2130,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 20000,
+  "rateOfClimbMs": 304,
+  "gLimitPositive": 9,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 1500,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 4500,
+  "emptyWeightKg": 17000,
+  "maxTakeoffWeightKg": 37000,
+  "payloadCapacityKg": 11000,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "AESA",
+  "radarModel": "Type 1475 (KLJ-5) GaN AESA Radar",
+  "radarRangeAirKm": 250,
+  "hasAesa": true,
+  "hasIrst": true,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 94,
+  "stealthLevel": "HIGH",
+  "rcsEstimatedM2": 0.05,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": true,
+  "maintenanceHoursPerFlightHour": null,
+  "costPerFlightHourUsd": null,
+  "reliabilityScore": 78,
+  "confidenceLevel": "ESTIMATED",
+  "confidenceScore": 88,
+  "sourceCount": 6,
+  "lastVerified": null,
+  "description": "PLAAF flagship 5th-generation heavy stealth fighter featuring canard-delta configuration, internal weapons bay carrying long-range PL-15 and ultra-long PL-17 BVRAAMs, and electro-optical distributed aperture sensors.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Chengdu_J-20_at_Airshow_China_2018.jpg/1280px-Chengdu_J-20_at_Airshow_China_2018.jpg",
+  "tvrScore": 93.2,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "PL-15 BVR-AAM",
+        "type": "BVR_AAM",
+        "maxRangeKm": 200,
+        "speedMach": 4.5,
+        "guidance": "Active Radar / Two-Way Datalink"
+      }
+    },
+    {
+      "weapon": {
+        "name": "PL-10 SRAAM",
+        "type": "WVR_AAM",
+        "maxRangeKm": 20,
+        "speedMach": 3.5,
+        "guidance": "Imaging Infrared"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "AIR_SUPERIORITY",
+  "aircraftName": "Chengdu J-20A Mighty Dragon",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 21.2,
+      "wingspanM": 13.01,
+      "heightM": 4.69
+    },
+    "weights": {
+      "emptyWeightKg": 17000,
+      "maxTakeoffWeightKg": 37000,
+      "payloadCapacityKg": 11000,
+      "internalFuelKg": 12000
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 2,
+      "engineModel": "Shenyang WS-10C / WS-15 Afterburning Turbofans",
+      "engineManufacturer": "Shenyang Liming Aero-Engine Group",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 180,
+      "thrustAfterburnerKn": 294
+    },
+    "performance": {
+      "maxSpeedKmh": 2130,
+      "maxSpeedMach": 2,
+      "cruiseSpeedKmh": 1200,
+      "combatRadiusKm": 1500,
+      "ferryRangeKm": 4500,
+      "serviceCeilingM": 20000,
+      "serviceCeilingFt": 65600,
+      "rateOfClimbMs": 304,
+      "gLimitPositive": 9
+    }
+  },
+  "avionics": {
+    "radar": "Type 1475 (KLJ-5) Active Electronically Scanned Array (GaN AESA)",
+    "radarType": "AESA",
+    "radarArchitecture": "Gallium Nitride (GaN) Solid-State Phased Array",
+    "radarRangeAirKm": 250,
+    "hasAesa": true,
+    "hasIrst": true,
+    "irstModel": "EOTS-86 Electro-Optical Targeting & EORD-31 IRST Suite",
+    "electronicWarfare": "Integrated Conformal Electronic Warfare & Multi-Spectral Jamming Array",
+    "ewScore": 94,
+    "helmetMountedDisplay": "Chinese Helmet Mounted Display and Sight (HMDS)",
+    "hasDatalink": true,
+    "datalinkProtocol": "PLA Joint Tactical Data System",
+    "sensorFusion": true,
+    "stealthLevel": "HIGH",
+    "rcsEstimatedM2": 0.05
+  },
+  "capabilities": {
+    "internalGun": null,
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": false,
+    "antiRadiationCapable": false,
+    "guidedBombCapable": true,
+    "cruiseMissileCapable": false,
+    "maximumPayloadKg": 11000,
+    "keyWeaponsIntegrated": [
+      "PL-15 Long-Range Active Radar BVRAAM (>200 km)",
+      "PL-10 High-Off-Boresight Imaging IR AAM",
+      "PL-17 Very-Long-Range Standoff AAM (>400 km)",
+      "LT-2 / LS-6 Precision Guided Glide Bombs"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 220,
+    "estimatedQuantity": 250,
+    "quantityYear": 2026,
+    "quantityNotes": "Estimated 220-250 J-20 airframes in active PLAAF service across multiple operational fighter brigades.",
+    "dataConfidence": "MEDIUM",
+    "lastVerified": "2026-01-15",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Official DoD/MoD Technical Specs & Flight Manual",
+      "url": "https://www.defense.gov",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "Jane's All the World's Aircraft 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

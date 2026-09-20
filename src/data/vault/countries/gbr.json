@@ -1,0 +1,44 @@
+{
+  "id": "country-gbr",
+  "name": "United Kingdom",
+  "countryCode": "GBR",
+  "isoCode": "GB",
+  "flag": "🇬🇧",
+  "region": "Europe / NATO",
+  "description": "Joint force operating Eurofighter Typhoon FGR4 swing-role fighters, 5th-gen F-35B Lightning stealth aircraft from Queen Elizabeth-class carriers, and P-8A Poseidon maritime patrol.",
+  "totalAircraftEstimate": 660,
+  "modernizationIndex": 89.5,
+  "defenseBudgetUsd": 68.5,
+  "militaryBranches": [
+    {
+      "name": "Royal Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "RAF",
+      "description": "Eurofighter Typhoon FGR4, F-35B Lightning, Poseidon MRA1, A400M Atlas, and Voyager tankers."
+    },
+    {
+      "name": "Royal Navy Fleet Air Arm",
+      "type": "NAVAL_AVIATION",
+      "officialName": "Fleet Air Arm (FAA)",
+      "description": "Carrier strike F-35B wings and maritime ASW helicopters (Merlin Mk2, Wildcat HMA2)."
+    },
+    {
+      "name": "Army Air Corps",
+      "type": "ARMY_AVIATION",
+      "officialName": "AAC (British Army)",
+      "description": "Battlefield attack helicopters (Boeing Apache AH-64E) and tactical reconnaissance."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

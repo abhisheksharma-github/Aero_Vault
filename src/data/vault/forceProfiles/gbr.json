@@ -1,0 +1,32 @@
+{
+  "country": "United Kingdom",
+  "countryCode": "GBR",
+  "flagEmoji": "🇬🇧",
+  "region": "Europe / NATO",
+  "atlasIndex": 74.2,
+  "airsIndex": 72,
+  "seasIndex": 75.8,
+  "armsIndex": 68,
+  "activeTroops": 184800,
+  "reserveTroops": 78400,
+  "paramilitary": 0,
+  "defenseBudgetUsd": 68.5,
+  "totalAircraft": 660,
+  "totalWarships": 75,
+  "totalVehicles": 1500,
+  "nuclearWarheads": 225,
+  "aircraftCarriers": 2,
+  "submarines": 10,
+  "sources": [
+    {
+      "name": "UK MoD Defence in a Competitive Age",
+      "url": "https://www.gov.uk/government/organisations/ministry-of-defence",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

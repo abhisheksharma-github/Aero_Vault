@@ -1,0 +1,33 @@
+{
+  "id": "gv-7",
+  "name": "M2A4 Bradley IFV",
+  "category": "IFV",
+  "country": "United States",
+  "countryCode": "USA",
+  "militaryBranch": "ARMY_AVIATION",
+  "status": "ACTIVE",
+  "activeCount": 2800,
+  "reserveCount": 1200,
+  "generation": "Infantry Fighting Vehicle",
+  "mainArmament": "25mm M242 Bushmaster Chain Gun + TOW-2B Missiles",
+  "enginePowerHp": 675,
+  "topSpeedKmh": 61,
+  "weightTons": 36,
+  "tvrScore": 87,
+  "crew": 3,
+  "description": "Upgraded infantry fighting vehicle with high-bandwidth tactical computing, Iron Fist APS integration, and Bradley Urban Survivability Kit.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/M2A4_Bradley_Fighting_Vehicle.jpg/1200px-M2A4_Bradley_Fighting_Vehicle.jpg",
+  "armorProtection": "Aluminum / Steel Laminate + Reactive Tiles",
+  "sources": [
+    {
+      "name": "Jane's Land Warfare Platforms: Armoured Fighting Vehicles",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Army Technology & MoD Procurement Records",
+      "url": "https://www.army.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

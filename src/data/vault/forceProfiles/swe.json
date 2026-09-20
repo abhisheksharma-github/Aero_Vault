@@ -1,0 +1,32 @@
+{
+  "country": "Sweden",
+  "countryCode": "SWE",
+  "flagEmoji": "🇸🇪",
+  "region": "Europe / NATO",
+  "atlasIndex": 55.8,
+  "airsIndex": 61,
+  "seasIndex": 54,
+  "armsIndex": 52,
+  "activeTroops": 24000,
+  "reserveTroops": 32000,
+  "paramilitary": 0,
+  "defenseBudgetUsd": 11.2,
+  "totalAircraft": 210,
+  "totalWarships": 65,
+  "totalVehicles": 2100,
+  "nuclearWarheads": 0,
+  "aircraftCarriers": 0,
+  "submarines": 5,
+  "sources": [
+    {
+      "name": "Swedish Armed Forces (Försvarsmakten)",
+      "url": "https://www.forsvarsmakten.se",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

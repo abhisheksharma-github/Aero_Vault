@@ -1,0 +1,32 @@
+{
+  "country": "South Korea",
+  "countryCode": "KOR",
+  "flagEmoji": "🇰🇷",
+  "region": "Asia-Pacific",
+  "atlasIndex": 71.9,
+  "airsIndex": 72.5,
+  "seasIndex": 70,
+  "armsIndex": 78.5,
+  "activeTroops": 500000,
+  "reserveTroops": 3100000,
+  "paramilitary": 30000,
+  "defenseBudgetUsd": 47.5,
+  "totalAircraft": 1600,
+  "totalWarships": 160,
+  "totalVehicles": 14000,
+  "nuclearWarheads": 0,
+  "aircraftCarriers": 0,
+  "submarines": 22,
+  "sources": [
+    {
+      "name": "ROK MND Defense Whitepaper",
+      "url": "https://www.mnd.go.kr",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

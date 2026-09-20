@@ -1,0 +1,44 @@
+{
+  "id": "country-chn",
+  "name": "China",
+  "countryCode": "CHN",
+  "isoCode": "CN",
+  "flag": "🇨🇳",
+  "region": "East Asia / Indo-Pacific",
+  "description": "Rapidly modernizing aerospace power with mass serial production of 5th-generation J-20 stealth fighters, electromagnetic catapult carrier aircraft (J-15T, J-35), and advanced long-range PL-15/PL-17 BVRAAM missile technology.",
+  "totalAircraftEstimate": 3300,
+  "modernizationIndex": 88,
+  "defenseBudgetUsd": 292,
+  "militaryBranches": [
+    {
+      "name": "People's Liberation Army Air Force",
+      "type": "AIR_FORCE",
+      "officialName": "PLAAF",
+      "description": "Heavy 5th-gen stealth fighters (J-20A/S), strike fighters (J-16), strategic standoff bombers (H-6N), and KJ-500 GaN AESA radar platforms."
+    },
+    {
+      "name": "PLA Naval Air Force",
+      "type": "NAVAL_AVIATION",
+      "officialName": "PLAN-AF",
+      "description": "Carrier strike groups operating from Liaoning, Shandong, and Fujian supercarriers (J-15T, J-35, KJ-600 AEW&C)."
+    },
+    {
+      "name": "PLA Ground Force Aviation",
+      "type": "ARMY_AVIATION",
+      "officialName": "PLAGFA",
+      "description": "Battlefield attack helicopters (Z-10ME, Z-19) and medium utility transport helicopters (Z-20)."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

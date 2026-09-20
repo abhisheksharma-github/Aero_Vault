@@ -1,0 +1,32 @@
+{
+  "country": "Russia",
+  "countryCode": "RUS",
+  "flagEmoji": "🇷🇺",
+  "region": "Eurasia",
+  "atlasIndex": 84.3,
+  "airsIndex": 81,
+  "seasIndex": 78.5,
+  "armsIndex": 89.2,
+  "activeTroops": 1320000,
+  "reserveTroops": 2000000,
+  "paramilitary": 250000,
+  "defenseBudgetUsd": 86.4,
+  "totalAircraft": 4100,
+  "totalWarships": 590,
+  "totalVehicles": 30000,
+  "nuclearWarheads": 5580,
+  "aircraftCarriers": 1,
+  "submarines": 58,
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "SIPRI Data 2025",
+      "url": "https://www.sipri.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

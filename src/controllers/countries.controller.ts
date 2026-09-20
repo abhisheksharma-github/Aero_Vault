@@ -1,14 +1,46 @@
 import { Request, Response, NextFunction } from 'express';
 import { prisma } from '../db.js';
-import { g20CountriesData } from '../data/g20/g20Countries.js';
-import { aircraftVault } from '../data/normalize.js';
+import {
+  vaultCountries,
+  vaultForceProfiles,
+  vaultIntelligence,
+  vaultNaval,
+  vaultLand,
+  vaultAircraft,
+} from '../data/vaultLoader.js';
 import { validatedParams, validatedQuery } from '../middleware/validate.middleware.js';
+import { computeCountryCoverage } from '../types/coverage.types.js';
+
+function getCoverageForCountry(countryName: string, countryCode?: string) {
+  const cName = countryName.toLowerCase();
+  const cCode = (countryCode || '').toUpperCase();
+
+  const hasForceProfile = vaultForceProfiles.some(
+    (fp) => fp.country.toLowerCase() === cName || fp.countryCode.toUpperCase() === cCode
+  );
+  const hasIntelligenceDossier = vaultIntelligence.some(
+    (intel) => intel.countryName.toLowerCase() === cName || intel.countryCode.toUpperCase() === cCode
+  );
+  const aircraftCount = vaultAircraft.filter(
+    (a) => a.country.toLowerCase() === cName || (a.originCountry && a.originCountry.toLowerCase() === cName)
+  ).length;
+  const warshipCount = vaultNaval.filter((n) => n.country.toLowerCase() === cName).length;
+  const vehicleCount = vaultLand.filter((l) => l.country.toLowerCase() === cName).length;
+
+  return computeCountryCoverage({
+    hasForceProfile,
+    hasIntelligenceDossier,
+    aircraftCount,
+    warshipCount,
+    vehicleCount,
+  });
+}
 
 export class CountriesController {
   /**
-   * GET /api/countries - List all G20 sovereign defense nations
+   * GET /api/countries - List all G20 sovereign defense nations with coverage metadata
    */
-  async getCountries(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getCountries = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       try {
         const countries = await prisma.country.findMany({
@@ -19,10 +51,15 @@ export class CountriesController {
         });
 
         if (countries && countries.length > 0) {
+          const countriesWithCoverage = countries.map((c) => ({
+            ...c,
+            coverage: getCoverageForCountry(c.name, c.countryCode),
+          }));
+
           res.status(200).json({
             success: true,
-            count: countries.length,
-            data: countries,
+            count: countriesWithCoverage.length,
+            data: countriesWithCoverage,
           });
           return;
         }
@@ -30,20 +67,25 @@ export class CountriesController {
         // Fallback to local verified G20 dataset
       }
 
+      const countriesWithCoverage = vaultCountries.map((c) => ({
+        ...c,
+        coverage: getCoverageForCountry(c.name, c.countryCode),
+      }));
+
       res.status(200).json({
         success: true,
-        count: g20CountriesData.length,
-        data: g20CountriesData,
+        count: countriesWithCoverage.length,
+        data: countriesWithCoverage,
       });
     } catch (error) {
       next(error);
     }
-  }
+  };
 
   /**
-   * GET /api/countries/:country - Get single country dossier
+   * GET /api/countries/:country - Get single country dossier with coverage metadata
    */
-  async getCountryByNameOrCode(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getCountryByNameOrCode = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const params = validatedParams<{ country: string }>(req);
       const rawParam = params.country || req.params.country;
@@ -64,9 +106,13 @@ export class CountriesController {
         });
 
         if (country) {
+          const coverage = getCoverageForCountry(country.name, country.countryCode);
           res.status(200).json({
             success: true,
-            data: country,
+            data: {
+              ...country,
+              coverage,
+            },
           });
           return;
         }
@@ -74,7 +120,7 @@ export class CountriesController {
         // Fallback
       }
 
-      const match = g20CountriesData.find(
+      const match = vaultCountries.find(
         (c) =>
           c.name.toLowerCase() === identifier ||
           c.countryCode.toLowerCase() === identifier ||
@@ -90,19 +136,24 @@ export class CountriesController {
         return;
       }
 
+      const coverage = getCoverageForCountry(match.name, match.countryCode);
+
       res.status(200).json({
         success: true,
-        data: match,
+        data: {
+          ...match,
+          coverage,
+        },
       });
     } catch (error) {
       next(error);
     }
-  }
+  };
 
   /**
    * GET /api/countries/:country/aircraft - Get all aircraft for country
    */
-  async getCountryAircraft(req: Request, res: Response, next: NextFunction): Promise<void> {
+  getCountryAircraft = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const params = validatedParams<{ country: string }>(req);
       const rawParam = params.country || req.params.country;
@@ -114,7 +165,7 @@ export class CountriesController {
       }>(req);
       const { branch, category, status } = query;
 
-      let filtered = aircraftVault.filter((a) => {
+      let filtered = vaultAircraft.filter((a) => {
         const c = (a.country || '').toLowerCase();
         const o = (a.originCountry || '').toLowerCase();
         const id = (a.id || '').toLowerCase();
@@ -159,7 +210,7 @@ export class CountriesController {
     } catch (error) {
       next(error);
     }
-  }
+  };
 }
 
 export const countriesController = new CountriesController();

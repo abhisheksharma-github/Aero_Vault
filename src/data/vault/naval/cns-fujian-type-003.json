@@ -1,0 +1,36 @@
+{
+  "id": "nv-3",
+  "name": "CNS Fujian (Type 003)",
+  "shipClass": "Type 003 Aircraft Carrier",
+  "vesselType": "AIRCRAFT_CARRIER",
+  "country": "China",
+  "countryCode": "CHN",
+  "militaryBranch": "NAVAL_AVIATION",
+  "status": "ACTIVE",
+  "displacementTons": 80000,
+  "maxSpeedKnots": 30,
+  "commissionedYear": 2024,
+  "crewComplement": 3200,
+  "activeCount": 1,
+  "originCountry": "China (Jiangnan Shipyard)",
+  "pennantNumber": "18",
+  "radarType": "AESA",
+  "hasAesa": true,
+  "tvrScore": 93.5,
+  "description": "First Chinese catapult-equipped (EMALS CATOBAR) supercarrier carrying J-15T, J-35 stealth fighters, and KJ-600 AEW&C aircraft.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/INS_Visakhapatnam_%28D66%29.jpg/1200px-INS_Visakhapatnam_%28D66%29.jpg",
+  "weapons": "HQ-10 SAM, Type 1130 11-barrel 30mm CIWS",
+  "propulsion": "Integrated Electric Propulsion (IEP) Steam Turbines",
+  "sources": [
+    {
+      "name": "Jane's Fighting Ships 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Official Naval Registry / Ministry of Defence",
+      "url": "https://www.navy.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

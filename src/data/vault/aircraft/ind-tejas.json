@@ -1,0 +1,208 @@
+{
+  "id": "ind-tejas",
+  "aliases": [
+    "ind-tejas",
+    "IND-IAF-TEJAS-MK1A",
+    "ind-iaf-tejas-mk1a"
+  ],
+  "name": "HAL Tejas Mk1A",
+  "commonName": "Tejas Mk1A",
+  "officialDesignation": "Tejas Mk1A",
+  "natoReportingName": null,
+  "family": "Tejas Light Combat Aircraft",
+  "variant": "Tejas Mk1A",
+  "block": "Mk1A Enhanced Standard",
+  "manufacturer": "Hindustan Aeronautics Limited (HAL)",
+  "manufacturerCountry": "India",
+  "originCountry": "India",
+  "country": "India",
+  "affiliation": "Indian Air Force",
+  "militaryBranch": "AIR_FORCE",
+  "serviceStatus": "ACTIVE",
+  "category": "LIGHT_ATTACK",
+  "generation": "GEN_5",
+  "era": "MODERN",
+  "role": "Lightweight Multirole Fighter",
+  "secondaryRoles": [
+    "Point Defense",
+    "Air Combat Patrol"
+  ],
+  "firstFlightYear": 2020,
+  "introductionYear": 2024,
+  "retirementYear": null,
+  "productionCount": 83,
+  "fleetCount": 40,
+  "activeCount": 40,
+  "inactiveCount": 0,
+  "retiredCount": 0,
+  "engineManufacturer": null,
+  "engineModel": "General Electric F404-GE-IN20",
+  "engineCount": 1,
+  "engineType": "Turbofan",
+  "hasAfterburner": true,
+  "thrustDryKn": 53.9,
+  "thrustAfterburnerKn": 85,
+  "topSpeedMach": 1.6,
+  "topSpeedKmh": 1980,
+  "cruiseSpeedKmh": null,
+  "serviceCeilingM": 15200,
+  "rateOfClimbMs": 250,
+  "gLimitPositive": 8.5,
+  "gLimitNegative": -3,
+  "enduranceHours": null,
+  "combatRangeKm": 850,
+  "combatRadiusKm": null,
+  "ferryRangeKm": 3000,
+  "emptyWeightKg": 6560,
+  "maxTakeoffWeightKg": 13500,
+  "payloadCapacityKg": 4000,
+  "internalFuelKg": null,
+  "lengthM": null,
+  "wingspanM": null,
+  "heightM": null,
+  "radarType": "AESA",
+  "radarModel": "EL/M-2052 / Uttam AESA",
+  "radarRangeAirKm": 150,
+  "hasAesa": true,
+  "hasIrst": false,
+  "hasSensorFusion": true,
+  "hasDatalink": true,
+  "hasHmd": true,
+  "electronicWarfare": null,
+  "ewScore": 89,
+  "stealthLevel": "REDUCED",
+  "rcsEstimatedM2": 0.5,
+  "hasRwr": true,
+  "hasEcm": true,
+  "hasMaws": true,
+  "maintenanceHoursPerFlightHour": 9,
+  "costPerFlightHourUsd": 8500,
+  "reliabilityScore": 84,
+  "confidenceLevel": "VERIFIED",
+  "confidenceScore": 94,
+  "sourceCount": 5,
+  "lastVerified": null,
+  "description": "Indigenous single-engine delta-wing light combat fighter featuring Uttam AESA radar, Astra Mk1 BVRAAM, self-protection EW jammer pod, and high-agility fly-by-wire flight control system.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg/1200px-HAL_Tejas_LCA_%28Light_Combat_Aircraft%29_-_Aero_India_2023.jpg",
+  "tvrScore": 81.4,
+  "weapons": [
+    {
+      "weapon": {
+        "name": "Astra Mk1 BVR-AAM",
+        "type": "BVR_AAM",
+        "maxRangeKm": 110,
+        "speedMach": 4.5,
+        "guidance": "Active Radar Homing"
+      }
+    },
+    {
+      "weapon": {
+        "name": "ASRAAM",
+        "type": "WVR_AAM",
+        "maxRangeKm": 50,
+        "speedMach": 3.5,
+        "guidance": "Imaging Infrared"
+      }
+    }
+  ],
+  "dataSources": [],
+  "milestones": [],
+  "snapshots": [],
+  "images": [],
+  "primaryCategory": "LIGHT_ATTACK",
+  "aircraftName": "HAL Tejas Mk1A",
+  "hardpoints": null,
+  "specifications": {
+    "dimensions": {
+      "lengthM": 13.2,
+      "wingspanM": 8.2,
+      "heightM": 4.4
+    },
+    "weights": {
+      "emptyWeightKg": 6560,
+      "maxTakeoffWeightKg": 13500,
+      "payloadCapacityKg": 4000,
+      "internalFuelKg": 2458
+    },
+    "crew": {
+      "minimumCrew": 1,
+      "maximumCrew": 2
+    },
+    "propulsion": {
+      "engineCount": 1,
+      "engineModel": "General Electric F404-GE-IN20 Afterburning Turbofan",
+      "engineManufacturer": "GE Aerospace / HAL License Assembly",
+      "engineType": "Turbofan",
+      "hasAfterburner": true,
+      "thrustDryKn": 53.9,
+      "thrustAfterburnerKn": 84
+    },
+    "performance": {
+      "maxSpeedKmh": 1975,
+      "maxSpeedMach": 1.6,
+      "cruiseSpeedKmh": 950,
+      "combatRadiusKm": 500,
+      "ferryRangeKm": 3000,
+      "serviceCeilingM": 15240,
+      "serviceCeilingFt": 50000,
+      "rateOfClimbMs": 280,
+      "gLimitPositive": 8
+    }
+  },
+  "avionics": {
+    "radar": "ELTA EL/M-2052 AESA / Indigenous DRDO Uttam AESA Radar",
+    "radarType": "AESA",
+    "radarArchitecture": "Gallium Arsenide (GaAs) / GaN",
+    "radarRangeAirKm": 150,
+    "hasAesa": true,
+    "hasIrst": false,
+    "electronicWarfare": "DRDO Angad Internal EW Suite with digital RF memory (DRFM) jammer and advanced RWR",
+    "ewScore": 88,
+    "targetingSystem": "Litening 4I Advanced Electro-Optical Targeting Pod",
+    "helmetMountedDisplay": "Elbit Systems TARGO II Helmet Mounted Cueing System",
+    "hasDatalink": true,
+    "datalinkProtocol": "Indigenous Software Defined Radio (SDR) & AFNET",
+    "sensorFusion": true,
+    "stealthLevel": "REDUCED",
+    "rcsEstimatedM2": 0.5
+  },
+  "capabilities": {
+    "internalGun": "23mm GSh-23 Twin-Barrel Autocannon (220 rounds)",
+    "airToAirCapable": true,
+    "airToGroundCapable": true,
+    "antiShipCapable": true,
+    "antiRadiationCapable": true,
+    "guidedBombCapable": true,
+    "cruiseMissileCapable": false,
+    "maximumPayloadKg": 4000,
+    "keyWeaponsIntegrated": [
+      "Astra Mk1 BVRAAM",
+      "Python-5 High-Off-Boresight AAM",
+      "Derby BVRAAM",
+      "ASRAAM (Advanced Short Range AAM)",
+      "BrahMos-NG (Future Standoff)",
+      "Laser-Guided Bombs (Sudharshan)"
+    ]
+  },
+  "fleet": {
+    "confirmedQuantity": 38,
+    "estimatedQuantity": 42,
+    "quantityYear": 2026,
+    "quantityNotes": "IAF has contracted 83 Tejas Mk1A aircraft (73 fighters, 10 trainers) with deliveries underway from HAL Bengaluru division, plus an additional order for 97 airframes cleared by the Defence Acquisition Council (DAC).",
+    "dataConfidence": "HIGH",
+    "lastVerified": "2026-02-18",
+    "freshnessStatus": "CURRENT"
+  },
+  "sources": [
+    {
+      "name": "Official DoD/MoD Technical Specs & Flight Manual",
+      "url": "https://www.defense.gov",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "Jane's All the World's Aircraft 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "w-6",
+  "name": "SCALP EG / Storm Shadow",
+  "type": "LAND_ATTACK_CRUISE_MISSILE",
+  "manufacturer": "MBDA",
+  "originCountry": "France / United Kingdom",
+  "guidance": "GPS / INS / Terrain Reference / IIR Terminal Seeker",
+  "maxRangeKm": 560,
+  "speedMach": 0.8,
+  "warheadKg": 450,
+  "description": "Deep-penetration stealth cruise missile carrying BROACH multi-stage tandem warhead for hardened targets.",
+  "sources": [
+    {
+      "name": "Jane's Weapons: Air-Launched",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

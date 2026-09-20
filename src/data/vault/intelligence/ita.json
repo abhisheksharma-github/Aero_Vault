@@ -1,0 +1,58 @@
+{
+  "countryName": "Italy",
+  "countryCode": "ITA",
+  "flag": "🇮🇹",
+  "airForceName": "Italy Air Force",
+  "armyAviationName": "Italy Army Aviation",
+  "navalAviationName": "Italy Naval Air Arm",
+  "globalRanking": 11,
+  "tvrTotal": 64.9,
+  "combatPowerScore": 68.3,
+  "strikeScore": 67,
+  "mobilityScore": 63.6,
+  "aewcScore": 60.3,
+  "tankerScore": 56.9,
+  "uavScore": 61.6,
+  "navalAirScore": 69.5,
+  "armyAirScore": 61,
+  "modernizationIndex": 65.8,
+  "logisticsScore": 62.2,
+  "forceReadiness": 85,
+  "totalActiveUnits": 800,
+  "airForceUnits": 520,
+  "armyAviationUnits": 160,
+  "navalAviationUnits": 120,
+  "marineUnits": 0,
+  "totalFighters": 360,
+  "totalBombers": 0,
+  "totalTransports": 120,
+  "totalHelicopters": 240,
+  "totalUAVs": 64,
+  "totalAEWC": 12,
+  "totalTankers": 16,
+  "totalTrainers": 160,
+  "gen5Count": 0,
+  "gen45Count": 200,
+  "gen4Count": 280,
+  "legacyCount": 80,
+  "primaryStrengths": [
+    "Comprehensive Europe / NATO force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "Ministero della Difesa (Italy)",
+      "url": "https://www.difesa.it",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

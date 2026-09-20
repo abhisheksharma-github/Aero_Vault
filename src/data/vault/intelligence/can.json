@@ -1,0 +1,58 @@
+{
+  "countryName": "Canada",
+  "countryCode": "CAN",
+  "flag": "🇨🇦",
+  "airForceName": "Canada Air Force",
+  "armyAviationName": "Canada Army Aviation",
+  "navalAviationName": "Canada Naval Air Arm",
+  "globalRanking": 19,
+  "tvrTotal": 55.8,
+  "combatPowerScore": 59.2,
+  "strikeScore": 58,
+  "mobilityScore": 55.1,
+  "aewcScore": 52.2,
+  "tankerScore": 49.3,
+  "uavScore": 53.4,
+  "navalAirScore": 55,
+  "armyAirScore": 56,
+  "modernizationIndex": 56.3,
+  "logisticsScore": 53.5,
+  "forceReadiness": 85,
+  "totalActiveUnits": 380,
+  "airForceUnits": 247,
+  "armyAviationUnits": 76,
+  "navalAviationUnits": 57,
+  "marineUnits": 0,
+  "totalFighters": 171,
+  "totalBombers": 0,
+  "totalTransports": 57,
+  "totalHelicopters": 114,
+  "totalUAVs": 30,
+  "totalAEWC": 6,
+  "totalTankers": 8,
+  "totalTrainers": 76,
+  "gen5Count": 0,
+  "gen45Count": 95,
+  "gen4Count": 133,
+  "legacyCount": 38,
+  "primaryStrengths": [
+    "Comprehensive North America / NATO force projection",
+    "High combat readiness & modernization"
+  ],
+  "primaryLimitations": [
+    "Operational budget sustainability",
+    "Logistical supply chain maintenance"
+  ],
+  "sources": [
+    {
+      "name": "Department of National Defence (Canada)",
+      "url": "https://www.canada.ca/en/department-national-defence.html",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

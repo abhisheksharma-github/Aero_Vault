@@ -1,0 +1,32 @@
+{
+  "id": "country-eun",
+  "name": "European Union (PESCO / EDA)",
+  "countryCode": "EUN",
+  "isoCode": "EU",
+  "flag": "🇪🇺",
+  "region": "Europe / Multi-National",
+  "description": "Permanent Structured Cooperation (PESCO) and European Defence Agency (EDA) joint aerospace programs including the Future Combat Air System (FCAS / SCAF), Eurodrone MALE RPAS, and Multi-Role Tanker Transport Fleet (MMF).",
+  "totalAircraftEstimate": 4500,
+  "modernizationIndex": 88,
+  "defenseBudgetUsd": 280,
+  "militaryBranches": [
+    {
+      "name": "Multinational Multi-Role Tanker Transport Fleet",
+      "type": "STRATEGIC",
+      "officialName": "NATO / EU MMF Fleet (Eindhoven)",
+      "description": "Pooled A330 MRTT strategic refueling and aeromedical evacuation airframes operated jointly by EU/NATO member nations."
+    }
+  ],
+  "sources": [
+    {
+      "name": "IISS Military Balance 2025",
+      "url": "https://www.iiss.org/publications/the-military-balance",
+      "retrievedAt": "2025-01-10"
+    },
+    {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

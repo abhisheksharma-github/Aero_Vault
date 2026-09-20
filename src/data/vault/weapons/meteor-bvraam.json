@@ -1,0 +1,19 @@
+{
+  "id": "w-1",
+  "name": "Meteor BVRAAM",
+  "type": "BVR_AAM",
+  "manufacturer": "MBDA",
+  "originCountry": "Europe",
+  "guidance": "Active Radar Homing / Solid Fuel Ramjet",
+  "maxRangeKm": 200,
+  "speedMach": 4,
+  "warheadKg": 25,
+  "description": "Beyond-visual-range air-to-air missile with throttleable ducted ramjet engine for unrivaled no-escape zone (>60 km).",
+  "sources": [
+    {
+      "name": "Jane's Weapons: Air-Launched",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    }
+  ]
+}

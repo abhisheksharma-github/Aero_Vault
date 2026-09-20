@@ -1,0 +1,36 @@
+{
+  "id": "nv-9",
+  "name": "HMS Queen Elizabeth (R08)",
+  "shipClass": "Queen Elizabeth-class Aircraft Carrier",
+  "vesselType": "AIRCRAFT_CARRIER",
+  "country": "United Kingdom",
+  "countryCode": "GBR",
+  "militaryBranch": "NAVAL_AVIATION",
+  "status": "ACTIVE",
+  "displacementTons": 65000,
+  "maxSpeedKnots": 26,
+  "commissionedYear": 2017,
+  "crewComplement": 1600,
+  "activeCount": 2,
+  "originCountry": "United Kingdom (Rosyth Dockyard)",
+  "pennantNumber": "R08",
+  "radarType": "AESA",
+  "hasAesa": true,
+  "tvrScore": 90.5,
+  "description": "Twin-island STOVL aircraft carrier operating 24-36 F-35B Lightning II stealth jump-jets and Merlin Mk2 ASW helicopters.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/USS_Virginia_%28SSN-774%29_underway_in_the_Atlantic_Ocean_in_2004.jpg/1200px-USS_Virginia_%28SSN-774%29_underway_in_the_Atlantic_Ocean_in_2004.jpg",
+  "weapons": "3x Phalanx 20mm CIWS, 4x 30mm DS30M Mk2 guns",
+  "propulsion": "2x Rolls-Royce MT30 Gas Turbines + 4x Diesel Gens",
+  "sources": [
+    {
+      "name": "Jane's Fighting Ships 2024-2025",
+      "url": "https://www.janes.com",
+      "retrievedAt": "2025-01-15"
+    },
+    {
+      "name": "Official Naval Registry / Ministry of Defence",
+      "url": "https://www.navy.mil",
+      "retrievedAt": "2025-01-10"
+    }
+  ]
+}

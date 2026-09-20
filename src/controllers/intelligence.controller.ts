@@ -20,13 +20,40 @@ import {
   GroundVehicleCategory,
 } from '../schemas/intelligence.schema.js';
 import {
-  initialSitrepEvents,
-  initialCountryForceProfiles,
-  initialNavalVessels,
-  initialGroundVehicles,
-} from '../data/multiDomainData.js';
-import { aircraftVault } from '../data/normalize.js';
+  vaultForceProfiles,
+  vaultSitrep,
+  vaultNaval,
+  vaultLand,
+  vaultAircraft,
+  vaultIntelligence,
+} from '../data/vaultLoader.js';
 import { validatedQuery, validatedParams } from '../middleware/validate.middleware.js';
+import { computeCountryCoverage } from '../types/coverage.types.js';
+
+function getCoverageForCountry(countryName: string, countryCode?: string) {
+  const cName = (countryName || '').toLowerCase();
+  const cCode = (countryCode || '').toUpperCase();
+
+  const hasForceProfile = vaultForceProfiles.some(
+    (fp) => fp.country.toLowerCase() === cName || fp.countryCode.toUpperCase() === cCode
+  );
+  const hasIntelligenceDossier = vaultIntelligence.some(
+    (intel) => intel.countryName.toLowerCase() === cName || intel.countryCode.toUpperCase() === cCode
+  );
+  const aircraftCount = vaultAircraft.filter(
+    (a) => a.country?.toLowerCase() === cName || (a.originCountry && a.originCountry.toLowerCase() === cName)
+  ).length;
+  const warshipCount = vaultNaval.filter((n) => n.country?.toLowerCase() === cName).length;
+  const vehicleCount = vaultLand.filter((l) => l.country?.toLowerCase() === cName).length;
+
+  return computeCountryCoverage({
+    hasForceProfile,
+    hasIntelligenceDossier,
+    aircraftCount,
+    warshipCount,
+    vehicleCount,
+  });
+}
 
 export class IntelligenceController {
   /**
@@ -91,7 +118,7 @@ export class IntelligenceController {
         // Fallback to in-memory dataset
       }
 
-      let sitreps = [...(initialSitrepEvents as any[])];
+      let sitreps = [...(vaultSitrep as any[])];
 
       if (domain) {
         sitreps = sitreps.filter((s) => s.domain === domain);
@@ -139,10 +166,15 @@ export class IntelligenceController {
           });
 
           if (profiles && profiles.length > 0) {
+            const profilesWithCoverage = profiles.map((p: any) => ({
+              ...p,
+              coverage: getCoverageForCountry(p.country, p.countryCode),
+            }));
+
             res.status(200).json({
               success: true,
-              count: profiles.length,
-              data: profiles,
+              count: profilesWithCoverage.length,
+              data: profilesWithCoverage,
             });
             return;
           }
@@ -151,7 +183,7 @@ export class IntelligenceController {
         // Fallback
       }
 
-      const profiles = [...(initialCountryForceProfiles as any[])];
+      const profiles = [...(vaultForceProfiles as any[])];
       const mult = order === 'asc' ? 1 : -1;
       profiles.sort((a, b) => {
         const valA = a[sortBy] ?? 0;
@@ -160,7 +192,10 @@ export class IntelligenceController {
         return (Number(valA) - Number(valB)) * mult;
       });
 
-      const paginated = profiles.slice(0, numLimit);
+      const paginated = profiles.slice(0, numLimit).map((p: any) => ({
+        ...p,
+        coverage: getCoverageForCountry(p.country, p.countryCode),
+      }));
 
       res.status(200).json({
         success: true,
@@ -216,10 +251,13 @@ export class IntelligenceController {
                 : [],
             ]);
 
+            const coverage = getCoverageForCountry(profile.country, profile.countryCode);
+
             res.status(200).json({
               success: true,
               data: {
                 profile,
+                coverage,
                 inventory: {
                   aircraftCount: aircraft.length,
                   warshipCount: vessels.length,
@@ -237,7 +275,7 @@ export class IntelligenceController {
         // Fallback
       }
 
-      const profile = (initialCountryForceProfiles as any[]).find(
+      const profile = (vaultForceProfiles as any[]).find(
         (p) =>
           p.countryCode?.toUpperCase() === code ||
           p.country?.toLowerCase() === (countryCode || '').toLowerCase()
@@ -245,18 +283,20 @@ export class IntelligenceController {
 
       const targetCountry = profile ? profile.country : countryCode;
 
-      const aircraft = aircraftVault.filter(
+      const aircraft = vaultAircraft.filter(
         (a) =>
           (a.country?.toLowerCase() === targetCountry?.toLowerCase() ||
             a.originCountry?.toLowerCase() === targetCountry?.toLowerCase()) &&
           a.serviceStatus === 'ACTIVE'
       );
-      const vessels = (initialNavalVessels as any[]).filter(
+      const vessels = (vaultNaval as any[]).filter(
         (v) => v.country?.toLowerCase() === targetCountry?.toLowerCase() && v.status === 'ACTIVE'
       );
-      const vehicles = (initialGroundVehicles as any[]).filter(
+      const vehicles = (vaultLand as any[]).filter(
         (g) => g.country?.toLowerCase() === targetCountry?.toLowerCase() && g.status === 'ACTIVE'
       );
+
+      const coverage = getCoverageForCountry(targetCountry, profile?.countryCode || code);
 
       res.status(200).json({
         success: true,
@@ -269,6 +309,7 @@ export class IntelligenceController {
             seasIndex: 0,
             armsIndex: 0,
           },
+          coverage,
           inventory: {
             aircraftCount: aircraft.length,
             warshipCount: vessels.length,
@@ -335,7 +376,7 @@ export class IntelligenceController {
         // Fallback
       }
 
-      let vessels = [...(initialNavalVessels as any[])];
+      let vessels = [...(vaultNaval as any[])];
 
       if (country) {
         vessels = vessels.filter((v) => v.country?.toLowerCase().includes(country.toLowerCase()));
@@ -421,7 +462,7 @@ export class IntelligenceController {
         // Fallback
       }
 
-      let vehicles = [...(initialGroundVehicles as any[])];
+      let vehicles = [...(vaultLand as any[])];
 
       if (country) {
         vehicles = vehicles.filter((v) => v.country?.toLowerCase().includes(country.toLowerCase()));
@@ -474,7 +515,7 @@ export class IntelligenceController {
         res.status(200).json({
           success: true,
           message: 'Global force profiles re-indexed successfully (tactical in-memory sync)',
-          syncedCount: initialCountryForceProfiles.length,
+          syncedCount: vaultForceProfiles.length,
         });
       }
     } catch (error) {
