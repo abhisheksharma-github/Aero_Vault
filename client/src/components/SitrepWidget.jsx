@@ -209,7 +209,7 @@ export default function SitrepWidget({ compact = false, maxItems = 15 }) {
           </button>
 
           {/* Domain Filter Toggle Bar */}
-          <div className="flex items-center space-x-1 bg-slate-950 p-1 rounded-xl border border-slate-800">
+          <div className="flex items-center space-x-1 bg-slate-950 p-1 rounded-xl border border-slate-800 overflow-x-auto touch-scroll max-w-full scrollbar-none">
             {domainOptions.map((opt) => {
               const Icon = opt.icon;
               const isSelected = domainFilter === opt.id;
@@ -220,13 +220,13 @@ export default function SitrepWidget({ compact = false, maxItems = 15 }) {
                     tacticalAudio.playTab();
                     setDomainFilter(opt.id);
                   }}
-                  className={`flex items-center space-x-1 px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold transition-all ${
+                  className={`flex items-center space-x-1 px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold whitespace-nowrap flex-shrink-0 transition-all ${
                     isSelected
                       ? 'bg-cyan-500 text-slate-950 shadow-sm'
                       : 'text-slate-400 hover:text-white hover:bg-slate-900'
                   }`}
                 >
-                  <Icon className="w-3 h-3" />
+                  <Icon className="w-3 h-3 flex-shrink-0" />
                   <span>{opt.label}</span>
                 </button>
               );

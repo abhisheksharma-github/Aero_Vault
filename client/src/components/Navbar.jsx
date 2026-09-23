@@ -121,7 +121,7 @@ export default function Navbar({
           </div>
 
           {/* Center Domain Quick Nav Switcher (Desktop) */}
-          <nav className="hidden xl:flex items-center space-x-1 bg-slate-900/90 p-1 rounded-2xl border border-slate-800">
+          <nav className="hidden 2xl:flex items-center space-x-1 bg-slate-900/90 p-1 rounded-2xl border border-slate-800">
             {navDomainTabs.map((tab) => {
               const Icon = tab.icon;
               const isActive = activeTab === tab.id;
@@ -129,7 +129,7 @@ export default function Navbar({
                 <button
                   key={tab.id}
                   onClick={() => handleTabClick(tab.id)}
-                  className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all ${
+                  className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-xl text-xs font-mono font-bold whitespace-nowrap transition-all ${
                     isActive
                       ? 'bg-cyan-500 text-slate-950 shadow-md shadow-cyan-500/20'
                       : tab.highlight
@@ -137,7 +137,7 @@ export default function Navbar({
                       : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
                   }`}
                 >
-                  <Icon className={`w-3.5 h-3.5 ${tab.pulse ? 'animate-pulse text-emerald-400' : ''}`} />
+                  <Icon className={`w-3.5 h-3.5 flex-shrink-0 ${tab.pulse ? 'animate-pulse text-emerald-400' : ''}`} />
                   <span>{tab.label}</span>
                 </button>
               );
@@ -145,21 +145,21 @@ export default function Navbar({
           </nav>
 
           {/* Quick Command Palette / Search Trigger */}
-          <div className="flex-1 max-w-xs mx-2 relative hidden md:block">
+          <div className="flex-1 min-w-0 max-w-[180px] lg:max-w-xs mx-1 sm:mx-2 relative hidden md:block">
             <button
               onClick={() => {
                 tacticalAudio.playClick();
                 if (onOpenCommandPalette) onOpenCommandPalette();
               }}
-              className="w-full pl-3 pr-3.5 py-1.5 rounded-xl bg-slate-900/80 hover:bg-slate-900 border border-slate-800 hover:border-cyan-500/40 text-xs text-slate-400 flex items-center justify-between transition-all group"
+              className="w-full pl-2.5 sm:pl-3 pr-2.5 sm:pr-3.5 py-1.5 rounded-xl bg-slate-900/80 hover:bg-slate-900 border border-slate-800 hover:border-cyan-500/40 text-xs text-slate-400 flex items-center justify-between transition-all group min-w-0"
             >
-              <div className="flex items-center space-x-2">
-                <Search className="w-3.5 h-3.5 text-slate-400 group-hover:text-cyan-400 transition-colors" />
+              <div className="flex items-center space-x-1.5 sm:space-x-2 min-w-0">
+                <Search className="w-3.5 h-3.5 text-slate-400 group-hover:text-cyan-400 transition-colors flex-shrink-0" />
                 <span className="text-[11px] font-sans text-slate-400 group-hover:text-white transition-colors truncate">
                   Search weapons, ships, jets...
                 </span>
               </div>
-              <kbd className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-mono text-slate-400 bg-slate-950 border border-slate-800 rounded-md group-hover:text-cyan-400 group-hover:border-cyan-500/40 transition-colors">
+              <kbd className="hidden sm:inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-mono text-slate-400 bg-slate-950 border border-slate-800 rounded-md group-hover:text-cyan-400 group-hover:border-cyan-500/40 transition-colors flex-shrink-0 ml-1">
                 <Command className="w-2.5 h-2.5" /> K
               </kbd>
             </button>
@@ -171,7 +171,7 @@ export default function Navbar({
             {/* Audio Feedback Synthesizer Toggle */}
             <button
               onClick={handleToggleSound}
-              className={`p-1.5 sm:p-2 rounded-xl border transition-all ${
+              className={`p-1.5 sm:p-2 rounded-xl border transition-all flex-shrink-0 ${
                 audioEnabled
                   ? 'bg-cyan-950/80 border-cyan-800 text-cyan-400 shadow-glow-cyan'
                   : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white hover:border-slate-700'
@@ -187,13 +187,13 @@ export default function Navbar({
                 tacticalAudio.playLock();
                 onOpenComparison();
               }}
-              className={`flex items-center space-x-1.5 sm:space-x-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-mono font-bold transition-all border ${
+              className={`flex items-center space-x-1.5 sm:space-x-2 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-mono font-bold transition-all border flex-shrink-0 ${
                 comparisonList.length > 0
                   ? 'bg-gradient-to-r from-cyan-400 to-cyan-500 text-slate-950 border-cyan-400 shadow-glow-cyan hover:brightness-110'
                   : 'bg-slate-900 border-slate-800 text-slate-200 hover:border-cyan-500/40'
               }`}
             >
-              <Scale className="w-3.5 h-3.5" />
+              <Scale className="w-3.5 h-3.5 flex-shrink-0" />
               <span className="hidden sm:inline">BENCHMARK</span>
               <span className={`px-1.5 py-0.2 rounded text-[10px] font-mono font-bold ${
                 comparisonList.length > 0 ? 'bg-slate-950/30 text-slate-950' : 'bg-slate-950 text-cyan-400 border border-cyan-800'
@@ -205,7 +205,7 @@ export default function Navbar({
             {/* Mobile Menu Toggle Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="xl:hidden p-1.5 sm:p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white"
+              className="2xl:hidden p-1.5 sm:p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white flex-shrink-0"
               aria-label="Toggle domain navigation menu"
             >
               {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}

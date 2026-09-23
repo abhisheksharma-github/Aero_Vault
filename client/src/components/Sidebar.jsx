@@ -245,19 +245,19 @@ export default function Sidebar({
                   <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1.5 h-6 bg-cyan-400 rounded-r-full shadow-glow-cyan" />
                 )}
                 
-                <div className="flex items-center space-x-3 min-w-0 pl-1">
+                <div className="flex items-center space-x-3 min-w-0 pl-1 flex-1">
                   <div
-                    className={`p-2 rounded-xl transition-transform group-hover:scale-105 ${
+                    className={`p-2 rounded-xl transition-transform group-hover:scale-105 flex-shrink-0 ${
                       isActive ? 'bg-cyan-500 text-slate-950 shadow-glow-cyan' : 'bg-slate-950 text-cyan-400 group-hover:bg-slate-800'
                     }`}
                   >
                     <Icon className="w-4 h-4" />
                   </div>
-                  <div className="truncate">
-                    <div className="text-xs font-display tracking-wide font-semibold flex items-center gap-1.5">
-                      <span>{item.label}</span>
+                  <div className="truncate min-w-0 flex-1">
+                    <div className="text-xs font-display tracking-wide font-semibold flex items-center gap-1.5 min-w-0">
+                      <span className="truncate">{item.label}</span>
                       {item.pulse && (
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping flex-shrink-0" />
                       )}
                     </div>
                     <div className="text-[10px] font-mono text-slate-400 truncate">{item.desc}</div>
