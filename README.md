@@ -1,6 +1,6 @@
 # ⚡ AeroVault — Global Multi-Domain Defense & Combat Air Intelligence Platform
 
-[![Build Status](https://img.shields.io/badge/Build-Passing-emerald.svg)](https://github.com/abhisheksharma-github/OrderEase)
+[![Build Status](https://img.shields.io/badge/Build-Passing-emerald.svg)](https://github.com/abhisheksharma-github/Aero_Vault)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3+-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.3+-cyan.svg)](https://react.dev/)
 [![Prisma](https://img.shields.io/badge/Prisma-5.22+-indigo.svg)](https://www.prisma.io/)
