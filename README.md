@@ -6,7 +6,7 @@
 [![Prisma](https://img.shields.io/badge/Prisma-5.22+-indigo.svg)](https://www.prisma.io/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4+-sky.svg)](https://tailwindcss.com/)
 [![Tests](https://img.shields.io/badge/Tests-Vitest-emerald.svg)](./tests)
-[![Intelligence Model](https://img.shields.io/badge/TVR_Model-Deterministic_7_Pillars-teal.svg)](./TVR_METHODOLOGY.md)
+
 
 **AeroVault** is an enterprise-grade defense intelligence platform providing multi-domain Order of Battle (OrBat), sovereign military power rankings, and technical hardware telemetry across global armed forces. It delivers mathematical **True Value Rating (TVR)** scoring, the **Global Military Power Index (ATLAS 2026)**, and verified open-source intelligence (OSINT) provenance across **Air, Naval, and Land Combat** domains.
 
