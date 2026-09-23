@@ -314,18 +314,18 @@ export default function IntelligenceOverview({
               </div>
             )}
 
-            {/* Primary Strengths */}
-            {selectedNation?.primaryStrengths && selectedNation.primaryStrengths.length > 0 && (
+            {/* Strategic Challenges & Vulnerabilities */}
+            {selectedNation?.challenges && selectedNation.challenges.length > 0 && (
               <div className="space-y-2">
-                <div className="text-[10px] font-mono text-emerald-400 uppercase font-bold flex items-center gap-1">
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                  Primary Strategic Strengths
+                <div className="text-[10px] font-mono text-amber-400 uppercase font-bold flex items-center gap-1">
+                  <AlertCircle className="w-3.5 h-3.5" />
+                  Strategic Challenges & Modernization Priorities
                 </div>
                 <ul className="space-y-1.5 text-xs text-slate-300">
-                  {selectedNation.primaryStrengths.map((str, idx) => (
+                  {selectedNation.challenges.map((chl, idx) => (
                     <li key={idx} className="flex items-start gap-1.5">
-                      <span className="text-emerald-400 font-bold">•</span>
-                      <span>{str}</span>
+                      <span className="text-amber-400 font-bold">•</span>
+                      <span>{chl}</span>
                     </li>
                   ))}
                 </ul>

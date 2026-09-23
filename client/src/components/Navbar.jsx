@@ -94,27 +94,27 @@ export default function Navbar({
       </div>
 
       {/* Main Tactical Navbar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 gap-3">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-14 sm:h-16 gap-2 sm:gap-3">
           
           {/* Brand Logo & Tag */}
           <div
-            className="flex items-center space-x-2.5 sm:space-x-3 flex-shrink-0 cursor-pointer group min-w-0"
+            className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0 cursor-pointer group min-w-0"
             onClick={() => handleTabClick('overview')}
           >
-            <div className="relative flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-br from-cyan-500/20 via-slate-900 to-slate-950 border border-cyan-500/40 shadow-glow-cyan group-hover:scale-105 transition-transform duration-300 flex-shrink-0">
+            <div className="relative flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-xl sm:rounded-2xl bg-gradient-to-br from-cyan-500/20 via-slate-900 to-slate-950 border border-cyan-500/40 shadow-glow-cyan group-hover:scale-105 transition-transform duration-300 flex-shrink-0">
               <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
             </div>
             <div className="min-w-0">
-              <div className="flex items-center space-x-1.5 sm:space-x-2">
-                <span className="text-lg sm:text-xl font-display font-black tracking-wider text-white">
+              <div className="flex items-center space-x-1 sm:space-x-2">
+                <span className="text-base sm:text-xl font-display font-black tracking-wider text-white">
                   AERO<span className="text-cyan-400">VAULT</span>
                 </span>
                 <span className="px-1.5 py-0.2 text-[8px] sm:text-[9px] font-mono font-bold uppercase rounded-md bg-cyan-950 text-cyan-400 border border-cyan-800">
                   v3.0 PRO
                 </span>
               </div>
-              <p className="text-[9px] sm:text-[10px] tracking-wider uppercase font-mono text-slate-400 truncate max-w-[180px] sm:max-w-none">
+              <p className="text-[8px] sm:text-[10px] tracking-wider uppercase font-mono text-slate-400 truncate max-w-[130px] sm:max-w-none">
                 Global Military Defense Intel
               </p>
             </div>
@@ -171,7 +171,7 @@ export default function Navbar({
             {/* Audio Feedback Synthesizer Toggle */}
             <button
               onClick={handleToggleSound}
-              className={`p-2 rounded-xl border transition-all ${
+              className={`p-1.5 sm:p-2 rounded-xl border transition-all ${
                 audioEnabled
                   ? 'bg-cyan-950/80 border-cyan-800 text-cyan-400 shadow-glow-cyan'
                   : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white hover:border-slate-700'
@@ -187,7 +187,7 @@ export default function Navbar({
                 tacticalAudio.playLock();
                 onOpenComparison();
               }}
-              className={`flex items-center space-x-1.5 sm:space-x-2 px-2.5 sm:px-3 py-2 rounded-xl text-xs font-mono font-bold transition-all border ${
+              className={`flex items-center space-x-1.5 sm:space-x-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-mono font-bold transition-all border ${
                 comparisonList.length > 0
                   ? 'bg-gradient-to-r from-cyan-400 to-cyan-500 text-slate-950 border-cyan-400 shadow-glow-cyan hover:brightness-110'
                   : 'bg-slate-900 border-slate-800 text-slate-200 hover:border-cyan-500/40'
@@ -205,7 +205,8 @@ export default function Navbar({
             {/* Mobile Menu Toggle Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="xl:hidden p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white"
+              className="xl:hidden p-1.5 sm:p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white"
+              aria-label="Toggle domain navigation menu"
             >
               {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
             </button>

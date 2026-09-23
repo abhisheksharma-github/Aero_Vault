@@ -238,15 +238,15 @@ export default function AircraftDirectoryView({
       </div>
 
       {/* Search & Multi-Faceted Filters */}
-      <div className="p-5 rounded-3xl bg-slate-900/90 border border-slate-800 space-y-4 shadow-xl">
+      <div className="p-3.5 sm:p-5 rounded-2xl sm:rounded-3xl bg-slate-900/90 border border-slate-800 space-y-3 sm:space-y-4 shadow-xl">
         {/* Status Filter Tab Pills */}
-        <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-800/80">
-          <div className="flex items-center space-x-2">
-            <span className="text-xs font-mono text-slate-400 font-bold uppercase mr-1">Status:</span>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pb-3 border-b border-slate-800/80">
+          <div className="flex items-center space-x-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none touch-scroll">
+            <span className="text-[11px] font-mono text-slate-400 font-bold uppercase mr-1 flex-shrink-0">Status:</span>
             {[
-              { id: 'ALL', label: 'All Statuses' },
-              { id: 'ACTIVE', label: 'In Service / Active', color: 'text-emerald-400', dot: true },
-              { id: 'RETIRED', label: 'Retired / Historic (Decommissioned)', color: 'text-rose-400' },
+              { id: 'ALL', label: 'All' },
+              { id: 'ACTIVE', label: 'Active', color: 'text-emerald-400', dot: true },
+              { id: 'RETIRED', label: 'Retired', color: 'text-rose-400' },
             ].map((st) => (
               <button
                 key={st.id}
@@ -254,22 +254,22 @@ export default function AircraftDirectoryView({
                   tacticalAudio.playClick();
                   setSelectedStatus(st.id);
                 }}
-                className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all ${
+                className={`flex items-center space-x-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl text-xs font-mono font-bold whitespace-nowrap transition-all flex-shrink-0 ${
                   selectedStatus === st.id
                     ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/50 shadow-glow-cyan'
                     : 'bg-slate-950 text-slate-400 hover:text-white border border-slate-800'
                 }`}
               >
-                {st.dot && <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />}
+                {st.dot && <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />}
                 <span className={st.color || ''}>{st.label}</span>
               </button>
             ))}
           </div>
 
-          <div className="flex items-center space-x-2">
-            <span className="text-xs font-mono text-slate-400 font-bold uppercase mr-1">Era:</span>
+          <div className="flex items-center space-x-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none touch-scroll">
+            <span className="text-[11px] font-mono text-slate-400 font-bold uppercase mr-1 flex-shrink-0">Era:</span>
             {[
-              { id: 'ALL', label: 'All Eras' },
+              { id: 'ALL', label: 'All' },
               { id: 'VINTAGE', label: 'Vintage (1947–60)' },
               { id: 'COLD_WAR', label: 'Cold War (1961–90)' },
               { id: 'MODERN', label: 'Modern (1991+)' },
@@ -280,7 +280,7 @@ export default function AircraftDirectoryView({
                   tacticalAudio.playClick();
                   setSelectedEra(er.id);
                 }}
-                className={`px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all ${
+                className={`px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl text-xs font-mono font-bold whitespace-nowrap transition-all flex-shrink-0 ${
                   selectedEra === er.id
                     ? 'bg-amber-500/20 text-amber-300 border border-amber-500/50'
                     : 'bg-slate-950 text-slate-400 hover:text-white border border-slate-800'

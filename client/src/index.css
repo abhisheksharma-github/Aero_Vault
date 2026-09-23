@@ -17,10 +17,14 @@
     --av-crimson: #EF4444;
   }
 
-  body {
+  html, body {
     background-color: var(--av-navy);
     color: var(--av-light);
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
+    -webkit-overflow-scrolling: touch;
     background-image: 
       radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 240, 255, 0.08), transparent 70%),
       radial-gradient(ellipse 60% 40% at 100% 60%, rgba(10, 42, 78, 0.4), transparent 60%);
@@ -141,6 +145,11 @@
   display: none;
 }
 
+/* Smooth Touch Scrolling */
+.touch-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
 
 /* Plain English Glossary Tooltip Styling */
 .intel-tooltip {
@@ -157,7 +166,7 @@
   bottom: 125%;
   left: 50%;
   transform: translateX(-50%) translateY(4px);
-  width: 240px;
+  width: min(240px, 80vw);
   padding: 8px 12px;
   border-radius: 12px;
   background: #00162E;
@@ -183,7 +192,8 @@
   border-color: #00162E transparent transparent transparent;
 }
 
-.intel-tooltip:hover .intel-tooltip-text {
+.intel-tooltip:hover .intel-tooltip-text,
+.intel-tooltip:focus-within .intel-tooltip-text {
   visibility: visible;
   opacity: 1;
   transform: translateX(-50%) translateY(0);

@@ -280,7 +280,7 @@ export default function CountryRankingsView({ onSelectCountry, onNavigateTab }) 
         </div>
 
         {/* Search Bar */}
-        <div className="relative min-w-[260px]">
+        <div className="relative w-full md:w-auto md:min-w-[260px] flex-1 md:flex-initial">
           <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
           <input
             type="text"
@@ -316,7 +316,7 @@ export default function CountryRankingsView({ onSelectCountry, onNavigateTab }) 
                 tacticalAudio.playClick();
                 setSelectedCountryDetail(country);
               }}
-              className="bg-slate-900/90 backdrop-blur-md rounded-2xl border border-slate-800 hover:border-cyan-500/50 p-4 space-y-3 cursor-pointer shadow-lg active:scale-[0.99] transition-all"
+              className="bg-slate-900/90 backdrop-blur-md rounded-2xl border border-slate-800 hover:border-cyan-500/50 p-3.5 sm:p-4 space-y-3 cursor-pointer shadow-lg active:scale-[0.99] transition-all"
             >
               {/* Header: Rank, Flag, Name, ATLAS Score */}
               <div className="flex items-start justify-between gap-2">
@@ -362,20 +362,20 @@ export default function CountryRankingsView({ onSelectCountry, onNavigateTab }) 
               </div>
 
               {/* 4-Metric Grid */}
-              <div className="grid grid-cols-4 gap-1.5 p-2.5 rounded-xl bg-slate-950/80 border border-slate-800/80 text-center font-mono text-[10px]">
-                <div>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5 p-2.5 rounded-xl bg-slate-950/80 border border-slate-800/80 text-center font-mono text-[10px]">
+                <div className="p-1 rounded bg-slate-900/60">
                   <span className="text-slate-400 block text-[9px]">AIRS</span>
                   <span className="text-cyan-300 font-bold">{country.airsIndex?.toFixed(1) || '0.0'}</span>
                 </div>
-                <div>
+                <div className="p-1 rounded bg-slate-900/60">
                   <span className="text-slate-400 block text-[9px]">SEAS</span>
                   <span className="text-cyan-300 font-bold">{country.seasIndex?.toFixed(1) || '0.0'}</span>
                 </div>
-                <div>
+                <div className="p-1 rounded bg-slate-900/60">
                   <span className="text-slate-400 block text-[9px]">AIR FLEET</span>
                   <span className="text-white font-bold">{(country.totalAircraft || 0).toLocaleString()}</span>
                 </div>
-                <div>
+                <div className="p-1 rounded bg-slate-900/60">
                   <span className="text-slate-400 block text-[9px]">BUDGET</span>
                   <span className="text-emerald-400 font-bold">${country.defenseBudgetUsd || 0}B</span>
                 </div>

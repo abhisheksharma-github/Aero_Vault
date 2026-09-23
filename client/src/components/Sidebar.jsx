@@ -192,7 +192,7 @@ export default function Sidebar({
                   </button>
                 )}
               </div>
-              <div className="grid grid-cols-3 gap-1.5 text-xs font-mono">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5 text-xs font-mono">
                 {superpowers.map((c) => {
                   const isSelected = selectedCountry?.toLowerCase() === c.name.toLowerCase();
                   return (
@@ -201,11 +201,11 @@ export default function Sidebar({
                       onClick={() => handleCountryClick(c.name)}
                       className={`p-2 rounded-xl flex items-center space-x-1.5 transition-all ${
                         isSelected
-                          ? 'bg-cyan-500/20 border border-cyan-500/50 text-white font-bold'
+                          ? 'bg-cyan-500/20 border border-cyan-500/50 text-white font-bold shadow-glow-cyan'
                           : 'bg-slate-950 hover:bg-slate-800 text-slate-300 border border-slate-800/80'
                       }`}
                     >
-                      <span className="text-base">{c.flag}</span>
+                      <span className="text-base flex-shrink-0">{c.flag}</span>
                       <span className="truncate text-[10px]">{c.name}</span>
                     </button>
                   );

@@ -92,16 +92,16 @@ export default function OverviewDashboard({
   };
 
   return (
-    <div className="space-y-8 animate-fade-in">
+    <div className="space-y-6 sm:space-y-8 animate-fade-in">
       
       {/* Top Aerospace Hero Banner */}
-      <div className="rounded-3xl p-6 sm:p-8 glass-panel border border-av-steel/40 bg-gradient-to-r from-av-blue/90 via-av-blue/40 to-av-navy relative overflow-hidden hud-corner-box">
-        <div className="relative z-10 max-w-3xl space-y-3">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-av-sky/10 border border-av-sky/30 text-av-sky text-xs font-mono">
+      <div className="rounded-2xl sm:rounded-3xl p-4 sm:p-8 glass-panel border border-av-steel/40 bg-gradient-to-r from-av-blue/90 via-av-blue/40 to-av-navy relative overflow-hidden hud-corner-box">
+        <div className="relative z-10 max-w-3xl space-y-2 sm:space-y-3">
+          <div className="inline-flex items-center space-x-2 px-2.5 sm:px-3 py-1 rounded-full bg-av-sky/10 border border-av-sky/30 text-av-sky text-[10px] sm:text-xs font-mono">
             <Radio className="w-3.5 h-3.5 animate-pulse" />
             <span className="font-bold">DEFENSE AIR FLEET INTELLIGENCE & TELEMETRY</span>
           </div>
-          <h1 className="text-2xl sm:text-4xl font-display font-black text-white tracking-tight leading-tight">
+          <h1 className="text-xl sm:text-4xl font-display font-black text-white tracking-tight leading-tight">
             Multi-Domain Air Power, Tri-Branch Fleets & TVR Analytics
           </h1>
           <p className="text-xs sm:text-sm text-av-light/90 leading-relaxed font-sans">
@@ -118,31 +118,31 @@ export default function OverviewDashboard({
       </div>
 
       {/* 4-Stat Core Metric Ribbon */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 font-mono">
-        <div className="glass-panel p-5 rounded-3xl border border-av-steel/30 space-y-1 hud-corner-box">
-          <div className="text-[10px] text-av-mist uppercase tracking-wider font-bold">Total Military Aircraft</div>
-          <div className="text-2xl sm:text-3xl font-black text-white">{totalAircraft.toLocaleString()}</div>
-          <div className="text-[10px] text-av-teal flex items-center gap-1">Global tracked inventory</div>
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4 font-mono">
+        <div className="glass-panel p-3.5 sm:p-5 rounded-2xl sm:rounded-3xl border border-av-steel/30 space-y-1 hud-corner-box">
+          <div className="text-[9px] sm:text-[10px] text-av-mist uppercase tracking-wider font-bold truncate">Total Military Aircraft</div>
+          <div className="text-xl sm:text-3xl font-black text-white">{totalAircraft.toLocaleString()}</div>
+          <div className="text-[9px] sm:text-[10px] text-av-teal flex items-center gap-1 truncate">Global tracked inventory</div>
         </div>
 
-        <div className="glass-panel p-5 rounded-3xl border border-av-steel/30 space-y-1 hud-corner-box">
-          <div className="text-[10px] text-av-mist uppercase tracking-wider font-bold">Active Frontline Units</div>
-          <div className="text-2xl sm:text-3xl font-black text-av-sky">{activeFleet.toLocaleString()}</div>
-          <div className="text-[10px] text-emerald-400 font-bold flex items-center gap-1">
-            <CheckCircle2 className="w-3 h-3" /> 85.3% Fleet Readiness
+        <div className="glass-panel p-3.5 sm:p-5 rounded-2xl sm:rounded-3xl border border-av-steel/30 space-y-1 hud-corner-box">
+          <div className="text-[9px] sm:text-[10px] text-av-mist uppercase tracking-wider font-bold truncate">Active Frontline Units</div>
+          <div className="text-xl sm:text-3xl font-black text-av-sky">{activeFleet.toLocaleString()}</div>
+          <div className="text-[9px] sm:text-[10px] text-emerald-400 font-bold flex items-center gap-1 truncate">
+            <CheckCircle2 className="w-3 h-3 flex-shrink-0" /> 85.3% Fleet Readiness
           </div>
         </div>
 
-        <div className="glass-panel p-5 rounded-3xl border border-av-steel/30 space-y-1 hud-corner-box">
-          <div className="text-[10px] text-av-mist uppercase tracking-wider font-bold">Nations Tracked</div>
-          <div className="text-2xl sm:text-3xl font-black text-white">{trackedNations}</div>
-          <div className="text-[10px] text-av-mist">Superpowers & air arms</div>
+        <div className="glass-panel p-3.5 sm:p-5 rounded-2xl sm:rounded-3xl border border-av-steel/30 space-y-1 hud-corner-box">
+          <div className="text-[9px] sm:text-[10px] text-av-mist uppercase tracking-wider font-bold truncate">Nations Tracked</div>
+          <div className="text-xl sm:text-3xl font-black text-white">{trackedNations}</div>
+          <div className="text-[9px] sm:text-[10px] text-av-mist truncate">Superpowers & air arms</div>
         </div>
 
-        <div className="glass-panel p-5 rounded-3xl border border-av-steel/30 space-y-1 hud-corner-box">
-          <div className="text-[10px] text-av-mist uppercase tracking-wider font-bold">Average Fleet TVR</div>
-          <div className="text-2xl sm:text-3xl font-black text-emerald-400">{avgTvr}</div>
-          <div className="text-[10px] text-av-teal">Calibrated to 7 capability pillars</div>
+        <div className="glass-panel p-3.5 sm:p-5 rounded-2xl sm:rounded-3xl border border-av-steel/30 space-y-1 hud-corner-box">
+          <div className="text-[9px] sm:text-[10px] text-av-mist uppercase tracking-wider font-bold truncate">Average Fleet TVR</div>
+          <div className="text-xl sm:text-3xl font-black text-emerald-400">{avgTvr}</div>
+          <div className="text-[9px] sm:text-[10px] text-av-teal truncate">Calibrated to 7 capability pillars</div>
         </div>
       </div>
 
@@ -150,8 +150,8 @@ export default function OverviewDashboard({
       <div className="space-y-4">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-lg sm:text-xl font-display font-bold text-white flex items-center gap-2">
-              <Shield className="w-5 h-5 text-av-sky" />
+            <h2 className="text-base sm:text-xl font-display font-bold text-white flex items-center gap-2">
+              <Shield className="w-4 sm:w-5 h-4 sm:h-5 text-av-sky" />
               <span>Three Specialized Aviation Branches</span>
             </h2>
             <p className="text-xs text-av-mist">
@@ -160,19 +160,19 @@ export default function OverviewDashboard({
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
           {branchSummary.map((b) => {
             const Icon = b.icon;
             return (
               <div
                 key={b.id}
                 onClick={() => handleBranchClick(b.id)}
-                className={`group glass-panel rounded-3xl p-6 border ${b.border} flex flex-col justify-between cursor-pointer hover:scale-[1.02] transition-all bg-gradient-to-b ${b.accent} hud-corner-box`}
+                className={`group glass-panel rounded-2xl sm:rounded-3xl p-5 sm:p-6 border ${b.border} flex flex-col justify-between cursor-pointer hover:scale-[1.02] transition-all bg-gradient-to-b ${b.accent} hud-corner-box`}
               >
-                <div className="space-y-3.5">
+                <div className="space-y-3 sm:space-y-3.5">
                   <div className="flex items-center justify-between">
-                    <div className="p-3 rounded-2xl bg-av-navy/90 border border-av-steel/40 text-av-sky shadow-lg">
-                      <Icon className="w-6 h-6" />
+                    <div className="p-2.5 sm:p-3 rounded-xl sm:rounded-2xl bg-av-navy/90 border border-av-steel/40 text-av-sky shadow-lg">
+                      <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
                     <span className={`text-xs font-mono font-bold px-2.5 py-1 rounded-xl border ${b.badgeColor}`}>
                       {b.count}
@@ -180,21 +180,21 @@ export default function OverviewDashboard({
                   </div>
 
                   <div>
-                    <h3 className="text-base font-display font-bold text-white group-hover:text-av-sky transition-colors">
+                    <h3 className="text-sm sm:text-base font-display font-bold text-white group-hover:text-av-sky transition-colors">
                       {b.name}
                     </h3>
-                    <p className="text-xs text-av-light/80 mt-1.5 leading-relaxed font-sans">
+                    <p className="text-xs text-av-light/80 mt-1 sm:mt-1.5 leading-relaxed font-sans">
                       {b.description}
                     </p>
                   </div>
 
-                  <div className="pt-2.5 border-t border-av-steel/20">
-                    <span className="text-[10px] font-mono text-av-mist uppercase block">Lead Platforms:</span>
+                  <div className="pt-2 sm:pt-2.5 border-t border-av-steel/20">
+                    <span className="text-[9px] sm:text-[10px] font-mono text-av-mist uppercase block">Lead Platforms:</span>
                     <span className="text-xs font-mono text-av-light font-semibold">{b.leadAssets}</span>
                   </div>
                 </div>
 
-                <div className="pt-4 flex items-center text-xs font-mono text-av-sky font-bold group-hover:translate-x-1 transition-transform">
+                <div className="pt-3 sm:pt-4 flex items-center text-xs font-mono text-av-sky font-bold group-hover:translate-x-1 transition-transform">
                   <span>Explore {b.name}</span>
                   <ArrowRight className="w-4 h-4 ml-1.5" />
                 </div>

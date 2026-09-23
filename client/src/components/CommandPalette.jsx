@@ -163,14 +163,14 @@ export default function CommandPalette({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-slate-950/85 backdrop-blur-xl animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-start justify-center pt-8 sm:pt-24 px-3 sm:px-4 bg-slate-950/85 backdrop-blur-xl animate-fade-in">
       <div 
-        className="w-full max-w-2xl rounded-3xl bg-slate-900 border border-cyan-500/40 shadow-2xl overflow-hidden bg-slate-900/95 hud-corner-box text-slate-100"
+        className="w-full max-w-2xl rounded-2xl sm:rounded-3xl bg-slate-900 border border-cyan-500/40 shadow-2xl overflow-hidden bg-slate-900/95 hud-corner-box text-slate-100"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Search Input Bar */}
-        <div className="relative p-4 border-b border-slate-800 flex items-center gap-3 bg-slate-950/50">
-          <Search className="w-5 h-5 text-cyan-400 animate-pulse flex-shrink-0" />
+        <div className="relative p-3.5 sm:p-4 border-b border-slate-800 flex items-center gap-2.5 sm:gap-3 bg-slate-950/50">
+          <Search className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400 animate-pulse flex-shrink-0" />
           <input
             ref={inputRef}
             type="text"
@@ -180,7 +180,7 @@ export default function CommandPalette({
               setSelectedIndex(0);
             }}
             placeholder="Search fighter jets, warships, tanks, countries, weapons, views..."
-            className="w-full bg-transparent text-sm sm:text-base text-white placeholder-slate-500 focus:outline-none font-sans"
+            className="w-full bg-transparent text-xs sm:text-base text-white placeholder-slate-500 focus:outline-none font-sans"
           />
           {query && (
             <button
@@ -196,7 +196,7 @@ export default function CommandPalette({
         </div>
 
         {/* Results List */}
-        <div className="max-h-96 overflow-y-auto p-2 space-y-1">
+        <div className="max-h-80 sm:max-h-96 overflow-y-auto p-2 space-y-1">
           {results.length === 0 ? (
             <div className="p-8 text-center text-slate-500 font-mono text-xs">
               No matching defense assets, sovereign arms, or commands found for &quot;{query}&quot;.
@@ -210,14 +210,14 @@ export default function CommandPalette({
                   key={`${item.type}-${item.title}`}
                   onClick={() => handleExecute(item)}
                   onMouseEnter={() => setSelectedIndex(idx)}
-                  className={`p-3 rounded-2xl flex items-center justify-between cursor-pointer transition-all ${
+                  className={`p-2.5 sm:p-3 rounded-xl sm:rounded-2xl flex items-center justify-between cursor-pointer transition-all ${
                     isSelected
                       ? 'bg-cyan-500/15 border border-cyan-500/40 shadow-glow-cyan text-white translate-x-1'
                       : 'border border-transparent hover:bg-slate-800/60 text-slate-300'
                   }`}
                 >
-                  <div className="flex items-center space-x-3 min-w-0">
-                    <div className={`p-2 rounded-xl border flex-shrink-0 ${
+                  <div className="flex items-center space-x-2.5 sm:space-x-3 min-w-0">
+                    <div className={`p-1.5 sm:p-2 rounded-xl border flex-shrink-0 ${
                       item.type === 'AIRCRAFT' 
                         ? 'bg-cyan-950 text-cyan-400 border-cyan-800' 
                         : item.type === 'NAVAL'
@@ -235,7 +235,7 @@ export default function CommandPalette({
                           {item.type}
                         </span>
                       </div>
-                      <div className="text-[11px] font-mono text-slate-400 truncate">
+                      <div className="text-[10px] sm:text-[11px] font-mono text-slate-400 truncate">
                         {item.subtitle}
                       </div>
                     </div>
@@ -251,12 +251,12 @@ export default function CommandPalette({
         </div>
 
         {/* Footer shortcuts hint */}
-        <div className="p-3 border-t border-slate-800 bg-slate-950/90 flex items-center justify-between text-[11px] font-mono text-slate-400">
-          <div className="flex items-center gap-3">
-            <span>Navigate <kbd className="px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-[10px]">↑</kbd> <kbd className="px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-[10px]">↓</kbd></span>
+        <div className="p-2.5 sm:p-3 border-t border-slate-800 bg-slate-950/90 flex items-center justify-between text-[10px] sm:text-[11px] font-mono text-slate-400">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <span><kbd className="px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-[10px]">↑</kbd> <kbd className="px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-[10px]">↓</kbd></span>
             <span>Select <kbd className="px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-[10px]">↵</kbd></span>
           </div>
-          <span className="text-cyan-400 font-bold">AEROVAULT GLOBAL DEFENSE COMMAND PALETTE</span>
+          <span className="text-cyan-400 font-bold hidden sm:inline">AEROVAULT GLOBAL COMMAND PALETTE</span>
         </div>
       </div>
     </div>

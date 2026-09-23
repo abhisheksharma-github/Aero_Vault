@@ -154,7 +154,7 @@ export default function App() {
 
 
   return (
-    <div className="min-h-screen bg-av-navy text-av-light flex flex-col font-sans radar-grid selection:bg-av-sky/20 selection:text-av-sky">
+    <div className="min-h-screen bg-av-navy text-av-light flex flex-col font-sans radar-grid selection:bg-av-sky/20 selection:text-av-sky overflow-x-hidden w-full">
       
       {/* Top Header Navbar */}
       <Navbar
@@ -169,8 +169,8 @@ export default function App() {
       />
 
       {/* Main Application Container */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8">
-        <div className="flex flex-col lg:flex-row gap-5 lg:gap-8 items-start">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-3.5 sm:py-8 min-w-0 overflow-x-hidden">
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 items-start w-full min-w-0">
           
           {/* Persistent Tactical Navigation Sidebar */}
           <Sidebar

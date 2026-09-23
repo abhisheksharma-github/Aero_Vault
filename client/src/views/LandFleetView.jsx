@@ -171,7 +171,7 @@ export default function LandFleetView({ onSelectCountry }) {
       </div>
 
       {/* 3. Armor Card Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
         {vehicles.map((vehicle) => {
           return (
             <div
@@ -180,7 +180,7 @@ export default function LandFleetView({ onSelectCountry }) {
                 tacticalAudio.playClick();
                 setSelectedVehicleForModal(vehicle);
               }}
-              className="bg-slate-900/80 backdrop-blur-md rounded-2xl border border-slate-800 hover:border-cyan-500/50 transition-all p-5 space-y-4 cursor-pointer group shadow-xl hover:-translate-y-1 relative overflow-hidden hud-corner-box"
+              className="bg-slate-900/80 backdrop-blur-md rounded-2xl border border-slate-800 hover:border-cyan-500/50 transition-all p-4 sm:p-5 space-y-3.5 sm:space-y-4 cursor-pointer group shadow-xl hover:-translate-y-1 relative overflow-hidden hud-corner-box"
             >
               {/* Header: Category tag + TVR Score */}
               <div className="flex items-start justify-between gap-2">
@@ -197,7 +197,7 @@ export default function LandFleetView({ onSelectCountry }) {
 
               {/* Vehicle Name & Generation */}
               <div>
-                <h3 className="text-lg font-display font-black text-white group-hover:text-cyan-400 transition-colors">
+                <h3 className="text-base sm:text-lg font-display font-black text-white group-hover:text-cyan-400 transition-colors">
                   {vehicle.name}
                 </h3>
                 <p className="text-xs font-sans text-slate-400 mt-0.5">
@@ -208,16 +208,16 @@ export default function LandFleetView({ onSelectCountry }) {
               {/* Specifications Grid */}
               <div className="space-y-2 bg-slate-950/70 p-3 rounded-xl border border-slate-800/80 text-xs font-mono">
                 <div>
-                  <div className="text-[10px] text-slate-500">MAIN ARMAMENT</div>
+                  <div className="text-[9px] sm:text-[10px] text-slate-500">MAIN ARMAMENT</div>
                   <div className="text-slate-200 font-bold mt-0.5 truncate">{vehicle.mainArmament || 'N/A'}</div>
                 </div>
                 <div className="grid grid-cols-2 gap-2 pt-1 border-t border-slate-800/60">
                   <div>
-                    <div className="text-[10px] text-slate-500">POWERPLANT</div>
+                    <div className="text-[9px] sm:text-[10px] text-slate-500">POWERPLANT</div>
                     <div className="text-cyan-400 font-bold mt-0.5">{vehicle.enginePowerHp || 1000} HP</div>
                   </div>
                   <div>
-                    <div className="text-[10px] text-slate-500">TOP SPEED</div>
+                    <div className="text-[9px] sm:text-[10px] text-slate-500">TOP SPEED</div>
                     <div className="text-slate-200 font-bold mt-0.5">{vehicle.topSpeedKmh || 60} km/h</div>
                   </div>
                 </div>
@@ -257,8 +257,8 @@ export default function LandFleetView({ onSelectCountry }) {
 
       {/* 4. Detailed Armor Dossier Modal */}
       {selectedVehicleForModal && (
-        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
-          <div className="bg-slate-900 border border-slate-800 rounded-3xl max-w-2xl w-full p-6 space-y-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-2 sm:p-4">
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl sm:rounded-3xl max-w-2xl w-full p-4 sm:p-6 space-y-4 sm:space-y-6 shadow-2xl relative max-h-[92vh] overflow-y-auto">
             
             {/* Header */}
             <div className="flex items-center justify-between border-b border-slate-800 pb-4">

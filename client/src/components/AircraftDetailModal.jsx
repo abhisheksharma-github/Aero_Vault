@@ -135,11 +135,11 @@ export default function AircraftDetailModal({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 overflow-y-auto bg-slate-950/90 backdrop-blur-2xl animate-fade-in">
       <div
-        className="relative w-full max-w-5xl rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl overflow-hidden my-auto max-h-[94vh] flex flex-col text-slate-100"
+        className="relative w-full max-w-5xl rounded-2xl sm:rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl overflow-hidden my-auto max-h-[92vh] flex flex-col text-slate-100"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header Ribbon */}
-        <div className="relative p-4 sm:p-6 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border-b border-slate-800 flex-shrink-0">
+        <div className="relative p-3.5 sm:p-6 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border-b border-slate-800 flex-shrink-0">
           <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4">
             <div className="space-y-1.5 min-w-0">
               <div className="flex items-center space-x-1.5 sm:space-x-2 flex-wrap gap-y-1">
@@ -167,15 +167,15 @@ export default function AircraftDetailModal({
                 </span>
               </div>
 
-              <h2 className="text-xl sm:text-3xl font-display font-black text-white truncate">{name}</h2>
-              <p className="text-xs font-mono text-slate-400 truncate">
+              <h2 className="text-lg sm:text-3xl font-display font-black text-white truncate">{name}</h2>
+              <p className="text-[11px] sm:text-xs font-mono text-slate-400 truncate">
                 {designation ? `${designation} • ` : ''}{manufacturer} • {country}
               </p>
             </div>
 
             {/* Right Actions: TVR Grade Badge, Compare & Close */}
             <div className="flex items-center justify-between sm:justify-end space-x-2 sm:space-x-2.5 flex-shrink-0 pt-1 sm:pt-0 border-t sm:border-t-0 border-slate-800/60">
-              <div className={`flex flex-col items-center justify-center px-3 py-1 rounded-xl sm:rounded-2xl border ${getGradeColor(tvrScore)}`}>
+              <div className={`flex flex-col items-center justify-center px-2.5 sm:px-3 py-1 rounded-xl sm:rounded-2xl border ${getGradeColor(tvrScore)}`}>
                 <span className="text-xs sm:text-sm font-mono font-black">{tvrScore.toFixed(1)}</span>
                 <span className="text-[8px] sm:text-[9px] font-mono font-bold tracking-wider">TVR SCORE</span>
               </div>
@@ -201,6 +201,7 @@ export default function AircraftDetailModal({
                   onClose();
                 }}
                 className="p-2 sm:p-2.5 rounded-xl sm:rounded-2xl bg-slate-950 text-slate-400 hover:text-white hover:bg-rose-500/20 hover:border-rose-500/50 border border-slate-800 transition-colors"
+                aria-label="Close modal"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -208,7 +209,7 @@ export default function AircraftDetailModal({
           </div>
 
           {/* Navigation Tab Bar */}
-          <div className="flex items-center space-x-1.5 overflow-x-auto pt-3 sm:pt-4 scrollbar-none -webkit-overflow-scrolling-touch">
+          <div className="flex items-center space-x-1.5 overflow-x-auto pt-2.5 sm:pt-4 scrollbar-none -webkit-overflow-scrolling-touch">
             {tabs.map((tab) => {
               const Icon = tab.icon;
               const isTabActive = activeTab === tab.id;
@@ -218,7 +219,7 @@ export default function AircraftDetailModal({
                   onClick={() => handleTabChange(tab.id)}
                   className={`flex items-center space-x-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-medium whitespace-nowrap transition-all flex-shrink-0 ${
                     isTabActive
-                      ? 'bg-cyan-500 text-slate-950 font-bold shadow-glow-cyan scale-105'
+                      ? 'bg-cyan-500 text-slate-950 font-bold shadow-glow-cyan'
                       : 'text-slate-400 hover:text-white hover:bg-slate-800 border border-transparent'
                   }`}
                 >
@@ -231,7 +232,7 @@ export default function AircraftDetailModal({
         </div>
 
         {/* Modal Body Content (Scrollable) */}
-        <div className="p-4 sm:p-6 overflow-y-auto space-y-6 flex-1 text-xs sm:text-sm">
+        <div className="p-3.5 sm:p-6 overflow-y-auto space-y-5 sm:space-y-6 flex-1 text-xs sm:text-sm">
           {/* TAB 1: OVERVIEW */}
           {activeTab === 'overview' && (
             <div className="space-y-6 animate-fade-in">

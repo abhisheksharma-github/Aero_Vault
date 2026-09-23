@@ -172,7 +172,7 @@ export default function NavalFleetView({ onSelectCountry }) {
       </div>
 
       {/* 3. Card Grid Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
         {vessels.map((vessel) => {
           return (
             <div
@@ -181,7 +181,7 @@ export default function NavalFleetView({ onSelectCountry }) {
                 tacticalAudio.playClick();
                 setSelectedVesselForModal(vessel);
               }}
-              className="bg-slate-900/80 backdrop-blur-md rounded-2xl border border-slate-800 hover:border-cyan-500/50 transition-all p-5 space-y-4 cursor-pointer group shadow-xl hover:-translate-y-1 relative overflow-hidden hud-corner-box"
+              className="bg-slate-900/80 backdrop-blur-md rounded-2xl border border-slate-800 hover:border-cyan-500/50 transition-all p-4 sm:p-5 space-y-3.5 sm:space-y-4 cursor-pointer group shadow-xl hover:-translate-y-1 relative overflow-hidden hud-corner-box"
             >
               {/* Header: Type tag + TVR Score */}
               <div className="flex items-start justify-between gap-2">
@@ -198,7 +198,7 @@ export default function NavalFleetView({ onSelectCountry }) {
 
               {/* Warship Name & Class */}
               <div>
-                <h3 className="text-lg font-display font-black text-white group-hover:text-cyan-400 transition-colors">
+                <h3 className="text-base sm:text-lg font-display font-black text-white group-hover:text-cyan-400 transition-colors">
                   {vessel.name}
                 </h3>
                 <p className="text-xs font-sans text-slate-400 mt-0.5">
@@ -209,19 +209,19 @@ export default function NavalFleetView({ onSelectCountry }) {
               {/* Key Naval Metrics Grid */}
               <div className="grid grid-cols-2 gap-2 bg-slate-950/70 p-3 rounded-xl border border-slate-800/80 text-xs font-mono">
                 <div>
-                  <div className="text-[10px] text-slate-500">PENNANT #</div>
+                  <div className="text-[9px] sm:text-[10px] text-slate-500">PENNANT #</div>
                   <div className="text-slate-200 font-bold mt-0.5">{vessel.pennantNumber || 'N/A'}</div>
                 </div>
                 <div>
-                  <div className="text-[10px] text-slate-500">DISPLACEMENT</div>
+                  <div className="text-[9px] sm:text-[10px] text-slate-500">DISPLACEMENT</div>
                   <div className="text-cyan-400 font-bold mt-0.5">{(vessel.displacementTons || 0).toLocaleString()} Tons</div>
                 </div>
                 <div>
-                  <div className="text-[10px] text-slate-500">MAX SPEED</div>
+                  <div className="text-[9px] sm:text-[10px] text-slate-500">MAX SPEED</div>
                   <div className="text-slate-200 font-bold mt-0.5">{vessel.maxSpeedKnots || 30.0} Knots</div>
                 </div>
                 <div>
-                  <div className="text-[10px] text-slate-500">RADAR / SENSORS</div>
+                  <div className="text-[9px] sm:text-[10px] text-slate-500">RADAR / SENSORS</div>
                   <div className="mt-0.5 flex items-center gap-1">
                     {vessel.hasAesa ? (
                       <span className="text-cyan-400 font-bold">AESA / GaN</span>
@@ -234,15 +234,15 @@ export default function NavalFleetView({ onSelectCountry }) {
 
               {/* Country & Active Fleet status */}
               <div className="flex items-center justify-between pt-2 border-t border-slate-800 text-xs font-mono text-slate-400">
-                <div className="flex items-center space-x-1.5">
-                  <span className="text-slate-300 font-bold">{vessel.country}</span>
+                <div className="flex items-center space-x-1.5 min-w-0">
+                  <span className="text-slate-300 font-bold truncate">{vessel.country}</span>
                   {vessel.originCountry && (
-                    <span className="text-[10px] text-slate-500 truncate max-w-[140px]">
+                    <span className="text-[10px] text-slate-500 truncate max-w-[120px] hidden sm:inline">
                       • {vessel.originCountry}
                     </span>
                   )}
                 </div>
-                <span className="text-cyan-400 font-bold">
+                <span className="text-cyan-400 font-bold flex-shrink-0">
                   {vessel.activeCount || 1} Active
                 </span>
               </div>
@@ -266,8 +266,8 @@ export default function NavalFleetView({ onSelectCountry }) {
 
       {/* 4. Detailed Warship Modal Dossier */}
       {selectedVesselForModal && (
-        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
-          <div className="bg-slate-900 border border-slate-800 rounded-3xl max-w-2xl w-full p-6 space-y-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-2 sm:p-4">
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl sm:rounded-3xl max-w-2xl w-full p-4 sm:p-6 space-y-4 sm:space-y-6 shadow-2xl relative max-h-[92vh] overflow-y-auto">
             
             {/* Header */}
             <div className="flex items-center justify-between border-b border-slate-800 pb-4">

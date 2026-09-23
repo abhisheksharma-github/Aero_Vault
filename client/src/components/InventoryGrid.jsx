@@ -104,10 +104,10 @@ export default function InventoryGrid({
       <div className="glass-panel rounded-3xl p-5 border border-av-steel/30 space-y-4 hud-corner-box">
         
         {/* Row 1: Status Tabs, View Switcher & Sorters */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
           
           {/* Status View Pills */}
-          <div className="flex flex-wrap items-center p-1 rounded-2xl bg-av-dark/90 border border-av-steel/30">
+          <div className="flex items-center p-1 rounded-2xl bg-av-dark/90 border border-av-steel/30 overflow-x-auto touch-scroll">
             {statuses.map((st) => {
               const Icon = st.icon;
               const isSelected = selectedStatus === st.id;
@@ -115,7 +115,7 @@ export default function InventoryGrid({
                 <button
                   key={st.id}
                   onClick={() => handleStatusClick(st.id)}
-                  className={`flex items-center space-x-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all ${
+                  className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
                     isSelected
                       ? 'bg-av-sky/20 text-av-sky border border-av-sky/40 shadow-glow-cyan'
                       : 'text-av-mist hover:text-white hover:bg-av-blue/40'
@@ -129,7 +129,7 @@ export default function InventoryGrid({
           </div>
 
           {/* Sorters & View Switcher */}
-          <div className="flex items-center space-x-2.5 self-end sm:self-auto flex-wrap">
+          <div className="flex items-center justify-between sm:justify-end space-x-2 flex-wrap gap-y-2">
             {/* View Mode Toggle: Grid vs Table */}
             <div className="flex items-center p-1 rounded-xl bg-av-dark/90 border border-av-steel/30">
               <button
@@ -159,13 +159,13 @@ export default function InventoryGrid({
             </div>
 
             {/* Sorter Dropdown */}
-            <div className="flex items-center space-x-2 px-3 py-1.5 rounded-xl bg-av-dark/90 border border-av-steel/30 text-xs">
-              <ArrowUpDown className="w-3.5 h-3.5 text-av-sky" />
-              <span className="text-av-mist font-mono text-[11px]">SORT:</span>
+            <div className="flex items-center space-x-1.5 px-2.5 py-1.5 rounded-xl bg-av-dark/90 border border-av-steel/30 text-xs">
+              <ArrowUpDown className="w-3.5 h-3.5 text-av-sky flex-shrink-0" />
+              <span className="text-av-mist font-mono text-[11px] hidden xs:inline">SORT:</span>
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="bg-transparent text-white font-semibold focus:outline-none cursor-pointer font-sans"
+                className="bg-transparent text-white font-semibold focus:outline-none cursor-pointer font-sans text-xs max-w-[120px] sm:max-w-none"
               >
                 <option value="tvrScore" className="bg-av-dark">TVR Score</option>
                 <option value="topSpeedMach" className="bg-av-dark">Top Mach Speed</option>
@@ -189,8 +189,8 @@ export default function InventoryGrid({
         </div>
 
         {/* Row 2: Category Filter Horizontal Scrollbar */}
-        <div className="flex items-center space-x-2 overflow-x-auto pb-1 pt-1 scrollbar-none border-t border-av-steel/20">
-          <span className="text-[11px] font-mono text-av-mist uppercase flex items-center pr-2">
+        <div className="flex items-center space-x-2 overflow-x-auto touch-scroll pb-1 pt-1 scrollbar-none border-t border-av-steel/20">
+          <span className="text-[11px] font-mono text-av-mist uppercase flex items-center pr-2 flex-shrink-0">
             <Filter className="w-3 h-3 mr-1 text-av-sky" /> Role:
           </span>
           {categories.map((cat) => {
@@ -212,8 +212,8 @@ export default function InventoryGrid({
         </div>
 
         {/* Row 3: Era Filter */}
-        <div className="flex items-center space-x-2 overflow-x-auto pb-1 pt-1 scrollbar-none border-t border-av-steel/15">
-          <span className="text-[11px] font-mono text-av-mist uppercase flex items-center pr-2">
+        <div className="flex items-center space-x-2 overflow-x-auto touch-scroll pb-1 pt-1 scrollbar-none border-t border-av-steel/15">
+          <span className="text-[11px] font-mono text-av-mist uppercase flex items-center pr-2 flex-shrink-0">
             <Compass className="w-3 h-3 mr-1 text-amber-400" /> Era:
           </span>
           {eras.map((era) => {
@@ -236,8 +236,8 @@ export default function InventoryGrid({
 
         {/* Row 4: Generation Filter */}
         {(selectedCategory === 'ALL' || selectedCategory === 'FIGHTER' || selectedCategory === 'BOMBER') && (
-          <div className="flex items-center space-x-2 overflow-x-auto pb-1 pt-1 scrollbar-none border-t border-av-steel/15">
-            <span className="text-[11px] font-mono text-av-mist uppercase flex items-center pr-2">
+          <div className="flex items-center space-x-2 overflow-x-auto touch-scroll pb-1 pt-1 scrollbar-none border-t border-av-steel/15">
+            <span className="text-[11px] font-mono text-av-mist uppercase flex items-center pr-2 flex-shrink-0">
               <Cpu className="w-3 h-3 mr-1 text-purple-400" /> Gen:
             </span>
             {generations.map((gen) => {
@@ -262,39 +262,39 @@ export default function InventoryGrid({
 
       {/* Comparison Floating Quick Dock */}
       {comparisonList.length > 0 && (
-        <div className="sticky top-20 z-30 flex items-center justify-between p-3.5 rounded-2xl bg-gradient-to-r from-av-blue/95 via-av-dark/95 to-av-blue/95 border border-av-sky/40 shadow-glow-cyan backdrop-blur-xl animate-fade-in">
-          <div className="flex items-center space-x-3">
-            <div className="p-2 rounded-xl bg-av-sky/20 text-av-sky">
+        <div className="sticky top-16 sm:top-20 z-30 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 p-3 sm:p-3.5 rounded-2xl bg-gradient-to-r from-av-blue/95 via-av-dark/95 to-av-blue/95 border border-av-sky/40 shadow-glow-cyan backdrop-blur-xl animate-fade-in">
+          <div className="flex items-center space-x-3 min-w-0">
+            <div className="p-2 rounded-xl bg-av-sky/20 text-av-sky flex-shrink-0">
               <Scale className="w-5 h-5 animate-pulse" />
             </div>
-            <div>
+            <div className="min-w-0">
               <div className="text-xs font-bold text-white flex items-center gap-2">
                 <span>Tactical Benchmark Dock</span>
                 <span className="px-1.5 py-0.2 rounded bg-av-sky text-av-navy text-[10px] font-mono font-black">
                   {comparisonList.length}/2 Ready
                 </span>
               </div>
-              <div className="text-[11px] font-mono text-av-mist truncate max-w-xs sm:max-w-md">
+              <div className="text-[11px] font-mono text-av-mist truncate max-w-[200px] xs:max-w-xs sm:max-w-md">
                 {comparisonList.map((a) => a.name).join(' vs ')}
               </div>
             </div>
           </div>
 
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center justify-end space-x-2">
             {comparisonList.length === 2 && (
               <button
                 onClick={() => {
                   tacticalAudio.playLaunch();
                   onOpenComparison();
                 }}
-                className="px-4 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-av-sky to-cyan-400 text-av-navy shadow-glow-cyan hover:brightness-110 transition-all font-mono uppercase tracking-wider"
+                className="w-full sm:w-auto px-4 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-av-sky to-cyan-400 text-av-navy shadow-glow-cyan hover:brightness-110 transition-all font-mono uppercase tracking-wider text-center"
               >
                 Launch Showdown →
               </button>
             )}
             {comparisonList.length === 1 && (
-              <span className="text-xs text-av-sky font-mono hidden sm:inline animate-pulse">
-                Click another aircraft to compare
+              <span className="text-[11px] text-av-sky font-mono animate-pulse">
+                Click 2nd platform to compare
               </span>
             )}
           </div>
